@@ -1,0 +1,183 @@
+[2024-12-03T17:00:02.020+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-03T17:00:02.044+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-03T16:30:00+00:00 [queued]>
+[2024-12-03T17:00:02.053+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-03T16:30:00+00:00 [queued]>
+[2024-12-03T17:00:02.053+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-03T17:00:02.071+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-12-03 16:30:00+00:00
+[2024-12-03T17:00:02.087+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=259) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-03T17:00:02.088+0000] {standard_task_runner.py:72} INFO - Started process 269 to run task
+[2024-12-03T17:00:02.090+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'get_all_data', 'scheduled__2024-12-03T16:30:00+00:00', '--job-id', '2270', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp01m7d8__']
+[2024-12-03T17:00:02.092+0000] {standard_task_runner.py:105} INFO - Job 2270: Subtask get_all_data
+[2024-12-03T17:00:02.177+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-03T16:30:00+00:00 [running]> on host 559daffc287d
+[2024-12-03T17:00:02.347+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-03T16:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-03T16:30:00+00:00'
+[2024-12-03T17:00:02.348+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-12-03T17:00:02.349+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-12-03T17:00:02.349+0000] {logging_mixin.py:190} INFO - Current task name:get_all_data state:running start_date:2024-12-03 17:00:02.045413+00:00
+[2024-12-03T17:00:02.349+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_roadkill and current dag run status:running
+[2024-12-03T17:00:02.349+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-03T17:00:02.350+0000] {inaturalist_dag.py:153} INFO - Getting data from keyword: roadkill
+[2024-12-03T17:00:02.357+0000] {inaturalist_dag.py:45} INFO - Maximum id 1 for the request
+[2024-12-03T17:00:07.481+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:00:07.502+0000] {inaturalist_dag.py:165} INFO - Extracted 190 observations
+[2024-12-03T17:00:07.502+0000] {inaturalist_dag.py:45} INFO - Maximum id 391838 for the request
+[2024-12-03T17:00:12.364+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:00:12.385+0000] {inaturalist_dag.py:165} INFO - Extracted 383 observations
+[2024-12-03T17:00:12.386+0000] {inaturalist_dag.py:45} INFO - Maximum id 921584 for the request
+[2024-12-03T17:00:14.672+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:00:14.681+0000] {inaturalist_dag.py:165} INFO - Extracted 578 observations
+[2024-12-03T17:00:14.682+0000] {inaturalist_dag.py:45} INFO - Maximum id 926875 for the request
+[2024-12-03T17:00:19.875+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:00:19.897+0000] {inaturalist_dag.py:165} INFO - Extracted 755 observations
+[2024-12-03T17:00:19.898+0000] {inaturalist_dag.py:45} INFO - Maximum id 1122856 for the request
+[2024-12-03T17:00:25.909+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:00:26.005+0000] {inaturalist_dag.py:165} INFO - Extracted 950 observations
+[2024-12-03T17:00:26.005+0000] {inaturalist_dag.py:45} INFO - Maximum id 1673455 for the request
+[2024-12-03T17:00:31.728+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:00:31.756+0000] {inaturalist_dag.py:165} INFO - Extracted 1141 observations
+[2024-12-03T17:00:31.756+0000] {inaturalist_dag.py:45} INFO - Maximum id 2496524 for the request
+[2024-12-03T17:00:36.986+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:00:37.010+0000] {inaturalist_dag.py:165} INFO - Extracted 1336 observations
+[2024-12-03T17:00:37.011+0000] {inaturalist_dag.py:45} INFO - Maximum id 3075819 for the request
+[2024-12-03T17:00:42.728+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:00:42.760+0000] {inaturalist_dag.py:165} INFO - Extracted 1528 observations
+[2024-12-03T17:00:42.760+0000] {inaturalist_dag.py:45} INFO - Maximum id 4166723 for the request
+[2024-12-03T17:00:47.950+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:00:47.986+0000] {inaturalist_dag.py:165} INFO - Extracted 1722 observations
+[2024-12-03T17:00:47.987+0000] {inaturalist_dag.py:45} INFO - Maximum id 5327081 for the request
+[2024-12-03T17:00:52.866+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:00:52.912+0000] {inaturalist_dag.py:165} INFO - Extracted 1917 observations
+[2024-12-03T17:00:52.912+0000] {inaturalist_dag.py:45} INFO - Maximum id 6652806 for the request
+[2024-12-03T17:00:58.117+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:00:58.220+0000] {inaturalist_dag.py:165} INFO - Extracted 2114 observations
+[2024-12-03T17:00:58.220+0000] {inaturalist_dag.py:45} INFO - Maximum id 7769647 for the request
+[2024-12-03T17:01:00.801+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:00.810+0000] {inaturalist_dag.py:165} INFO - Extracted 2294 observations
+[2024-12-03T17:01:00.810+0000] {inaturalist_dag.py:45} INFO - Maximum id 7797274 for the request
+[2024-12-03T17:01:03.032+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:03.037+0000] {inaturalist_dag.py:165} INFO - Extracted 2481 observations
+[2024-12-03T17:01:03.037+0000] {inaturalist_dag.py:45} INFO - Maximum id 7797484 for the request
+[2024-12-03T17:01:05.456+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:05.461+0000] {inaturalist_dag.py:165} INFO - Extracted 2675 observations
+[2024-12-03T17:01:05.461+0000] {inaturalist_dag.py:45} INFO - Maximum id 7797704 for the request
+[2024-12-03T17:01:07.733+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:07.741+0000] {inaturalist_dag.py:165} INFO - Extracted 2864 observations
+[2024-12-03T17:01:07.741+0000] {inaturalist_dag.py:45} INFO - Maximum id 7797924 for the request
+[2024-12-03T17:01:10.651+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:10.656+0000] {inaturalist_dag.py:165} INFO - Extracted 3040 observations
+[2024-12-03T17:01:10.657+0000] {inaturalist_dag.py:45} INFO - Maximum id 7814101 for the request
+[2024-12-03T17:01:13.375+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:13.381+0000] {inaturalist_dag.py:165} INFO - Extracted 3222 observations
+[2024-12-03T17:01:13.382+0000] {inaturalist_dag.py:45} INFO - Maximum id 7814317 for the request
+[2024-12-03T17:01:15.949+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:15.954+0000] {inaturalist_dag.py:165} INFO - Extracted 3408 observations
+[2024-12-03T17:01:15.954+0000] {inaturalist_dag.py:45} INFO - Maximum id 7814534 for the request
+[2024-12-03T17:01:19.055+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:19.063+0000] {inaturalist_dag.py:165} INFO - Extracted 3606 observations
+[2024-12-03T17:01:19.065+0000] {inaturalist_dag.py:45} INFO - Maximum id 7814773 for the request
+[2024-12-03T17:01:21.413+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:21.418+0000] {inaturalist_dag.py:165} INFO - Extracted 3780 observations
+[2024-12-03T17:01:21.418+0000] {inaturalist_dag.py:45} INFO - Maximum id 7814993 for the request
+[2024-12-03T17:01:27.197+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:27.232+0000] {inaturalist_dag.py:165} INFO - Extracted 3974 observations
+[2024-12-03T17:01:27.233+0000] {inaturalist_dag.py:45} INFO - Maximum id 8593856 for the request
+[2024-12-03T17:01:33.121+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:33.197+0000] {inaturalist_dag.py:165} INFO - Extracted 4161 observations
+[2024-12-03T17:01:33.198+0000] {inaturalist_dag.py:45} INFO - Maximum id 9490147 for the request
+[2024-12-03T17:01:39.949+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:39.980+0000] {inaturalist_dag.py:165} INFO - Extracted 4352 observations
+[2024-12-03T17:01:39.981+0000] {inaturalist_dag.py:45} INFO - Maximum id 10690428 for the request
+[2024-12-03T17:01:46.151+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:46.184+0000] {inaturalist_dag.py:165} INFO - Extracted 4552 observations
+[2024-12-03T17:01:46.185+0000] {inaturalist_dag.py:45} INFO - Maximum id 10994999 for the request
+[2024-12-03T17:01:52.994+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:01:53.042+0000] {inaturalist_dag.py:165} INFO - Extracted 4752 observations
+[2024-12-03T17:01:53.043+0000] {inaturalist_dag.py:45} INFO - Maximum id 11188232 for the request
+[2024-12-03T17:02:00.039+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:00.089+0000] {inaturalist_dag.py:165} INFO - Extracted 4951 observations
+[2024-12-03T17:02:00.089+0000] {inaturalist_dag.py:45} INFO - Maximum id 12275501 for the request
+[2024-12-03T17:02:07.225+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:07.285+0000] {inaturalist_dag.py:165} INFO - Extracted 5151 observations
+[2024-12-03T17:02:07.286+0000] {inaturalist_dag.py:45} INFO - Maximum id 13453858 for the request
+[2024-12-03T17:02:12.774+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:12.882+0000] {inaturalist_dag.py:165} INFO - Extracted 5351 observations
+[2024-12-03T17:02:12.882+0000] {inaturalist_dag.py:45} INFO - Maximum id 14754411 for the request
+[2024-12-03T17:02:18.416+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:18.451+0000] {inaturalist_dag.py:165} INFO - Extracted 5550 observations
+[2024-12-03T17:02:18.452+0000] {inaturalist_dag.py:45} INFO - Maximum id 16271333 for the request
+[2024-12-03T17:02:24.656+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:24.697+0000] {inaturalist_dag.py:165} INFO - Extracted 5750 observations
+[2024-12-03T17:02:24.698+0000] {inaturalist_dag.py:45} INFO - Maximum id 17769831 for the request
+[2024-12-03T17:02:30.886+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:30.924+0000] {inaturalist_dag.py:165} INFO - Extracted 5946 observations
+[2024-12-03T17:02:30.925+0000] {inaturalist_dag.py:45} INFO - Maximum id 19087974 for the request
+[2024-12-03T17:02:36.148+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:36.182+0000] {inaturalist_dag.py:165} INFO - Extracted 6145 observations
+[2024-12-03T17:02:36.182+0000] {inaturalist_dag.py:45} INFO - Maximum id 19708414 for the request
+[2024-12-03T17:02:39.100+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:39.121+0000] {inaturalist_dag.py:165} INFO - Extracted 6345 observations
+[2024-12-03T17:02:39.122+0000] {inaturalist_dag.py:45} INFO - Maximum id 19728239 for the request
+[2024-12-03T17:02:42.390+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:42.450+0000] {inaturalist_dag.py:165} INFO - Extracted 6545 observations
+[2024-12-03T17:02:42.450+0000] {inaturalist_dag.py:45} INFO - Maximum id 19740775 for the request
+[2024-12-03T17:02:45.367+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:45.388+0000] {inaturalist_dag.py:165} INFO - Extracted 6744 observations
+[2024-12-03T17:02:45.389+0000] {inaturalist_dag.py:45} INFO - Maximum id 19760403 for the request
+[2024-12-03T17:02:48.655+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:48.681+0000] {inaturalist_dag.py:165} INFO - Extracted 6944 observations
+[2024-12-03T17:02:48.681+0000] {inaturalist_dag.py:45} INFO - Maximum id 19770134 for the request
+[2024-12-03T17:02:51.855+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:51.874+0000] {inaturalist_dag.py:165} INFO - Extracted 7144 observations
+[2024-12-03T17:02:51.875+0000] {inaturalist_dag.py:45} INFO - Maximum id 19787408 for the request
+[2024-12-03T17:02:54.855+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:54.874+0000] {inaturalist_dag.py:165} INFO - Extracted 7344 observations
+[2024-12-03T17:02:54.874+0000] {inaturalist_dag.py:45} INFO - Maximum id 19815548 for the request
+[2024-12-03T17:02:58.217+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:02:58.246+0000] {inaturalist_dag.py:165} INFO - Extracted 7544 observations
+[2024-12-03T17:02:58.247+0000] {inaturalist_dag.py:45} INFO - Maximum id 19860224 for the request
+[2024-12-03T17:03:02.135+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:03:02.191+0000] {inaturalist_dag.py:165} INFO - Extracted 7744 observations
+[2024-12-03T17:03:02.192+0000] {inaturalist_dag.py:45} INFO - Maximum id 19882838 for the request
+[2024-12-03T17:03:06.245+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:03:06.269+0000] {inaturalist_dag.py:165} INFO - Extracted 7944 observations
+[2024-12-03T17:03:06.270+0000] {inaturalist_dag.py:45} INFO - Maximum id 19940969 for the request
+[2024-12-03T17:03:09.338+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:03:09.364+0000] {inaturalist_dag.py:165} INFO - Extracted 8144 observations
+[2024-12-03T17:03:09.365+0000] {inaturalist_dag.py:45} INFO - Maximum id 19981482 for the request
+[2024-12-03T17:03:12.471+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:03:12.491+0000] {inaturalist_dag.py:165} INFO - Extracted 8344 observations
+[2024-12-03T17:03:12.492+0000] {inaturalist_dag.py:45} INFO - Maximum id 20040446 for the request
+[2024-12-03T17:03:15.319+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:03:15.338+0000] {inaturalist_dag.py:165} INFO - Extracted 8544 observations
+[2024-12-03T17:03:15.338+0000] {inaturalist_dag.py:45} INFO - Maximum id 20052079 for the request
+[2024-12-03T17:03:18.583+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:03:18.604+0000] {inaturalist_dag.py:165} INFO - Extracted 8744 observations
+[2024-12-03T17:03:18.604+0000] {inaturalist_dag.py:45} INFO - Maximum id 20069921 for the request
+[2024-12-03T17:03:21.833+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:03:21.911+0000] {inaturalist_dag.py:165} INFO - Extracted 8944 observations
+[2024-12-03T17:03:21.912+0000] {inaturalist_dag.py:45} INFO - Maximum id 20238981 for the request
+[2024-12-03T17:03:25.110+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:03:25.130+0000] {inaturalist_dag.py:165} INFO - Extracted 9144 observations
+[2024-12-03T17:03:25.131+0000] {inaturalist_dag.py:45} INFO - Maximum id 20398339 for the request
+[2024-12-03T17:03:29.107+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:03:29.162+0000] {inaturalist_dag.py:165} INFO - Extracted 9344 observations
+[2024-12-03T17:03:29.163+0000] {inaturalist_dag.py:45} INFO - Maximum id 20770994 for the request
+[2024-12-03T17:03:32.762+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:03:32.793+0000] {inaturalist_dag.py:165} INFO - Extracted 9544 observations
+[2024-12-03T17:03:32.793+0000] {inaturalist_dag.py:45} INFO - Maximum id 20891671 for the request
+[2024-12-03T17:03:36.927+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:03:36.951+0000] {inaturalist_dag.py:165} INFO - Extracted 9744 observations
+[2024-12-03T17:03:36.952+0000] {inaturalist_dag.py:45} INFO - Maximum id 21091032 for the request
+[2024-12-03T17:03:40.732+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:03:40.765+0000] {inaturalist_dag.py:165} INFO - Extracted 9943 observations
+[2024-12-03T17:03:40.766+0000] {inaturalist_dag.py:45} INFO - Maximum id 21308707 for the request
+[2024-12-03T17:03:43.911+0000] {inaturalist_dag.py:61} INFO - Got 200 results
+[2024-12-03T17:03:43.982+0000] {inaturalist_dag.py:165} INFO - Extracted 10143 observations
+[2024-12-03T17:03:43.983+0000] {inaturalist_dag.py:45} INFO - Maximum id 21334407 for the request
+[2024-12-03T17:03:44.148+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-12-03T17:03:44.148+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-12-03T17:03:44.149+0000] {process_utils.py:132} INFO - Sending 15 to group 269. PIDs of all processes in the group: [269]
+[2024-12-03T17:03:44.149+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 269
+[2024-12-03T17:03:44.149+0000] {taskinstance.py:3092} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-12-03T17:03:44.184+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-03T17:03:44.242+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=269, status='terminated', exitcode=0, started='17:00:01') (269) terminated with exit code 0

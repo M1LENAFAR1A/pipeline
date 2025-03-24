@@ -1,0 +1,49 @@
+[2024-12-18T16:00:02.784+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-18T16:00:02.801+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-18T15:30:00+00:00 [queued]>
+[2024-12-18T16:00:02.813+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-18T15:30:00+00:00 [queued]>
+[2024-12-18T16:00:02.813+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-18T16:00:02.834+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-12-18 15:30:00+00:00
+[2024-12-18T16:00:02.848+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=203) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-18T16:00:02.850+0000] {standard_task_runner.py:72} INFO - Started process 211 to run task
+[2024-12-18T16:00:02.851+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'get_all_data', 'scheduled__2024-12-18T15:30:00+00:00', '--job-id', '204', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmpcgxhdoa1']
+[2024-12-18T16:00:02.855+0000] {standard_task_runner.py:105} INFO - Job 204: Subtask get_all_data
+[2024-12-18T16:00:02.927+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-18T15:30:00+00:00 [running]> on host 5aac2a1ca36c
+[2024-12-18T16:00:03.066+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-18T15:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-18T15:30:00+00:00'
+[2024-12-18T16:00:03.067+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-18T16:00:03.071+0000] {inaturalist_dag.py:150} INFO - Getting data from keyword: roadkill
+[2024-12-18T16:00:03.089+0000] {inaturalist_dag.py:41} INFO - Maximum id 192762750 for the request
+[2024-12-18T16:00:05.146+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2024-12-18T16:00:05.180+0000] {inaturalist_dag.py:163} INFO - Extracted 200 observations
+[2024-12-18T16:00:05.181+0000] {inaturalist_dag.py:41} INFO - Maximum id 193347814 for the request
+[2024-12-18T16:00:07.119+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2024-12-18T16:00:07.134+0000] {inaturalist_dag.py:163} INFO - Extracted 400 observations
+[2024-12-18T16:00:07.134+0000] {inaturalist_dag.py:41} INFO - Maximum id 193724422 for the request
+[2024-12-18T16:00:09.200+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2024-12-18T16:00:09.229+0000] {inaturalist_dag.py:163} INFO - Extracted 600 observations
+[2024-12-18T16:00:09.230+0000] {inaturalist_dag.py:41} INFO - Maximum id 194548102 for the request
+[2024-12-18T16:00:11.084+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2024-12-18T16:00:11.099+0000] {inaturalist_dag.py:163} INFO - Extracted 800 observations
+[2024-12-18T16:00:11.099+0000] {inaturalist_dag.py:41} INFO - Maximum id 194707786 for the request
+[2024-12-18T16:00:12.989+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2024-12-18T16:00:13.008+0000] {inaturalist_dag.py:163} INFO - Extracted 1000 observations
+[2024-12-18T16:00:13.008+0000] {inaturalist_dag.py:41} INFO - Maximum id 195343926 for the request
+[2024-12-18T16:00:15.254+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2024-12-18T16:00:15.278+0000] {inaturalist_dag.py:163} INFO - Extracted 1200 observations
+[2024-12-18T16:00:15.278+0000] {inaturalist_dag.py:41} INFO - Maximum id 196641178 for the request
+[2024-12-18T16:00:17.196+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2024-12-18T16:00:17.227+0000] {inaturalist_dag.py:163} INFO - Extracted 1400 observations
+[2024-12-18T16:00:17.227+0000] {inaturalist_dag.py:41} INFO - Maximum id 197564402 for the request
+[2024-12-18T16:00:19.762+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2024-12-18T16:00:19.855+0000] {inaturalist_dag.py:163} INFO - Extracted 1600 observations
+[2024-12-18T16:00:19.871+0000] {inaturalist_dag.py:41} INFO - Maximum id 198201349 for the request
+[2024-12-18T16:00:22.252+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2024-12-18T16:00:22.296+0000] {inaturalist_dag.py:163} INFO - Extracted 1800 observations
+[2024-12-18T16:00:22.296+0000] {inaturalist_dag.py:41} INFO - Maximum id 199170737 for the request
+[2024-12-18T16:00:24.616+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2024-12-18T16:00:24.633+0000] {inaturalist_dag.py:163} INFO - Extracted 2000 observations
+[2024-12-18T16:00:24.633+0000] {inaturalist_dag.py:41} INFO - Maximum id 199858097 for the request
+[2024-12-18T16:00:26.575+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2024-12-18T16:00:26.594+0000] {inaturalist_dag.py:163} INFO - Extracted 2200 observations
+[2024-12-18T16:00:26.594+0000] {inaturalist_dag.py:41} INFO - Maximum id 200754577 for the request

@@ -1,0 +1,83 @@
+[2024-10-29T17:14:39.130+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-29T17:14:39.144+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: biological_data_dag.extract_data_from_red_list manual__2024-10-29T17:13:55.094298+00:00 [queued]>
+[2024-10-29T17:14:39.151+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: biological_data_dag.extract_data_from_red_list manual__2024-10-29T17:13:55.094298+00:00 [queued]>
+[2024-10-29T17:14:39.152+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-10-29T17:14:39.165+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): extract_data_from_red_list> on 2024-10-29 17:13:55.094298+00:00
+[2024-10-29T17:14:39.173+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=795) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-29T17:14:39.174+0000] {standard_task_runner.py:72} INFO - Started process 798 to run task
+[2024-10-29T17:14:39.175+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'biological_data_dag', 'extract_data_from_red_list', 'manual__2024-10-29T17:13:55.094298+00:00', '--job-id', '143', '--raw', '--subdir', 'DAGS_FOLDER/biological_data_dag.py', '--cfg-path', '/tmp/tmpo88g24ub']
+[2024-10-29T17:14:39.177+0000] {standard_task_runner.py:105} INFO - Job 143: Subtask extract_data_from_red_list
+[2024-10-29T17:14:39.216+0000] {task_command.py:467} INFO - Running <TaskInstance: biological_data_dag.extract_data_from_red_list manual__2024-10-29T17:13:55.094298+00:00 [running]> on host 8b409d8ad50e
+[2024-10-29T17:14:39.306+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='biological_data_dag' AIRFLOW_CTX_TASK_ID='extract_data_from_red_list' AIRFLOW_CTX_EXECUTION_DATE='2024-10-29T17:13:55.094298+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-29T17:13:55.094298+00:00'
+[2024-10-29T17:14:39.307+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-29T17:14:39.308+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-29T17:14:39.308+0000] {logging_mixin.py:190} INFO - Current task name:extract_data_from_red_list state:running start_date:2024-10-29 17:14:39.145124+00:00
+[2024-10-29T17:14:39.308+0000] {logging_mixin.py:190} INFO - Dag name:biological_data_dag and current dag run status:running
+[2024-10-29T17:14:39.308+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-29T17:14:39.585+0000] {logging_mixin.py:190} INFO - Species link https://www.iucnredlist.org/species/29691/115767606
+[2024-10-29T17:14:42.534+0000] {logging_mixin.py:190} INFO - Species name: Ablepharus kitaibelii
+[2024-10-29T17:14:42.659+0000] {logging_mixin.py:190} INFO - Common name: Juniper Skink
+[2024-10-29T17:14:42.808+0000] {logging_mixin.py:190} INFO - Class: reptilia
+[2024-10-29T17:14:42.858+0000] {logging_mixin.py:190} INFO - Order: squamata
+[2024-10-29T17:14:42.915+0000] {logging_mixin.py:190} INFO - Family: scincidae
+[2024-10-29T17:14:42.973+0000] {logging_mixin.py:190} INFO - Genus: ablepharus
+[2024-10-29T17:14:43.015+0000] {logging_mixin.py:190} INFO - Conservation status: Least Concern 
+[2024-10-29T17:14:43.092+0000] {logging_mixin.py:190} INFO - Habitat type: Terrestrial
+[2024-10-29T17:14:43.093+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:14:43.093+0000] {logging_mixin.py:190} INFO - species to store [{'species': 'Ablepharus kitaibelii', 'common_name': 'Juniper Skink', 'class_red_list': 'reptilia', 'order_red_list': 'squamata', 'family_red_list': 'scincidae', 'genus_red_list': 'ablepharus', 'conservation_status': 'Least Concern ', 'habitat_type': 'Terrestrial'}]
+[2024-10-29T17:14:44.093+0000] {logging_mixin.py:190} INFO - Species link https://www.iucnredlist.org/species/22725044/155292529
+[2024-10-29T17:14:51.737+0000] {logging_mixin.py:190} INFO - Species name: Acanthis flammea
+[2024-10-29T17:14:52.118+0000] {logging_mixin.py:190} INFO - Common name: Redpoll
+[2024-10-29T17:14:52.474+0000] {logging_mixin.py:190} INFO - Class: aves
+[2024-10-29T17:14:52.569+0000] {logging_mixin.py:190} INFO - Order: passeriformes
+[2024-10-29T17:14:52.703+0000] {logging_mixin.py:190} INFO - Family: fringillidae
+[2024-10-29T17:14:52.772+0000] {logging_mixin.py:190} INFO - Genus: acanthis
+[2024-10-29T17:14:52.817+0000] {logging_mixin.py:190} INFO - Conservation status: Least Concern 
+[2024-10-29T17:14:52.908+0000] {logging_mixin.py:190} INFO - Habitat type: Terrestrial
+[2024-10-29T17:14:52.908+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:14:52.909+0000] {logging_mixin.py:190} INFO - species to store [{'species': 'Acanthis flammea', 'common_name': 'Redpoll', 'class_red_list': 'aves', 'order_red_list': 'passeriformes', 'family_red_list': 'fringillidae', 'genus_red_list': 'acanthis', 'conservation_status': 'Least Concern ', 'habitat_type': 'Terrestrial'}]
+[2024-10-29T17:14:53.502+0000] {logging_mixin.py:190} INFO - Species link https://www.iucnredlist.org/species/76/97260200
+[2024-10-29T17:15:56.164+0000] {logging_mixin.py:190} INFO - Species name: Acanthochelys spixii
+[2024-10-29T17:15:56.198+0000] {logging_mixin.py:190} INFO - Common name: Black Spiny-necked Swamp Turtle
+[2024-10-29T17:15:56.405+0000] {logging_mixin.py:190} INFO - Class: reptilia
+[2024-10-29T17:15:56.454+0000] {logging_mixin.py:190} INFO - Order: testudines
+[2024-10-29T17:15:56.510+0000] {logging_mixin.py:190} INFO - Family: chelidae
+[2024-10-29T17:15:56.564+0000] {logging_mixin.py:190} INFO - Genus: acanthochelys
+[2024-10-29T17:15:56.599+0000] {logging_mixin.py:190} INFO - Conservation status: Lower Risk/near threatened 
+[2024-10-29T17:15:56.664+0000] {logging_mixin.py:190} INFO - Habitat type: Terrestrial
+[2024-10-29T17:15:56.665+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:15:56.665+0000] {logging_mixin.py:190} INFO - species to store [{'species': 'Acanthochelys spixii', 'common_name': 'Black Spiny-necked Swamp Turtle', 'class_red_list': 'reptilia', 'order_red_list': 'testudines', 'family_red_list': 'chelidae', 'genus_red_list': 'acanthochelys', 'conservation_status': 'Lower Risk/near threatened ', 'habitat_type': 'Terrestrial'}]
+[2024-10-29T17:15:57.065+0000] {logging_mixin.py:190} INFO - Species link https://www.iucnredlist.org/species/61456/12470495
+[2024-10-29T17:16:59.942+0000] {logging_mixin.py:190} INFO - Species name: Acanthodactylus erythrurus
+[2024-10-29T17:16:59.963+0000] {logging_mixin.py:190} INFO - Common name: Spiny-footed Lizard
+[2024-10-29T17:17:00.113+0000] {logging_mixin.py:190} INFO - Class: reptilia
+[2024-10-29T17:17:00.160+0000] {logging_mixin.py:190} INFO - Order: squamata
+[2024-10-29T17:17:00.209+0000] {logging_mixin.py:190} INFO - Family: lacertidae
+[2024-10-29T17:17:00.302+0000] {logging_mixin.py:190} INFO - Genus: acanthodactylus
+[2024-10-29T17:17:00.335+0000] {logging_mixin.py:190} INFO - Conservation status: Least Concern 
+[2024-10-29T17:17:00.383+0000] {logging_mixin.py:190} INFO - Habitat type: Terrestrial
+[2024-10-29T17:17:00.383+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:17:00.384+0000] {logging_mixin.py:190} INFO - species to store [{'species': 'Acanthodactylus erythrurus', 'common_name': 'Spiny-footed Lizard', 'class_red_list': 'reptilia', 'order_red_list': 'squamata', 'family_red_list': 'lacertidae', 'genus_red_list': 'acanthodactylus', 'conservation_status': 'Least Concern ', 'habitat_type': 'Terrestrial'}]
+[2024-10-29T17:17:00.789+0000] {logging_mixin.py:190} INFO - Species link https://www.iucnredlist.org/species/22695490/197951702
+[2024-10-29T17:17:04.638+0000] {logging_mixin.py:190} INFO - Species name: Accipiter badius
+[2024-10-29T17:17:04.674+0000] {logging_mixin.py:190} INFO - Common name: Shikra
+[2024-10-29T17:17:04.966+0000] {logging_mixin.py:190} INFO - Class: aves
+[2024-10-29T17:17:05.045+0000] {logging_mixin.py:190} INFO - Order: accipitriformes
+[2024-10-29T17:17:05.154+0000] {logging_mixin.py:190} INFO - Family: accipitridae
+[2024-10-29T17:17:05.250+0000] {logging_mixin.py:190} INFO - Genus: accipiter
+[2024-10-29T17:17:05.307+0000] {logging_mixin.py:190} INFO - Conservation status: Least Concern 
+[2024-10-29T17:17:05.385+0000] {logging_mixin.py:190} INFO - Habitat type: Terrestrial
+[2024-10-29T17:17:05.385+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:17:05.385+0000] {logging_mixin.py:190} INFO - species to store [{'species': 'Accipiter badius', 'common_name': 'Shikra', 'class_red_list': 'aves', 'order_red_list': 'accipitriformes', 'family_red_list': 'accipitridae', 'genus_red_list': 'accipiter', 'conservation_status': 'Least Concern ', 'habitat_type': 'Terrestrial'}]
+[2024-10-29T17:17:05.464+0000] {python.py:240} INFO - Done. Returned value was: [{'species': 'Accipiter badius', 'common_name': 'Shikra', 'class_red_list': 'aves', 'order_red_list': 'accipitriformes', 'family_red_list': 'accipitridae', 'genus_red_list': 'accipiter', 'conservation_status': 'Least Concern ', 'habitat_type': 'Terrestrial'}]
+[2024-10-29T17:17:05.493+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-29T17:17:05.494+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=biological_data_dag, task_id=extract_data_from_red_list, run_id=manual__2024-10-29T17:13:55.094298+00:00, execution_date=20241029T171355, start_date=20241029T171439, end_date=20241029T171705
+[2024-10-29T17:17:05.504+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-29T17:17:05.504+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-29T17:17:05.504+0000] {logging_mixin.py:190} INFO - Dag name:biological_data_dag queued_at:2024-10-29 17:13:55.109771+00:00
+[2024-10-29T17:17:05.505+0000] {logging_mixin.py:190} INFO - Task hostname:8b409d8ad50e operator:_PythonDecoratedOperator
+[2024-10-29T17:17:05.540+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-29T17:17:05.573+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-29T17:17:05.582+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

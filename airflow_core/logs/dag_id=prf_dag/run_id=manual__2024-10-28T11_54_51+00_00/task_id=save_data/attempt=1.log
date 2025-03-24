@@ -1,0 +1,73 @@
+[2024-10-28T12:02:59.266+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-28T12:02:59.289+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prf_dag.save_data manual__2024-10-28T11:54:51+00:00 [queued]>
+[2024-10-28T12:02:59.298+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prf_dag.save_data manual__2024-10-28T11:54:51+00:00 [queued]>
+[2024-10-28T12:02:59.298+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-28T12:02:59.308+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): save_data> on 2024-10-28 11:54:51+00:00
+[2024-10-28T12:02:59.316+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=173) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-28T12:02:59.318+0000] {standard_task_runner.py:72} INFO - Started process 175 to run task
+[2024-10-28T12:02:59.318+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'prf_dag', 'save_data', 'manual__2024-10-28T11:54:51+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/prf_dag.py', '--cfg-path', '/tmp/tmpe0mitv_a']
+[2024-10-28T12:02:59.319+0000] {standard_task_runner.py:105} INFO - Job 44: Subtask save_data
+[2024-10-28T12:02:59.363+0000] {task_command.py:467} INFO - Running <TaskInstance: prf_dag.save_data manual__2024-10-28T11:54:51+00:00 [running]> on host c2ccde8dd234
+[2024-10-28T12:02:59.453+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='prf_dag' AIRFLOW_CTX_TASK_ID='save_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-28T11:54:51+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-28T11:54:51+00:00'
+[2024-10-28T12:02:59.454+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-28T12:02:59.454+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-28T12:02:59.455+0000] {logging_mixin.py:190} INFO - Current task name:save_data state:running start_date:2024-10-28 12:02:59.289548+00:00
+[2024-10-28T12:02:59.455+0000] {logging_mixin.py:190} INFO - Dag name:prf_dag and current dag run status:running
+[2024-10-28T12:02:59.455+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-28T12:03:01.472+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2024/occorência_datatran2024_10.csv
+[2024-10-28T12:03:06.475+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2024/pessoa_acidentes2024_10.csv
+[2024-10-28T12:03:20.228+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2024/acidentes2024_todas_causas_tipos_10.csv
+[2024-10-28T12:03:22.047+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2023/occorência_datatran2023_10.csv
+[2024-10-28T12:03:27.794+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2023/pessoa_acidentes2023_10.csv
+[2024-10-28T12:03:44.445+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2023/acidentes2023_todas_causas_tipos_10.csv
+[2024-10-28T12:03:46.227+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2022/occorência_datatran2022_10.csv
+[2024-10-28T12:03:51.446+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2022/pessoa_acidentes2022_10.csv
+[2024-10-28T12:04:06.548+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2022/acidentes2022_todas_causas_tipos_10.csv
+[2024-10-28T12:04:08.544+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2021/occorência_datatran2021_10.csv
+[2024-10-28T12:04:14.391+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2021/pessoa_acidentes2021_10.csv
+[2024-10-28T12:04:27.710+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2021/acidentes2021_todas_causas_tipos_10.csv
+[2024-10-28T12:04:29.296+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2020/occorência_datatran2020_10.csv
+[2024-10-28T12:04:36.343+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2020/pessoa_acidentes2020_10.csv
+[2024-10-28T12:04:48.387+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2020/acidentes2020_todas_causas_tipos_10.csv
+[2024-10-28T12:04:50.322+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2019/occorência_datatran2019_10.csv
+[2024-10-28T12:04:55.624+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2019/pessoa_acidentes2019_10.csv
+[2024-10-28T12:05:06.525+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2019/acidentes2019_todas_causas_tipos_10.csv
+[2024-10-28T12:05:08.330+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2018/occorência_datatran2018_10.csv
+[2024-10-28T12:05:14.003+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2018/pessoa_acidentes2018_10.csv
+[2024-10-28T12:05:24.495+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2018/acidentes2018_todas_causas_tipos_10.csv
+[2024-10-28T12:05:27.033+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2017/occorência_datatran2017_10.csv
+[2024-10-28T12:05:33.654+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2017/pessoa_acidentes2017_10.csv
+[2024-10-28T12:05:43.904+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2017/acidentes2017_todas_causas_tipos_10.csv
+[2024-10-28T12:05:45.739+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2016/occorência_datatran2016_10.csv
+[2024-10-28T12:05:50.878+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2016/pessoa_acidentes2016_atual_10.csv
+[2024-10-28T12:05:53.720+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2015/occorência_datatran2015_10.csv
+[2024-10-28T12:06:01.471+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2015/pessoa_acidentes2015_10.csv
+[2024-10-28T12:06:04.753+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2014/occorência_datatran2014_10.csv
+[2024-10-28T12:06:15.500+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2014/pessoa_acidentes2014_10.csv
+[2024-10-28T12:06:19.184+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2013/occorência_datatran2013_10.csv
+[2024-10-28T12:06:31.680+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2013/pessoa_acidentes2013_10.csv
+[2024-10-28T12:06:35.044+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2012/occorência_datatran2012_10.csv
+[2024-10-28T12:06:46.788+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2012/pessoa_acidentes2012_10.csv
+[2024-10-28T12:06:49.806+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2011/occorência_datatran2011_10.csv
+[2024-10-28T12:07:00.833+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2011/pessoa_acidentes2011_10.csv
+[2024-10-28T12:07:03.686+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2010/occorência_datatran2010_10.csv
+[2024-10-28T12:07:14.676+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2010/pessoa_acidentes2010_10.csv
+[2024-10-28T12:07:17.494+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2009/occorência_datatran2009_10.csv
+[2024-10-28T12:07:27.562+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2009/pessoa_acidentes2009_10.csv
+[2024-10-28T12:07:29.859+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2008/occorência_datatran2008_10.csv
+[2024-10-28T12:07:37.643+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2008/pessoa_acidentes2008_10.csv
+[2024-10-28T12:07:39.727+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2007/occorência_datatran2007_10.csv
+[2024-10-28T12:07:47.447+0000] {logging_mixin.py:190} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2007/pessoa_acidentes2007_10.csv
+[2024-10-28T12:07:47.459+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-10-28T12:07:47.471+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-28T12:07:47.482+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-28T12:07:47.482+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=prf_dag, task_id=save_data, run_id=manual__2024-10-28T11:54:51+00:00, execution_date=20241028T115451, start_date=20241028T120259, end_date=20241028T120747
+[2024-10-28T12:07:47.494+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-28T12:07:47.495+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-28T12:07:47.495+0000] {logging_mixin.py:190} INFO - Dag name:prf_dag queued_at:2024-10-28 11:54:56.440829+00:00
+[2024-10-28T12:07:47.495+0000] {logging_mixin.py:190} INFO - Task hostname:c2ccde8dd234 operator:_PythonDecoratedOperator
+[2024-10-28T12:07:47.521+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-28T12:07:47.536+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-28T12:07:47.538+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

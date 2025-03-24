@@ -1,0 +1,28 @@
+[2024-12-19T14:30:01.656+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-19T14:30:01.673+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-19T14:00:00+00:00 [queued]>
+[2024-12-19T14:30:01.685+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-19T14:00:00+00:00 [queued]>
+[2024-12-19T14:30:01.685+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-19T14:30:01.700+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-12-19 14:00:00+00:00
+[2024-12-19T14:30:01.707+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=2758) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-19T14:30:01.708+0000] {standard_task_runner.py:72} INFO - Started process 2764 to run task
+[2024-12-19T14:30:01.710+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'get_all_data', 'scheduled__2024-12-19T14:00:00+00:00', '--job-id', '343', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp8r6j9svr']
+[2024-12-19T14:30:01.713+0000] {standard_task_runner.py:105} INFO - Job 343: Subtask get_all_data
+[2024-12-19T14:30:01.770+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-19T14:00:00+00:00 [running]> on host e919aa2070f5
+[2024-12-19T14:30:01.882+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-19T14:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-19T14:00:00+00:00'
+[2024-12-19T14:30:01.883+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-19T14:30:01.885+0000] {inaturalist_dag.py:150} INFO - Getting data from keyword: roadkill
+[2024-12-19T14:30:01.899+0000] {inaturalist_dag.py:41} INFO - Maximum id 255552342 for the request
+[2024-12-19T14:30:03.018+0000] {inaturalist_dag.py:58} INFO - Got 1 results
+[2024-12-19T14:30:03.018+0000] {inaturalist_dag.py:163} INFO - Extracted 1 observations
+[2024-12-19T14:30:03.019+0000] {inaturalist_dag.py:41} INFO - Maximum id 255589079 for the request
+[2024-12-19T14:30:03.939+0000] {inaturalist_dag.py:58} INFO - Got 0 results
+[2024-12-19T14:30:03.939+0000] {inaturalist_dag.py:158} INFO - No more observations found, stopping.
+[2024-12-19T14:30:03.947+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-12-19T14:30:03.950+0000] {python.py:240} INFO - Done. Returned value was: [{'observation_id': 255589079, 'uuid': '63d98b86-8fee-4cf1-8b5e-d191c08af76c', 'species_guess': None, 'observed_on_string': '2024-12-19 09:29:12-05:00', 'updated_at': '2024-12-19T09:29:23-05:00', 'description': 'Roadkill', 'geojson_latitude': 34.2592411861, 'geojson_longitude': -82.0394903888, 'observed_on': '2024-12-19', 'created_at': '2024-12-19T09:29:23-05:00', 'observations_photos': [], 'taxon_id': None, 'taxon_name': None, 'place_guess': 'Waters Edge Rd, Greenwood, SC, US', 'quality_grade': 'casual', 'positional_accuracy': 9, 'default_photo': None, 'project_ids': []}]
+[2024-12-19T14:30:03.975+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-19T14:30:03.975+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_roadkill, task_id=get_all_data, run_id=scheduled__2024-12-19T14:00:00+00:00, execution_date=20241219T140000, start_date=20241219T143001, end_date=20241219T143003
+[2024-12-19T14:30:04.010+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-19T14:30:04.048+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-19T14:30:04.050+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

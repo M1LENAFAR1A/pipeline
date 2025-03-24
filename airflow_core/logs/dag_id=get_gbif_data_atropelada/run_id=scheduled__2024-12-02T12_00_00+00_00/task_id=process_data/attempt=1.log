@@ -1,0 +1,25 @@
+[2024-12-02T17:45:49.275+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-02T17:45:49.302+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_gbif_data_atropelada.process_data scheduled__2024-12-02T12:00:00+00:00 [queued]>
+[2024-12-02T17:45:49.322+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_gbif_data_atropelada.process_data scheduled__2024-12-02T12:00:00+00:00 [queued]>
+[2024-12-02T17:45:49.322+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-02T17:45:49.352+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): process_data> on 2024-12-02 12:00:00+00:00
+[2024-12-02T17:45:49.371+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=107) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-02T17:45:49.372+0000] {standard_task_runner.py:72} INFO - Started process 123 to run task
+[2024-12-02T17:45:49.374+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_gbif_data_atropelada', 'process_data', 'scheduled__2024-12-02T12:00:00+00:00', '--job-id', '2078', '--raw', '--subdir', 'DAGS_FOLDER/gbif_dag.py', '--cfg-path', '/tmp/tmpoggypx_8']
+[2024-12-02T17:45:49.376+0000] {standard_task_runner.py:105} INFO - Job 2078: Subtask process_data
+[2024-12-02T17:45:49.457+0000] {task_command.py:467} INFO - Running <TaskInstance: get_gbif_data_atropelada.process_data scheduled__2024-12-02T12:00:00+00:00 [running]> on host 59d51ca962df
+[2024-12-02T17:45:49.706+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_gbif_data_atropelada' AIRFLOW_CTX_TASK_ID='process_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-02T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-02T12:00:00+00:00'
+[2024-12-02T17:45:49.708+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-12-02T17:45:49.708+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-12-02T17:45:49.710+0000] {logging_mixin.py:190} INFO - Current task name:process_data state:running start_date:2024-12-02 17:45:49.303301+00:00
+[2024-12-02T17:45:49.710+0000] {logging_mixin.py:190} INFO - Dag name:get_gbif_data_atropelada and current dag run status:running
+[2024-12-02T17:45:49.713+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-02T17:45:49.718+0000] {gbif_dag.py:260} INFO - No new occurrences to process
+[2024-12-02T17:45:49.719+0000] {taskinstance.py:301} INFO - No occurrences to process
+[2024-12-02T17:45:49.756+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-02T17:45:49.757+0000] {taskinstance.py:352} INFO - Marking task as SKIPPED. dag_id=get_gbif_data_atropelada, task_id=process_data, run_id=scheduled__2024-12-02T12:00:00+00:00, execution_date=20241202T120000, start_date=20241202T174549, end_date=20241202T174549
+[2024-12-02T17:45:49.835+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-02T17:45:49.872+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-02T17:45:49.874+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

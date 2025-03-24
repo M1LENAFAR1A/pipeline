@@ -1,0 +1,47 @@
+[2024-12-02T11:13:24.503+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-02T11:13:24.605+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.publish_message_for_transformation scheduled__2024-12-02T10:30:00+00:00 [queued]>
+[2024-12-02T11:13:24.661+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.publish_message_for_transformation scheduled__2024-12-02T10:30:00+00:00 [queued]>
+[2024-12-02T11:13:24.661+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-02T11:13:24.711+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): publish_message_for_transformation> on 2024-12-02 10:30:00+00:00
+[2024-12-02T11:13:24.752+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=180) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-02T11:13:24.776+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelada', 'publish_message_for_transformation', 'scheduled__2024-12-02T10:30:00+00:00', '--job-id', '2005', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmpaghqerng']
+[2024-12-02T11:13:24.768+0000] {standard_task_runner.py:72} INFO - Started process 213 to run task
+[2024-12-02T11:13:24.778+0000] {standard_task_runner.py:105} INFO - Job 2005: Subtask publish_message_for_transformation
+[2024-12-02T11:13:24.953+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_atropelada.publish_message_for_transformation scheduled__2024-12-02T10:30:00+00:00 [running]> on host 59d51ca962df
+[2024-12-02T11:13:25.412+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_atropelada' AIRFLOW_CTX_TASK_ID='publish_message_for_transformation' AIRFLOW_CTX_EXECUTION_DATE='2024-12-02T10:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-02T10:30:00+00:00'
+[2024-12-02T11:13:25.420+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-12-02T11:13:25.421+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-12-02T11:13:25.421+0000] {logging_mixin.py:190} INFO - Current task name:publish_message_for_transformation state:running start_date:2024-12-02 11:13:24.605751+00:00
+[2024-12-02T11:13:25.427+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelada and current dag run status:running
+[2024-12-02T11:13:25.427+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-02T11:13:25.459+0000] {connection_workflow.py:179} INFO - Pika version 1.3.2 connecting to ('192.168.30.21', 30673)
+[2024-12-02T11:13:25.464+0000] {io_services_utils.py:345} INFO - Socket connected: <socket.socket fd=84, family=2, type=1, proto=6, laddr=('172.22.0.8', 60172), raddr=('192.168.30.21', 30673)>
+[2024-12-02T11:13:25.486+0000] {connection_workflow.py:428} INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x77eacf0ecc80>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x77eacf0ecc80> params=<ConnectionParameters host=192.168.30.21 port=30673 virtual_host=/ ssl=False>>).
+[2024-12-02T11:13:25.520+0000] {connection_workflow.py:293} INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x77eacf0ecc80> params=<ConnectionParameters host=192.168.30.21 port=30673 virtual_host=/ ssl=False>>
+[2024-12-02T11:13:25.525+0000] {connection_workflow.py:725} INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x77eacf0ecc80> params=<ConnectionParameters host=192.168.30.21 port=30673 virtual_host=/ ssl=False>>
+[2024-12-02T11:13:25.525+0000] {blocking_connection.py:453} INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x77eacf0ecc80> params=<ConnectionParameters host=192.168.30.21 port=30673 virtual_host=/ ssl=False>>
+[2024-12-02T11:13:25.526+0000] {blocking_connection.py:1264} INFO - Created channel=1
+[2024-12-02T11:13:25.541+0000] {rabbitmq.py:33} INFO - Sending message {'path': 'inaturalist_data/atropelada_data/2024/12/02/atropelada_observations_111308.csv', 'source': 'Inaturalist', 'keyword': 'atropelada', 'extraction_date': 1733138005437775297} to rabbitmq channel environbit
+[2024-12-02T11:13:25.542+0000] {blocking_connection.py:802} INFO - Closing connection (200): Normal shutdown
+[2024-12-02T11:13:25.543+0000] {channel.py:536} INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x77eacf0ecc80> params=<ConnectionParameters host=192.168.30.21 port=30673 virtual_host=/ ssl=False>>>
+[2024-12-02T11:13:25.545+0000] {channel.py:1133} INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x77eacf0ecc80> params=<ConnectionParameters host=192.168.30.21 port=30673 virtual_host=/ ssl=False>>>
+[2024-12-02T11:13:25.546+0000] {connection.py:1316} INFO - Closing connection (200): 'Normal shutdown'
+[2024-12-02T11:13:25.550+0000] {io_services_utils.py:731} INFO - Aborting transport connection: state=1; <socket.socket fd=84, family=2, type=1, proto=6, laddr=('172.22.0.8', 60172), raddr=('192.168.30.21', 30673)>
+[2024-12-02T11:13:25.551+0000] {io_services_utils.py:904} INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=84, family=2, type=1, proto=6, laddr=('172.22.0.8', 60172), raddr=('192.168.30.21', 30673)>
+[2024-12-02T11:13:25.551+0000] {io_services_utils.py:869} INFO - Deactivating transport: state=1; <socket.socket fd=84, family=2, type=1, proto=6, laddr=('172.22.0.8', 60172), raddr=('192.168.30.21', 30673)>
+[2024-12-02T11:13:25.552+0000] {connection.py:2017} INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+[2024-12-02T11:13:25.553+0000] {connection.py:2086} INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+[2024-12-02T11:13:25.554+0000] {io_services_utils.py:882} INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=84, family=2, type=1, proto=6, laddr=('172.22.0.8', 60172), raddr=('192.168.30.21', 30673)>
+[2024-12-02T11:13:25.558+0000] {blocking_connection.py:525} INFO - User-initiated close: result=(<SelectConnection CLOSED transport=None params=<ConnectionParameters host=192.168.30.21 port=30673 virtual_host=/ ssl=False>>, ConnectionClosedByClient: (200) 'Normal shutdown')
+[2024-12-02T11:13:25.560+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-02T11:13:25.608+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-02T11:13:25.608+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_atropelada, task_id=publish_message_for_transformation, run_id=scheduled__2024-12-02T10:30:00+00:00, execution_date=20241202T103000, start_date=20241202T111324, end_date=20241202T111325
+[2024-12-02T11:13:25.635+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-12-02T11:13:25.635+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-12-02T11:13:25.636+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelada queued_at:2024-12-02 11:00:00.220644+00:00
+[2024-12-02T11:13:25.636+0000] {logging_mixin.py:190} INFO - Task hostname:59d51ca962df operator:_PythonDecoratedOperator
+[2024-12-02T11:13:25.684+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-02T11:13:25.799+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-02T11:13:25.803+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,41 @@
+[2024-11-25T16:43:48.236+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-25T16:43:48.256+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prf_dag.save_data manual__2024-11-25T16:43:12.600181+00:00 [queued]>
+[2024-11-25T16:43:48.268+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prf_dag.save_data manual__2024-11-25T16:43:12.600181+00:00 [queued]>
+[2024-11-25T16:43:48.269+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-11-25T16:43:48.297+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): save_data> on 2024-11-25 16:43:12.600181+00:00
+[2024-11-25T16:43:48.322+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=894) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-25T16:43:48.324+0000] {standard_task_runner.py:72} INFO - Started process 897 to run task
+[2024-11-25T16:43:48.327+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'prf_dag', 'save_data', 'manual__2024-11-25T16:43:12.600181+00:00', '--job-id', '1519', '--raw', '--subdir', 'DAGS_FOLDER/prf_dag.py', '--cfg-path', '/tmp/tmpmc1d14zw']
+[2024-11-25T16:43:48.329+0000] {standard_task_runner.py:105} INFO - Job 1519: Subtask save_data
+[2024-11-25T16:43:48.387+0000] {task_command.py:467} INFO - Running <TaskInstance: prf_dag.save_data manual__2024-11-25T16:43:12.600181+00:00 [running]> on host 07f92f2579af
+[2024-11-25T16:43:48.521+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='prf_dag' AIRFLOW_CTX_TASK_ID='save_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-25T16:43:12.600181+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-25T16:43:12.600181+00:00'
+[2024-11-25T16:43:48.521+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-25T16:43:48.522+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-25T16:43:48.522+0000] {logging_mixin.py:190} INFO - Current task name:save_data state:running start_date:2024-11-25 16:43:48.257096+00:00
+[2024-11-25T16:43:48.522+0000] {logging_mixin.py:190} INFO - Dag name:prf_dag and current dag run status:running
+[2024-11-25T16:43:48.522+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-25T16:43:49.600+0000] {minio.py:40} INFO - created prf/2024/occorência_datatran2024_11.csv object; etag: d5764806456a393ea9f9404222f9b69c-4, version-id: None
+[2024-11-25T16:43:49.601+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2024/occorência_datatran2024_11.csv
+[2024-11-25T16:43:52.601+0000] {prf_dag.py:195} INFO - Sending object {'path': '/prf/2024/occorência_datatran2024_11.csv', 'source': 'PRF', 'extraction_date': 1732553032601927898} to environbit queue
+[2024-11-25T16:43:52.625+0000] {rabbitmq.py:33} INFO - Sending message {'path': '/prf/2024/occorência_datatran2024_11.csv', 'source': 'PRF', 'extraction_date': 1732553032601927898} to rabbitmq channel environbit
+[2024-11-25T16:43:56.665+0000] {minio.py:40} INFO - created prf/2024/pessoa_acidentes2024_11.csv object; etag: d82c4ffdc677630ebcf1b5d5bf63a5f2-12, version-id: None
+[2024-11-25T16:43:56.666+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2024/pessoa_acidentes2024_11.csv
+[2024-11-25T16:43:59.666+0000] {prf_dag.py:195} INFO - Sending object {'path': '/prf/2024/pessoa_acidentes2024_11.csv', 'source': 'PRF', 'extraction_date': 1732553039666677420} to environbit queue
+[2024-11-25T16:43:59.711+0000] {rabbitmq.py:33} INFO - Sending message {'path': '/prf/2024/pessoa_acidentes2024_11.csv', 'source': 'PRF', 'extraction_date': 1732553039666677420} to rabbitmq channel environbit
+[2024-11-25T16:44:18.824+0000] {minio.py:40} INFO - created prf/2024/acidentes2024_todas_causas_tipos_11.csv object; etag: 1ad0d95effa50cb8447175833c703e33-37, version-id: None
+[2024-11-25T16:44:18.826+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2024/acidentes2024_todas_causas_tipos_11.csv
+[2024-11-25T16:44:21.827+0000] {prf_dag.py:195} INFO - Sending object {'path': '/prf/2024/acidentes2024_todas_causas_tipos_11.csv', 'source': 'PRF', 'extraction_date': 1732553061827361512} to environbit queue
+[2024-11-25T16:44:21.847+0000] {rabbitmq.py:33} INFO - Sending message {'path': '/prf/2024/acidentes2024_todas_causas_tipos_11.csv', 'source': 'PRF', 'extraction_date': 1732553061827361512} to rabbitmq channel environbit
+[2024-11-25T16:44:21.863+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-11-25T16:44:21.868+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-25T16:44:21.877+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-25T16:44:21.877+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=prf_dag, task_id=save_data, run_id=manual__2024-11-25T16:43:12.600181+00:00, execution_date=20241125T164312, start_date=20241125T164348, end_date=20241125T164421
+[2024-11-25T16:44:21.886+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-25T16:44:21.886+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-25T16:44:21.886+0000] {logging_mixin.py:190} INFO - Dag name:prf_dag queued_at:2024-11-25 16:43:12.607515+00:00
+[2024-11-25T16:44:21.886+0000] {logging_mixin.py:190} INFO - Task hostname:07f92f2579af operator:_PythonDecoratedOperator
+[2024-11-25T16:44:21.911+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-25T16:44:21.925+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-25T16:44:21.927+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

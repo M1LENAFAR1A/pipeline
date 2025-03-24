@@ -1,0 +1,29 @@
+[2024-12-03T12:18:00.168+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-03T12:18:00.262+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.save_data manual__2024-12-03T12:16:48.884964+00:00 [queued]>
+[2024-12-03T12:18:00.304+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.save_data manual__2024-12-03T12:16:48.884964+00:00 [queued]>
+[2024-12-03T12:18:00.307+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-03T12:18:00.356+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): save_data> on 2024-12-03 12:16:48.884964+00:00
+[2024-12-03T12:18:00.384+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=124) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-03T12:18:00.389+0000] {standard_task_runner.py:72} INFO - Started process 130 to run task
+[2024-12-03T12:18:00.397+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'save_data', 'manual__2024-12-03T12:16:48.884964+00:00', '--job-id', '2140', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmpucd2xcmy']
+[2024-12-03T12:18:00.401+0000] {standard_task_runner.py:105} INFO - Job 2140: Subtask save_data
+[2024-12-03T12:18:00.522+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.save_data manual__2024-12-03T12:16:48.884964+00:00 [running]> on host 629c168e87a3
+[2024-12-03T12:18:00.935+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='save_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-03T12:16:48.884964+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-03T12:16:48.884964+00:00'
+[2024-12-03T12:18:00.938+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-12-03T12:18:00.940+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-12-03T12:18:00.941+0000] {logging_mixin.py:190} INFO - Current task name:save_data state:running start_date:2024-12-03 12:18:00.265464+00:00
+[2024-12-03T12:18:00.942+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_roadkill and current dag run status:running
+[2024-12-03T12:18:00.942+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-03T12:18:01.162+0000] {minio.py:40} INFO - created inaturalist_data/roadkill_data/2024/12/03/roadkill_observations_121753.csv object; etag: cb9d97189f6d6caf34b54e554be8b621, version-id: None
+[2024-12-03T12:18:01.163+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under inaturalist_data/roadkill_data/2024/12/03/roadkill_observations_121753.csv
+[2024-12-03T12:18:01.165+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-03T12:18:01.192+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-03T12:18:01.193+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_roadkill, task_id=save_data, run_id=manual__2024-12-03T12:16:48.884964+00:00, execution_date=20241203T121648, start_date=20241203T121800, end_date=20241203T121801
+[2024-12-03T12:18:01.217+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-12-03T12:18:01.219+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-12-03T12:18:01.220+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_roadkill queued_at:2024-12-03 12:17:24.672470+00:00
+[2024-12-03T12:18:01.220+0000] {logging_mixin.py:190} INFO - Task hostname:629c168e87a3 operator:_PythonDecoratedOperator
+[2024-12-03T12:18:01.270+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-03T12:18:01.290+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

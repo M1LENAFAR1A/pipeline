@@ -1,0 +1,28 @@
+[2024-11-19T10:20:45.816+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-19T10:20:45.885+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_gbif_data_roadkill.process_data scheduled__2024-11-19T09:30:00+00:00 [queued]>
+[2024-11-19T10:20:45.933+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_gbif_data_roadkill.process_data scheduled__2024-11-19T09:30:00+00:00 [queued]>
+[2024-11-19T10:20:45.935+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-11-19T10:20:46.013+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): process_data> on 2024-11-19 09:30:00+00:00
+[2024-11-19T10:20:46.093+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=59) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-19T10:20:46.095+0000] {standard_task_runner.py:72} INFO - Started process 121 to run task
+[2024-11-19T10:20:46.104+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_gbif_data_roadkill', 'process_data', 'scheduled__2024-11-19T09:30:00+00:00', '--job-id', '651', '--raw', '--subdir', 'DAGS_FOLDER/gbif_dag.py', '--cfg-path', '/tmp/tmp288g3b0p']
+[2024-11-19T10:20:46.109+0000] {standard_task_runner.py:105} INFO - Job 651: Subtask process_data
+[2024-11-19T10:20:46.337+0000] {task_command.py:467} INFO - Running <TaskInstance: get_gbif_data_roadkill.process_data scheduled__2024-11-19T09:30:00+00:00 [running]> on host 1bd5b698e8d7
+[2024-11-19T10:20:46.793+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_gbif_data_roadkill' AIRFLOW_CTX_TASK_ID='process_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-19T09:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-19T09:30:00+00:00'
+[2024-11-19T10:20:46.794+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-19T10:20:46.794+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-19T10:20:46.795+0000] {logging_mixin.py:190} INFO - Current task name:process_data state:running start_date:2024-11-19 10:20:45.886324+00:00
+[2024-11-19T10:20:46.797+0000] {logging_mixin.py:190} INFO - Dag name:get_gbif_data_roadkill and current dag run status:running
+[2024-11-19T10:20:46.798+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-19T10:20:46.799+0000] {python.py:240} INFO - Done. Returned value was: {'path': 'gbif_data/roadkill_data/2024/11/19/roadkill_occurrences_102046.json', 'format': 'application/json'}
+[2024-11-19T10:20:46.889+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-19T10:20:46.890+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_gbif_data_roadkill, task_id=process_data, run_id=scheduled__2024-11-19T09:30:00+00:00, execution_date=20241119T093000, start_date=20241119T102045, end_date=20241119T102046
+[2024-11-19T10:20:46.929+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-19T10:20:46.930+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-19T10:20:46.930+0000] {logging_mixin.py:190} INFO - Dag name:get_gbif_data_roadkill queued_at:2024-11-19 10:20:30.128528+00:00
+[2024-11-19T10:20:46.930+0000] {logging_mixin.py:190} INFO - Task hostname:1bd5b698e8d7 operator:_PythonDecoratedOperator
+[2024-11-19T10:20:46.960+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-19T10:20:47.021+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-19T10:20:47.024+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

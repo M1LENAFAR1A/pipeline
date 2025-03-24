@@ -1,0 +1,41 @@
+[2024-12-03T16:00:04.128+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-03T16:00:04.153+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-03T15:30:00+00:00 [queued]>
+[2024-12-03T16:00:04.164+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-03T15:30:00+00:00 [queued]>
+[2024-12-03T16:00:04.165+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-03T16:00:04.190+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-12-03 15:30:00+00:00
+[2024-12-03T16:00:04.201+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=332) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-03T16:00:04.202+0000] {standard_task_runner.py:72} INFO - Started process 348 to run task
+[2024-12-03T16:00:04.206+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'get_all_data', 'scheduled__2024-12-03T15:30:00+00:00', '--job-id', '2222', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmpoymnks80']
+[2024-12-03T16:00:04.207+0000] {standard_task_runner.py:105} INFO - Job 2222: Subtask get_all_data
+[2024-12-03T16:00:04.324+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-03T15:30:00+00:00 [running]> on host 559daffc287d
+[2024-12-03T16:00:04.614+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-03T15:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-03T15:30:00+00:00'
+[2024-12-03T16:00:04.615+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-12-03T16:00:04.616+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-12-03T16:00:04.616+0000] {logging_mixin.py:190} INFO - Current task name:get_all_data state:running start_date:2024-12-03 16:00:04.154429+00:00
+[2024-12-03T16:00:04.616+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_roadkill and current dag run status:running
+[2024-12-03T16:00:04.617+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-03T16:00:04.617+0000] {inaturalist_dag.py:152} INFO - Getting data from keyword: roadkill
+[2024-12-03T16:00:07.489+0000] {inaturalist_dag.py:164} INFO - Extracted 94 observations
+[2024-12-03T16:00:11.791+0000] {inaturalist_dag.py:164} INFO - Extracted 190 observations
+[2024-12-03T16:00:13.988+0000] {inaturalist_dag.py:164} INFO - Extracted 283 observations
+[2024-12-03T16:00:16.422+0000] {inaturalist_dag.py:164} INFO - Extracted 382 observations
+[2024-12-03T16:00:17.557+0000] {inaturalist_dag.py:164} INFO - Extracted 482 observations
+[2024-12-03T16:00:19.528+0000] {inaturalist_dag.py:164} INFO - Extracted 577 observations
+[2024-12-03T16:00:22.856+0000] {inaturalist_dag.py:164} INFO - Extracted 651 observations
+[2024-12-03T16:00:26.127+0000] {inaturalist_dag.py:164} INFO - Extracted 751 observations
+[2024-12-03T16:00:28.039+0000] {inaturalist_dag.py:164} INFO - Extracted 847 observations
+[2024-12-03T16:00:30.440+0000] {inaturalist_dag.py:164} INFO - Extracted 947 observations
+[2024-12-03T16:00:41.380+0000] {inaturalist_dag.py:164} INFO - Extracted 1043 observations
+[2024-12-03T16:00:45.901+0000] {inaturalist_dag.py:164} INFO - Extracted 1137 observations
+[2024-12-03T16:00:47.895+0000] {inaturalist_dag.py:164} INFO - Extracted 1237 observations
+[2024-12-03T16:00:52.193+0000] {inaturalist_dag.py:164} INFO - Extracted 1332 observations
+[2024-12-03T16:00:55.315+0000] {inaturalist_dag.py:164} INFO - Extracted 1425 observations
+[2024-12-03T16:00:55.533+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-12-03T16:00:55.534+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-12-03T16:00:55.585+0000] {process_utils.py:132} INFO - Sending 15 to group 348. PIDs of all processes in the group: [348]
+[2024-12-03T16:00:55.586+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 348
+[2024-12-03T16:00:55.594+0000] {taskinstance.py:3092} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-12-03T16:00:55.639+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-03T16:00:55.683+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=348, status='terminated', exitcode=0, started='16:00:03') (348) terminated with exit code 0

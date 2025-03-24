@@ -1,0 +1,1628 @@
+[2024-12-03T15:46:15.778+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-03T15:46:15.825+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data manual__2024-12-03T15:46:10.819845+00:00 [queued]>
+[2024-12-03T15:46:15.846+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data manual__2024-12-03T15:46:10.819845+00:00 [queued]>
+[2024-12-03T15:46:15.848+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-03T15:46:15.880+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-12-03 15:46:10.819845+00:00
+[2024-12-03T15:46:15.918+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=115) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-03T15:46:15.921+0000] {standard_task_runner.py:72} INFO - Started process 118 to run task
+[2024-12-03T15:46:15.929+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'get_all_data', 'manual__2024-12-03T15:46:10.819845+00:00', '--job-id', '2210', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmpu_8j189x']
+[2024-12-03T15:46:15.938+0000] {standard_task_runner.py:105} INFO - Job 2210: Subtask get_all_data
+[2024-12-03T15:46:16.060+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.get_all_data manual__2024-12-03T15:46:10.819845+00:00 [running]> on host 559daffc287d
+[2024-12-03T15:46:16.349+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-03T15:46:10.819845+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-03T15:46:10.819845+00:00'
+[2024-12-03T15:46:16.352+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-12-03T15:46:16.356+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-12-03T15:46:16.357+0000] {logging_mixin.py:190} INFO - Current task name:get_all_data state:running start_date:2024-12-03 15:46:15.826139+00:00
+[2024-12-03T15:46:16.357+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_roadkill and current dag run status:running
+[2024-12-03T15:46:16.358+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-03T15:46:16.359+0000] {inaturalist_dag.py:152} INFO - Getting data from keyword: roadkill
+[2024-12-03T15:46:17.577+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:17.589+0000] {logging_mixin.py:190} INFO - each result id 12418
+[2024-12-03T15:46:17.593+0000] {logging_mixin.py:190} INFO - each result id 13605
+[2024-12-03T15:46:17.598+0000] {logging_mixin.py:190} INFO - each result id 15921
+[2024-12-03T15:46:17.600+0000] {logging_mixin.py:190} INFO - each result id 15923
+[2024-12-03T15:46:17.608+0000] {logging_mixin.py:190} INFO - each result id 15924
+[2024-12-03T15:46:18.908+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:18.909+0000] {logging_mixin.py:190} INFO - each result id 17109
+[2024-12-03T15:46:18.909+0000] {logging_mixin.py:190} INFO - each result id 20733
+[2024-12-03T15:46:18.910+0000] {logging_mixin.py:190} INFO - each result id 20930
+[2024-12-03T15:46:18.910+0000] {logging_mixin.py:190} INFO - each result id 24239
+[2024-12-03T15:46:18.910+0000] {logging_mixin.py:190} INFO - each result id 24849
+[2024-12-03T15:46:20.123+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:20.123+0000] {logging_mixin.py:190} INFO - each result id 25062
+[2024-12-03T15:46:20.124+0000] {logging_mixin.py:190} INFO - each result id 25293
+[2024-12-03T15:46:20.124+0000] {logging_mixin.py:190} INFO - each result id 25298
+[2024-12-03T15:46:20.124+0000] {logging_mixin.py:190} INFO - each result id 26417
+[2024-12-03T15:46:20.125+0000] {logging_mixin.py:190} INFO - each result id 26437
+[2024-12-03T15:46:21.330+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:21.330+0000] {logging_mixin.py:190} INFO - each result id 26438
+[2024-12-03T15:46:21.331+0000] {logging_mixin.py:190} INFO - each result id 29426
+[2024-12-03T15:46:21.331+0000] {logging_mixin.py:190} INFO - each result id 29427
+[2024-12-03T15:46:21.331+0000] {logging_mixin.py:190} INFO - each result id 29849
+[2024-12-03T15:46:21.332+0000] {logging_mixin.py:190} INFO - each result id 30875
+[2024-12-03T15:46:22.658+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:22.658+0000] {logging_mixin.py:190} INFO - each result id 30879
+[2024-12-03T15:46:22.659+0000] {logging_mixin.py:190} INFO - each result id 31255
+[2024-12-03T15:46:22.659+0000] {logging_mixin.py:190} INFO - each result id 33008
+[2024-12-03T15:46:22.659+0000] {logging_mixin.py:190} INFO - each result id 33057
+[2024-12-03T15:46:22.659+0000] {logging_mixin.py:190} INFO - each result id 33285
+[2024-12-03T15:46:23.856+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:23.856+0000] {logging_mixin.py:190} INFO - each result id 33449
+[2024-12-03T15:46:23.856+0000] {logging_mixin.py:190} INFO - each result id 33969
+[2024-12-03T15:46:23.857+0000] {logging_mixin.py:190} INFO - each result id 35627
+[2024-12-03T15:46:23.857+0000] {logging_mixin.py:190} INFO - each result id 35833
+[2024-12-03T15:46:23.857+0000] {logging_mixin.py:190} INFO - each result id 37218
+[2024-12-03T15:46:25.023+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:25.023+0000] {logging_mixin.py:190} INFO - each result id 37348
+[2024-12-03T15:46:25.024+0000] {logging_mixin.py:190} INFO - each result id 37779
+[2024-12-03T15:46:25.024+0000] {logging_mixin.py:190} INFO - each result id 38621
+[2024-12-03T15:46:25.025+0000] {logging_mixin.py:190} INFO - each result id 39923
+[2024-12-03T15:46:25.025+0000] {logging_mixin.py:190} INFO - each result id 39924
+[2024-12-03T15:46:26.238+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:26.238+0000] {logging_mixin.py:190} INFO - each result id 40889
+[2024-12-03T15:46:26.238+0000] {logging_mixin.py:190} INFO - each result id 42360
+[2024-12-03T15:46:26.238+0000] {logging_mixin.py:190} INFO - each result id 44080
+[2024-12-03T15:46:26.239+0000] {logging_mixin.py:190} INFO - each result id 44656
+[2024-12-03T15:46:26.239+0000] {logging_mixin.py:190} INFO - each result id 47818
+[2024-12-03T15:46:27.580+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:27.580+0000] {logging_mixin.py:190} INFO - each result id 54821
+[2024-12-03T15:46:27.580+0000] {logging_mixin.py:190} INFO - each result id 58089
+[2024-12-03T15:46:27.581+0000] {logging_mixin.py:190} INFO - each result id 60318
+[2024-12-03T15:46:27.581+0000] {logging_mixin.py:190} INFO - each result id 66927
+[2024-12-03T15:46:27.581+0000] {logging_mixin.py:190} INFO - each result id 67969
+[2024-12-03T15:46:28.695+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:28.695+0000] {logging_mixin.py:190} INFO - each result id 72435
+[2024-12-03T15:46:28.695+0000] {logging_mixin.py:190} INFO - each result id 75101
+[2024-12-03T15:46:28.695+0000] {logging_mixin.py:190} INFO - each result id 75107
+[2024-12-03T15:46:28.696+0000] {logging_mixin.py:190} INFO - each result id 75108
+[2024-12-03T15:46:28.696+0000] {logging_mixin.py:190} INFO - each result id 76663
+[2024-12-03T15:46:29.774+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:29.775+0000] {logging_mixin.py:190} INFO - each result id 78747
+[2024-12-03T15:46:29.775+0000] {logging_mixin.py:190} INFO - each result id 80518
+[2024-12-03T15:46:29.775+0000] {logging_mixin.py:190} INFO - each result id 80942
+[2024-12-03T15:46:29.775+0000] {logging_mixin.py:190} INFO - each result id 81364
+[2024-12-03T15:46:29.775+0000] {logging_mixin.py:190} INFO - each result id 86242
+[2024-12-03T15:46:31.351+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:31.352+0000] {logging_mixin.py:190} INFO - each result id 88276
+[2024-12-03T15:46:31.353+0000] {logging_mixin.py:190} INFO - each result id 89786
+[2024-12-03T15:46:31.354+0000] {logging_mixin.py:190} INFO - each result id 92379
+[2024-12-03T15:46:31.355+0000] {logging_mixin.py:190} INFO - each result id 93942
+[2024-12-03T15:46:31.356+0000] {logging_mixin.py:190} INFO - each result id 96025
+[2024-12-03T15:46:32.684+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:32.685+0000] {logging_mixin.py:190} INFO - each result id 96025
+[2024-12-03T15:46:32.685+0000] {logging_mixin.py:190} INFO - each result id 96032
+[2024-12-03T15:46:32.685+0000] {logging_mixin.py:190} INFO - each result id 96033
+[2024-12-03T15:46:32.686+0000] {logging_mixin.py:190} INFO - each result id 96299
+[2024-12-03T15:46:32.686+0000] {logging_mixin.py:190} INFO - each result id 98379
+[2024-12-03T15:46:34.121+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:34.122+0000] {logging_mixin.py:190} INFO - each result id 100742
+[2024-12-03T15:46:34.122+0000] {logging_mixin.py:190} INFO - each result id 104260
+[2024-12-03T15:46:34.122+0000] {logging_mixin.py:190} INFO - each result id 106547
+[2024-12-03T15:46:34.122+0000] {logging_mixin.py:190} INFO - each result id 106552
+[2024-12-03T15:46:34.123+0000] {logging_mixin.py:190} INFO - each result id 106560
+[2024-12-03T15:46:35.759+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:35.760+0000] {logging_mixin.py:190} INFO - each result id 106566
+[2024-12-03T15:46:35.760+0000] {logging_mixin.py:190} INFO - each result id 106595
+[2024-12-03T15:46:35.760+0000] {logging_mixin.py:190} INFO - each result id 106601
+[2024-12-03T15:46:35.760+0000] {logging_mixin.py:190} INFO - each result id 106952
+[2024-12-03T15:46:35.761+0000] {logging_mixin.py:190} INFO - each result id 108006
+[2024-12-03T15:46:37.294+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:37.295+0000] {logging_mixin.py:190} INFO - each result id 108006
+[2024-12-03T15:46:37.295+0000] {logging_mixin.py:190} INFO - each result id 108017
+[2024-12-03T15:46:37.295+0000] {logging_mixin.py:190} INFO - each result id 108022
+[2024-12-03T15:46:37.296+0000] {logging_mixin.py:190} INFO - each result id 108058
+[2024-12-03T15:46:37.296+0000] {logging_mixin.py:190} INFO - each result id 108059
+[2024-12-03T15:46:39.449+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:39.450+0000] {logging_mixin.py:190} INFO - each result id 109535
+[2024-12-03T15:46:39.450+0000] {logging_mixin.py:190} INFO - each result id 112264
+[2024-12-03T15:46:39.450+0000] {logging_mixin.py:190} INFO - each result id 112511
+[2024-12-03T15:46:39.451+0000] {logging_mixin.py:190} INFO - each result id 113756
+[2024-12-03T15:46:39.451+0000] {logging_mixin.py:190} INFO - each result id 114685
+[2024-12-03T15:46:41.201+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:41.203+0000] {logging_mixin.py:190} INFO - each result id 117125
+[2024-12-03T15:46:41.204+0000] {logging_mixin.py:190} INFO - each result id 118562
+[2024-12-03T15:46:41.205+0000] {logging_mixin.py:190} INFO - each result id 119334
+[2024-12-03T15:46:41.205+0000] {logging_mixin.py:190} INFO - each result id 119823
+[2024-12-03T15:46:41.206+0000] {logging_mixin.py:190} INFO - each result id 121146
+[2024-12-03T15:46:42.594+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:42.595+0000] {logging_mixin.py:190} INFO - each result id 121645
+[2024-12-03T15:46:42.595+0000] {logging_mixin.py:190} INFO - each result id 125694
+[2024-12-03T15:46:42.596+0000] {logging_mixin.py:190} INFO - each result id 126792
+[2024-12-03T15:46:42.596+0000] {logging_mixin.py:190} INFO - each result id 126794
+[2024-12-03T15:46:42.596+0000] {logging_mixin.py:190} INFO - each result id 127295
+[2024-12-03T15:46:44.247+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:44.248+0000] {logging_mixin.py:190} INFO - each result id 127600
+[2024-12-03T15:46:44.248+0000] {logging_mixin.py:190} INFO - each result id 134780
+[2024-12-03T15:46:44.248+0000] {logging_mixin.py:190} INFO - each result id 138583
+[2024-12-03T15:46:44.249+0000] {logging_mixin.py:190} INFO - each result id 143456
+[2024-12-03T15:46:44.249+0000] {logging_mixin.py:190} INFO - each result id 148826
+[2024-12-03T15:46:45.732+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:45.734+0000] {logging_mixin.py:190} INFO - each result id 148846
+[2024-12-03T15:46:45.736+0000] {logging_mixin.py:190} INFO - each result id 149906
+[2024-12-03T15:46:45.736+0000] {logging_mixin.py:190} INFO - each result id 156256
+[2024-12-03T15:46:45.737+0000] {logging_mixin.py:190} INFO - each result id 160193
+[2024-12-03T15:46:45.738+0000] {logging_mixin.py:190} INFO - each result id 160195
+[2024-12-03T15:46:47.243+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:47.244+0000] {logging_mixin.py:190} INFO - each result id 163700
+[2024-12-03T15:46:47.244+0000] {logging_mixin.py:190} INFO - each result id 178082
+[2024-12-03T15:46:47.244+0000] {logging_mixin.py:190} INFO - each result id 183589
+[2024-12-03T15:46:47.245+0000] {logging_mixin.py:190} INFO - each result id 184005
+[2024-12-03T15:46:47.245+0000] {logging_mixin.py:190} INFO - each result id 186303
+[2024-12-03T15:46:48.872+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:48.873+0000] {logging_mixin.py:190} INFO - each result id 186526
+[2024-12-03T15:46:48.873+0000] {logging_mixin.py:190} INFO - each result id 186800
+[2024-12-03T15:46:48.873+0000] {logging_mixin.py:190} INFO - each result id 186913
+[2024-12-03T15:46:48.874+0000] {logging_mixin.py:190} INFO - each result id 189225
+[2024-12-03T15:46:48.874+0000] {logging_mixin.py:190} INFO - each result id 196490
+[2024-12-03T15:46:50.473+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:50.474+0000] {logging_mixin.py:190} INFO - each result id 199743
+[2024-12-03T15:46:50.475+0000] {logging_mixin.py:190} INFO - each result id 201185
+[2024-12-03T15:46:50.476+0000] {logging_mixin.py:190} INFO - each result id 204428
+[2024-12-03T15:46:50.477+0000] {logging_mixin.py:190} INFO - each result id 207054
+[2024-12-03T15:46:50.479+0000] {logging_mixin.py:190} INFO - each result id 207056
+[2024-12-03T15:46:51.938+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:51.939+0000] {logging_mixin.py:190} INFO - each result id 207058
+[2024-12-03T15:46:51.939+0000] {logging_mixin.py:190} INFO - each result id 208365
+[2024-12-03T15:46:51.940+0000] {logging_mixin.py:190} INFO - each result id 212059
+[2024-12-03T15:46:51.940+0000] {logging_mixin.py:190} INFO - each result id 226979
+[2024-12-03T15:46:51.940+0000] {logging_mixin.py:190} INFO - each result id 226980
+[2024-12-03T15:46:54.094+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:54.095+0000] {logging_mixin.py:190} INFO - each result id 229764
+[2024-12-03T15:46:54.095+0000] {logging_mixin.py:190} INFO - each result id 229782
+[2024-12-03T15:46:54.096+0000] {logging_mixin.py:190} INFO - each result id 231736
+[2024-12-03T15:46:54.096+0000] {logging_mixin.py:190} INFO - each result id 232209
+[2024-12-03T15:46:54.097+0000] {logging_mixin.py:190} INFO - each result id 232835
+[2024-12-03T15:46:55.630+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:55.631+0000] {logging_mixin.py:190} INFO - each result id 237574
+[2024-12-03T15:46:55.631+0000] {logging_mixin.py:190} INFO - each result id 237965
+[2024-12-03T15:46:55.631+0000] {logging_mixin.py:190} INFO - each result id 238903
+[2024-12-03T15:46:55.631+0000] {logging_mixin.py:190} INFO - each result id 240657
+[2024-12-03T15:46:55.632+0000] {logging_mixin.py:190} INFO - each result id 243764
+[2024-12-03T15:46:57.174+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:57.175+0000] {logging_mixin.py:190} INFO - each result id 244755
+[2024-12-03T15:46:57.175+0000] {logging_mixin.py:190} INFO - each result id 245976
+[2024-12-03T15:46:57.175+0000] {logging_mixin.py:190} INFO - each result id 256548
+[2024-12-03T15:46:57.176+0000] {logging_mixin.py:190} INFO - each result id 256943
+[2024-12-03T15:46:57.176+0000] {logging_mixin.py:190} INFO - each result id 261643
+[2024-12-03T15:46:58.348+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:58.348+0000] {logging_mixin.py:190} INFO - each result id 261704
+[2024-12-03T15:46:58.348+0000] {logging_mixin.py:190} INFO - each result id 262068
+[2024-12-03T15:46:58.348+0000] {logging_mixin.py:190} INFO - each result id 262070
+[2024-12-03T15:46:58.349+0000] {logging_mixin.py:190} INFO - each result id 269107
+[2024-12-03T15:46:58.349+0000] {logging_mixin.py:190} INFO - each result id 271562
+[2024-12-03T15:46:59.807+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:46:59.808+0000] {logging_mixin.py:190} INFO - each result id 272028
+[2024-12-03T15:46:59.808+0000] {logging_mixin.py:190} INFO - each result id 284624
+[2024-12-03T15:46:59.808+0000] {logging_mixin.py:190} INFO - each result id 295001
+[2024-12-03T15:46:59.809+0000] {logging_mixin.py:190} INFO - each result id 301123
+[2024-12-03T15:46:59.809+0000] {logging_mixin.py:190} INFO - each result id 315645
+[2024-12-03T15:47:01.265+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:01.266+0000] {logging_mixin.py:190} INFO - each result id 322824
+[2024-12-03T15:47:01.267+0000] {logging_mixin.py:190} INFO - each result id 322829
+[2024-12-03T15:47:01.267+0000] {logging_mixin.py:190} INFO - each result id 323437
+[2024-12-03T15:47:01.267+0000] {logging_mixin.py:190} INFO - each result id 323860
+[2024-12-03T15:47:01.268+0000] {logging_mixin.py:190} INFO - each result id 323943
+[2024-12-03T15:47:02.487+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:02.488+0000] {logging_mixin.py:190} INFO - each result id 324811
+[2024-12-03T15:47:02.488+0000] {logging_mixin.py:190} INFO - each result id 324812
+[2024-12-03T15:47:02.489+0000] {logging_mixin.py:190} INFO - each result id 324813
+[2024-12-03T15:47:02.489+0000] {logging_mixin.py:190} INFO - each result id 324814
+[2024-12-03T15:47:02.489+0000] {logging_mixin.py:190} INFO - each result id 333455
+[2024-12-03T15:47:04.124+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:04.124+0000] {logging_mixin.py:190} INFO - each result id 333493
+[2024-12-03T15:47:04.125+0000] {logging_mixin.py:190} INFO - each result id 337690
+[2024-12-03T15:47:04.125+0000] {logging_mixin.py:190} INFO - each result id 345487
+[2024-12-03T15:47:04.125+0000] {logging_mixin.py:190} INFO - each result id 350039
+[2024-12-03T15:47:04.125+0000] {logging_mixin.py:190} INFO - each result id 353715
+[2024-12-03T15:47:05.691+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:05.691+0000] {logging_mixin.py:190} INFO - each result id 353850
+[2024-12-03T15:47:05.691+0000] {logging_mixin.py:190} INFO - each result id 354681
+[2024-12-03T15:47:05.692+0000] {logging_mixin.py:190} INFO - each result id 354748
+[2024-12-03T15:47:05.692+0000] {logging_mixin.py:190} INFO - each result id 356128
+[2024-12-03T15:47:05.692+0000] {logging_mixin.py:190} INFO - each result id 357650
+[2024-12-03T15:47:07.197+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:07.197+0000] {logging_mixin.py:190} INFO - each result id 358769
+[2024-12-03T15:47:07.197+0000] {logging_mixin.py:190} INFO - each result id 359831
+[2024-12-03T15:47:07.197+0000] {logging_mixin.py:190} INFO - each result id 364183
+[2024-12-03T15:47:07.198+0000] {logging_mixin.py:190} INFO - each result id 365024
+[2024-12-03T15:47:07.198+0000] {logging_mixin.py:190} INFO - each result id 365041
+[2024-12-03T15:47:08.423+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:08.424+0000] {logging_mixin.py:190} INFO - each result id 368233
+[2024-12-03T15:47:08.424+0000] {logging_mixin.py:190} INFO - each result id 368254
+[2024-12-03T15:47:08.424+0000] {logging_mixin.py:190} INFO - each result id 368350
+[2024-12-03T15:47:08.425+0000] {logging_mixin.py:190} INFO - each result id 368974
+[2024-12-03T15:47:08.425+0000] {logging_mixin.py:190} INFO - each result id 369898
+[2024-12-03T15:47:09.525+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:09.526+0000] {logging_mixin.py:190} INFO - each result id 370621
+[2024-12-03T15:47:09.526+0000] {logging_mixin.py:190} INFO - each result id 370622
+[2024-12-03T15:47:09.526+0000] {logging_mixin.py:190} INFO - each result id 371890
+[2024-12-03T15:47:09.526+0000] {logging_mixin.py:190} INFO - each result id 372888
+[2024-12-03T15:47:09.527+0000] {logging_mixin.py:190} INFO - each result id 376165
+[2024-12-03T15:47:10.673+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:10.674+0000] {logging_mixin.py:190} INFO - each result id 378351
+[2024-12-03T15:47:10.674+0000] {logging_mixin.py:190} INFO - each result id 380666
+[2024-12-03T15:47:10.675+0000] {logging_mixin.py:190} INFO - each result id 382991
+[2024-12-03T15:47:10.675+0000] {logging_mixin.py:190} INFO - each result id 383054
+[2024-12-03T15:47:10.675+0000] {logging_mixin.py:190} INFO - each result id 384369
+[2024-12-03T15:47:12.015+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:12.016+0000] {logging_mixin.py:190} INFO - each result id 384850
+[2024-12-03T15:47:12.016+0000] {logging_mixin.py:190} INFO - each result id 385133
+[2024-12-03T15:47:12.017+0000] {logging_mixin.py:190} INFO - each result id 386274
+[2024-12-03T15:47:12.017+0000] {logging_mixin.py:190} INFO - each result id 388151
+[2024-12-03T15:47:12.018+0000] {logging_mixin.py:190} INFO - each result id 391547
+[2024-12-03T15:47:12.926+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:12.926+0000] {logging_mixin.py:190} INFO - each result id 391547
+[2024-12-03T15:47:12.927+0000] {logging_mixin.py:190} INFO - each result id 391701
+[2024-12-03T15:47:12.927+0000] {logging_mixin.py:190} INFO - each result id 391716
+[2024-12-03T15:47:12.927+0000] {logging_mixin.py:190} INFO - each result id 391717
+[2024-12-03T15:47:12.927+0000] {logging_mixin.py:190} INFO - each result id 391718
+[2024-12-03T15:47:14.260+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:14.260+0000] {logging_mixin.py:190} INFO - each result id 391719
+[2024-12-03T15:47:14.260+0000] {logging_mixin.py:190} INFO - each result id 391838
+[2024-12-03T15:47:14.261+0000] {logging_mixin.py:190} INFO - each result id 391839
+[2024-12-03T15:47:14.261+0000] {logging_mixin.py:190} INFO - each result id 392578
+[2024-12-03T15:47:14.261+0000] {logging_mixin.py:190} INFO - each result id 392796
+[2024-12-03T15:47:15.802+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:15.805+0000] {logging_mixin.py:190} INFO - each result id 395172
+[2024-12-03T15:47:15.807+0000] {logging_mixin.py:190} INFO - each result id 395176
+[2024-12-03T15:47:15.809+0000] {logging_mixin.py:190} INFO - each result id 399590
+[2024-12-03T15:47:15.811+0000] {logging_mixin.py:190} INFO - each result id 401542
+[2024-12-03T15:47:15.812+0000] {logging_mixin.py:190} INFO - each result id 403579
+[2024-12-03T15:47:17.024+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:17.024+0000] {logging_mixin.py:190} INFO - each result id 404813
+[2024-12-03T15:47:17.024+0000] {logging_mixin.py:190} INFO - each result id 405081
+[2024-12-03T15:47:17.025+0000] {logging_mixin.py:190} INFO - each result id 409590
+[2024-12-03T15:47:17.025+0000] {logging_mixin.py:190} INFO - each result id 410153
+[2024-12-03T15:47:17.025+0000] {logging_mixin.py:190} INFO - each result id 412394
+[2024-12-03T15:47:18.779+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:18.779+0000] {logging_mixin.py:190} INFO - each result id 414741
+[2024-12-03T15:47:18.780+0000] {logging_mixin.py:190} INFO - each result id 415467
+[2024-12-03T15:47:18.780+0000] {logging_mixin.py:190} INFO - each result id 416051
+[2024-12-03T15:47:18.780+0000] {logging_mixin.py:190} INFO - each result id 416441
+[2024-12-03T15:47:18.780+0000] {logging_mixin.py:190} INFO - each result id 416648
+[2024-12-03T15:47:20.326+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:20.327+0000] {logging_mixin.py:190} INFO - each result id 416838
+[2024-12-03T15:47:20.327+0000] {logging_mixin.py:190} INFO - each result id 417465
+[2024-12-03T15:47:20.328+0000] {logging_mixin.py:190} INFO - each result id 417483
+[2024-12-03T15:47:20.328+0000] {logging_mixin.py:190} INFO - each result id 423013
+[2024-12-03T15:47:20.328+0000] {logging_mixin.py:190} INFO - each result id 423143
+[2024-12-03T15:47:21.848+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:21.848+0000] {logging_mixin.py:190} INFO - each result id 428000
+[2024-12-03T15:47:21.848+0000] {logging_mixin.py:190} INFO - each result id 432581
+[2024-12-03T15:47:21.848+0000] {logging_mixin.py:190} INFO - each result id 435428
+[2024-12-03T15:47:21.849+0000] {logging_mixin.py:190} INFO - each result id 436445
+[2024-12-03T15:47:21.849+0000] {logging_mixin.py:190} INFO - each result id 437945
+[2024-12-03T15:47:23.390+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:23.390+0000] {logging_mixin.py:190} INFO - each result id 443629
+[2024-12-03T15:47:23.391+0000] {logging_mixin.py:190} INFO - each result id 443681
+[2024-12-03T15:47:23.391+0000] {logging_mixin.py:190} INFO - each result id 453698
+[2024-12-03T15:47:23.391+0000] {logging_mixin.py:190} INFO - each result id 464931
+[2024-12-03T15:47:23.391+0000] {logging_mixin.py:190} INFO - each result id 470854
+[2024-12-03T15:47:27.291+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:27.291+0000] {logging_mixin.py:190} INFO - each result id 489208
+[2024-12-03T15:47:27.292+0000] {logging_mixin.py:190} INFO - each result id 490072
+[2024-12-03T15:47:27.292+0000] {logging_mixin.py:190} INFO - each result id 491071
+[2024-12-03T15:47:27.292+0000] {logging_mixin.py:190} INFO - each result id 492796
+[2024-12-03T15:47:27.293+0000] {logging_mixin.py:190} INFO - each result id 495764
+[2024-12-03T15:47:29.006+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:29.006+0000] {logging_mixin.py:190} INFO - each result id 497019
+[2024-12-03T15:47:29.007+0000] {logging_mixin.py:190} INFO - each result id 500430
+[2024-12-03T15:47:29.007+0000] {logging_mixin.py:190} INFO - each result id 508539
+[2024-12-03T15:47:29.007+0000] {logging_mixin.py:190} INFO - each result id 508541
+[2024-12-03T15:47:29.008+0000] {logging_mixin.py:190} INFO - each result id 521829
+[2024-12-03T15:47:31.723+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:31.723+0000] {logging_mixin.py:190} INFO - each result id 532593
+[2024-12-03T15:47:31.723+0000] {logging_mixin.py:190} INFO - each result id 542793
+[2024-12-03T15:47:31.724+0000] {logging_mixin.py:190} INFO - each result id 546537
+[2024-12-03T15:47:31.724+0000] {logging_mixin.py:190} INFO - each result id 554119
+[2024-12-03T15:47:31.724+0000] {logging_mixin.py:190} INFO - each result id 554326
+[2024-12-03T15:47:33.515+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:33.515+0000] {logging_mixin.py:190} INFO - each result id 554843
+[2024-12-03T15:47:33.515+0000] {logging_mixin.py:190} INFO - each result id 557793
+[2024-12-03T15:47:33.515+0000] {logging_mixin.py:190} INFO - each result id 561001
+[2024-12-03T15:47:33.516+0000] {logging_mixin.py:190} INFO - each result id 561093
+[2024-12-03T15:47:33.516+0000] {logging_mixin.py:190} INFO - each result id 562823
+[2024-12-03T15:47:34.840+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:34.840+0000] {logging_mixin.py:190} INFO - each result id 564063
+[2024-12-03T15:47:34.840+0000] {logging_mixin.py:190} INFO - each result id 568935
+[2024-12-03T15:47:34.841+0000] {logging_mixin.py:190} INFO - each result id 568937
+[2024-12-03T15:47:34.841+0000] {logging_mixin.py:190} INFO - each result id 576715
+[2024-12-03T15:47:34.841+0000] {logging_mixin.py:190} INFO - each result id 578907
+[2024-12-03T15:47:35.982+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:35.983+0000] {logging_mixin.py:190} INFO - each result id 578907
+[2024-12-03T15:47:35.985+0000] {logging_mixin.py:190} INFO - each result id 581936
+[2024-12-03T15:47:35.986+0000] {logging_mixin.py:190} INFO - each result id 586382
+[2024-12-03T15:47:35.987+0000] {logging_mixin.py:190} INFO - each result id 594042
+[2024-12-03T15:47:35.988+0000] {logging_mixin.py:190} INFO - each result id 594053
+[2024-12-03T15:47:37.402+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:37.402+0000] {logging_mixin.py:190} INFO - each result id 600676
+[2024-12-03T15:47:37.402+0000] {logging_mixin.py:190} INFO - each result id 601950
+[2024-12-03T15:47:37.402+0000] {logging_mixin.py:190} INFO - each result id 601952
+[2024-12-03T15:47:37.403+0000] {logging_mixin.py:190} INFO - each result id 601953
+[2024-12-03T15:47:37.403+0000] {logging_mixin.py:190} INFO - each result id 601954
+[2024-12-03T15:47:38.505+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:38.505+0000] {logging_mixin.py:190} INFO - each result id 601955
+[2024-12-03T15:47:38.505+0000] {logging_mixin.py:190} INFO - each result id 601957
+[2024-12-03T15:47:38.506+0000] {logging_mixin.py:190} INFO - each result id 601958
+[2024-12-03T15:47:38.506+0000] {logging_mixin.py:190} INFO - each result id 601959
+[2024-12-03T15:47:38.506+0000] {logging_mixin.py:190} INFO - each result id 601960
+[2024-12-03T15:47:39.545+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:39.546+0000] {logging_mixin.py:190} INFO - each result id 601961
+[2024-12-03T15:47:39.546+0000] {logging_mixin.py:190} INFO - each result id 601962
+[2024-12-03T15:47:39.546+0000] {logging_mixin.py:190} INFO - each result id 601963
+[2024-12-03T15:47:39.546+0000] {logging_mixin.py:190} INFO - each result id 601964
+[2024-12-03T15:47:39.546+0000] {logging_mixin.py:190} INFO - each result id 601965
+[2024-12-03T15:47:40.815+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:40.815+0000] {logging_mixin.py:190} INFO - each result id 601964
+[2024-12-03T15:47:40.815+0000] {logging_mixin.py:190} INFO - each result id 601965
+[2024-12-03T15:47:40.816+0000] {logging_mixin.py:190} INFO - each result id 601966
+[2024-12-03T15:47:40.816+0000] {logging_mixin.py:190} INFO - each result id 601967
+[2024-12-03T15:47:40.816+0000] {logging_mixin.py:190} INFO - each result id 601968
+[2024-12-03T15:47:42.428+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:42.429+0000] {logging_mixin.py:190} INFO - each result id 601969
+[2024-12-03T15:47:42.429+0000] {logging_mixin.py:190} INFO - each result id 601970
+[2024-12-03T15:47:42.430+0000] {logging_mixin.py:190} INFO - each result id 602796
+[2024-12-03T15:47:42.431+0000] {logging_mixin.py:190} INFO - each result id 603793
+[2024-12-03T15:47:42.431+0000] {logging_mixin.py:190} INFO - each result id 603795
+[2024-12-03T15:47:44.368+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:44.368+0000] {logging_mixin.py:190} INFO - each result id 604053
+[2024-12-03T15:47:44.368+0000] {logging_mixin.py:190} INFO - each result id 604054
+[2024-12-03T15:47:44.369+0000] {logging_mixin.py:190} INFO - each result id 610824
+[2024-12-03T15:47:44.369+0000] {logging_mixin.py:190} INFO - each result id 612344
+[2024-12-03T15:47:44.369+0000] {logging_mixin.py:190} INFO - each result id 612779
+[2024-12-03T15:47:46.219+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:46.220+0000] {logging_mixin.py:190} INFO - each result id 614067
+[2024-12-03T15:47:46.220+0000] {logging_mixin.py:190} INFO - each result id 620356
+[2024-12-03T15:47:46.220+0000] {logging_mixin.py:190} INFO - each result id 639548
+[2024-12-03T15:47:46.221+0000] {logging_mixin.py:190} INFO - each result id 640894
+[2024-12-03T15:47:46.221+0000] {logging_mixin.py:190} INFO - each result id 647346
+[2024-12-03T15:47:48.766+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:48.767+0000] {logging_mixin.py:190} INFO - each result id 650889
+[2024-12-03T15:47:48.767+0000] {logging_mixin.py:190} INFO - each result id 667932
+[2024-12-03T15:47:48.767+0000] {logging_mixin.py:190} INFO - each result id 672394
+[2024-12-03T15:47:48.767+0000] {logging_mixin.py:190} INFO - each result id 677110
+[2024-12-03T15:47:48.768+0000] {logging_mixin.py:190} INFO - each result id 677804
+[2024-12-03T15:47:50.719+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:50.720+0000] {logging_mixin.py:190} INFO - each result id 677804
+[2024-12-03T15:47:50.720+0000] {logging_mixin.py:190} INFO - each result id 677805
+[2024-12-03T15:47:50.720+0000] {logging_mixin.py:190} INFO - each result id 678135
+[2024-12-03T15:47:50.720+0000] {logging_mixin.py:190} INFO - each result id 685230
+[2024-12-03T15:47:50.720+0000] {logging_mixin.py:190} INFO - each result id 685250
+[2024-12-03T15:47:52.455+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:52.455+0000] {logging_mixin.py:190} INFO - each result id 693304
+[2024-12-03T15:47:52.455+0000] {logging_mixin.py:190} INFO - each result id 693308
+[2024-12-03T15:47:52.456+0000] {logging_mixin.py:190} INFO - each result id 693313
+[2024-12-03T15:47:52.456+0000] {logging_mixin.py:190} INFO - each result id 693314
+[2024-12-03T15:47:52.456+0000] {logging_mixin.py:190} INFO - each result id 696882
+[2024-12-03T15:47:53.999+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:53.999+0000] {logging_mixin.py:190} INFO - each result id 708590
+[2024-12-03T15:47:53.999+0000] {logging_mixin.py:190} INFO - each result id 710593
+[2024-12-03T15:47:54.000+0000] {logging_mixin.py:190} INFO - each result id 716750
+[2024-12-03T15:47:54.000+0000] {logging_mixin.py:190} INFO - each result id 716754
+[2024-12-03T15:47:54.000+0000] {logging_mixin.py:190} INFO - each result id 716762
+[2024-12-03T15:47:55.327+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:55.328+0000] {logging_mixin.py:190} INFO - each result id 716763
+[2024-12-03T15:47:55.328+0000] {logging_mixin.py:190} INFO - each result id 716764
+[2024-12-03T15:47:55.328+0000] {logging_mixin.py:190} INFO - each result id 716765
+[2024-12-03T15:47:55.328+0000] {logging_mixin.py:190} INFO - each result id 716770
+[2024-12-03T15:47:55.329+0000] {logging_mixin.py:190} INFO - each result id 716771
+[2024-12-03T15:47:56.861+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:56.862+0000] {logging_mixin.py:190} INFO - each result id 716777
+[2024-12-03T15:47:56.862+0000] {logging_mixin.py:190} INFO - each result id 716779
+[2024-12-03T15:47:56.862+0000] {logging_mixin.py:190} INFO - each result id 729102
+[2024-12-03T15:47:56.862+0000] {logging_mixin.py:190} INFO - each result id 729328
+[2024-12-03T15:47:56.862+0000] {logging_mixin.py:190} INFO - each result id 731878
+[2024-12-03T15:47:58.609+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:47:58.609+0000] {logging_mixin.py:190} INFO - each result id 740186
+[2024-12-03T15:47:58.610+0000] {logging_mixin.py:190} INFO - each result id 756646
+[2024-12-03T15:47:58.611+0000] {logging_mixin.py:190} INFO - each result id 762624
+[2024-12-03T15:47:58.611+0000] {logging_mixin.py:190} INFO - each result id 765374
+[2024-12-03T15:47:58.612+0000] {logging_mixin.py:190} INFO - each result id 765700
+[2024-12-03T15:48:00.264+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:00.265+0000] {logging_mixin.py:190} INFO - each result id 794796
+[2024-12-03T15:48:00.265+0000] {logging_mixin.py:190} INFO - each result id 796642
+[2024-12-03T15:48:00.265+0000] {logging_mixin.py:190} INFO - each result id 796860
+[2024-12-03T15:48:00.266+0000] {logging_mixin.py:190} INFO - each result id 801442
+[2024-12-03T15:48:00.266+0000] {logging_mixin.py:190} INFO - each result id 803196
+[2024-12-03T15:48:01.880+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:01.881+0000] {logging_mixin.py:190} INFO - each result id 811435
+[2024-12-03T15:48:01.881+0000] {logging_mixin.py:190} INFO - each result id 829946
+[2024-12-03T15:48:01.881+0000] {logging_mixin.py:190} INFO - each result id 831040
+[2024-12-03T15:48:01.881+0000] {logging_mixin.py:190} INFO - each result id 834192
+[2024-12-03T15:48:01.881+0000] {logging_mixin.py:190} INFO - each result id 835604
+[2024-12-03T15:48:03.553+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:03.553+0000] {logging_mixin.py:190} INFO - each result id 854855
+[2024-12-03T15:48:03.553+0000] {logging_mixin.py:190} INFO - each result id 858198
+[2024-12-03T15:48:03.554+0000] {logging_mixin.py:190} INFO - each result id 873228
+[2024-12-03T15:48:03.554+0000] {logging_mixin.py:190} INFO - each result id 873235
+[2024-12-03T15:48:03.554+0000] {logging_mixin.py:190} INFO - each result id 873241
+[2024-12-03T15:48:05.491+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:05.491+0000] {logging_mixin.py:190} INFO - each result id 873265
+[2024-12-03T15:48:05.491+0000] {logging_mixin.py:190} INFO - each result id 875075
+[2024-12-03T15:48:05.492+0000] {logging_mixin.py:190} INFO - each result id 875393
+[2024-12-03T15:48:05.492+0000] {logging_mixin.py:190} INFO - each result id 879151
+[2024-12-03T15:48:05.492+0000] {logging_mixin.py:190} INFO - each result id 881095
+[2024-12-03T15:48:07.211+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:07.211+0000] {logging_mixin.py:190} INFO - each result id 881121
+[2024-12-03T15:48:07.211+0000] {logging_mixin.py:190} INFO - each result id 882431
+[2024-12-03T15:48:07.212+0000] {logging_mixin.py:190} INFO - each result id 882432
+[2024-12-03T15:48:07.212+0000] {logging_mixin.py:190} INFO - each result id 882815
+[2024-12-03T15:48:07.212+0000] {logging_mixin.py:190} INFO - each result id 882863
+[2024-12-03T15:48:08.637+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:08.638+0000] {logging_mixin.py:190} INFO - each result id 885011
+[2024-12-03T15:48:08.638+0000] {logging_mixin.py:190} INFO - each result id 887134
+[2024-12-03T15:48:08.638+0000] {logging_mixin.py:190} INFO - each result id 887686
+[2024-12-03T15:48:08.638+0000] {logging_mixin.py:190} INFO - each result id 893334
+[2024-12-03T15:48:08.639+0000] {logging_mixin.py:190} INFO - each result id 895616
+[2024-12-03T15:48:10.172+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:10.173+0000] {logging_mixin.py:190} INFO - each result id 903103
+[2024-12-03T15:48:10.173+0000] {logging_mixin.py:190} INFO - each result id 911774
+[2024-12-03T15:48:10.173+0000] {logging_mixin.py:190} INFO - each result id 915703
+[2024-12-03T15:48:10.173+0000] {logging_mixin.py:190} INFO - each result id 920672
+[2024-12-03T15:48:10.173+0000] {logging_mixin.py:190} INFO - each result id 921438
+[2024-12-03T15:48:12.546+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:12.546+0000] {logging_mixin.py:190} INFO - each result id 921545
+[2024-12-03T15:48:12.546+0000] {logging_mixin.py:190} INFO - each result id 921546
+[2024-12-03T15:48:12.547+0000] {logging_mixin.py:190} INFO - each result id 921547
+[2024-12-03T15:48:12.547+0000] {logging_mixin.py:190} INFO - each result id 921548
+[2024-12-03T15:48:12.547+0000] {logging_mixin.py:190} INFO - each result id 921549
+[2024-12-03T15:48:14.265+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:14.265+0000] {logging_mixin.py:190} INFO - each result id 921550
+[2024-12-03T15:48:14.266+0000] {logging_mixin.py:190} INFO - each result id 921551
+[2024-12-03T15:48:14.266+0000] {logging_mixin.py:190} INFO - each result id 921552
+[2024-12-03T15:48:14.266+0000] {logging_mixin.py:190} INFO - each result id 921553
+[2024-12-03T15:48:14.266+0000] {logging_mixin.py:190} INFO - each result id 921555
+[2024-12-03T15:48:15.399+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:15.400+0000] {logging_mixin.py:190} INFO - each result id 921556
+[2024-12-03T15:48:15.400+0000] {logging_mixin.py:190} INFO - each result id 921558
+[2024-12-03T15:48:15.401+0000] {logging_mixin.py:190} INFO - each result id 921559
+[2024-12-03T15:48:15.401+0000] {logging_mixin.py:190} INFO - each result id 921560
+[2024-12-03T15:48:15.402+0000] {logging_mixin.py:190} INFO - each result id 921561
+[2024-12-03T15:48:17.950+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:17.951+0000] {logging_mixin.py:190} INFO - each result id 921562
+[2024-12-03T15:48:17.951+0000] {logging_mixin.py:190} INFO - each result id 921563
+[2024-12-03T15:48:17.951+0000] {logging_mixin.py:190} INFO - each result id 921564
+[2024-12-03T15:48:17.951+0000] {logging_mixin.py:190} INFO - each result id 921565
+[2024-12-03T15:48:17.951+0000] {logging_mixin.py:190} INFO - each result id 921566
+[2024-12-03T15:48:19.486+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:19.486+0000] {logging_mixin.py:190} INFO - each result id 921567
+[2024-12-03T15:48:19.487+0000] {logging_mixin.py:190} INFO - each result id 921568
+[2024-12-03T15:48:19.487+0000] {logging_mixin.py:190} INFO - each result id 921569
+[2024-12-03T15:48:19.487+0000] {logging_mixin.py:190} INFO - each result id 921571
+[2024-12-03T15:48:19.487+0000] {logging_mixin.py:190} INFO - each result id 921572
+[2024-12-03T15:48:20.616+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:20.617+0000] {logging_mixin.py:190} INFO - each result id 921573
+[2024-12-03T15:48:20.617+0000] {logging_mixin.py:190} INFO - each result id 921575
+[2024-12-03T15:48:20.617+0000] {logging_mixin.py:190} INFO - each result id 921576
+[2024-12-03T15:48:20.617+0000] {logging_mixin.py:190} INFO - each result id 921577
+[2024-12-03T15:48:20.618+0000] {logging_mixin.py:190} INFO - each result id 921578
+[2024-12-03T15:48:21.750+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:21.751+0000] {logging_mixin.py:190} INFO - each result id 921579
+[2024-12-03T15:48:21.751+0000] {logging_mixin.py:190} INFO - each result id 921580
+[2024-12-03T15:48:21.751+0000] {logging_mixin.py:190} INFO - each result id 921581
+[2024-12-03T15:48:21.751+0000] {logging_mixin.py:190} INFO - each result id 921582
+[2024-12-03T15:48:21.752+0000] {logging_mixin.py:190} INFO - each result id 921583
+[2024-12-03T15:48:22.972+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:22.972+0000] {logging_mixin.py:190} INFO - each result id 921584
+[2024-12-03T15:48:22.972+0000] {logging_mixin.py:190} INFO - each result id 921585
+[2024-12-03T15:48:22.972+0000] {logging_mixin.py:190} INFO - each result id 921586
+[2024-12-03T15:48:22.973+0000] {logging_mixin.py:190} INFO - each result id 921588
+[2024-12-03T15:48:22.973+0000] {logging_mixin.py:190} INFO - each result id 921589
+[2024-12-03T15:48:24.303+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:24.303+0000] {logging_mixin.py:190} INFO - each result id 921590
+[2024-12-03T15:48:24.304+0000] {logging_mixin.py:190} INFO - each result id 921591
+[2024-12-03T15:48:24.304+0000] {logging_mixin.py:190} INFO - each result id 921592
+[2024-12-03T15:48:24.304+0000] {logging_mixin.py:190} INFO - each result id 921593
+[2024-12-03T15:48:24.304+0000] {logging_mixin.py:190} INFO - each result id 921594
+[2024-12-03T15:48:25.425+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:25.425+0000] {logging_mixin.py:190} INFO - each result id 921595
+[2024-12-03T15:48:25.425+0000] {logging_mixin.py:190} INFO - each result id 921596
+[2024-12-03T15:48:25.426+0000] {logging_mixin.py:190} INFO - each result id 921597
+[2024-12-03T15:48:25.426+0000] {logging_mixin.py:190} INFO - each result id 921598
+[2024-12-03T15:48:25.426+0000] {logging_mixin.py:190} INFO - each result id 921599
+[2024-12-03T15:48:26.430+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:26.431+0000] {logging_mixin.py:190} INFO - each result id 921600
+[2024-12-03T15:48:26.431+0000] {logging_mixin.py:190} INFO - each result id 921601
+[2024-12-03T15:48:26.431+0000] {logging_mixin.py:190} INFO - each result id 921602
+[2024-12-03T15:48:26.431+0000] {logging_mixin.py:190} INFO - each result id 921603
+[2024-12-03T15:48:26.431+0000] {logging_mixin.py:190} INFO - each result id 921604
+[2024-12-03T15:48:27.678+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:27.678+0000] {logging_mixin.py:190} INFO - each result id 921605
+[2024-12-03T15:48:27.678+0000] {logging_mixin.py:190} INFO - each result id 921607
+[2024-12-03T15:48:27.678+0000] {logging_mixin.py:190} INFO - each result id 921608
+[2024-12-03T15:48:27.679+0000] {logging_mixin.py:190} INFO - each result id 921609
+[2024-12-03T15:48:27.679+0000] {logging_mixin.py:190} INFO - each result id 921610
+[2024-12-03T15:48:28.809+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:28.810+0000] {logging_mixin.py:190} INFO - each result id 921611
+[2024-12-03T15:48:28.811+0000] {logging_mixin.py:190} INFO - each result id 921613
+[2024-12-03T15:48:28.811+0000] {logging_mixin.py:190} INFO - each result id 921614
+[2024-12-03T15:48:28.811+0000] {logging_mixin.py:190} INFO - each result id 921615
+[2024-12-03T15:48:28.812+0000] {logging_mixin.py:190} INFO - each result id 921616
+[2024-12-03T15:48:30.136+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:30.136+0000] {logging_mixin.py:190} INFO - each result id 921617
+[2024-12-03T15:48:30.136+0000] {logging_mixin.py:190} INFO - each result id 921618
+[2024-12-03T15:48:30.137+0000] {logging_mixin.py:190} INFO - each result id 921619
+[2024-12-03T15:48:30.137+0000] {logging_mixin.py:190} INFO - each result id 921620
+[2024-12-03T15:48:30.137+0000] {logging_mixin.py:190} INFO - each result id 921621
+[2024-12-03T15:48:31.365+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:31.365+0000] {logging_mixin.py:190} INFO - each result id 921622
+[2024-12-03T15:48:31.365+0000] {logging_mixin.py:190} INFO - each result id 921624
+[2024-12-03T15:48:31.365+0000] {logging_mixin.py:190} INFO - each result id 921625
+[2024-12-03T15:48:31.366+0000] {logging_mixin.py:190} INFO - each result id 921626
+[2024-12-03T15:48:31.366+0000] {logging_mixin.py:190} INFO - each result id 921627
+[2024-12-03T15:48:32.697+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:32.698+0000] {logging_mixin.py:190} INFO - each result id 921628
+[2024-12-03T15:48:32.698+0000] {logging_mixin.py:190} INFO - each result id 921629
+[2024-12-03T15:48:32.698+0000] {logging_mixin.py:190} INFO - each result id 921630
+[2024-12-03T15:48:32.698+0000] {logging_mixin.py:190} INFO - each result id 921631
+[2024-12-03T15:48:32.699+0000] {logging_mixin.py:190} INFO - each result id 921633
+[2024-12-03T15:48:33.769+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:33.770+0000] {logging_mixin.py:190} INFO - each result id 921635
+[2024-12-03T15:48:33.770+0000] {logging_mixin.py:190} INFO - each result id 921636
+[2024-12-03T15:48:33.770+0000] {logging_mixin.py:190} INFO - each result id 921637
+[2024-12-03T15:48:33.770+0000] {logging_mixin.py:190} INFO - each result id 921638
+[2024-12-03T15:48:33.771+0000] {logging_mixin.py:190} INFO - each result id 921639
+[2024-12-03T15:48:34.709+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:34.709+0000] {logging_mixin.py:190} INFO - each result id 921640
+[2024-12-03T15:48:34.709+0000] {logging_mixin.py:190} INFO - each result id 921642
+[2024-12-03T15:48:34.710+0000] {logging_mixin.py:190} INFO - each result id 921643
+[2024-12-03T15:48:34.710+0000] {logging_mixin.py:190} INFO - each result id 921644
+[2024-12-03T15:48:34.710+0000] {logging_mixin.py:190} INFO - each result id 921645
+[2024-12-03T15:48:35.973+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:35.974+0000] {logging_mixin.py:190} INFO - each result id 921646
+[2024-12-03T15:48:35.974+0000] {logging_mixin.py:190} INFO - each result id 921647
+[2024-12-03T15:48:35.974+0000] {logging_mixin.py:190} INFO - each result id 921648
+[2024-12-03T15:48:35.974+0000] {logging_mixin.py:190} INFO - each result id 921650
+[2024-12-03T15:48:35.974+0000] {logging_mixin.py:190} INFO - each result id 921651
+[2024-12-03T15:48:36.898+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:36.899+0000] {logging_mixin.py:190} INFO - each result id 921652
+[2024-12-03T15:48:36.899+0000] {logging_mixin.py:190} INFO - each result id 921654
+[2024-12-03T15:48:36.899+0000] {logging_mixin.py:190} INFO - each result id 921655
+[2024-12-03T15:48:36.900+0000] {logging_mixin.py:190} INFO - each result id 921656
+[2024-12-03T15:48:36.900+0000] {logging_mixin.py:190} INFO - each result id 921657
+[2024-12-03T15:48:37.838+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:37.839+0000] {logging_mixin.py:190} INFO - each result id 921658
+[2024-12-03T15:48:37.839+0000] {logging_mixin.py:190} INFO - each result id 921659
+[2024-12-03T15:48:37.839+0000] {logging_mixin.py:190} INFO - each result id 921660
+[2024-12-03T15:48:37.840+0000] {logging_mixin.py:190} INFO - each result id 921661
+[2024-12-03T15:48:37.840+0000] {logging_mixin.py:190} INFO - each result id 921663
+[2024-12-03T15:48:38.841+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:38.842+0000] {logging_mixin.py:190} INFO - each result id 921664
+[2024-12-03T15:48:38.842+0000] {logging_mixin.py:190} INFO - each result id 921665
+[2024-12-03T15:48:38.842+0000] {logging_mixin.py:190} INFO - each result id 921666
+[2024-12-03T15:48:38.843+0000] {logging_mixin.py:190} INFO - each result id 921667
+[2024-12-03T15:48:38.843+0000] {logging_mixin.py:190} INFO - each result id 921668
+[2024-12-03T15:48:40.073+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:40.073+0000] {logging_mixin.py:190} INFO - each result id 921669
+[2024-12-03T15:48:40.074+0000] {logging_mixin.py:190} INFO - each result id 921670
+[2024-12-03T15:48:40.074+0000] {logging_mixin.py:190} INFO - each result id 921672
+[2024-12-03T15:48:40.074+0000] {logging_mixin.py:190} INFO - each result id 921673
+[2024-12-03T15:48:40.074+0000] {logging_mixin.py:190} INFO - each result id 921675
+[2024-12-03T15:48:41.016+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:41.017+0000] {logging_mixin.py:190} INFO - each result id 921676
+[2024-12-03T15:48:41.017+0000] {logging_mixin.py:190} INFO - each result id 921677
+[2024-12-03T15:48:41.017+0000] {logging_mixin.py:190} INFO - each result id 921678
+[2024-12-03T15:48:41.017+0000] {logging_mixin.py:190} INFO - each result id 921679
+[2024-12-03T15:48:41.018+0000] {logging_mixin.py:190} INFO - each result id 921680
+[2024-12-03T15:48:42.047+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:42.047+0000] {logging_mixin.py:190} INFO - each result id 921681
+[2024-12-03T15:48:42.048+0000] {logging_mixin.py:190} INFO - each result id 921682
+[2024-12-03T15:48:42.048+0000] {logging_mixin.py:190} INFO - each result id 921684
+[2024-12-03T15:48:42.048+0000] {logging_mixin.py:190} INFO - each result id 921685
+[2024-12-03T15:48:42.048+0000] {logging_mixin.py:190} INFO - each result id 921686
+[2024-12-03T15:48:43.167+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:43.168+0000] {logging_mixin.py:190} INFO - each result id 921687
+[2024-12-03T15:48:43.168+0000] {logging_mixin.py:190} INFO - each result id 921688
+[2024-12-03T15:48:43.168+0000] {logging_mixin.py:190} INFO - each result id 921689
+[2024-12-03T15:48:43.168+0000] {logging_mixin.py:190} INFO - each result id 921690
+[2024-12-03T15:48:43.168+0000] {logging_mixin.py:190} INFO - each result id 921691
+[2024-12-03T15:48:44.267+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:44.267+0000] {logging_mixin.py:190} INFO - each result id 921693
+[2024-12-03T15:48:44.267+0000] {logging_mixin.py:190} INFO - each result id 921694
+[2024-12-03T15:48:44.267+0000] {logging_mixin.py:190} INFO - each result id 921695
+[2024-12-03T15:48:44.268+0000] {logging_mixin.py:190} INFO - each result id 921696
+[2024-12-03T15:48:44.268+0000] {logging_mixin.py:190} INFO - each result id 921697
+[2024-12-03T15:48:45.706+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:45.707+0000] {logging_mixin.py:190} INFO - each result id 921699
+[2024-12-03T15:48:45.707+0000] {logging_mixin.py:190} INFO - each result id 921700
+[2024-12-03T15:48:45.707+0000] {logging_mixin.py:190} INFO - each result id 921701
+[2024-12-03T15:48:45.708+0000] {logging_mixin.py:190} INFO - each result id 921703
+[2024-12-03T15:48:45.708+0000] {logging_mixin.py:190} INFO - each result id 921704
+[2024-12-03T15:48:46.933+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:46.934+0000] {logging_mixin.py:190} INFO - each result id 921705
+[2024-12-03T15:48:46.934+0000] {logging_mixin.py:190} INFO - each result id 921706
+[2024-12-03T15:48:46.934+0000] {logging_mixin.py:190} INFO - each result id 921707
+[2024-12-03T15:48:46.934+0000] {logging_mixin.py:190} INFO - each result id 921708
+[2024-12-03T15:48:46.935+0000] {logging_mixin.py:190} INFO - each result id 921709
+[2024-12-03T15:48:48.159+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:48.159+0000] {logging_mixin.py:190} INFO - each result id 921711
+[2024-12-03T15:48:48.160+0000] {logging_mixin.py:190} INFO - each result id 921712
+[2024-12-03T15:48:48.160+0000] {logging_mixin.py:190} INFO - each result id 921713
+[2024-12-03T15:48:48.160+0000] {logging_mixin.py:190} INFO - each result id 921714
+[2024-12-03T15:48:48.160+0000] {logging_mixin.py:190} INFO - each result id 921715
+[2024-12-03T15:48:49.386+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:49.387+0000] {logging_mixin.py:190} INFO - each result id 921716
+[2024-12-03T15:48:49.387+0000] {logging_mixin.py:190} INFO - each result id 921717
+[2024-12-03T15:48:49.387+0000] {logging_mixin.py:190} INFO - each result id 921718
+[2024-12-03T15:48:49.387+0000] {logging_mixin.py:190} INFO - each result id 921719
+[2024-12-03T15:48:49.388+0000] {logging_mixin.py:190} INFO - each result id 921720
+[2024-12-03T15:48:50.470+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:50.471+0000] {logging_mixin.py:190} INFO - each result id 921721
+[2024-12-03T15:48:50.471+0000] {logging_mixin.py:190} INFO - each result id 921723
+[2024-12-03T15:48:50.471+0000] {logging_mixin.py:190} INFO - each result id 921724
+[2024-12-03T15:48:50.471+0000] {logging_mixin.py:190} INFO - each result id 921725
+[2024-12-03T15:48:50.472+0000] {logging_mixin.py:190} INFO - each result id 921726
+[2024-12-03T15:48:51.812+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:51.814+0000] {logging_mixin.py:190} INFO - each result id 921727
+[2024-12-03T15:48:51.814+0000] {logging_mixin.py:190} INFO - each result id 921728
+[2024-12-03T15:48:51.815+0000] {logging_mixin.py:190} INFO - each result id 921730
+[2024-12-03T15:48:51.816+0000] {logging_mixin.py:190} INFO - each result id 921731
+[2024-12-03T15:48:51.817+0000] {logging_mixin.py:190} INFO - each result id 921732
+[2024-12-03T15:48:53.935+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:53.935+0000] {logging_mixin.py:190} INFO - each result id 921733
+[2024-12-03T15:48:53.936+0000] {logging_mixin.py:190} INFO - each result id 921734
+[2024-12-03T15:48:53.936+0000] {logging_mixin.py:190} INFO - each result id 921736
+[2024-12-03T15:48:53.936+0000] {logging_mixin.py:190} INFO - each result id 921737
+[2024-12-03T15:48:53.936+0000] {logging_mixin.py:190} INFO - each result id 921740
+[2024-12-03T15:48:54.997+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:54.999+0000] {logging_mixin.py:190} INFO - each result id 921743
+[2024-12-03T15:48:55.000+0000] {logging_mixin.py:190} INFO - each result id 921744
+[2024-12-03T15:48:55.001+0000] {logging_mixin.py:190} INFO - each result id 921745
+[2024-12-03T15:48:55.002+0000] {logging_mixin.py:190} INFO - each result id 921748
+[2024-12-03T15:48:55.004+0000] {logging_mixin.py:190} INFO - each result id 921749
+[2024-12-03T15:48:57.277+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:57.278+0000] {logging_mixin.py:190} INFO - each result id 921750
+[2024-12-03T15:48:57.280+0000] {logging_mixin.py:190} INFO - each result id 921751
+[2024-12-03T15:48:57.281+0000] {logging_mixin.py:190} INFO - each result id 921753
+[2024-12-03T15:48:57.281+0000] {logging_mixin.py:190} INFO - each result id 921754
+[2024-12-03T15:48:57.282+0000] {logging_mixin.py:190} INFO - each result id 921755
+[2024-12-03T15:48:58.714+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:58.715+0000] {logging_mixin.py:190} INFO - each result id 921758
+[2024-12-03T15:48:58.716+0000] {logging_mixin.py:190} INFO - each result id 921759
+[2024-12-03T15:48:58.717+0000] {logging_mixin.py:190} INFO - each result id 921769
+[2024-12-03T15:48:58.718+0000] {logging_mixin.py:190} INFO - each result id 921781
+[2024-12-03T15:48:58.718+0000] {logging_mixin.py:190} INFO - each result id 921786
+[2024-12-03T15:48:59.838+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:48:59.839+0000] {logging_mixin.py:190} INFO - each result id 921787
+[2024-12-03T15:48:59.839+0000] {logging_mixin.py:190} INFO - each result id 921788
+[2024-12-03T15:48:59.840+0000] {logging_mixin.py:190} INFO - each result id 921789
+[2024-12-03T15:48:59.840+0000] {logging_mixin.py:190} INFO - each result id 921790
+[2024-12-03T15:48:59.841+0000] {logging_mixin.py:190} INFO - each result id 921791
+[2024-12-03T15:49:01.412+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:01.413+0000] {logging_mixin.py:190} INFO - each result id 921792
+[2024-12-03T15:49:01.413+0000] {logging_mixin.py:190} INFO - each result id 921793
+[2024-12-03T15:49:01.413+0000] {logging_mixin.py:190} INFO - each result id 921794
+[2024-12-03T15:49:01.413+0000] {logging_mixin.py:190} INFO - each result id 921796
+[2024-12-03T15:49:01.414+0000] {logging_mixin.py:190} INFO - each result id 921798
+[2024-12-03T15:49:03.897+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:03.898+0000] {logging_mixin.py:190} INFO - each result id 921802
+[2024-12-03T15:49:03.899+0000] {logging_mixin.py:190} INFO - each result id 921804
+[2024-12-03T15:49:03.900+0000] {logging_mixin.py:190} INFO - each result id 921805
+[2024-12-03T15:49:03.901+0000] {logging_mixin.py:190} INFO - each result id 921806
+[2024-12-03T15:49:03.902+0000] {logging_mixin.py:190} INFO - each result id 921807
+[2024-12-03T15:49:04.893+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:04.894+0000] {logging_mixin.py:190} INFO - each result id 921810
+[2024-12-03T15:49:04.894+0000] {logging_mixin.py:190} INFO - each result id 921812
+[2024-12-03T15:49:04.894+0000] {logging_mixin.py:190} INFO - each result id 921813
+[2024-12-03T15:49:04.895+0000] {logging_mixin.py:190} INFO - each result id 921815
+[2024-12-03T15:49:04.895+0000] {logging_mixin.py:190} INFO - each result id 921817
+[2024-12-03T15:49:05.971+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:05.972+0000] {logging_mixin.py:190} INFO - each result id 921818
+[2024-12-03T15:49:05.972+0000] {logging_mixin.py:190} INFO - each result id 921820
+[2024-12-03T15:49:05.972+0000] {logging_mixin.py:190} INFO - each result id 921822
+[2024-12-03T15:49:05.972+0000] {logging_mixin.py:190} INFO - each result id 921823
+[2024-12-03T15:49:05.972+0000] {logging_mixin.py:190} INFO - each result id 921825
+[2024-12-03T15:49:07.204+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:07.205+0000] {logging_mixin.py:190} INFO - each result id 921826
+[2024-12-03T15:49:07.205+0000] {logging_mixin.py:190} INFO - each result id 921827
+[2024-12-03T15:49:07.205+0000] {logging_mixin.py:190} INFO - each result id 921829
+[2024-12-03T15:49:07.205+0000] {logging_mixin.py:190} INFO - each result id 921830
+[2024-12-03T15:49:07.205+0000] {logging_mixin.py:190} INFO - each result id 921831
+[2024-12-03T15:49:08.180+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:08.180+0000] {logging_mixin.py:190} INFO - each result id 921832
+[2024-12-03T15:49:08.181+0000] {logging_mixin.py:190} INFO - each result id 921833
+[2024-12-03T15:49:08.181+0000] {logging_mixin.py:190} INFO - each result id 921835
+[2024-12-03T15:49:08.181+0000] {logging_mixin.py:190} INFO - each result id 921839
+[2024-12-03T15:49:08.181+0000] {logging_mixin.py:190} INFO - each result id 921842
+[2024-12-03T15:49:09.262+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:09.262+0000] {logging_mixin.py:190} INFO - each result id 921844
+[2024-12-03T15:49:09.263+0000] {logging_mixin.py:190} INFO - each result id 921851
+[2024-12-03T15:49:09.263+0000] {logging_mixin.py:190} INFO - each result id 921872
+[2024-12-03T15:49:09.263+0000] {logging_mixin.py:190} INFO - each result id 921887
+[2024-12-03T15:49:09.263+0000] {logging_mixin.py:190} INFO - each result id 926829
+[2024-12-03T15:49:10.504+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:10.504+0000] {logging_mixin.py:190} INFO - each result id 926830
+[2024-12-03T15:49:10.504+0000] {logging_mixin.py:190} INFO - each result id 926831
+[2024-12-03T15:49:10.504+0000] {logging_mixin.py:190} INFO - each result id 926832
+[2024-12-03T15:49:10.505+0000] {logging_mixin.py:190} INFO - each result id 926841
+[2024-12-03T15:49:10.505+0000] {logging_mixin.py:190} INFO - each result id 926852
+[2024-12-03T15:49:11.773+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:11.774+0000] {logging_mixin.py:190} INFO - each result id 926854
+[2024-12-03T15:49:11.774+0000] {logging_mixin.py:190} INFO - each result id 926863
+[2024-12-03T15:49:11.774+0000] {logging_mixin.py:190} INFO - each result id 926869
+[2024-12-03T15:49:11.774+0000] {logging_mixin.py:190} INFO - each result id 926870
+[2024-12-03T15:49:11.774+0000] {logging_mixin.py:190} INFO - each result id 926874
+[2024-12-03T15:49:12.908+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:12.909+0000] {logging_mixin.py:190} INFO - each result id 926869
+[2024-12-03T15:49:12.910+0000] {logging_mixin.py:190} INFO - each result id 926870
+[2024-12-03T15:49:12.910+0000] {logging_mixin.py:190} INFO - each result id 926874
+[2024-12-03T15:49:12.911+0000] {logging_mixin.py:190} INFO - each result id 926875
+[2024-12-03T15:49:12.912+0000] {logging_mixin.py:190} INFO - each result id 926883
+[2024-12-03T15:49:13.871+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:13.872+0000] {logging_mixin.py:190} INFO - each result id 926902
+[2024-12-03T15:49:13.873+0000] {logging_mixin.py:190} INFO - each result id 926924
+[2024-12-03T15:49:13.874+0000] {logging_mixin.py:190} INFO - each result id 926936
+[2024-12-03T15:49:13.875+0000] {logging_mixin.py:190} INFO - each result id 926937
+[2024-12-03T15:49:13.876+0000] {logging_mixin.py:190} INFO - each result id 926947
+[2024-12-03T15:49:14.947+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:14.948+0000] {logging_mixin.py:190} INFO - each result id 926949
+[2024-12-03T15:49:14.948+0000] {logging_mixin.py:190} INFO - each result id 926950
+[2024-12-03T15:49:14.948+0000] {logging_mixin.py:190} INFO - each result id 926957
+[2024-12-03T15:49:14.949+0000] {logging_mixin.py:190} INFO - each result id 926958
+[2024-12-03T15:49:14.949+0000] {logging_mixin.py:190} INFO - each result id 926960
+[2024-12-03T15:49:16.070+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:16.071+0000] {logging_mixin.py:190} INFO - each result id 926965
+[2024-12-03T15:49:16.072+0000] {logging_mixin.py:190} INFO - each result id 926966
+[2024-12-03T15:49:16.073+0000] {logging_mixin.py:190} INFO - each result id 926967
+[2024-12-03T15:49:16.074+0000] {logging_mixin.py:190} INFO - each result id 926980
+[2024-12-03T15:49:16.075+0000] {logging_mixin.py:190} INFO - each result id 926994
+[2024-12-03T15:49:17.447+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:17.447+0000] {logging_mixin.py:190} INFO - each result id 926995
+[2024-12-03T15:49:17.448+0000] {logging_mixin.py:190} INFO - each result id 927001
+[2024-12-03T15:49:17.448+0000] {logging_mixin.py:190} INFO - each result id 927002
+[2024-12-03T15:49:17.449+0000] {logging_mixin.py:190} INFO - each result id 927003
+[2024-12-03T15:49:17.449+0000] {logging_mixin.py:190} INFO - each result id 927007
+[2024-12-03T15:49:20.829+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:20.829+0000] {logging_mixin.py:190} INFO - each result id 927003
+[2024-12-03T15:49:20.830+0000] {logging_mixin.py:190} INFO - each result id 927007
+[2024-12-03T15:49:20.830+0000] {logging_mixin.py:190} INFO - each result id 927016
+[2024-12-03T15:49:20.831+0000] {logging_mixin.py:190} INFO - each result id 927018
+[2024-12-03T15:49:20.831+0000] {logging_mixin.py:190} INFO - each result id 927020
+[2024-12-03T15:49:21.905+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:21.906+0000] {logging_mixin.py:190} INFO - each result id 927018
+[2024-12-03T15:49:21.907+0000] {logging_mixin.py:190} INFO - each result id 927020
+[2024-12-03T15:49:21.908+0000] {logging_mixin.py:190} INFO - each result id 927021
+[2024-12-03T15:49:21.908+0000] {logging_mixin.py:190} INFO - each result id 927028
+[2024-12-03T15:49:21.909+0000] {logging_mixin.py:190} INFO - each result id 927029
+[2024-12-03T15:49:22.874+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:22.874+0000] {logging_mixin.py:190} INFO - each result id 927030
+[2024-12-03T15:49:22.874+0000] {logging_mixin.py:190} INFO - each result id 927033
+[2024-12-03T15:49:22.874+0000] {logging_mixin.py:190} INFO - each result id 927038
+[2024-12-03T15:49:22.875+0000] {logging_mixin.py:190} INFO - each result id 927040
+[2024-12-03T15:49:22.875+0000] {logging_mixin.py:190} INFO - each result id 927043
+[2024-12-03T15:49:24.101+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:24.102+0000] {logging_mixin.py:190} INFO - each result id 927043
+[2024-12-03T15:49:24.102+0000] {logging_mixin.py:190} INFO - each result id 927045
+[2024-12-03T15:49:24.102+0000] {logging_mixin.py:190} INFO - each result id 927053
+[2024-12-03T15:49:24.103+0000] {logging_mixin.py:190} INFO - each result id 927061
+[2024-12-03T15:49:24.103+0000] {logging_mixin.py:190} INFO - each result id 927065
+[2024-12-03T15:49:25.130+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:25.130+0000] {logging_mixin.py:190} INFO - each result id 927061
+[2024-12-03T15:49:25.131+0000] {logging_mixin.py:190} INFO - each result id 927065
+[2024-12-03T15:49:25.131+0000] {logging_mixin.py:190} INFO - each result id 927066
+[2024-12-03T15:49:25.131+0000] {logging_mixin.py:190} INFO - each result id 927069
+[2024-12-03T15:49:25.131+0000] {logging_mixin.py:190} INFO - each result id 927070
+[2024-12-03T15:49:26.256+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:26.257+0000] {logging_mixin.py:190} INFO - each result id 927070
+[2024-12-03T15:49:26.258+0000] {logging_mixin.py:190} INFO - each result id 927079
+[2024-12-03T15:49:26.258+0000] {logging_mixin.py:190} INFO - each result id 927086
+[2024-12-03T15:49:26.259+0000] {logging_mixin.py:190} INFO - each result id 927088
+[2024-12-03T15:49:26.260+0000] {logging_mixin.py:190} INFO - each result id 927089
+[2024-12-03T15:49:27.277+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:27.277+0000] {logging_mixin.py:190} INFO - each result id 927090
+[2024-12-03T15:49:27.277+0000] {logging_mixin.py:190} INFO - each result id 927091
+[2024-12-03T15:49:27.277+0000] {logging_mixin.py:190} INFO - each result id 927095
+[2024-12-03T15:49:27.278+0000] {logging_mixin.py:190} INFO - each result id 927099
+[2024-12-03T15:49:27.278+0000] {logging_mixin.py:190} INFO - each result id 927115
+[2024-12-03T15:49:28.616+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:28.616+0000] {logging_mixin.py:190} INFO - each result id 927493
+[2024-12-03T15:49:28.616+0000] {logging_mixin.py:190} INFO - each result id 929214
+[2024-12-03T15:49:28.616+0000] {logging_mixin.py:190} INFO - each result id 929221
+[2024-12-03T15:49:28.617+0000] {logging_mixin.py:190} INFO - each result id 940154
+[2024-12-03T15:49:28.617+0000] {logging_mixin.py:190} INFO - each result id 940156
+[2024-12-03T15:49:29.952+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:29.952+0000] {logging_mixin.py:190} INFO - each result id 940160
+[2024-12-03T15:49:29.952+0000] {logging_mixin.py:190} INFO - each result id 940163
+[2024-12-03T15:49:29.953+0000] {logging_mixin.py:190} INFO - each result id 940170
+[2024-12-03T15:49:29.953+0000] {logging_mixin.py:190} INFO - each result id 940173
+[2024-12-03T15:49:29.953+0000] {logging_mixin.py:190} INFO - each result id 940174
+[2024-12-03T15:49:33.820+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:33.820+0000] {logging_mixin.py:190} INFO - each result id 940179
+[2024-12-03T15:49:33.820+0000] {logging_mixin.py:190} INFO - each result id 940187
+[2024-12-03T15:49:33.820+0000] {logging_mixin.py:190} INFO - each result id 940190
+[2024-12-03T15:49:33.821+0000] {logging_mixin.py:190} INFO - each result id 940193
+[2024-12-03T15:49:33.821+0000] {logging_mixin.py:190} INFO - each result id 940201
+[2024-12-03T15:49:35.377+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:35.378+0000] {logging_mixin.py:190} INFO - each result id 940204
+[2024-12-03T15:49:35.378+0000] {logging_mixin.py:190} INFO - each result id 940209
+[2024-12-03T15:49:35.378+0000] {logging_mixin.py:190} INFO - each result id 940228
+[2024-12-03T15:49:35.379+0000] {logging_mixin.py:190} INFO - each result id 940231
+[2024-12-03T15:49:35.379+0000] {logging_mixin.py:190} INFO - each result id 940237
+[2024-12-03T15:49:38.359+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:38.359+0000] {logging_mixin.py:190} INFO - each result id 940242
+[2024-12-03T15:49:38.360+0000] {logging_mixin.py:190} INFO - each result id 940255
+[2024-12-03T15:49:38.360+0000] {logging_mixin.py:190} INFO - each result id 940260
+[2024-12-03T15:49:38.361+0000] {logging_mixin.py:190} INFO - each result id 940267
+[2024-12-03T15:49:38.361+0000] {logging_mixin.py:190} INFO - each result id 940270
+[2024-12-03T15:49:39.779+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:39.779+0000] {logging_mixin.py:190} INFO - each result id 940274
+[2024-12-03T15:49:39.780+0000] {logging_mixin.py:190} INFO - each result id 940278
+[2024-12-03T15:49:39.780+0000] {logging_mixin.py:190} INFO - each result id 941319
+[2024-12-03T15:49:39.780+0000] {logging_mixin.py:190} INFO - each result id 941341
+[2024-12-03T15:49:39.780+0000] {logging_mixin.py:190} INFO - each result id 947973
+[2024-12-03T15:49:41.420+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:41.420+0000] {logging_mixin.py:190} INFO - each result id 950723
+[2024-12-03T15:49:41.420+0000] {logging_mixin.py:190} INFO - each result id 950773
+[2024-12-03T15:49:41.421+0000] {logging_mixin.py:190} INFO - each result id 951311
+[2024-12-03T15:49:41.421+0000] {logging_mixin.py:190} INFO - each result id 952881
+[2024-12-03T15:49:41.421+0000] {logging_mixin.py:190} INFO - each result id 953372
+[2024-12-03T15:49:42.860+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:42.861+0000] {logging_mixin.py:190} INFO - each result id 953654
+[2024-12-03T15:49:42.862+0000] {logging_mixin.py:190} INFO - each result id 955340
+[2024-12-03T15:49:42.862+0000] {logging_mixin.py:190} INFO - each result id 956421
+[2024-12-03T15:49:42.863+0000] {logging_mixin.py:190} INFO - each result id 957263
+[2024-12-03T15:49:42.864+0000] {logging_mixin.py:190} INFO - each result id 957266
+[2024-12-03T15:49:45.408+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:45.409+0000] {logging_mixin.py:190} INFO - each result id 958662
+[2024-12-03T15:49:45.409+0000] {logging_mixin.py:190} INFO - each result id 958673
+[2024-12-03T15:49:45.409+0000] {logging_mixin.py:190} INFO - each result id 960964
+[2024-12-03T15:49:45.409+0000] {logging_mixin.py:190} INFO - each result id 960965
+[2024-12-03T15:49:45.409+0000] {logging_mixin.py:190} INFO - each result id 960967
+[2024-12-03T15:49:46.971+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:46.971+0000] {logging_mixin.py:190} INFO - each result id 961434
+[2024-12-03T15:49:46.971+0000] {logging_mixin.py:190} INFO - each result id 961864
+[2024-12-03T15:49:46.972+0000] {logging_mixin.py:190} INFO - each result id 961865
+[2024-12-03T15:49:46.972+0000] {logging_mixin.py:190} INFO - each result id 961938
+[2024-12-03T15:49:46.972+0000] {logging_mixin.py:190} INFO - each result id 964586
+[2024-12-03T15:49:48.380+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:48.380+0000] {logging_mixin.py:190} INFO - each result id 965539
+[2024-12-03T15:49:48.381+0000] {logging_mixin.py:190} INFO - each result id 970294
+[2024-12-03T15:49:48.381+0000] {logging_mixin.py:190} INFO - each result id 971115
+[2024-12-03T15:49:48.381+0000] {logging_mixin.py:190} INFO - each result id 971626
+[2024-12-03T15:49:48.382+0000] {logging_mixin.py:190} INFO - each result id 971627
+[2024-12-03T15:49:49.831+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:49.832+0000] {logging_mixin.py:190} INFO - each result id 971632
+[2024-12-03T15:49:49.833+0000] {logging_mixin.py:190} INFO - each result id 971633
+[2024-12-03T15:49:49.833+0000] {logging_mixin.py:190} INFO - each result id 971635
+[2024-12-03T15:49:49.834+0000] {logging_mixin.py:190} INFO - each result id 972855
+[2024-12-03T15:49:49.834+0000] {logging_mixin.py:190} INFO - each result id 972911
+[2024-12-03T15:49:51.468+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:51.469+0000] {logging_mixin.py:190} INFO - each result id 972912
+[2024-12-03T15:49:51.469+0000] {logging_mixin.py:190} INFO - each result id 974109
+[2024-12-03T15:49:51.469+0000] {logging_mixin.py:190} INFO - each result id 974198
+[2024-12-03T15:49:51.469+0000] {logging_mixin.py:190} INFO - each result id 974258
+[2024-12-03T15:49:51.470+0000] {logging_mixin.py:190} INFO - each result id 978995
+[2024-12-03T15:49:53.014+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:53.015+0000] {logging_mixin.py:190} INFO - each result id 979007
+[2024-12-03T15:49:53.015+0000] {logging_mixin.py:190} INFO - each result id 982103
+[2024-12-03T15:49:53.016+0000] {logging_mixin.py:190} INFO - each result id 983687
+[2024-12-03T15:49:53.017+0000] {logging_mixin.py:190} INFO - each result id 983688
+[2024-12-03T15:49:53.017+0000] {logging_mixin.py:190} INFO - each result id 983703
+[2024-12-03T15:49:54.728+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:54.729+0000] {logging_mixin.py:190} INFO - each result id 983707
+[2024-12-03T15:49:54.729+0000] {logging_mixin.py:190} INFO - each result id 988007
+[2024-12-03T15:49:54.729+0000] {logging_mixin.py:190} INFO - each result id 990371
+[2024-12-03T15:49:54.729+0000] {logging_mixin.py:190} INFO - each result id 990373
+[2024-12-03T15:49:54.730+0000] {logging_mixin.py:190} INFO - each result id 1005344
+[2024-12-03T15:49:56.285+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:56.286+0000] {logging_mixin.py:190} INFO - each result id 1012843
+[2024-12-03T15:49:56.287+0000] {logging_mixin.py:190} INFO - each result id 1012883
+[2024-12-03T15:49:56.288+0000] {logging_mixin.py:190} INFO - each result id 1013748
+[2024-12-03T15:49:56.288+0000] {logging_mixin.py:190} INFO - each result id 1013942
+[2024-12-03T15:49:56.289+0000] {logging_mixin.py:190} INFO - each result id 1014164
+[2024-12-03T15:49:57.807+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:57.808+0000] {logging_mixin.py:190} INFO - each result id 1014333
+[2024-12-03T15:49:57.808+0000] {logging_mixin.py:190} INFO - each result id 1014812
+[2024-12-03T15:49:57.808+0000] {logging_mixin.py:190} INFO - each result id 1014814
+[2024-12-03T15:49:57.809+0000] {logging_mixin.py:190} INFO - each result id 1014815
+[2024-12-03T15:49:57.809+0000] {logging_mixin.py:190} INFO - each result id 1014816
+[2024-12-03T15:49:59.321+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:49:59.321+0000] {logging_mixin.py:190} INFO - each result id 1014886
+[2024-12-03T15:49:59.322+0000] {logging_mixin.py:190} INFO - each result id 1015385
+[2024-12-03T15:49:59.322+0000] {logging_mixin.py:190} INFO - each result id 1015386
+[2024-12-03T15:49:59.322+0000] {logging_mixin.py:190} INFO - each result id 1015634
+[2024-12-03T15:49:59.323+0000] {logging_mixin.py:190} INFO - each result id 1015635
+[2024-12-03T15:50:02.508+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:02.508+0000] {logging_mixin.py:190} INFO - each result id 1016187
+[2024-12-03T15:50:02.508+0000] {logging_mixin.py:190} INFO - each result id 1016190
+[2024-12-03T15:50:02.509+0000] {logging_mixin.py:190} INFO - each result id 1016760
+[2024-12-03T15:50:02.509+0000] {logging_mixin.py:190} INFO - each result id 1016761
+[2024-12-03T15:50:02.509+0000] {logging_mixin.py:190} INFO - each result id 1026427
+[2024-12-03T15:50:03.947+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:03.947+0000] {logging_mixin.py:190} INFO - each result id 1033022
+[2024-12-03T15:50:03.948+0000] {logging_mixin.py:190} INFO - each result id 1033172
+[2024-12-03T15:50:03.948+0000] {logging_mixin.py:190} INFO - each result id 1033176
+[2024-12-03T15:50:03.948+0000] {logging_mixin.py:190} INFO - each result id 1035808
+[2024-12-03T15:50:03.949+0000] {logging_mixin.py:190} INFO - each result id 1035809
+[2024-12-03T15:50:05.716+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:05.716+0000] {logging_mixin.py:190} INFO - each result id 1035810
+[2024-12-03T15:50:05.717+0000] {logging_mixin.py:190} INFO - each result id 1035815
+[2024-12-03T15:50:05.717+0000] {logging_mixin.py:190} INFO - each result id 1046520
+[2024-12-03T15:50:05.717+0000] {logging_mixin.py:190} INFO - each result id 1049801
+[2024-12-03T15:50:05.718+0000] {logging_mixin.py:190} INFO - each result id 1052763
+[2024-12-03T15:50:07.057+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:07.057+0000] {logging_mixin.py:190} INFO - each result id 1054445
+[2024-12-03T15:50:07.058+0000] {logging_mixin.py:190} INFO - each result id 1054672
+[2024-12-03T15:50:07.058+0000] {logging_mixin.py:190} INFO - each result id 1055199
+[2024-12-03T15:50:07.058+0000] {logging_mixin.py:190} INFO - each result id 1055637
+[2024-12-03T15:50:07.058+0000] {logging_mixin.py:190} INFO - each result id 1064696
+[2024-12-03T15:50:09.593+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:09.594+0000] {logging_mixin.py:190} INFO - each result id 1064703
+[2024-12-03T15:50:09.594+0000] {logging_mixin.py:190} INFO - each result id 1066556
+[2024-12-03T15:50:09.594+0000] {logging_mixin.py:190} INFO - each result id 1066557
+[2024-12-03T15:50:09.594+0000] {logging_mixin.py:190} INFO - each result id 1067160
+[2024-12-03T15:50:09.594+0000] {logging_mixin.py:190} INFO - each result id 1068176
+[2024-12-03T15:50:11.044+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:11.045+0000] {logging_mixin.py:190} INFO - each result id 1068578
+[2024-12-03T15:50:11.045+0000] {logging_mixin.py:190} INFO - each result id 1068590
+[2024-12-03T15:50:11.046+0000] {logging_mixin.py:190} INFO - each result id 1068625
+[2024-12-03T15:50:11.046+0000] {logging_mixin.py:190} INFO - each result id 1068781
+[2024-12-03T15:50:11.046+0000] {logging_mixin.py:190} INFO - each result id 1068821
+[2024-12-03T15:50:12.448+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:12.448+0000] {logging_mixin.py:190} INFO - each result id 1069390
+[2024-12-03T15:50:12.448+0000] {logging_mixin.py:190} INFO - each result id 1069888
+[2024-12-03T15:50:12.449+0000] {logging_mixin.py:190} INFO - each result id 1069889
+[2024-12-03T15:50:12.449+0000] {logging_mixin.py:190} INFO - each result id 1069890
+[2024-12-03T15:50:12.449+0000] {logging_mixin.py:190} INFO - each result id 1070798
+[2024-12-03T15:50:13.980+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:13.980+0000] {logging_mixin.py:190} INFO - each result id 1071204
+[2024-12-03T15:50:13.981+0000] {logging_mixin.py:190} INFO - each result id 1071301
+[2024-12-03T15:50:13.981+0000] {logging_mixin.py:190} INFO - each result id 1071344
+[2024-12-03T15:50:13.981+0000] {logging_mixin.py:190} INFO - each result id 1078619
+[2024-12-03T15:50:13.981+0000] {logging_mixin.py:190} INFO - each result id 1078723
+[2024-12-03T15:50:15.319+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:15.319+0000] {logging_mixin.py:190} INFO - each result id 1078725
+[2024-12-03T15:50:15.319+0000] {logging_mixin.py:190} INFO - each result id 1078735
+[2024-12-03T15:50:15.320+0000] {logging_mixin.py:190} INFO - each result id 1078873
+[2024-12-03T15:50:15.320+0000] {logging_mixin.py:190} INFO - each result id 1078925
+[2024-12-03T15:50:15.320+0000] {logging_mixin.py:190} INFO - each result id 1079273
+[2024-12-03T15:50:16.758+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:16.759+0000] {logging_mixin.py:190} INFO - each result id 1079788
+[2024-12-03T15:50:16.760+0000] {logging_mixin.py:190} INFO - each result id 1079789
+[2024-12-03T15:50:16.760+0000] {logging_mixin.py:190} INFO - each result id 1079790
+[2024-12-03T15:50:16.761+0000] {logging_mixin.py:190} INFO - each result id 1079948
+[2024-12-03T15:50:16.762+0000] {logging_mixin.py:190} INFO - each result id 1083005
+[2024-12-03T15:50:18.178+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:18.178+0000] {logging_mixin.py:190} INFO - each result id 1086240
+[2024-12-03T15:50:18.178+0000] {logging_mixin.py:190} INFO - each result id 1092002
+[2024-12-03T15:50:18.178+0000] {logging_mixin.py:190} INFO - each result id 1103622
+[2024-12-03T15:50:18.179+0000] {logging_mixin.py:190} INFO - each result id 1108485
+[2024-12-03T15:50:18.179+0000] {logging_mixin.py:190} INFO - each result id 1108486
+[2024-12-03T15:50:19.608+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:19.609+0000] {logging_mixin.py:190} INFO - each result id 1108487
+[2024-12-03T15:50:19.609+0000] {logging_mixin.py:190} INFO - each result id 1109011
+[2024-12-03T15:50:19.609+0000] {logging_mixin.py:190} INFO - each result id 1116304
+[2024-12-03T15:50:19.610+0000] {logging_mixin.py:190} INFO - each result id 1116305
+[2024-12-03T15:50:19.610+0000] {logging_mixin.py:190} INFO - each result id 1120962
+[2024-12-03T15:50:21.254+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:21.254+0000] {logging_mixin.py:190} INFO - each result id 1121695
+[2024-12-03T15:50:21.254+0000] {logging_mixin.py:190} INFO - each result id 1122856
+[2024-12-03T15:50:21.254+0000] {logging_mixin.py:190} INFO - each result id 1133939
+[2024-12-03T15:50:21.255+0000] {logging_mixin.py:190} INFO - each result id 1134771
+[2024-12-03T15:50:21.255+0000] {logging_mixin.py:190} INFO - each result id 1134773
+[2024-12-03T15:50:22.780+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:22.780+0000] {logging_mixin.py:190} INFO - each result id 1135416
+[2024-12-03T15:50:22.781+0000] {logging_mixin.py:190} INFO - each result id 1136201
+[2024-12-03T15:50:22.781+0000] {logging_mixin.py:190} INFO - each result id 1140719
+[2024-12-03T15:50:22.781+0000] {logging_mixin.py:190} INFO - each result id 1140723
+[2024-12-03T15:50:22.781+0000] {logging_mixin.py:190} INFO - each result id 1140869
+[2024-12-03T15:50:24.220+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:24.221+0000] {logging_mixin.py:190} INFO - each result id 1141936
+[2024-12-03T15:50:24.221+0000] {logging_mixin.py:190} INFO - each result id 1144832
+[2024-12-03T15:50:24.221+0000] {logging_mixin.py:190} INFO - each result id 1147777
+[2024-12-03T15:50:24.221+0000] {logging_mixin.py:190} INFO - each result id 1148962
+[2024-12-03T15:50:24.222+0000] {logging_mixin.py:190} INFO - each result id 1148970
+[2024-12-03T15:50:25.337+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:25.337+0000] {logging_mixin.py:190} INFO - each result id 1148982
+[2024-12-03T15:50:25.337+0000] {logging_mixin.py:190} INFO - each result id 1148984
+[2024-12-03T15:50:25.337+0000] {logging_mixin.py:190} INFO - each result id 1148986
+[2024-12-03T15:50:25.338+0000] {logging_mixin.py:190} INFO - each result id 1148999
+[2024-12-03T15:50:25.338+0000] {logging_mixin.py:190} INFO - each result id 1149034
+[2024-12-03T15:50:26.468+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:26.468+0000] {logging_mixin.py:190} INFO - each result id 1149049
+[2024-12-03T15:50:26.468+0000] {logging_mixin.py:190} INFO - each result id 1149055
+[2024-12-03T15:50:26.469+0000] {logging_mixin.py:190} INFO - each result id 1149060
+[2024-12-03T15:50:26.469+0000] {logging_mixin.py:190} INFO - each result id 1149070
+[2024-12-03T15:50:26.469+0000] {logging_mixin.py:190} INFO - each result id 1149078
+[2024-12-03T15:50:27.694+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:27.695+0000] {logging_mixin.py:190} INFO - each result id 1149079
+[2024-12-03T15:50:27.695+0000] {logging_mixin.py:190} INFO - each result id 1149080
+[2024-12-03T15:50:27.695+0000] {logging_mixin.py:190} INFO - each result id 1149082
+[2024-12-03T15:50:27.696+0000] {logging_mixin.py:190} INFO - each result id 1149087
+[2024-12-03T15:50:27.696+0000] {logging_mixin.py:190} INFO - each result id 1149089
+[2024-12-03T15:50:29.024+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:29.025+0000] {logging_mixin.py:190} INFO - each result id 1151841
+[2024-12-03T15:50:29.025+0000] {logging_mixin.py:190} INFO - each result id 1151857
+[2024-12-03T15:50:29.025+0000] {logging_mixin.py:190} INFO - each result id 1152388
+[2024-12-03T15:50:29.025+0000] {logging_mixin.py:190} INFO - each result id 1156689
+[2024-12-03T15:50:29.026+0000] {logging_mixin.py:190} INFO - each result id 1160023
+[2024-12-03T15:50:29.976+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:29.977+0000] {logging_mixin.py:190} INFO - each result id 1160082
+[2024-12-03T15:50:29.977+0000] {logging_mixin.py:190} INFO - each result id 1160199
+[2024-12-03T15:50:29.978+0000] {logging_mixin.py:190} INFO - each result id 1170002
+[2024-12-03T15:50:29.978+0000] {logging_mixin.py:190} INFO - each result id 1170011
+[2024-12-03T15:50:29.978+0000] {logging_mixin.py:190} INFO - each result id 1170072
+[2024-12-03T15:50:31.174+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:31.174+0000] {logging_mixin.py:190} INFO - each result id 1170078
+[2024-12-03T15:50:31.175+0000] {logging_mixin.py:190} INFO - each result id 1170133
+[2024-12-03T15:50:31.175+0000] {logging_mixin.py:190} INFO - each result id 1170152
+[2024-12-03T15:50:31.175+0000] {logging_mixin.py:190} INFO - each result id 1170153
+[2024-12-03T15:50:31.175+0000] {logging_mixin.py:190} INFO - each result id 1173903
+[2024-12-03T15:50:34.778+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:34.779+0000] {logging_mixin.py:190} INFO - each result id 1173913
+[2024-12-03T15:50:34.779+0000] {logging_mixin.py:190} INFO - each result id 1173932
+[2024-12-03T15:50:34.780+0000] {logging_mixin.py:190} INFO - each result id 1175686
+[2024-12-03T15:50:34.780+0000] {logging_mixin.py:190} INFO - each result id 1178977
+[2024-12-03T15:50:34.781+0000] {logging_mixin.py:190} INFO - each result id 1182130
+[2024-12-03T15:50:36.313+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:36.314+0000] {logging_mixin.py:190} INFO - each result id 1185217
+[2024-12-03T15:50:36.315+0000] {logging_mixin.py:190} INFO - each result id 1185263
+[2024-12-03T15:50:36.315+0000] {logging_mixin.py:190} INFO - each result id 1187646
+[2024-12-03T15:50:36.316+0000] {logging_mixin.py:190} INFO - each result id 1189916
+[2024-12-03T15:50:36.316+0000] {logging_mixin.py:190} INFO - each result id 1197025
+[2024-12-03T15:50:38.245+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:38.245+0000] {logging_mixin.py:190} INFO - each result id 1198966
+[2024-12-03T15:50:38.245+0000] {logging_mixin.py:190} INFO - each result id 1200496
+[2024-12-03T15:50:38.246+0000] {logging_mixin.py:190} INFO - each result id 1201790
+[2024-12-03T15:50:38.246+0000] {logging_mixin.py:190} INFO - each result id 1201793
+[2024-12-03T15:50:38.246+0000] {logging_mixin.py:190} INFO - each result id 1201794
+[2024-12-03T15:50:39.789+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:39.790+0000] {logging_mixin.py:190} INFO - each result id 1201795
+[2024-12-03T15:50:39.790+0000] {logging_mixin.py:190} INFO - each result id 1201796
+[2024-12-03T15:50:39.790+0000] {logging_mixin.py:190} INFO - each result id 1227254
+[2024-12-03T15:50:39.790+0000] {logging_mixin.py:190} INFO - each result id 1228213
+[2024-12-03T15:50:39.791+0000] {logging_mixin.py:190} INFO - each result id 1233353
+[2024-12-03T15:50:41.320+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:41.321+0000] {logging_mixin.py:190} INFO - each result id 1233357
+[2024-12-03T15:50:41.321+0000] {logging_mixin.py:190} INFO - each result id 1233362
+[2024-12-03T15:50:41.321+0000] {logging_mixin.py:190} INFO - each result id 1233947
+[2024-12-03T15:50:41.321+0000] {logging_mixin.py:190} INFO - each result id 1233986
+[2024-12-03T15:50:41.322+0000] {logging_mixin.py:190} INFO - each result id 1250564
+[2024-12-03T15:50:42.873+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:42.874+0000] {logging_mixin.py:190} INFO - each result id 1253443
+[2024-12-03T15:50:42.874+0000] {logging_mixin.py:190} INFO - each result id 1271044
+[2024-12-03T15:50:42.875+0000] {logging_mixin.py:190} INFO - each result id 1281143
+[2024-12-03T15:50:42.875+0000] {logging_mixin.py:190} INFO - each result id 1282514
+[2024-12-03T15:50:42.876+0000] {logging_mixin.py:190} INFO - each result id 1288946
+[2024-12-03T15:50:44.805+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:44.805+0000] {logging_mixin.py:190} INFO - each result id 1289042
+[2024-12-03T15:50:44.806+0000] {logging_mixin.py:190} INFO - each result id 1290042
+[2024-12-03T15:50:44.806+0000] {logging_mixin.py:190} INFO - each result id 1290075
+[2024-12-03T15:50:44.806+0000] {logging_mixin.py:190} INFO - each result id 1294261
+[2024-12-03T15:50:44.806+0000] {logging_mixin.py:190} INFO - each result id 1296313
+[2024-12-03T15:50:46.342+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:46.343+0000] {logging_mixin.py:190} INFO - each result id 1299305
+[2024-12-03T15:50:46.343+0000] {logging_mixin.py:190} INFO - each result id 1306139
+[2024-12-03T15:50:46.343+0000] {logging_mixin.py:190} INFO - each result id 1310373
+[2024-12-03T15:50:46.343+0000] {logging_mixin.py:190} INFO - each result id 1311365
+[2024-12-03T15:50:46.343+0000] {logging_mixin.py:190} INFO - each result id 1311367
+[2024-12-03T15:50:47.672+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:47.673+0000] {logging_mixin.py:190} INFO - each result id 1311522
+[2024-12-03T15:50:47.673+0000] {logging_mixin.py:190} INFO - each result id 1311616
+[2024-12-03T15:50:47.673+0000] {logging_mixin.py:190} INFO - each result id 1326626
+[2024-12-03T15:50:47.673+0000] {logging_mixin.py:190} INFO - each result id 1326640
+[2024-12-03T15:50:47.674+0000] {logging_mixin.py:190} INFO - each result id 1329952
+[2024-12-03T15:50:49.213+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:49.213+0000] {logging_mixin.py:190} INFO - each result id 1334133
+[2024-12-03T15:50:49.213+0000] {logging_mixin.py:190} INFO - each result id 1336029
+[2024-12-03T15:50:49.214+0000] {logging_mixin.py:190} INFO - each result id 1337544
+[2024-12-03T15:50:49.214+0000] {logging_mixin.py:190} INFO - each result id 1342697
+[2024-12-03T15:50:49.214+0000] {logging_mixin.py:190} INFO - each result id 1345951
+[2024-12-03T15:50:50.739+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:50.739+0000] {logging_mixin.py:190} INFO - each result id 1345951
+[2024-12-03T15:50:50.740+0000] {logging_mixin.py:190} INFO - each result id 1345952
+[2024-12-03T15:50:50.740+0000] {logging_mixin.py:190} INFO - each result id 1351493
+[2024-12-03T15:50:50.740+0000] {logging_mixin.py:190} INFO - each result id 1353269
+[2024-12-03T15:50:50.740+0000] {logging_mixin.py:190} INFO - each result id 1353992
+[2024-12-03T15:50:52.006+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:52.006+0000] {logging_mixin.py:190} INFO - each result id 1358142
+[2024-12-03T15:50:52.007+0000] {logging_mixin.py:190} INFO - each result id 1358147
+[2024-12-03T15:50:52.007+0000] {logging_mixin.py:190} INFO - each result id 1362973
+[2024-12-03T15:50:52.007+0000] {logging_mixin.py:190} INFO - each result id 1366993
+[2024-12-03T15:50:52.008+0000] {logging_mixin.py:190} INFO - each result id 1367368
+[2024-12-03T15:50:53.305+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:53.305+0000] {logging_mixin.py:190} INFO - each result id 1378549
+[2024-12-03T15:50:53.305+0000] {logging_mixin.py:190} INFO - each result id 1381340
+[2024-12-03T15:50:53.306+0000] {logging_mixin.py:190} INFO - each result id 1381346
+[2024-12-03T15:50:53.306+0000] {logging_mixin.py:190} INFO - each result id 1381657
+[2024-12-03T15:50:53.306+0000] {logging_mixin.py:190} INFO - each result id 1381658
+[2024-12-03T15:50:54.741+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:54.741+0000] {logging_mixin.py:190} INFO - each result id 1381954
+[2024-12-03T15:50:54.741+0000] {logging_mixin.py:190} INFO - each result id 1382757
+[2024-12-03T15:50:54.741+0000] {logging_mixin.py:190} INFO - each result id 1396249
+[2024-12-03T15:50:54.742+0000] {logging_mixin.py:190} INFO - each result id 1402201
+[2024-12-03T15:50:54.742+0000] {logging_mixin.py:190} INFO - each result id 1410964
+[2024-12-03T15:50:56.296+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:56.297+0000] {logging_mixin.py:190} INFO - each result id 1411267
+[2024-12-03T15:50:56.297+0000] {logging_mixin.py:190} INFO - each result id 1414236
+[2024-12-03T15:50:56.298+0000] {logging_mixin.py:190} INFO - each result id 1414341
+[2024-12-03T15:50:56.298+0000] {logging_mixin.py:190} INFO - each result id 1415026
+[2024-12-03T15:50:56.299+0000] {logging_mixin.py:190} INFO - each result id 1418378
+[2024-12-03T15:50:57.810+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:57.811+0000] {logging_mixin.py:190} INFO - each result id 1427923
+[2024-12-03T15:50:57.811+0000] {logging_mixin.py:190} INFO - each result id 1439128
+[2024-12-03T15:50:57.811+0000] {logging_mixin.py:190} INFO - each result id 1442379
+[2024-12-03T15:50:57.812+0000] {logging_mixin.py:190} INFO - each result id 1443736
+[2024-12-03T15:50:57.812+0000] {logging_mixin.py:190} INFO - each result id 1443737
+[2024-12-03T15:50:59.460+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:50:59.460+0000] {logging_mixin.py:190} INFO - each result id 1443738
+[2024-12-03T15:50:59.460+0000] {logging_mixin.py:190} INFO - each result id 1444268
+[2024-12-03T15:50:59.461+0000] {logging_mixin.py:190} INFO - each result id 1444653
+[2024-12-03T15:50:59.461+0000] {logging_mixin.py:190} INFO - each result id 1449312
+[2024-12-03T15:50:59.461+0000] {logging_mixin.py:190} INFO - each result id 1454076
+[2024-12-03T15:51:00.995+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:00.996+0000] {logging_mixin.py:190} INFO - each result id 1454119
+[2024-12-03T15:51:00.996+0000] {logging_mixin.py:190} INFO - each result id 1456989
+[2024-12-03T15:51:00.996+0000] {logging_mixin.py:190} INFO - each result id 1457876
+[2024-12-03T15:51:00.996+0000] {logging_mixin.py:190} INFO - each result id 1458324
+[2024-12-03T15:51:00.997+0000] {logging_mixin.py:190} INFO - each result id 1458325
+[2024-12-03T15:51:02.315+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:02.315+0000] {logging_mixin.py:190} INFO - each result id 1458326
+[2024-12-03T15:51:02.316+0000] {logging_mixin.py:190} INFO - each result id 1463710
+[2024-12-03T15:51:02.316+0000] {logging_mixin.py:190} INFO - each result id 1466480
+[2024-12-03T15:51:02.316+0000] {logging_mixin.py:190} INFO - each result id 1466996
+[2024-12-03T15:51:02.316+0000] {logging_mixin.py:190} INFO - each result id 1471661
+[2024-12-03T15:51:03.652+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:03.653+0000] {logging_mixin.py:190} INFO - each result id 1480590
+[2024-12-03T15:51:03.654+0000] {logging_mixin.py:190} INFO - each result id 1487932
+[2024-12-03T15:51:03.654+0000] {logging_mixin.py:190} INFO - each result id 1501525
+[2024-12-03T15:51:03.655+0000] {logging_mixin.py:190} INFO - each result id 1501526
+[2024-12-03T15:51:03.656+0000] {logging_mixin.py:190} INFO - each result id 1502971
+[2024-12-03T15:51:05.077+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:05.077+0000] {logging_mixin.py:190} INFO - each result id 1504844
+[2024-12-03T15:51:05.077+0000] {logging_mixin.py:190} INFO - each result id 1505496
+[2024-12-03T15:51:05.077+0000] {logging_mixin.py:190} INFO - each result id 1506003
+[2024-12-03T15:51:05.078+0000] {logging_mixin.py:190} INFO - each result id 1507513
+[2024-12-03T15:51:05.078+0000] {logging_mixin.py:190} INFO - each result id 1509512
+[2024-12-03T15:51:06.844+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:06.844+0000] {logging_mixin.py:190} INFO - each result id 1510799
+[2024-12-03T15:51:06.845+0000] {logging_mixin.py:190} INFO - each result id 1510886
+[2024-12-03T15:51:06.845+0000] {logging_mixin.py:190} INFO - each result id 1518899
+[2024-12-03T15:51:06.846+0000] {logging_mixin.py:190} INFO - each result id 1519192
+[2024-12-03T15:51:06.846+0000] {logging_mixin.py:190} INFO - each result id 1521975
+[2024-12-03T15:51:08.365+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:08.366+0000] {logging_mixin.py:190} INFO - each result id 1523657
+[2024-12-03T15:51:08.366+0000] {logging_mixin.py:190} INFO - each result id 1526765
+[2024-12-03T15:51:08.367+0000] {logging_mixin.py:190} INFO - each result id 1534229
+[2024-12-03T15:51:08.368+0000] {logging_mixin.py:190} INFO - each result id 1543799
+[2024-12-03T15:51:08.368+0000] {logging_mixin.py:190} INFO - each result id 1546554
+[2024-12-03T15:51:09.790+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:09.790+0000] {logging_mixin.py:190} INFO - each result id 1550734
+[2024-12-03T15:51:09.790+0000] {logging_mixin.py:190} INFO - each result id 1550735
+[2024-12-03T15:51:09.791+0000] {logging_mixin.py:190} INFO - each result id 1550736
+[2024-12-03T15:51:09.791+0000] {logging_mixin.py:190} INFO - each result id 1558171
+[2024-12-03T15:51:09.791+0000] {logging_mixin.py:190} INFO - each result id 1564653
+[2024-12-03T15:51:11.332+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:11.332+0000] {logging_mixin.py:190} INFO - each result id 1566177
+[2024-12-03T15:51:11.332+0000] {logging_mixin.py:190} INFO - each result id 1566767
+[2024-12-03T15:51:11.332+0000] {logging_mixin.py:190} INFO - each result id 1571815
+[2024-12-03T15:51:11.333+0000] {logging_mixin.py:190} INFO - each result id 1579648
+[2024-12-03T15:51:11.333+0000] {logging_mixin.py:190} INFO - each result id 1581877
+[2024-12-03T15:51:12.968+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:12.969+0000] {logging_mixin.py:190} INFO - each result id 1583546
+[2024-12-03T15:51:12.969+0000] {logging_mixin.py:190} INFO - each result id 1591749
+[2024-12-03T15:51:12.969+0000] {logging_mixin.py:190} INFO - each result id 1591750
+[2024-12-03T15:51:12.970+0000] {logging_mixin.py:190} INFO - each result id 1591752
+[2024-12-03T15:51:12.970+0000] {logging_mixin.py:190} INFO - each result id 1591753
+[2024-12-03T15:51:14.498+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:14.499+0000] {logging_mixin.py:190} INFO - each result id 1591754
+[2024-12-03T15:51:14.499+0000] {logging_mixin.py:190} INFO - each result id 1600607
+[2024-12-03T15:51:14.499+0000] {logging_mixin.py:190} INFO - each result id 1601499
+[2024-12-03T15:51:14.500+0000] {logging_mixin.py:190} INFO - each result id 1604069
+[2024-12-03T15:51:14.500+0000] {logging_mixin.py:190} INFO - each result id 1604073
+[2024-12-03T15:51:15.929+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:15.929+0000] {logging_mixin.py:190} INFO - each result id 1610678
+[2024-12-03T15:51:15.930+0000] {logging_mixin.py:190} INFO - each result id 1610726
+[2024-12-03T15:51:15.930+0000] {logging_mixin.py:190} INFO - each result id 1610737
+[2024-12-03T15:51:15.930+0000] {logging_mixin.py:190} INFO - each result id 1610744
+[2024-12-03T15:51:15.930+0000] {logging_mixin.py:190} INFO - each result id 1610835
+[2024-12-03T15:51:17.257+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:17.257+0000] {logging_mixin.py:190} INFO - each result id 1612064
+[2024-12-03T15:51:17.257+0000] {logging_mixin.py:190} INFO - each result id 1612076
+[2024-12-03T15:51:17.258+0000] {logging_mixin.py:190} INFO - each result id 1612094
+[2024-12-03T15:51:17.258+0000] {logging_mixin.py:190} INFO - each result id 1612095
+[2024-12-03T15:51:17.258+0000] {logging_mixin.py:190} INFO - each result id 1612102
+[2024-12-03T15:51:18.891+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:18.892+0000] {logging_mixin.py:190} INFO - each result id 1612798
+[2024-12-03T15:51:18.892+0000] {logging_mixin.py:190} INFO - each result id 1614001
+[2024-12-03T15:51:18.892+0000] {logging_mixin.py:190} INFO - each result id 1616748
+[2024-12-03T15:51:18.892+0000] {logging_mixin.py:190} INFO - each result id 1620248
+[2024-12-03T15:51:18.892+0000] {logging_mixin.py:190} INFO - each result id 1630786
+[2024-12-03T15:51:20.133+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:20.133+0000] {logging_mixin.py:190} INFO - each result id 1633782
+[2024-12-03T15:51:20.134+0000] {logging_mixin.py:190} INFO - each result id 1642408
+[2024-12-03T15:51:20.134+0000] {logging_mixin.py:190} INFO - each result id 1643224
+[2024-12-03T15:51:20.134+0000] {logging_mixin.py:190} INFO - each result id 1643429
+[2024-12-03T15:51:20.134+0000] {logging_mixin.py:190} INFO - each result id 1647312
+[2024-12-03T15:51:21.675+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:21.676+0000] {logging_mixin.py:190} INFO - each result id 1647312
+[2024-12-03T15:51:21.677+0000] {logging_mixin.py:190} INFO - each result id 1653010
+[2024-12-03T15:51:21.678+0000] {logging_mixin.py:190} INFO - each result id 1665813
+[2024-12-03T15:51:21.678+0000] {logging_mixin.py:190} INFO - each result id 1673455
+[2024-12-03T15:51:21.679+0000] {logging_mixin.py:190} INFO - each result id 1677906
+[2024-12-03T15:51:23.322+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:23.324+0000] {logging_mixin.py:190} INFO - each result id 1695004
+[2024-12-03T15:51:23.324+0000] {logging_mixin.py:190} INFO - each result id 1695871
+[2024-12-03T15:51:23.325+0000] {logging_mixin.py:190} INFO - each result id 1705105
+[2024-12-03T15:51:23.325+0000] {logging_mixin.py:190} INFO - each result id 1707430
+[2024-12-03T15:51:23.325+0000] {logging_mixin.py:190} INFO - each result id 1719595
+[2024-12-03T15:51:25.154+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:25.154+0000] {logging_mixin.py:190} INFO - each result id 1720709
+[2024-12-03T15:51:25.154+0000] {logging_mixin.py:190} INFO - each result id 1720755
+[2024-12-03T15:51:25.155+0000] {logging_mixin.py:190} INFO - each result id 1728596
+[2024-12-03T15:51:25.155+0000] {logging_mixin.py:190} INFO - each result id 1728599
+[2024-12-03T15:51:25.155+0000] {logging_mixin.py:190} INFO - each result id 1738494
+[2024-12-03T15:51:26.586+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:26.586+0000] {logging_mixin.py:190} INFO - each result id 1743133
+[2024-12-03T15:51:26.586+0000] {logging_mixin.py:190} INFO - each result id 1752299
+[2024-12-03T15:51:26.586+0000] {logging_mixin.py:190} INFO - each result id 1765712
+[2024-12-03T15:51:26.586+0000] {logging_mixin.py:190} INFO - each result id 1770053
+[2024-12-03T15:51:26.587+0000] {logging_mixin.py:190} INFO - each result id 1775131
+[2024-12-03T15:51:29.243+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:29.243+0000] {logging_mixin.py:190} INFO - each result id 1776079
+[2024-12-03T15:51:29.243+0000] {logging_mixin.py:190} INFO - each result id 1776134
+[2024-12-03T15:51:29.244+0000] {logging_mixin.py:190} INFO - each result id 1776139
+[2024-12-03T15:51:29.244+0000] {logging_mixin.py:190} INFO - each result id 1776172
+[2024-12-03T15:51:29.244+0000] {logging_mixin.py:190} INFO - each result id 1776177
+[2024-12-03T15:51:30.891+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:30.892+0000] {logging_mixin.py:190} INFO - each result id 1776179
+[2024-12-03T15:51:30.892+0000] {logging_mixin.py:190} INFO - each result id 1788132
+[2024-12-03T15:51:30.892+0000] {logging_mixin.py:190} INFO - each result id 1791313
+[2024-12-03T15:51:30.892+0000] {logging_mixin.py:190} INFO - each result id 1794229
+[2024-12-03T15:51:30.893+0000] {logging_mixin.py:190} INFO - each result id 1797471
+[2024-12-03T15:51:32.532+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:32.532+0000] {logging_mixin.py:190} INFO - each result id 1801744
+[2024-12-03T15:51:32.532+0000] {logging_mixin.py:190} INFO - each result id 1802042
+[2024-12-03T15:51:32.533+0000] {logging_mixin.py:190} INFO - each result id 1802046
+[2024-12-03T15:51:32.533+0000] {logging_mixin.py:190} INFO - each result id 1805225
+[2024-12-03T15:51:32.533+0000] {logging_mixin.py:190} INFO - each result id 1812226
+[2024-12-03T15:51:33.982+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:33.983+0000] {logging_mixin.py:190} INFO - each result id 1812320
+[2024-12-03T15:51:33.983+0000] {logging_mixin.py:190} INFO - each result id 1812946
+[2024-12-03T15:51:33.984+0000] {logging_mixin.py:190} INFO - each result id 1819720
+[2024-12-03T15:51:33.984+0000] {logging_mixin.py:190} INFO - each result id 1824670
+[2024-12-03T15:51:33.984+0000] {logging_mixin.py:190} INFO - each result id 1828184
+[2024-12-03T15:51:35.510+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:35.511+0000] {logging_mixin.py:190} INFO - each result id 1828218
+[2024-12-03T15:51:35.511+0000] {logging_mixin.py:190} INFO - each result id 1835290
+[2024-12-03T15:51:35.512+0000] {logging_mixin.py:190} INFO - each result id 1839133
+[2024-12-03T15:51:35.512+0000] {logging_mixin.py:190} INFO - each result id 1839136
+[2024-12-03T15:51:35.513+0000] {logging_mixin.py:190} INFO - each result id 1841179
+[2024-12-03T15:51:37.050+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:37.051+0000] {logging_mixin.py:190} INFO - each result id 1850622
+[2024-12-03T15:51:37.051+0000] {logging_mixin.py:190} INFO - each result id 1853368
+[2024-12-03T15:51:37.052+0000] {logging_mixin.py:190} INFO - each result id 1858526
+[2024-12-03T15:51:37.052+0000] {logging_mixin.py:190} INFO - each result id 1858537
+[2024-12-03T15:51:37.052+0000] {logging_mixin.py:190} INFO - each result id 1858546
+[2024-12-03T15:51:38.253+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:38.254+0000] {logging_mixin.py:190} INFO - each result id 1859942
+[2024-12-03T15:51:38.255+0000] {logging_mixin.py:190} INFO - each result id 1859943
+[2024-12-03T15:51:38.256+0000] {logging_mixin.py:190} INFO - each result id 1859952
+[2024-12-03T15:51:38.256+0000] {logging_mixin.py:190} INFO - each result id 1859954
+[2024-12-03T15:51:38.257+0000] {logging_mixin.py:190} INFO - each result id 1859955
+[2024-12-03T15:51:39.784+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:39.785+0000] {logging_mixin.py:190} INFO - each result id 1859957
+[2024-12-03T15:51:39.785+0000] {logging_mixin.py:190} INFO - each result id 1859960
+[2024-12-03T15:51:39.785+0000] {logging_mixin.py:190} INFO - each result id 1859962
+[2024-12-03T15:51:39.785+0000] {logging_mixin.py:190} INFO - each result id 1859965
+[2024-12-03T15:51:39.786+0000] {logging_mixin.py:190} INFO - each result id 1859968
+[2024-12-03T15:51:41.120+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:41.120+0000] {logging_mixin.py:190} INFO - each result id 1859969
+[2024-12-03T15:51:41.121+0000] {logging_mixin.py:190} INFO - each result id 1859970
+[2024-12-03T15:51:41.121+0000] {logging_mixin.py:190} INFO - each result id 1859973
+[2024-12-03T15:51:41.122+0000] {logging_mixin.py:190} INFO - each result id 1859976
+[2024-12-03T15:51:41.122+0000] {logging_mixin.py:190} INFO - each result id 1859977
+[2024-12-03T15:51:42.991+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:42.992+0000] {logging_mixin.py:190} INFO - each result id 1859978
+[2024-12-03T15:51:42.992+0000] {logging_mixin.py:190} INFO - each result id 1861950
+[2024-12-03T15:51:42.993+0000] {logging_mixin.py:190} INFO - each result id 1868009
+[2024-12-03T15:51:42.993+0000] {logging_mixin.py:190} INFO - each result id 1868010
+[2024-12-03T15:51:42.994+0000] {logging_mixin.py:190} INFO - each result id 1868343
+[2024-12-03T15:51:45.531+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:45.532+0000] {logging_mixin.py:190} INFO - each result id 1871179
+[2024-12-03T15:51:45.532+0000] {logging_mixin.py:190} INFO - each result id 1872606
+[2024-12-03T15:51:45.532+0000] {logging_mixin.py:190} INFO - each result id 1872613
+[2024-12-03T15:51:45.533+0000] {logging_mixin.py:190} INFO - each result id 1872615
+[2024-12-03T15:51:45.533+0000] {logging_mixin.py:190} INFO - each result id 1873146
+[2024-12-03T15:51:46.958+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:46.959+0000] {logging_mixin.py:190} INFO - each result id 1873146
+[2024-12-03T15:51:46.959+0000] {logging_mixin.py:190} INFO - each result id 1878367
+[2024-12-03T15:51:46.959+0000] {logging_mixin.py:190} INFO - each result id 1878368
+[2024-12-03T15:51:46.959+0000] {logging_mixin.py:190} INFO - each result id 1880166
+[2024-12-03T15:51:46.960+0000] {logging_mixin.py:190} INFO - each result id 1882649
+[2024-12-03T15:51:48.457+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:48.458+0000] {logging_mixin.py:190} INFO - each result id 1883117
+[2024-12-03T15:51:48.458+0000] {logging_mixin.py:190} INFO - each result id 1883352
+[2024-12-03T15:51:48.458+0000] {logging_mixin.py:190} INFO - each result id 1884922
+[2024-12-03T15:51:48.458+0000] {logging_mixin.py:190} INFO - each result id 1886662
+[2024-12-03T15:51:48.458+0000] {logging_mixin.py:190} INFO - each result id 1890851
+[2024-12-03T15:51:50.154+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:50.154+0000] {logging_mixin.py:190} INFO - each result id 1891182
+[2024-12-03T15:51:50.154+0000] {logging_mixin.py:190} INFO - each result id 1891263
+[2024-12-03T15:51:50.155+0000] {logging_mixin.py:190} INFO - each result id 1891270
+[2024-12-03T15:51:50.155+0000] {logging_mixin.py:190} INFO - each result id 1891278
+[2024-12-03T15:51:50.155+0000] {logging_mixin.py:190} INFO - each result id 1898685
+[2024-12-03T15:51:51.753+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:51.754+0000] {logging_mixin.py:190} INFO - each result id 1898754
+[2024-12-03T15:51:51.754+0000] {logging_mixin.py:190} INFO - each result id 1900830
+[2024-12-03T15:51:51.755+0000] {logging_mixin.py:190} INFO - each result id 1902385
+[2024-12-03T15:51:51.755+0000] {logging_mixin.py:190} INFO - each result id 1907887
+[2024-12-03T15:51:51.755+0000] {logging_mixin.py:190} INFO - each result id 1909168
+[2024-12-03T15:51:53.217+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:53.218+0000] {logging_mixin.py:190} INFO - each result id 1909752
+[2024-12-03T15:51:53.218+0000] {logging_mixin.py:190} INFO - each result id 1910182
+[2024-12-03T15:51:53.219+0000] {logging_mixin.py:190} INFO - each result id 1911820
+[2024-12-03T15:51:53.219+0000] {logging_mixin.py:190} INFO - each result id 1924134
+[2024-12-03T15:51:53.219+0000] {logging_mixin.py:190} INFO - each result id 1926484
+[2024-12-03T15:51:54.672+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:54.672+0000] {logging_mixin.py:190} INFO - each result id 1937531
+[2024-12-03T15:51:54.672+0000] {logging_mixin.py:190} INFO - each result id 1945319
+[2024-12-03T15:51:54.673+0000] {logging_mixin.py:190} INFO - each result id 1945356
+[2024-12-03T15:51:54.673+0000] {logging_mixin.py:190} INFO - each result id 1946170
+[2024-12-03T15:51:54.673+0000] {logging_mixin.py:190} INFO - each result id 1951000
+[2024-12-03T15:51:56.857+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:56.857+0000] {logging_mixin.py:190} INFO - each result id 1951001
+[2024-12-03T15:51:56.858+0000] {logging_mixin.py:190} INFO - each result id 1951002
+[2024-12-03T15:51:56.858+0000] {logging_mixin.py:190} INFO - each result id 1960800
+[2024-12-03T15:51:56.858+0000] {logging_mixin.py:190} INFO - each result id 1962307
+[2024-12-03T15:51:56.858+0000] {logging_mixin.py:190} INFO - each result id 1968108
+[2024-12-03T15:51:58.417+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:51:58.418+0000] {logging_mixin.py:190} INFO - each result id 1989702
+[2024-12-03T15:51:58.418+0000] {logging_mixin.py:190} INFO - each result id 2005382
+[2024-12-03T15:51:58.419+0000] {logging_mixin.py:190} INFO - each result id 2006058
+[2024-12-03T15:51:58.419+0000] {logging_mixin.py:190} INFO - each result id 2009262
+[2024-12-03T15:51:58.419+0000] {logging_mixin.py:190} INFO - each result id 2009648
+[2024-12-03T15:52:00.182+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:00.184+0000] {logging_mixin.py:190} INFO - each result id 2009652
+[2024-12-03T15:52:00.185+0000] {logging_mixin.py:190} INFO - each result id 2014580
+[2024-12-03T15:52:00.187+0000] {logging_mixin.py:190} INFO - each result id 2053480
+[2024-12-03T15:52:00.187+0000] {logging_mixin.py:190} INFO - each result id 2058422
+[2024-12-03T15:52:00.187+0000] {logging_mixin.py:190} INFO - each result id 2071738
+[2024-12-03T15:52:01.942+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:01.943+0000] {logging_mixin.py:190} INFO - each result id 2074419
+[2024-12-03T15:52:01.943+0000] {logging_mixin.py:190} INFO - each result id 2078510
+[2024-12-03T15:52:01.943+0000] {logging_mixin.py:190} INFO - each result id 2080006
+[2024-12-03T15:52:01.943+0000] {logging_mixin.py:190} INFO - each result id 2089121
+[2024-12-03T15:52:01.944+0000] {logging_mixin.py:190} INFO - each result id 2089122
+[2024-12-03T15:52:03.486+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:03.486+0000] {logging_mixin.py:190} INFO - each result id 2089123
+[2024-12-03T15:52:03.486+0000] {logging_mixin.py:190} INFO - each result id 2094735
+[2024-12-03T15:52:03.487+0000] {logging_mixin.py:190} INFO - each result id 2099722
+[2024-12-03T15:52:03.487+0000] {logging_mixin.py:190} INFO - each result id 2103721
+[2024-12-03T15:52:03.488+0000] {logging_mixin.py:190} INFO - each result id 2103726
+[2024-12-03T15:52:05.323+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:05.323+0000] {logging_mixin.py:190} INFO - each result id 2129653
+[2024-12-03T15:52:05.323+0000] {logging_mixin.py:190} INFO - each result id 2139090
+[2024-12-03T15:52:05.324+0000] {logging_mixin.py:190} INFO - each result id 2139126
+[2024-12-03T15:52:05.324+0000] {logging_mixin.py:190} INFO - each result id 2146702
+[2024-12-03T15:52:05.324+0000] {logging_mixin.py:190} INFO - each result id 2146746
+[2024-12-03T15:52:06.664+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:06.666+0000] {logging_mixin.py:190} INFO - each result id 2147951
+[2024-12-03T15:52:06.667+0000] {logging_mixin.py:190} INFO - each result id 2147953
+[2024-12-03T15:52:06.668+0000] {logging_mixin.py:190} INFO - each result id 2163460
+[2024-12-03T15:52:06.669+0000] {logging_mixin.py:190} INFO - each result id 2301325
+[2024-12-03T15:52:06.670+0000] {logging_mixin.py:190} INFO - each result id 2306913
+[2024-12-03T15:52:08.219+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:08.220+0000] {logging_mixin.py:190} INFO - each result id 2306913
+[2024-12-03T15:52:08.220+0000] {logging_mixin.py:190} INFO - each result id 2306939
+[2024-12-03T15:52:08.220+0000] {logging_mixin.py:190} INFO - each result id 2307211
+[2024-12-03T15:52:08.221+0000] {logging_mixin.py:190} INFO - each result id 2307243
+[2024-12-03T15:52:08.221+0000] {logging_mixin.py:190} INFO - each result id 2308726
+[2024-12-03T15:52:09.332+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:09.332+0000] {logging_mixin.py:190} INFO - each result id 2307243
+[2024-12-03T15:52:09.332+0000] {logging_mixin.py:190} INFO - each result id 2308726
+[2024-12-03T15:52:09.333+0000] {logging_mixin.py:190} INFO - each result id 2308731
+[2024-12-03T15:52:09.333+0000] {logging_mixin.py:190} INFO - each result id 2315421
+[2024-12-03T15:52:09.333+0000] {logging_mixin.py:190} INFO - each result id 2315877
+[2024-12-03T15:52:10.869+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:10.870+0000] {logging_mixin.py:190} INFO - each result id 2315921
+[2024-12-03T15:52:10.870+0000] {logging_mixin.py:190} INFO - each result id 2338296
+[2024-12-03T15:52:10.871+0000] {logging_mixin.py:190} INFO - each result id 2338593
+[2024-12-03T15:52:10.871+0000] {logging_mixin.py:190} INFO - each result id 2338966
+[2024-12-03T15:52:10.871+0000] {logging_mixin.py:190} INFO - each result id 2339710
+[2024-12-03T15:52:12.957+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:12.958+0000] {logging_mixin.py:190} INFO - each result id 2342039
+[2024-12-03T15:52:12.958+0000] {logging_mixin.py:190} INFO - each result id 2342289
+[2024-12-03T15:52:12.959+0000] {logging_mixin.py:190} INFO - each result id 2343524
+[2024-12-03T15:52:12.959+0000] {logging_mixin.py:190} INFO - each result id 2344950
+[2024-12-03T15:52:12.960+0000] {logging_mixin.py:190} INFO - each result id 2346155
+[2024-12-03T15:52:14.783+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:14.783+0000] {logging_mixin.py:190} INFO - each result id 2346156
+[2024-12-03T15:52:14.784+0000] {logging_mixin.py:190} INFO - each result id 2346157
+[2024-12-03T15:52:14.784+0000] {logging_mixin.py:190} INFO - each result id 2346897
+[2024-12-03T15:52:14.784+0000] {logging_mixin.py:190} INFO - each result id 2351278
+[2024-12-03T15:52:14.784+0000] {logging_mixin.py:190} INFO - each result id 2352470
+[2024-12-03T15:52:16.311+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:16.312+0000] {logging_mixin.py:190} INFO - each result id 2354420
+[2024-12-03T15:52:16.312+0000] {logging_mixin.py:190} INFO - each result id 2363459
+[2024-12-03T15:52:16.312+0000] {logging_mixin.py:190} INFO - each result id 2364191
+[2024-12-03T15:52:16.312+0000] {logging_mixin.py:190} INFO - each result id 2364192
+[2024-12-03T15:52:16.313+0000] {logging_mixin.py:190} INFO - each result id 2367166
+[2024-12-03T15:52:17.856+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:17.856+0000] {logging_mixin.py:190} INFO - each result id 2368003
+[2024-12-03T15:52:17.856+0000] {logging_mixin.py:190} INFO - each result id 2370593
+[2024-12-03T15:52:17.856+0000] {logging_mixin.py:190} INFO - each result id 2385337
+[2024-12-03T15:52:17.857+0000] {logging_mixin.py:190} INFO - each result id 2386015
+[2024-12-03T15:52:17.857+0000] {logging_mixin.py:190} INFO - each result id 2389309
+[2024-12-03T15:52:19.285+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:19.285+0000] {logging_mixin.py:190} INFO - each result id 2386015
+[2024-12-03T15:52:19.285+0000] {logging_mixin.py:190} INFO - each result id 2389309
+[2024-12-03T15:52:19.286+0000] {logging_mixin.py:190} INFO - each result id 2395879
+[2024-12-03T15:52:19.286+0000] {logging_mixin.py:190} INFO - each result id 2403009
+[2024-12-03T15:52:19.286+0000] {logging_mixin.py:190} INFO - each result id 2403876
+[2024-12-03T15:52:21.342+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:21.343+0000] {logging_mixin.py:190} INFO - each result id 2410638
+[2024-12-03T15:52:21.343+0000] {logging_mixin.py:190} INFO - each result id 2410639
+[2024-12-03T15:52:21.343+0000] {logging_mixin.py:190} INFO - each result id 2425907
+[2024-12-03T15:52:21.343+0000] {logging_mixin.py:190} INFO - each result id 2427243
+[2024-12-03T15:52:21.344+0000] {logging_mixin.py:190} INFO - each result id 2427750
+[2024-12-03T15:52:23.289+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:23.290+0000] {logging_mixin.py:190} INFO - each result id 2427751
+[2024-12-03T15:52:23.290+0000] {logging_mixin.py:190} INFO - each result id 2428504
+[2024-12-03T15:52:23.290+0000] {logging_mixin.py:190} INFO - each result id 2430210
+[2024-12-03T15:52:23.290+0000] {logging_mixin.py:190} INFO - each result id 2430211
+[2024-12-03T15:52:23.290+0000] {logging_mixin.py:190} INFO - each result id 2430212
+[2024-12-03T15:52:25.159+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:25.160+0000] {logging_mixin.py:190} INFO - each result id 2430213
+[2024-12-03T15:52:25.160+0000] {logging_mixin.py:190} INFO - each result id 2438965
+[2024-12-03T15:52:25.160+0000] {logging_mixin.py:190} INFO - each result id 2443566
+[2024-12-03T15:52:25.161+0000] {logging_mixin.py:190} INFO - each result id 2447101
+[2024-12-03T15:52:25.161+0000] {logging_mixin.py:190} INFO - each result id 2448515
+[2024-12-03T15:52:26.870+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:26.870+0000] {logging_mixin.py:190} INFO - each result id 2448537
+[2024-12-03T15:52:26.870+0000] {logging_mixin.py:190} INFO - each result id 2450872
+[2024-12-03T15:52:26.870+0000] {logging_mixin.py:190} INFO - each result id 2454114
+[2024-12-03T15:52:26.871+0000] {logging_mixin.py:190} INFO - each result id 2457988
+[2024-12-03T15:52:26.871+0000] {logging_mixin.py:190} INFO - each result id 2466797
+[2024-12-03T15:52:28.510+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:28.511+0000] {logging_mixin.py:190} INFO - each result id 2475015
+[2024-12-03T15:52:28.511+0000] {logging_mixin.py:190} INFO - each result id 2482393
+[2024-12-03T15:52:28.511+0000] {logging_mixin.py:190} INFO - each result id 2483078
+[2024-12-03T15:52:28.512+0000] {logging_mixin.py:190} INFO - each result id 2484804
+[2024-12-03T15:52:28.512+0000] {logging_mixin.py:190} INFO - each result id 2489041
+[2024-12-03T15:52:30.198+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:30.199+0000] {logging_mixin.py:190} INFO - each result id 2493192
+[2024-12-03T15:52:30.200+0000] {logging_mixin.py:190} INFO - each result id 2494036
+[2024-12-03T15:52:30.200+0000] {logging_mixin.py:190} INFO - each result id 2495796
+[2024-12-03T15:52:30.201+0000] {logging_mixin.py:190} INFO - each result id 2495797
+[2024-12-03T15:52:30.202+0000] {logging_mixin.py:190} INFO - each result id 2496524
+[2024-12-03T15:52:31.375+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:31.375+0000] {logging_mixin.py:190} INFO - each result id 2498826
+[2024-12-03T15:52:31.375+0000] {logging_mixin.py:190} INFO - each result id 2498829
+[2024-12-03T15:52:31.376+0000] {logging_mixin.py:190} INFO - each result id 2504418
+[2024-12-03T15:52:31.376+0000] {logging_mixin.py:190} INFO - each result id 2504419
+[2024-12-03T15:52:31.379+0000] {logging_mixin.py:190} INFO - each result id 2505218
+[2024-12-03T15:52:32.819+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:32.820+0000] {logging_mixin.py:190} INFO - each result id 2505311
+[2024-12-03T15:52:32.820+0000] {logging_mixin.py:190} INFO - each result id 2505328
+[2024-12-03T15:52:32.820+0000] {logging_mixin.py:190} INFO - each result id 2505549
+[2024-12-03T15:52:32.821+0000] {logging_mixin.py:190} INFO - each result id 2507261
+[2024-12-03T15:52:32.821+0000] {logging_mixin.py:190} INFO - each result id 2510115
+[2024-12-03T15:52:34.758+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:34.758+0000] {logging_mixin.py:190} INFO - each result id 2513011
+[2024-12-03T15:52:34.759+0000] {logging_mixin.py:190} INFO - each result id 2521313
+[2024-12-03T15:52:34.759+0000] {logging_mixin.py:190} INFO - each result id 2546592
+[2024-12-03T15:52:34.759+0000] {logging_mixin.py:190} INFO - each result id 2565725
+[2024-12-03T15:52:34.759+0000] {logging_mixin.py:190} INFO - each result id 2568931
+[2024-12-03T15:52:36.495+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:36.496+0000] {logging_mixin.py:190} INFO - each result id 2575341
+[2024-12-03T15:52:36.496+0000] {logging_mixin.py:190} INFO - each result id 2575342
+[2024-12-03T15:52:36.496+0000] {logging_mixin.py:190} INFO - each result id 2600424
+[2024-12-03T15:52:36.496+0000] {logging_mixin.py:190} INFO - each result id 2600426
+[2024-12-03T15:52:36.496+0000] {logging_mixin.py:190} INFO - each result id 2600427
+[2024-12-03T15:52:37.831+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:37.831+0000] {logging_mixin.py:190} INFO - each result id 2601483
+[2024-12-03T15:52:37.831+0000] {logging_mixin.py:190} INFO - each result id 2601767
+[2024-12-03T15:52:37.831+0000] {logging_mixin.py:190} INFO - each result id 2602080
+[2024-12-03T15:52:37.832+0000] {logging_mixin.py:190} INFO - each result id 2607168
+[2024-12-03T15:52:37.832+0000] {logging_mixin.py:190} INFO - each result id 2607170
+[2024-12-03T15:52:39.474+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:39.474+0000] {logging_mixin.py:190} INFO - each result id 2610047
+[2024-12-03T15:52:39.474+0000] {logging_mixin.py:190} INFO - each result id 2611543
+[2024-12-03T15:52:39.475+0000] {logging_mixin.py:190} INFO - each result id 2619777
+[2024-12-03T15:52:39.475+0000] {logging_mixin.py:190} INFO - each result id 2622574
+[2024-12-03T15:52:39.475+0000] {logging_mixin.py:190} INFO - each result id 2624752
+[2024-12-03T15:52:41.319+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:41.320+0000] {logging_mixin.py:190} INFO - each result id 2624770
+[2024-12-03T15:52:41.320+0000] {logging_mixin.py:190} INFO - each result id 2625123
+[2024-12-03T15:52:41.320+0000] {logging_mixin.py:190} INFO - each result id 2625235
+[2024-12-03T15:52:41.320+0000] {logging_mixin.py:190} INFO - each result id 2627454
+[2024-12-03T15:52:41.320+0000] {logging_mixin.py:190} INFO - each result id 2629037
+[2024-12-03T15:52:43.160+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:43.160+0000] {logging_mixin.py:190} INFO - each result id 2630581
+[2024-12-03T15:52:43.160+0000] {logging_mixin.py:190} INFO - each result id 2631438
+[2024-12-03T15:52:43.161+0000] {logging_mixin.py:190} INFO - each result id 2633276
+[2024-12-03T15:52:43.161+0000] {logging_mixin.py:190} INFO - each result id 2636891
+[2024-12-03T15:52:43.161+0000] {logging_mixin.py:190} INFO - each result id 2640371
+[2024-12-03T15:52:44.956+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:44.957+0000] {logging_mixin.py:190} INFO - each result id 2641266
+[2024-12-03T15:52:44.957+0000] {logging_mixin.py:190} INFO - each result id 2642032
+[2024-12-03T15:52:44.957+0000] {logging_mixin.py:190} INFO - each result id 2642819
+[2024-12-03T15:52:44.957+0000] {logging_mixin.py:190} INFO - each result id 2644899
+[2024-12-03T15:52:44.958+0000] {logging_mixin.py:190} INFO - each result id 2648925
+[2024-12-03T15:52:46.341+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:46.341+0000] {logging_mixin.py:190} INFO - each result id 2649375
+[2024-12-03T15:52:46.342+0000] {logging_mixin.py:190} INFO - each result id 2650704
+[2024-12-03T15:52:46.342+0000] {logging_mixin.py:190} INFO - each result id 2650705
+[2024-12-03T15:52:46.342+0000] {logging_mixin.py:190} INFO - each result id 2650711
+[2024-12-03T15:52:46.342+0000] {logging_mixin.py:190} INFO - each result id 2650731
+[2024-12-03T15:52:47.772+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:47.772+0000] {logging_mixin.py:190} INFO - each result id 2650768
+[2024-12-03T15:52:47.773+0000] {logging_mixin.py:190} INFO - each result id 2653736
+[2024-12-03T15:52:47.773+0000] {logging_mixin.py:190} INFO - each result id 2654223
+[2024-12-03T15:52:47.773+0000] {logging_mixin.py:190} INFO - each result id 2656335
+[2024-12-03T15:52:47.773+0000] {logging_mixin.py:190} INFO - each result id 2680109
+[2024-12-03T15:52:49.813+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:49.813+0000] {logging_mixin.py:190} INFO - each result id 2680116
+[2024-12-03T15:52:49.814+0000] {logging_mixin.py:190} INFO - each result id 2680127
+[2024-12-03T15:52:49.814+0000] {logging_mixin.py:190} INFO - each result id 2680128
+[2024-12-03T15:52:49.814+0000] {logging_mixin.py:190} INFO - each result id 2680134
+[2024-12-03T15:52:49.815+0000] {logging_mixin.py:190} INFO - each result id 2680141
+[2024-12-03T15:52:51.158+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:51.159+0000] {logging_mixin.py:190} INFO - each result id 2680142
+[2024-12-03T15:52:51.159+0000] {logging_mixin.py:190} INFO - each result id 2680143
+[2024-12-03T15:52:51.159+0000] {logging_mixin.py:190} INFO - each result id 2680155
+[2024-12-03T15:52:51.159+0000] {logging_mixin.py:190} INFO - each result id 2680159
+[2024-12-03T15:52:51.160+0000] {logging_mixin.py:190} INFO - each result id 2680183
+[2024-12-03T15:52:52.581+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:52.582+0000] {logging_mixin.py:190} INFO - each result id 2680194
+[2024-12-03T15:52:52.582+0000] {logging_mixin.py:190} INFO - each result id 2680198
+[2024-12-03T15:52:52.582+0000] {logging_mixin.py:190} INFO - each result id 2680204
+[2024-12-03T15:52:52.583+0000] {logging_mixin.py:190} INFO - each result id 2680208
+[2024-12-03T15:52:52.583+0000] {logging_mixin.py:190} INFO - each result id 2680210
+[2024-12-03T15:52:54.014+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:54.014+0000] {logging_mixin.py:190} INFO - each result id 2680213
+[2024-12-03T15:52:54.014+0000] {logging_mixin.py:190} INFO - each result id 2680214
+[2024-12-03T15:52:54.015+0000] {logging_mixin.py:190} INFO - each result id 2680216
+[2024-12-03T15:52:54.015+0000] {logging_mixin.py:190} INFO - each result id 2680217
+[2024-12-03T15:52:54.015+0000] {logging_mixin.py:190} INFO - each result id 2680220
+[2024-12-03T15:52:55.165+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:55.166+0000] {logging_mixin.py:190} INFO - each result id 2680226
+[2024-12-03T15:52:55.166+0000] {logging_mixin.py:190} INFO - each result id 2680227
+[2024-12-03T15:52:55.167+0000] {logging_mixin.py:190} INFO - each result id 2680228
+[2024-12-03T15:52:55.167+0000] {logging_mixin.py:190} INFO - each result id 2680231
+[2024-12-03T15:52:55.167+0000] {logging_mixin.py:190} INFO - each result id 2680783
+[2024-12-03T15:52:56.477+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:56.477+0000] {logging_mixin.py:190} INFO - each result id 2681972
+[2024-12-03T15:52:56.478+0000] {logging_mixin.py:190} INFO - each result id 2682702
+[2024-12-03T15:52:56.478+0000] {logging_mixin.py:190} INFO - each result id 2682908
+[2024-12-03T15:52:56.478+0000] {logging_mixin.py:190} INFO - each result id 2688981
+[2024-12-03T15:52:56.478+0000] {logging_mixin.py:190} INFO - each result id 2696493
+[2024-12-03T15:52:58.536+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:58.537+0000] {logging_mixin.py:190} INFO - each result id 2700519
+[2024-12-03T15:52:58.538+0000] {logging_mixin.py:190} INFO - each result id 2706417
+[2024-12-03T15:52:58.538+0000] {logging_mixin.py:190} INFO - each result id 2707800
+[2024-12-03T15:52:58.539+0000] {logging_mixin.py:190} INFO - each result id 2708674
+[2024-12-03T15:52:58.539+0000] {logging_mixin.py:190} INFO - each result id 2715155
+[2024-12-03T15:52:59.960+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:52:59.961+0000] {logging_mixin.py:190} INFO - each result id 2717543
+[2024-12-03T15:52:59.961+0000] {logging_mixin.py:190} INFO - each result id 2719333
+[2024-12-03T15:52:59.961+0000] {logging_mixin.py:190} INFO - each result id 2726897
+[2024-12-03T15:52:59.961+0000] {logging_mixin.py:190} INFO - each result id 2726903
+[2024-12-03T15:52:59.962+0000] {logging_mixin.py:190} INFO - each result id 2726904
+[2024-12-03T15:53:01.385+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:53:01.385+0000] {logging_mixin.py:190} INFO - each result id 2726907
+[2024-12-03T15:53:01.386+0000] {logging_mixin.py:190} INFO - each result id 2726910
+[2024-12-03T15:53:01.386+0000] {logging_mixin.py:190} INFO - each result id 2726913
+[2024-12-03T15:53:01.386+0000] {logging_mixin.py:190} INFO - each result id 2726915
+[2024-12-03T15:53:01.387+0000] {logging_mixin.py:190} INFO - each result id 2726917
+[2024-12-03T15:53:02.827+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:53:02.827+0000] {logging_mixin.py:190} INFO - each result id 2726921
+[2024-12-03T15:53:02.827+0000] {logging_mixin.py:190} INFO - each result id 2726925
+[2024-12-03T15:53:02.828+0000] {logging_mixin.py:190} INFO - each result id 2726930
+[2024-12-03T15:53:02.828+0000] {logging_mixin.py:190} INFO - each result id 2726932
+[2024-12-03T15:53:02.828+0000] {logging_mixin.py:190} INFO - each result id 2726935
+[2024-12-03T15:53:04.485+0000] {inaturalist_dag.py:60} INFO - Found 5
+[2024-12-03T15:53:04.486+0000] {logging_mixin.py:190} INFO - each result id 2736288
+[2024-12-03T15:53:04.486+0000] {logging_mixin.py:190} INFO - each result id 2736289
+[2024-12-03T15:53:04.487+0000] {logging_mixin.py:190} INFO - each result id 2737621
+[2024-12-03T15:53:04.487+0000] {logging_mixin.py:190} INFO - each result id 2738535
+[2024-12-03T15:53:04.487+0000] {logging_mixin.py:190} INFO - each result id 2738561
+[2024-12-03T15:53:04.843+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-12-03T15:53:04.844+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-12-03T15:53:04.846+0000] {process_utils.py:132} INFO - Sending 15 to group 118. PIDs of all processes in the group: [118]
+[2024-12-03T15:53:04.848+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 118
+[2024-12-03T15:53:04.849+0000] {taskinstance.py:3092} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-12-03T15:53:04.895+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-03T15:53:04.943+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=118, status='terminated', exitcode=0, started='15:46:15') (118) terminated with exit code 0

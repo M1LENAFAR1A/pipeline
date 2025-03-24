@@ -1,0 +1,198 @@
+[2024-12-11T09:50:21.304+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-11T09:50:21.319+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prf_dag.save_data manual__2024-12-11T09:42:39.007479+00:00 [queued]>
+[2024-12-11T09:50:21.326+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prf_dag.save_data manual__2024-12-11T09:42:39.007479+00:00 [queued]>
+[2024-12-11T09:50:21.327+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-12-11T09:50:21.340+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): save_data> on 2024-12-11 09:42:39.007479+00:00
+[2024-12-11T09:50:21.349+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=243) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-11T09:50:21.350+0000] {standard_task_runner.py:72} INFO - Started process 244 to run task
+[2024-12-11T09:50:21.351+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'prf_dag', 'save_data', 'manual__2024-12-11T09:42:39.007479+00:00', '--job-id', '78', '--raw', '--subdir', 'DAGS_FOLDER/prf_dag.py', '--cfg-path', '/tmp/tmpuhepn99_']
+[2024-12-11T09:50:21.352+0000] {standard_task_runner.py:105} INFO - Job 78: Subtask save_data
+[2024-12-11T09:50:21.394+0000] {task_command.py:467} INFO - Running <TaskInstance: prf_dag.save_data manual__2024-12-11T09:42:39.007479+00:00 [running]> on host a036f9eea991
+[2024-12-11T09:50:21.524+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='prf_dag' AIRFLOW_CTX_TASK_ID='save_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-11T09:42:39.007479+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-11T09:42:39.007479+00:00'
+[2024-12-11T09:50:21.526+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-11T09:50:23.116+0000] {minio.py:40} INFO - created prf/2024/occorência_datatran2024_12.csv object; etag: d5764806456a393ea9f9404222f9b69c-4, version-id: None
+[2024-12-11T09:50:23.116+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2024/occorência_datatran2024_12.csv
+[2024-12-11T09:50:26.118+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2024/occorência_datatran2024_12.csv', 'source': 'PRF', 'extraction_date': 1733910626118645966, 'retry': 0} to environbit queue
+[2024-12-11T09:50:26.178+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2024/occorência_datatran2024_12.csv', 'source': 'PRF', 'extraction_date': 1733910626118645966, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:50:29.978+0000] {minio.py:40} INFO - created prf/2024/pessoa_acidentes2024_12.csv object; etag: d82c4ffdc677630ebcf1b5d5bf63a5f2-12, version-id: None
+[2024-12-11T09:50:29.979+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2024/pessoa_acidentes2024_12.csv
+[2024-12-11T09:50:32.981+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2024/pessoa_acidentes2024_12.csv', 'source': 'PRF', 'extraction_date': 1733910632981477149, 'retry': 0} to environbit queue
+[2024-12-11T09:50:33.001+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2024/pessoa_acidentes2024_12.csv', 'source': 'PRF', 'extraction_date': 1733910632981477149, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:50:41.857+0000] {minio.py:40} INFO - created prf/2024/acidentes2024_todas_causas_tipos_12.csv object; etag: 1ad0d95effa50cb8447175833c703e33-37, version-id: None
+[2024-12-11T09:50:41.858+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2024/acidentes2024_todas_causas_tipos_12.csv
+[2024-12-11T09:50:44.859+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2024/acidentes2024_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910644859384329, 'retry': 0} to environbit queue
+[2024-12-11T09:50:44.877+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2024/acidentes2024_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910644859384329, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:50:46.156+0000] {minio.py:40} INFO - created prf/2023/occorência_datatran2023_12.csv object; etag: a4a8e5769a4e9e4c0a2e46fb3876eba7-4, version-id: None
+[2024-12-11T09:50:46.157+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2023/occorência_datatran2023_12.csv
+[2024-12-11T09:50:49.157+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2023/occorência_datatran2023_12.csv', 'source': 'PRF', 'extraction_date': 1733910649157815181, 'retry': 0} to environbit queue
+[2024-12-11T09:50:49.183+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2023/occorência_datatran2023_12.csv', 'source': 'PRF', 'extraction_date': 1733910649157815181, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:50:52.709+0000] {minio.py:40} INFO - created prf/2023/pessoa_acidentes2023_12.csv object; etag: 11c9e2f086595bea148787d846430f0d-14, version-id: None
+[2024-12-11T09:50:52.709+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2023/pessoa_acidentes2023_12.csv
+[2024-12-11T09:50:55.710+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2023/pessoa_acidentes2023_12.csv', 'source': 'PRF', 'extraction_date': 1733910655710706762, 'retry': 0} to environbit queue
+[2024-12-11T09:50:55.730+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2023/pessoa_acidentes2023_12.csv', 'source': 'PRF', 'extraction_date': 1733910655710706762, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:51:10.714+0000] {minio.py:40} INFO - created prf/2023/acidentes2023_todas_causas_tipos_12.csv object; etag: 5f28187a07607e6ae71fca93c5c627a7-42, version-id: None
+[2024-12-11T09:51:10.714+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2023/acidentes2023_todas_causas_tipos_12.csv
+[2024-12-11T09:51:13.715+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2023/acidentes2023_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910673715427788, 'retry': 0} to environbit queue
+[2024-12-11T09:51:13.732+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2023/acidentes2023_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910673715427788, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:51:14.797+0000] {minio.py:40} INFO - created prf/2022/occorência_datatran2022_12.csv object; etag: 290bd56c7d7058e6448a4952e7bb1635-4, version-id: None
+[2024-12-11T09:51:14.797+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2022/occorência_datatran2022_12.csv
+[2024-12-11T09:51:17.798+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2022/occorência_datatran2022_12.csv', 'source': 'PRF', 'extraction_date': 1733910677798915745, 'retry': 0} to environbit queue
+[2024-12-11T09:51:17.818+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2022/occorência_datatran2022_12.csv', 'source': 'PRF', 'extraction_date': 1733910677798915745, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:51:21.176+0000] {minio.py:40} INFO - created prf/2022/pessoa_acidentes2022_12.csv object; etag: 37beab160eceef1d8951c49d8a75720a-13, version-id: None
+[2024-12-11T09:51:21.177+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2022/pessoa_acidentes2022_12.csv
+[2024-12-11T09:51:24.179+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2022/pessoa_acidentes2022_12.csv', 'source': 'PRF', 'extraction_date': 1733910684179432558, 'retry': 0} to environbit queue
+[2024-12-11T09:51:24.205+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2022/pessoa_acidentes2022_12.csv', 'source': 'PRF', 'extraction_date': 1733910684179432558, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:51:34.490+0000] {minio.py:40} INFO - created prf/2022/acidentes2022_todas_causas_tipos_12.csv object; etag: 59f09cf5688645500ad7aea00d919267-37, version-id: None
+[2024-12-11T09:51:34.490+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2022/acidentes2022_todas_causas_tipos_12.csv
+[2024-12-11T09:51:37.492+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2022/acidentes2022_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910697492055856, 'retry': 0} to environbit queue
+[2024-12-11T09:51:37.512+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2022/acidentes2022_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910697492055856, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:51:38.585+0000] {minio.py:40} INFO - created prf/2021/occorência_datatran2021_12.csv object; etag: 071727721cfe3226b48b253a60c73ee4-4, version-id: None
+[2024-12-11T09:51:38.585+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2021/occorência_datatran2021_12.csv
+[2024-12-11T09:51:41.586+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2021/occorência_datatran2021_12.csv', 'source': 'PRF', 'extraction_date': 1733910701586875225, 'retry': 0} to environbit queue
+[2024-12-11T09:51:41.605+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2021/occorência_datatran2021_12.csv', 'source': 'PRF', 'extraction_date': 1733910701586875225, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:51:45.651+0000] {minio.py:40} INFO - created prf/2021/pessoa_acidentes2021_12.csv object; etag: 1bd8fa48b7b6910130c8a704f75c94c8-13, version-id: None
+[2024-12-11T09:51:45.651+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2021/pessoa_acidentes2021_12.csv
+[2024-12-11T09:51:48.652+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2021/pessoa_acidentes2021_12.csv', 'source': 'PRF', 'extraction_date': 1733910708652634705, 'retry': 0} to environbit queue
+[2024-12-11T09:51:48.668+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2021/pessoa_acidentes2021_12.csv', 'source': 'PRF', 'extraction_date': 1733910708652634705, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:51:59.271+0000] {minio.py:40} INFO - created prf/2021/acidentes2021_todas_causas_tipos_12.csv object; etag: de6186f1b1663002a75f378916d59559-33, version-id: None
+[2024-12-11T09:51:59.272+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2021/acidentes2021_todas_causas_tipos_12.csv
+[2024-12-11T09:52:02.273+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2021/acidentes2021_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910722273645585, 'retry': 0} to environbit queue
+[2024-12-11T09:52:02.293+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2021/acidentes2021_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910722273645585, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:52:03.549+0000] {minio.py:40} INFO - created prf/2020/occorência_datatran2020_12.csv object; etag: c5a0942cb5c3b7299098022571fa5b2a-4, version-id: None
+[2024-12-11T09:52:03.550+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2020/occorência_datatran2020_12.csv
+[2024-12-11T09:52:06.551+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2020/occorência_datatran2020_12.csv', 'source': 'PRF', 'extraction_date': 1733910726551097336, 'retry': 0} to environbit queue
+[2024-12-11T09:52:06.567+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2020/occorência_datatran2020_12.csv', 'source': 'PRF', 'extraction_date': 1733910726551097336, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:52:09.818+0000] {minio.py:40} INFO - created prf/2020/pessoa_acidentes2020_12.csv object; etag: c04f26b74e6d6dd1ec231c5ec931bbb6-12, version-id: None
+[2024-12-11T09:52:09.818+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2020/pessoa_acidentes2020_12.csv
+[2024-12-11T09:52:12.820+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2020/pessoa_acidentes2020_12.csv', 'source': 'PRF', 'extraction_date': 1733910732820333014, 'retry': 0} to environbit queue
+[2024-12-11T09:52:12.840+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2020/pessoa_acidentes2020_12.csv', 'source': 'PRF', 'extraction_date': 1733910732820333014, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:52:22.010+0000] {minio.py:40} INFO - created prf/2020/acidentes2020_todas_causas_tipos_12.csv object; etag: 7aa48e803828f0dbacecebae1607a21e-29, version-id: None
+[2024-12-11T09:52:22.011+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2020/acidentes2020_todas_causas_tipos_12.csv
+[2024-12-11T09:52:25.015+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2020/acidentes2020_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910745015080900, 'retry': 0} to environbit queue
+[2024-12-11T09:52:25.036+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2020/acidentes2020_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910745015080900, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:52:26.334+0000] {minio.py:40} INFO - created prf/2019/occorência_datatran2019_12.csv object; etag: 878c24ab74124f366d971e06f3eacec9-4, version-id: None
+[2024-12-11T09:52:26.334+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2019/occorência_datatran2019_12.csv
+[2024-12-11T09:52:29.335+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2019/occorência_datatran2019_12.csv', 'source': 'PRF', 'extraction_date': 1733910749335599196, 'retry': 0} to environbit queue
+[2024-12-11T09:52:29.367+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2019/occorência_datatran2019_12.csv', 'source': 'PRF', 'extraction_date': 1733910749335599196, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:52:33.553+0000] {minio.py:40} INFO - created prf/2019/pessoa_acidentes2019_12.csv object; etag: 6fa1d4bd06f1d3493d571f94ddef4d60-13, version-id: None
+[2024-12-11T09:52:33.553+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2019/pessoa_acidentes2019_12.csv
+[2024-12-11T09:52:36.555+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2019/pessoa_acidentes2019_12.csv', 'source': 'PRF', 'extraction_date': 1733910756555791089, 'retry': 0} to environbit queue
+[2024-12-11T09:52:36.573+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2019/pessoa_acidentes2019_12.csv', 'source': 'PRF', 'extraction_date': 1733910756555791089, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:52:44.330+0000] {minio.py:40} INFO - created prf/2019/acidentes2019_todas_causas_tipos_12.csv object; etag: 7de57dea82a17bed87dc9049d88b8b32-24, version-id: None
+[2024-12-11T09:52:44.331+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2019/acidentes2019_todas_causas_tipos_12.csv
+[2024-12-11T09:52:47.332+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2019/acidentes2019_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910767331984441, 'retry': 0} to environbit queue
+[2024-12-11T09:52:47.350+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2019/acidentes2019_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910767331984441, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:52:48.555+0000] {minio.py:40} INFO - created prf/2018/occorência_datatran2018_12.csv object; etag: 9e76ac2fee114604a2407241e086ecc1-4, version-id: None
+[2024-12-11T09:52:48.555+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2018/occorência_datatran2018_12.csv
+[2024-12-11T09:52:51.556+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2018/occorência_datatran2018_12.csv', 'source': 'PRF', 'extraction_date': 1733910771556366751, 'retry': 0} to environbit queue
+[2024-12-11T09:52:51.579+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2018/occorência_datatran2018_12.csv', 'source': 'PRF', 'extraction_date': 1733910771556366751, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:52:55.385+0000] {minio.py:40} INFO - created prf/2018/pessoa_acidentes2018_12.csv object; etag: eddb3995ef8cf4a6a235556dcfb52337-13, version-id: None
+[2024-12-11T09:52:55.386+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2018/pessoa_acidentes2018_12.csv
+[2024-12-11T09:52:58.387+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2018/pessoa_acidentes2018_12.csv', 'source': 'PRF', 'extraction_date': 1733910778387960610, 'retry': 0} to environbit queue
+[2024-12-11T09:52:58.405+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2018/pessoa_acidentes2018_12.csv', 'source': 'PRF', 'extraction_date': 1733910778387960610, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:53:05.728+0000] {minio.py:40} INFO - created prf/2018/acidentes2018_todas_causas_tipos_12.csv object; etag: b03eca996ab92769132d4ba7db222a4d-23, version-id: None
+[2024-12-11T09:53:05.728+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2018/acidentes2018_todas_causas_tipos_12.csv
+[2024-12-11T09:53:08.730+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2018/acidentes2018_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910788730621477, 'retry': 0} to environbit queue
+[2024-12-11T09:53:08.749+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2018/acidentes2018_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910788730621477, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:53:10.645+0000] {minio.py:40} INFO - created prf/2017/occorência_datatran2017_12.csv object; etag: 288ef5da53ce8a542c587885e5780e6e-5, version-id: None
+[2024-12-11T09:53:10.645+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2017/occorência_datatran2017_12.csv
+[2024-12-11T09:53:13.646+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2017/occorência_datatran2017_12.csv', 'source': 'PRF', 'extraction_date': 1733910793646798158, 'retry': 0} to environbit queue
+[2024-12-11T09:53:13.664+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2017/occorência_datatran2017_12.csv', 'source': 'PRF', 'extraction_date': 1733910793646798158, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:53:18.724+0000] {minio.py:40} INFO - created prf/2017/pessoa_acidentes2017_12.csv object; etag: c35ff1066664912bb9ee08b4bafbe2c9-16, version-id: None
+[2024-12-11T09:53:18.725+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2017/pessoa_acidentes2017_12.csv
+[2024-12-11T09:53:21.726+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2017/pessoa_acidentes2017_12.csv', 'source': 'PRF', 'extraction_date': 1733910801726625707, 'retry': 0} to environbit queue
+[2024-12-11T09:53:21.742+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2017/pessoa_acidentes2017_12.csv', 'source': 'PRF', 'extraction_date': 1733910801726625707, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:53:29.282+0000] {minio.py:40} INFO - created prf/2017/acidentes2017_todas_causas_tipos_12.csv object; etag: e4e4a759bc74b042c1a5e1177e107186-24, version-id: None
+[2024-12-11T09:53:29.282+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2017/acidentes2017_todas_causas_tipos_12.csv
+[2024-12-11T09:53:32.283+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2017/acidentes2017_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910812283347936, 'retry': 0} to environbit queue
+[2024-12-11T09:53:32.297+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2017/acidentes2017_todas_causas_tipos_12.csv', 'source': 'PRF', 'extraction_date': 1733910812283347936, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:53:33.760+0000] {minio.py:40} INFO - created prf/2016/occorência_datatran2016_12.csv object; etag: 40741f1e9bbf7285469bf8cfc3190a40-4, version-id: None
+[2024-12-11T09:53:33.761+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2016/occorência_datatran2016_12.csv
+[2024-12-11T09:53:36.763+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2016/occorência_datatran2016_12.csv', 'source': 'PRF', 'extraction_date': 1733910816762994860, 'retry': 0} to environbit queue
+[2024-12-11T09:53:36.793+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2016/occorência_datatran2016_12.csv', 'source': 'PRF', 'extraction_date': 1733910816762994860, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:53:40.649+0000] {minio.py:40} INFO - created prf/2016/pessoa_acidentes2016_atual_12.csv object; etag: 92d9c8473c96000566b4970f53a0dd81-12, version-id: None
+[2024-12-11T09:53:40.650+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2016/pessoa_acidentes2016_atual_12.csv
+[2024-12-11T09:53:43.654+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2016/pessoa_acidentes2016_atual_12.csv', 'source': 'PRF', 'extraction_date': 1733910823654245096, 'retry': 0} to environbit queue
+[2024-12-11T09:53:43.678+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2016/pessoa_acidentes2016_atual_12.csv', 'source': 'PRF', 'extraction_date': 1733910823654245096, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:53:45.464+0000] {minio.py:40} INFO - created prf/2015/occorência_datatran2015_12.csv object; etag: a407b571b142a5162b2d8d747329daa8-6, version-id: None
+[2024-12-11T09:53:45.465+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2015/occorência_datatran2015_12.csv
+[2024-12-11T09:53:48.466+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2015/occorência_datatran2015_12.csv', 'source': 'PRF', 'extraction_date': 1733910828466195317, 'retry': 0} to environbit queue
+[2024-12-11T09:53:48.485+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2015/occorência_datatran2015_12.csv', 'source': 'PRF', 'extraction_date': 1733910828466195317, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:53:54.167+0000] {minio.py:40} INFO - created prf/2015/pessoa_acidentes2015_12.csv object; etag: f50742df073ecf5d03eb7ab97b220c26-18, version-id: None
+[2024-12-11T09:53:54.168+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2015/pessoa_acidentes2015_12.csv
+[2024-12-11T09:53:57.169+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2015/pessoa_acidentes2015_12.csv', 'source': 'PRF', 'extraction_date': 1733910837169062780, 'retry': 0} to environbit queue
+[2024-12-11T09:53:57.188+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2015/pessoa_acidentes2015_12.csv', 'source': 'PRF', 'extraction_date': 1733910837169062780, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:53:59.279+0000] {minio.py:40} INFO - created prf/2014/occorência_datatran2014_12.csv object; etag: 69f6223039b88eb118959b7775ceae1a-7, version-id: None
+[2024-12-11T09:53:59.280+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2014/occorência_datatran2014_12.csv
+[2024-12-11T09:54:02.282+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2014/occorência_datatran2014_12.csv', 'source': 'PRF', 'extraction_date': 1733910842282416556, 'retry': 0} to environbit queue
+[2024-12-11T09:54:02.299+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2014/occorência_datatran2014_12.csv', 'source': 'PRF', 'extraction_date': 1733910842282416556, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:54:09.925+0000] {minio.py:40} INFO - created prf/2014/pessoa_acidentes2014_12.csv object; etag: cfe0a5391b3033513038e578bb39f515-24, version-id: None
+[2024-12-11T09:54:09.926+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2014/pessoa_acidentes2014_12.csv
+[2024-12-11T09:54:12.927+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2014/pessoa_acidentes2014_12.csv', 'source': 'PRF', 'extraction_date': 1733910852927143293, 'retry': 0} to environbit queue
+[2024-12-11T09:54:12.948+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2014/pessoa_acidentes2014_12.csv', 'source': 'PRF', 'extraction_date': 1733910852927143293, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:54:15.280+0000] {minio.py:40} INFO - created prf/2013/occorência_datatran2013_12.csv object; etag: 4d7e4371918c464738f208d3f42996b6-8, version-id: None
+[2024-12-11T09:54:15.281+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2013/occorência_datatran2013_12.csv
+[2024-12-11T09:54:18.283+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2013/occorência_datatran2013_12.csv', 'source': 'PRF', 'extraction_date': 1733910858283367600, 'retry': 0} to environbit queue
+[2024-12-11T09:54:18.306+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2013/occorência_datatran2013_12.csv', 'source': 'PRF', 'extraction_date': 1733910858283367600, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:54:25.657+0000] {minio.py:40} INFO - created prf/2013/pessoa_acidentes2013_12.csv object; etag: 63e34776ed0ac7cd434df594d59a162e-26, version-id: None
+[2024-12-11T09:54:25.657+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2013/pessoa_acidentes2013_12.csv
+[2024-12-11T09:54:28.658+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2013/pessoa_acidentes2013_12.csv', 'source': 'PRF', 'extraction_date': 1733910868658727848, 'retry': 0} to environbit queue
+[2024-12-11T09:54:28.688+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2013/pessoa_acidentes2013_12.csv', 'source': 'PRF', 'extraction_date': 1733910868658727848, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:54:31.757+0000] {minio.py:40} INFO - created prf/2012/occorência_datatran2012_12.csv object; etag: 3dff0c383fdba8e5c101e881a312c90c-8, version-id: None
+[2024-12-11T09:54:31.757+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2012/occorência_datatran2012_12.csv
+[2024-12-11T09:54:34.759+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2012/occorência_datatran2012_12.csv', 'source': 'PRF', 'extraction_date': 1733910874759420425, 'retry': 0} to environbit queue
+[2024-12-11T09:54:34.791+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2012/occorência_datatran2012_12.csv', 'source': 'PRF', 'extraction_date': 1733910874759420425, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:54:42.089+0000] {minio.py:40} INFO - created prf/2012/pessoa_acidentes2012_12.csv object; etag: c5f5d86de342a9c31e095e8fdd8f3056-26, version-id: None
+[2024-12-11T09:54:42.090+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2012/pessoa_acidentes2012_12.csv
+[2024-12-11T09:54:45.090+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2012/pessoa_acidentes2012_12.csv', 'source': 'PRF', 'extraction_date': 1733910885090938848, 'retry': 0} to environbit queue
+[2024-12-11T09:54:45.111+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2012/pessoa_acidentes2012_12.csv', 'source': 'PRF', 'extraction_date': 1733910885090938848, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:54:47.054+0000] {minio.py:40} INFO - created prf/2011/occorência_datatran2011_12.csv object; etag: 5af60ddc3f4b5eb783bc2d21ce300e4f-7, version-id: None
+[2024-12-11T09:54:47.055+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2011/occorência_datatran2011_12.csv
+[2024-12-11T09:54:50.056+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2011/occorência_datatran2011_12.csv', 'source': 'PRF', 'extraction_date': 1733910890056041777, 'retry': 0} to environbit queue
+[2024-12-11T09:54:50.076+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2011/occorência_datatran2011_12.csv', 'source': 'PRF', 'extraction_date': 1733910890056041777, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:54:57.758+0000] {minio.py:40} INFO - created prf/2011/pessoa_acidentes2011_12.csv object; etag: a261200f90bb61661d753ee1c61a9077-27, version-id: None
+[2024-12-11T09:54:57.759+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2011/pessoa_acidentes2011_12.csv
+[2024-12-11T09:55:00.761+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2011/pessoa_acidentes2011_12.csv', 'source': 'PRF', 'extraction_date': 1733910900761016333, 'retry': 0} to environbit queue
+[2024-12-11T09:55:00.787+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2011/pessoa_acidentes2011_12.csv', 'source': 'PRF', 'extraction_date': 1733910900761016333, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:55:02.935+0000] {minio.py:40} INFO - created prf/2010/occorência_datatran2010_12.csv object; etag: 085da601a43cb258ed0b6316db81775b-7, version-id: None
+[2024-12-11T09:55:02.935+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2010/occorência_datatran2010_12.csv
+[2024-12-11T09:55:05.936+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2010/occorência_datatran2010_12.csv', 'source': 'PRF', 'extraction_date': 1733910905936521171, 'retry': 0} to environbit queue
+[2024-12-11T09:55:05.955+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2010/occorência_datatran2010_12.csv', 'source': 'PRF', 'extraction_date': 1733910905936521171, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:55:14.530+0000] {minio.py:40} INFO - created prf/2010/pessoa_acidentes2010_12.csv object; etag: 0a519278f9e3b08bce5fda9aff841d28-26, version-id: None
+[2024-12-11T09:55:14.531+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2010/pessoa_acidentes2010_12.csv
+[2024-12-11T09:55:17.533+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2010/pessoa_acidentes2010_12.csv', 'source': 'PRF', 'extraction_date': 1733910917533533869, 'retry': 0} to environbit queue
+[2024-12-11T09:55:17.552+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2010/pessoa_acidentes2010_12.csv', 'source': 'PRF', 'extraction_date': 1733910917533533869, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:55:19.671+0000] {minio.py:40} INFO - created prf/2009/occorência_datatran2009_12.csv object; etag: 2ce0716d1b8211767f84634668055b0a-6, version-id: None
+[2024-12-11T09:55:19.671+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2009/occorência_datatran2009_12.csv
+[2024-12-11T09:55:22.672+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2009/occorência_datatran2009_12.csv', 'source': 'PRF', 'extraction_date': 1733910922672293253, 'retry': 0} to environbit queue
+[2024-12-11T09:55:22.690+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2009/occorência_datatran2009_12.csv', 'source': 'PRF', 'extraction_date': 1733910922672293253, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:55:29.835+0000] {minio.py:40} INFO - created prf/2009/pessoa_acidentes2009_12.csv object; etag: 4cd3cd5881c547b684cee4b1543c58ea-22, version-id: None
+[2024-12-11T09:55:29.836+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2009/pessoa_acidentes2009_12.csv
+[2024-12-11T09:55:32.837+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2009/pessoa_acidentes2009_12.csv', 'source': 'PRF', 'extraction_date': 1733910932837410947, 'retry': 0} to environbit queue
+[2024-12-11T09:55:32.861+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2009/pessoa_acidentes2009_12.csv', 'source': 'PRF', 'extraction_date': 1733910932837410947, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:55:34.629+0000] {minio.py:40} INFO - created prf/2008/occorência_datatran2008_12.csv object; etag: b5a4490ac410d4f1dead59c6c53e109c-5, version-id: None
+[2024-12-11T09:55:34.631+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2008/occorência_datatran2008_12.csv
+[2024-12-11T09:55:37.636+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2008/occorência_datatran2008_12.csv', 'source': 'PRF', 'extraction_date': 1733910937636591169, 'retry': 0} to environbit queue
+[2024-12-11T09:55:37.692+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2008/occorência_datatran2008_12.csv', 'source': 'PRF', 'extraction_date': 1733910937636591169, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:55:44.557+0000] {minio.py:40} INFO - created prf/2008/pessoa_acidentes2008_12.csv object; etag: b421dce368347cbe3a145d38b1a393a3-20, version-id: None
+[2024-12-11T09:55:44.559+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2008/pessoa_acidentes2008_12.csv
+[2024-12-11T09:55:47.560+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2008/pessoa_acidentes2008_12.csv', 'source': 'PRF', 'extraction_date': 1733910947560590117, 'retry': 0} to environbit queue
+[2024-12-11T09:55:47.580+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2008/pessoa_acidentes2008_12.csv', 'source': 'PRF', 'extraction_date': 1733910947560590117, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:55:49.151+0000] {minio.py:40} INFO - created prf/2007/occorência_datatran2007_12.csv object; etag: e3d176485e6f7ff58d0ee62541e9bc8e-5, version-id: None
+[2024-12-11T09:55:49.151+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2007/occorência_datatran2007_12.csv
+[2024-12-11T09:55:52.152+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2007/occorência_datatran2007_12.csv', 'source': 'PRF', 'extraction_date': 1733910952152842690, 'retry': 0} to environbit queue
+[2024-12-11T09:55:52.171+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2007/occorência_datatran2007_12.csv', 'source': 'PRF', 'extraction_date': 1733910952152842690, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:55:57.787+0000] {minio.py:40} INFO - created prf/2007/pessoa_acidentes2007_12.csv object; etag: 0befeaa465e29434abea9e5844f970fe-18, version-id: None
+[2024-12-11T09:55:57.787+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under /prf/2007/pessoa_acidentes2007_12.csv
+[2024-12-11T09:56:00.788+0000] {prf_dag.py:191} INFO - Sending object {'path': '/prf/2007/pessoa_acidentes2007_12.csv', 'source': 'PRF', 'extraction_date': 1733910960788856958, 'retry': 0} to environbit queue
+[2024-12-11T09:56:00.817+0000] {rabbitmq.py:35} INFO - Sending message {'path': '/prf/2007/pessoa_acidentes2007_12.csv', 'source': 'PRF', 'extraction_date': 1733910960788856958, 'retry': 0} to rabbitmq channel environbit
+[2024-12-11T09:56:00.823+0000] {variable.py:316} WARNING - The variable FULL_EXTRACTION is defined in the EnvironmentVariablesBackend secrets backend, which takes precedence over reading from the database. The value in the database will be updated, but to read it you have to delete the conflicting variable from EnvironmentVariablesBackend
+[2024-12-11T09:56:00.834+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-12-11T09:56:00.843+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-11T09:56:00.858+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-11T09:56:00.859+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=prf_dag, task_id=save_data, run_id=manual__2024-12-11T09:42:39.007479+00:00, execution_date=20241211T094239, start_date=20241211T095021, end_date=20241211T095600
+[2024-12-11T09:56:00.927+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-11T09:56:00.951+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-11T09:56:00.955+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

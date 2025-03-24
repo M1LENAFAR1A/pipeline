@@ -1,0 +1,28 @@
+[2024-11-21T17:05:25.442+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T17:05:25.456+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_gbif_data_atropelamento.process_data manual__2024-11-21T17:05:19.147367+00:00 [queued]>
+[2024-11-21T17:05:25.463+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_gbif_data_atropelamento.process_data manual__2024-11-21T17:05:19.147367+00:00 [queued]>
+[2024-11-21T17:05:25.464+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-11-21T17:05:25.476+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): process_data> on 2024-11-21 17:05:19.147367+00:00
+[2024-11-21T17:05:25.484+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1946) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T17:05:25.485+0000] {standard_task_runner.py:72} INFO - Started process 1949 to run task
+[2024-11-21T17:05:25.485+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_gbif_data_atropelamento', 'process_data', 'manual__2024-11-21T17:05:19.147367+00:00', '--job-id', '1011', '--raw', '--subdir', 'DAGS_FOLDER/gbif_dag.py', '--cfg-path', '/tmp/tmpbx4xvomq']
+[2024-11-21T17:05:25.486+0000] {standard_task_runner.py:105} INFO - Job 1011: Subtask process_data
+[2024-11-21T17:05:25.530+0000] {task_command.py:467} INFO - Running <TaskInstance: get_gbif_data_atropelamento.process_data manual__2024-11-21T17:05:19.147367+00:00 [running]> on host 569dbdc45a07
+[2024-11-21T17:05:25.620+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_gbif_data_atropelamento' AIRFLOW_CTX_TASK_ID='process_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T17:05:19.147367+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-21T17:05:19.147367+00:00'
+[2024-11-21T17:05:25.621+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T17:05:25.622+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T17:05:25.622+0000] {logging_mixin.py:190} INFO - Current task name:process_data state:running start_date:2024-11-21 17:05:25.456981+00:00
+[2024-11-21T17:05:25.622+0000] {logging_mixin.py:190} INFO - Dag name:get_gbif_data_atropelamento and current dag run status:running
+[2024-11-21T17:05:25.622+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T17:05:25.625+0000] {python.py:240} INFO - Done. Returned value was: {'path': 'gbif_data/atropelamento_data/2024/11/21/atropelamento_occurrences_170525.csv', 'tmp_path': '/tmp/gbif/atropelamento/atropelamento_occurrences_170525.csv', 'format': 'application/json'}
+[2024-11-21T17:05:25.651+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-21T17:05:25.652+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_gbif_data_atropelamento, task_id=process_data, run_id=manual__2024-11-21T17:05:19.147367+00:00, execution_date=20241121T170519, start_date=20241121T170525, end_date=20241121T170525
+[2024-11-21T17:05:25.660+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-21T17:05:25.661+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-21T17:05:25.661+0000] {logging_mixin.py:190} INFO - Dag name:get_gbif_data_atropelamento queued_at:2024-11-21 17:05:19.211647+00:00
+[2024-11-21T17:05:25.661+0000] {logging_mixin.py:190} INFO - Task hostname:569dbdc45a07 operator:_PythonDecoratedOperator
+[2024-11-21T17:05:25.698+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-21T17:05:25.719+0000] {taskinstance.py:3900} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2024-11-21T17:05:25.721+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

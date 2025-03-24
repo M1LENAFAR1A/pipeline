@@ -1,0 +1,24 @@
+[2024-11-18T14:04:55.500+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-18T14:04:55.519+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: biological_data_dag.extract_data_from_adw scheduled__2024-10-05T00:00:00+00:00 [queued]>
+[2024-11-18T14:04:55.530+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: biological_data_dag.extract_data_from_adw scheduled__2024-10-05T00:00:00+00:00 [queued]>
+[2024-11-18T14:04:55.531+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-11-18T14:04:55.547+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): extract_data_from_adw> on 2024-10-05 00:00:00+00:00
+[2024-11-18T14:04:55.555+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=65) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-18T14:04:55.556+0000] {standard_task_runner.py:72} INFO - Started process 73 to run task
+[2024-11-18T14:04:55.557+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'biological_data_dag', 'extract_data_from_adw', 'scheduled__2024-10-05T00:00:00+00:00', '--job-id', '556', '--raw', '--subdir', 'DAGS_FOLDER/biological_data_dag.py', '--cfg-path', '/tmp/tmpcblc0cfc']
+[2024-11-18T14:04:55.558+0000] {standard_task_runner.py:105} INFO - Job 556: Subtask extract_data_from_adw
+[2024-11-18T14:04:55.606+0000] {task_command.py:467} INFO - Running <TaskInstance: biological_data_dag.extract_data_from_adw scheduled__2024-10-05T00:00:00+00:00 [running]> on host 1657679c2206
+[2024-11-18T14:04:55.713+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='biological_data_dag' AIRFLOW_CTX_TASK_ID='extract_data_from_adw' AIRFLOW_CTX_EXECUTION_DATE='2024-10-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-05T00:00:00+00:00'
+[2024-11-18T14:04:55.714+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-18T14:04:55.714+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-18T14:04:55.714+0000] {logging_mixin.py:190} INFO - Current task name:extract_data_from_adw state:running start_date:2024-11-18 14:04:55.520373+00:00
+[2024-11-18T14:04:55.714+0000] {logging_mixin.py:190} INFO - Dag name:biological_data_dag and current dag run status:running
+[2024-11-18T14:04:55.715+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-18T14:04:55.715+0000] {taskinstance.py:301} INFO - Adw data retrieval removed.
+[2024-11-18T14:04:55.730+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-18T14:04:55.730+0000] {taskinstance.py:352} INFO - Marking task as SKIPPED. dag_id=biological_data_dag, task_id=extract_data_from_adw, run_id=scheduled__2024-10-05T00:00:00+00:00, execution_date=20241005T000000, start_date=20241118T140455, end_date=20241118T140455
+[2024-11-18T14:04:55.770+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-18T14:04:55.796+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-18T14:04:55.800+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

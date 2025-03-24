@@ -1,0 +1,140 @@
+[2024-11-18T14:05:46.535+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-18T14:05:46.559+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: biological_data_dag.extract_data_from_red_list scheduled__2024-10-05T00:00:00+00:00 [queued]>
+[2024-11-18T14:05:46.573+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: biological_data_dag.extract_data_from_red_list scheduled__2024-10-05T00:00:00+00:00 [queued]>
+[2024-11-18T14:05:46.574+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-11-18T14:05:46.594+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): extract_data_from_red_list> on 2024-10-05 00:00:00+00:00
+[2024-11-18T14:05:46.607+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1201) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-18T14:05:46.608+0000] {standard_task_runner.py:72} INFO - Started process 1204 to run task
+[2024-11-18T14:05:46.609+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'biological_data_dag', 'extract_data_from_red_list', 'scheduled__2024-10-05T00:00:00+00:00', '--job-id', '557', '--raw', '--subdir', 'DAGS_FOLDER/biological_data_dag.py', '--cfg-path', '/tmp/tmp1rciu_fl']
+[2024-11-18T14:05:46.610+0000] {standard_task_runner.py:105} INFO - Job 557: Subtask extract_data_from_red_list
+[2024-11-18T14:05:46.667+0000] {task_command.py:467} INFO - Running <TaskInstance: biological_data_dag.extract_data_from_red_list scheduled__2024-10-05T00:00:00+00:00 [running]> on host 1657679c2206
+[2024-11-18T14:05:46.809+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='biological_data_dag' AIRFLOW_CTX_TASK_ID='extract_data_from_red_list' AIRFLOW_CTX_EXECUTION_DATE='2024-10-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-05T00:00:00+00:00'
+[2024-11-18T14:05:46.810+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-18T14:05:46.811+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-18T14:05:46.811+0000] {logging_mixin.py:190} INFO - Current task name:extract_data_from_red_list state:running start_date:2024-11-18 14:05:46.559943+00:00
+[2024-11-18T14:05:46.811+0000] {logging_mixin.py:190} INFO - Dag name:biological_data_dag and current dag run status:running
+[2024-11-18T14:05:46.811+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-18T14:05:47.346+0000] {biological_data_dag.py:342} INFO - Species link https://www.iucnredlist.org/species/29691/115767606
+[2024-11-18T14:05:53.214+0000] {biological_data_dag.py:366} ERROR - Error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":".headline__subtitle"}
+  (Session info: chrome=130.0.6723.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x5b96cfa4b57e <unknown>
+#1 0x5b96cf580900 <unknown>
+#2 0x5b96cf5ccad2 <unknown>
+#3 0x5b96cf5cccd1 <unknown>
+#4 0x5b96cf616884 <unknown>
+#5 0x5b96cf5f4bbd <unknown>
+#6 0x5b96cf614392 <unknown>
+#7 0x5b96cf5f4933 <unknown>
+#8 0x5b96cf5c03a8 <unknown>
+#9 0x5b96cf5c135e <unknown>
+#10 0x5b96cfa1e936 <unknown>
+#11 0x5b96cfa21c67 <unknown>
+#12 0x5b96cfa21728 <unknown>
+#13 0x5b96cfa220f5 <unknown>
+#14 0x5b96cfa0f83e <unknown>
+#15 0x5b96cfa2243f <unknown>
+#16 0x5b96cf9f92f5 <unknown>
+#17 0x5b96cfa3aa25 <unknown>
+#18 0x5b96cfa3ac06 <unknown>
+#19 0x5b96cfa4a3b5 <unknown>
+#20 0x7b9a7c9d4144 <unknown>
+
+[2024-11-18T14:05:54.055+0000] {biological_data_dag.py:342} INFO - Species link https://www.iucnredlist.org/species/22725044/155292529
+[2024-11-18T14:05:57.029+0000] {biological_data_dag.py:366} ERROR - Error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":".headline__subtitle"}
+  (Session info: chrome=130.0.6723.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x5de7b9aee57e <unknown>
+#1 0x5de7b9623900 <unknown>
+#2 0x5de7b966fad2 <unknown>
+#3 0x5de7b966fcd1 <unknown>
+#4 0x5de7b96b9884 <unknown>
+#5 0x5de7b9697bbd <unknown>
+#6 0x5de7b96b7392 <unknown>
+#7 0x5de7b9697933 <unknown>
+#8 0x5de7b96633a8 <unknown>
+#9 0x5de7b966435e <unknown>
+#10 0x5de7b9ac1936 <unknown>
+#11 0x5de7b9ac4c67 <unknown>
+#12 0x5de7b9ac4728 <unknown>
+#13 0x5de7b9ac50f5 <unknown>
+#14 0x5de7b9ab283e <unknown>
+#15 0x5de7b9ac543f <unknown>
+#16 0x5de7b9a9c2f5 <unknown>
+#17 0x5de7b9adda25 <unknown>
+#18 0x5de7b9addc06 <unknown>
+#19 0x5de7b9aed3b5 <unknown>
+#20 0x784af420a144 <unknown>
+
+[2024-11-18T14:05:57.389+0000] {biological_data_dag.py:342} INFO - Species link https://www.iucnredlist.org/species/76/97260200
+[2024-11-18T14:06:02.643+0000] {biological_data_dag.py:421} INFO - Species name: Acanthochelys spixii
+[2024-11-18T14:06:02.784+0000] {biological_data_dag.py:411} INFO - Common name: Black Spiny-necked Swamp Turtle
+[2024-11-18T14:06:03.007+0000] {biological_data_dag.py:381} INFO - Class: reptilia
+[2024-11-18T14:06:03.167+0000] {biological_data_dag.py:384} INFO - Order: testudines
+[2024-11-18T14:06:03.387+0000] {biological_data_dag.py:387} INFO - Family: chelidae
+[2024-11-18T14:06:03.436+0000] {biological_data_dag.py:390} INFO - Genus: acanthochelys
+[2024-11-18T14:06:03.507+0000] {biological_data_dag.py:401} INFO - Conservation status: Lower Risk/near threatened 
+[2024-11-18T14:06:03.604+0000] {biological_data_dag.py:433} INFO - Habitat type: Terrestrial
+[2024-11-18T14:06:03.604+0000] {biological_data_dag.py:363} INFO - species to store: {species_to_store}
+[2024-11-18T14:06:04.139+0000] {biological_data_dag.py:342} INFO - Species link https://www.iucnredlist.org/species/61456/12470495
+[2024-11-18T14:06:13.142+0000] {biological_data_dag.py:421} INFO - Species name: Acanthodactylus erythrurus
+[2024-11-18T14:06:13.203+0000] {biological_data_dag.py:411} INFO - Common name: Spiny-footed Lizard
+[2024-11-18T14:06:13.520+0000] {biological_data_dag.py:381} INFO - Class: reptilia
+[2024-11-18T14:06:13.582+0000] {biological_data_dag.py:384} INFO - Order: squamata
+[2024-11-18T14:06:13.646+0000] {biological_data_dag.py:387} INFO - Family: lacertidae
+[2024-11-18T14:06:13.737+0000] {biological_data_dag.py:390} INFO - Genus: acanthodactylus
+[2024-11-18T14:06:13.796+0000] {biological_data_dag.py:401} INFO - Conservation status: Least Concern 
+[2024-11-18T14:06:13.916+0000] {biological_data_dag.py:433} INFO - Habitat type: Terrestrial
+[2024-11-18T14:06:13.916+0000] {biological_data_dag.py:363} INFO - species to store: {species_to_store}
+[2024-11-18T14:06:14.623+0000] {biological_data_dag.py:342} INFO - Species link https://www.iucnredlist.org/species/22695490/197951702
+[2024-11-18T14:06:29.084+0000] {biological_data_dag.py:421} INFO - Species name: Accipiter badius
+[2024-11-18T14:06:29.116+0000] {biological_data_dag.py:411} INFO - Common name: Shikra
+[2024-11-18T14:06:29.305+0000] {biological_data_dag.py:381} INFO - Class: aves
+[2024-11-18T14:06:29.351+0000] {biological_data_dag.py:384} INFO - Order: accipitriformes
+[2024-11-18T14:06:29.393+0000] {biological_data_dag.py:387} INFO - Family: accipitridae
+[2024-11-18T14:06:29.434+0000] {biological_data_dag.py:390} INFO - Genus: accipiter
+[2024-11-18T14:06:29.465+0000] {biological_data_dag.py:401} INFO - Conservation status: Least Concern 
+[2024-11-18T14:06:29.519+0000] {biological_data_dag.py:433} INFO - Habitat type: Terrestrial
+[2024-11-18T14:06:29.519+0000] {biological_data_dag.py:363} INFO - species to store: {species_to_store}
+[2024-11-18T14:06:29.947+0000] {biological_data_dag.py:342} INFO - Species link https://www.iucnredlist.org/species/22695656/264598871
+[2024-11-18T14:06:35.162+0000] {biological_data_dag.py:421} INFO - Species name: Accipiter cooperii
+[2024-11-18T14:06:35.188+0000] {biological_data_dag.py:411} INFO - Common name: Cooper's Hawk
+[2024-11-18T14:06:35.367+0000] {biological_data_dag.py:381} INFO - Class: aves
+[2024-11-18T14:06:35.404+0000] {biological_data_dag.py:384} INFO - Order: accipitriformes
+[2024-11-18T14:06:35.451+0000] {biological_data_dag.py:387} INFO - Family: accipitridae
+[2024-11-18T14:06:35.486+0000] {biological_data_dag.py:390} INFO - Genus: accipiter
+[2024-11-18T14:06:35.515+0000] {biological_data_dag.py:401} INFO - Conservation status: Least Concern 
+[2024-11-18T14:06:35.567+0000] {biological_data_dag.py:433} INFO - Habitat type: Terrestrial
+[2024-11-18T14:06:35.568+0000] {biological_data_dag.py:363} INFO - species to store: {species_to_store}
+[2024-11-18T14:06:36.306+0000] {biological_data_dag.py:342} INFO - Species link https://www.iucnredlist.org/species/22695683/198505113
+[2024-11-18T14:06:51.489+0000] {biological_data_dag.py:421} INFO - Species name: Accipiter gentilis
+[2024-11-18T14:06:51.527+0000] {biological_data_dag.py:411} INFO - Common name: Northern Goshawk
+[2024-11-18T14:06:51.777+0000] {biological_data_dag.py:381} INFO - Class: aves
+[2024-11-18T14:06:51.816+0000] {biological_data_dag.py:384} INFO - Order: accipitriformes
+[2024-11-18T14:06:51.849+0000] {biological_data_dag.py:387} INFO - Family: accipitridae
+[2024-11-18T14:06:51.889+0000] {biological_data_dag.py:390} INFO - Genus: accipiter
+[2024-11-18T14:06:51.913+0000] {biological_data_dag.py:401} INFO - Conservation status: Least Concern 
+[2024-11-18T14:06:51.970+0000] {biological_data_dag.py:433} INFO - Habitat type: Terrestrial
+[2024-11-18T14:06:51.970+0000] {biological_data_dag.py:363} INFO - species to store: {species_to_store}
+[2024-11-18T14:06:52.447+0000] {biological_data_dag.py:342} INFO - Species link https://www.iucnredlist.org/species/22695624/199751254
+[2024-11-18T14:07:08.244+0000] {biological_data_dag.py:421} INFO - Species name: Accipiter nisus
+[2024-11-18T14:07:08.279+0000] {biological_data_dag.py:411} INFO - Common name: Eurasian Sparrowhawk
+[2024-11-18T14:07:08.405+0000] {biological_data_dag.py:381} INFO - Class: aves
+[2024-11-18T14:07:08.443+0000] {biological_data_dag.py:384} INFO - Order: accipitriformes
+[2024-11-18T14:07:08.476+0000] {biological_data_dag.py:387} INFO - Family: accipitridae
+[2024-11-18T14:07:08.513+0000] {biological_data_dag.py:390} INFO - Genus: accipiter
+[2024-11-18T14:07:08.543+0000] {biological_data_dag.py:401} INFO - Conservation status: Least Concern 
+[2024-11-18T14:07:08.621+0000] {biological_data_dag.py:433} INFO - Habitat type: Terrestrial
+[2024-11-18T14:07:08.622+0000] {biological_data_dag.py:363} INFO - species to store: {species_to_store}
+[2024-11-18T14:07:08.690+0000] {python.py:240} INFO - Done. Returned value was: [{'specie': 'Accipiter nisus', 'common_name_red_list': 'Eurasian Sparrowhawk', 'class_red_list': 'aves', 'order_red_list': 'accipitriformes', 'family_red_list': 'accipitridae', 'genus_red_list': 'accipiter', 'conservation_status_red_list': 'Least Concern ', 'habitat_type_red_list': 'Terrestrial'}]
+[2024-11-18T14:07:08.721+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-18T14:07:08.721+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=biological_data_dag, task_id=extract_data_from_red_list, run_id=scheduled__2024-10-05T00:00:00+00:00, execution_date=20241005T000000, start_date=20241118T140546, end_date=20241118T140708
+[2024-11-18T14:07:08.732+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-18T14:07:08.734+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-18T14:07:08.736+0000] {logging_mixin.py:190} INFO - Dag name:biological_data_dag queued_at:2024-11-18 14:04:40.867087+00:00
+[2024-11-18T14:07:08.737+0000] {logging_mixin.py:190} INFO - Task hostname:1657679c2206 operator:_PythonDecoratedOperator
+[2024-11-18T14:07:08.776+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-18T14:07:08.805+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-18T14:07:08.809+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

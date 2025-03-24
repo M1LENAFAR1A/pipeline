@@ -1,0 +1,21 @@
+[2024-10-24T22:09:27.322+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-24T22:09:27.341+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.upload_to_minio scheduled__2024-10-24T21:00:00+00:00 [queued]>
+[2024-10-24T22:09:27.355+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.upload_to_minio scheduled__2024-10-24T21:00:00+00:00 [queued]>
+[2024-10-24T22:09:27.355+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 4
+[2024-10-24T22:09:27.378+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): upload_to_minio> on 2024-10-24 21:00:00+00:00
+[2024-10-24T22:09:27.394+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=332) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-24T22:09:27.395+0000] {standard_task_runner.py:72} INFO - Started process 334 to run task
+[2024-10-24T22:09:27.396+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelamento', 'upload_to_minio', 'scheduled__2024-10-24T21:00:00+00:00', '--job-id', '458', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp02j3famz']
+[2024-10-24T22:09:27.398+0000] {standard_task_runner.py:105} INFO - Job 458: Subtask upload_to_minio
+[2024-10-24T22:09:27.462+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_atropelamento.upload_to_minio scheduled__2024-10-24T21:00:00+00:00 [running]> on host 0f320a8498fe
+[2024-10-24T22:09:27.593+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_atropelamento' AIRFLOW_CTX_TASK_ID='upload_to_minio' AIRFLOW_CTX_EXECUTION_DATE='2024-10-24T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-24T21:00:00+00:00'
+[2024-10-24T22:09:27.594+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-24T22:09:27.594+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-24T22:09:27.594+0000] {logging_mixin.py:190} INFO - Current task name:upload_to_minio state:running start_date:2024-10-24 22:09:27.341909+00:00
+[2024-10-24T22:09:27.595+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelamento and current dag run status:running
+[2024-10-24T22:09:27.595+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-24T22:11:41.131+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x76c579546810>, 'Connection to 192.168.30.21 timed out. (connect timeout=300)')': /environbit?location=
+[2024-10-24T22:13:56.697+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x76c579578bc0>, 'Connection to 192.168.30.21 timed out. (connect timeout=300)')': /environbit?location=
+[2024-10-24T22:16:12.266+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x76c5795790d0>, 'Connection to 192.168.30.21 timed out. (connect timeout=300)')': /environbit?location=

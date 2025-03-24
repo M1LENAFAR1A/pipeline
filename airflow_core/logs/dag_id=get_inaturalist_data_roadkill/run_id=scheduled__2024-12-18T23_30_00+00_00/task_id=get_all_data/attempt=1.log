@@ -1,0 +1,28 @@
+[2024-12-19T09:38:54.689+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-19T09:38:54.713+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-18T23:30:00+00:00 [queued]>
+[2024-12-19T09:38:54.727+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-18T23:30:00+00:00 [queued]>
+[2024-12-19T09:38:54.728+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-19T09:38:54.745+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-12-18 23:30:00+00:00
+[2024-12-19T09:38:54.762+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=52) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-19T09:38:54.764+0000] {standard_task_runner.py:72} INFO - Started process 61 to run task
+[2024-12-19T09:38:54.768+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'get_all_data', 'scheduled__2024-12-18T23:30:00+00:00', '--job-id', '265', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmph1zttq9l']
+[2024-12-19T09:38:54.771+0000] {standard_task_runner.py:105} INFO - Job 265: Subtask get_all_data
+[2024-12-19T09:38:54.845+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-18T23:30:00+00:00 [running]> on host e919aa2070f5
+[2024-12-19T09:38:55.042+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-18T23:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-18T23:30:00+00:00'
+[2024-12-19T09:38:55.047+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-19T09:38:55.051+0000] {inaturalist_dag.py:150} INFO - Getting data from keyword: roadkill
+[2024-12-19T09:38:55.078+0000] {inaturalist_dag.py:41} INFO - Maximum id 255533773 for the request
+[2024-12-19T09:38:56.157+0000] {inaturalist_dag.py:58} INFO - Got 1 results
+[2024-12-19T09:38:56.158+0000] {inaturalist_dag.py:163} INFO - Extracted 1 observations
+[2024-12-19T09:38:56.159+0000] {inaturalist_dag.py:41} INFO - Maximum id 255552342 for the request
+[2024-12-19T09:38:57.007+0000] {inaturalist_dag.py:58} INFO - Got 0 results
+[2024-12-19T09:38:57.008+0000] {inaturalist_dag.py:158} INFO - No more observations found, stopping.
+[2024-12-19T09:38:57.015+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-12-19T09:38:57.021+0000] {python.py:240} INFO - Done. Returned value was: [{'observation_id': 255552342, 'uuid': '9dc652bf-b532-4ba6-b1ce-2d0872d7b062', 'species_guess': 'Red-necked Wallaby', 'observed_on_string': '2024-12-19 13:33:45', 'updated_at': '2024-12-19T16:42:14+11:00', 'description': 'Roadkill, female, non- lactating.', 'geojson_latitude': -34.96780467, 'geojson_longitude': 150.59760722, 'observed_on': '2024-12-19', 'created_at': '2024-12-19T13:34:29+11:00', 'observations_photos': [{'id': 457986008, 'url': 'https://inaturalist-open-data.s3.amazonaws.com/photos/457986008/square.jpeg'}], 'taxon_id': 1453431, 'taxon_name': 'Notamacropus rufogriseus', 'place_guess': 'Falls Creek NSW 2540, Australia', 'quality_grade': 'research', 'positional_accuracy': 5, 'default_photo': {'url': 'https://inaturalist-open-data.s3.amazonaws.com/photos/95958892/square.jpg', 'original_dimensions': {'height': 1365, 'width': 2048}}, 'project_ids': []}]
+[2024-12-19T09:38:57.055+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-19T09:38:57.056+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_roadkill, task_id=get_all_data, run_id=scheduled__2024-12-18T23:30:00+00:00, execution_date=20241218T233000, start_date=20241219T093854, end_date=20241219T093857
+[2024-12-19T09:38:57.085+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-19T09:38:57.115+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-19T09:38:57.117+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

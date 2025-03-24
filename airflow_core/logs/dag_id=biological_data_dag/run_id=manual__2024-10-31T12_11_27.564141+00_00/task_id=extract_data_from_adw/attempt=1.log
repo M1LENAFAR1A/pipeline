@@ -1,0 +1,335 @@
+[2024-10-31T12:11:43.550+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-31T12:11:43.591+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: biological_data_dag.extract_data_from_adw manual__2024-10-31T12:11:27.564141+00:00 [queued]>
+[2024-10-31T12:11:43.609+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: biological_data_dag.extract_data_from_adw manual__2024-10-31T12:11:27.564141+00:00 [queued]>
+[2024-10-31T12:11:43.610+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-31T12:11:43.635+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): extract_data_from_adw> on 2024-10-31 12:11:27.564141+00:00
+[2024-10-31T12:11:43.649+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=339) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-31T12:11:43.652+0000] {standard_task_runner.py:72} INFO - Started process 345 to run task
+[2024-10-31T12:11:43.653+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'biological_data_dag', 'extract_data_from_adw', 'manual__2024-10-31T12:11:27.564141+00:00', '--job-id', '280', '--raw', '--subdir', 'DAGS_FOLDER/biological_data_dag.py', '--cfg-path', '/tmp/tmpzkv9oqr_']
+[2024-10-31T12:11:43.655+0000] {standard_task_runner.py:105} INFO - Job 280: Subtask extract_data_from_adw
+[2024-10-31T12:11:43.730+0000] {task_command.py:467} INFO - Running <TaskInstance: biological_data_dag.extract_data_from_adw manual__2024-10-31T12:11:27.564141+00:00 [running]> on host 587c00f37f8c
+[2024-10-31T12:11:43.884+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='biological_data_dag' AIRFLOW_CTX_TASK_ID='extract_data_from_adw' AIRFLOW_CTX_EXECUTION_DATE='2024-10-31T12:11:27.564141+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-31T12:11:27.564141+00:00'
+[2024-10-31T12:11:43.886+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-31T12:11:43.886+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-31T12:11:43.887+0000] {logging_mixin.py:190} INFO - Current task name:extract_data_from_adw state:running start_date:2024-10-31 12:11:43.592071+00:00
+[2024-10-31T12:11:43.887+0000] {logging_mixin.py:190} INFO - Dag name:biological_data_dag and current dag run status:running
+[2024-10-31T12:11:43.888+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-31T12:11:43.889+0000] {biological_data_dag.py:99} INFO - Number of species to extract data: 2322
+[2024-10-31T12:11:43.889+0000] {biological_data_dag.py:104} INFO - Specie being extracted: Ablepharus kitaibelii
+[2024-10-31T12:11:45.001+0000] {biological_data_dag.py:117} INFO - Request was successful!
+[2024-10-31T12:11:45.059+0000] {biological_data_dag.py:149} INFO - Rank: Kingdom
+[2024-10-31T12:11:45.059+0000] {biological_data_dag.py:150} INFO - Taxon Name: Animalia
+[2024-10-31T12:11:45.060+0000] {biological_data_dag.py:151} INFO - Vernacular Name: animals
+[2024-10-31T12:11:45.062+0000] {biological_data_dag.py:149} INFO - Rank: Phylum
+[2024-10-31T12:11:45.062+0000] {biological_data_dag.py:150} INFO - Taxon Name: Chordata
+[2024-10-31T12:11:45.062+0000] {biological_data_dag.py:151} INFO - Vernacular Name: chordates
+[2024-10-31T12:11:45.064+0000] {biological_data_dag.py:149} INFO - Rank: Subphylum
+[2024-10-31T12:11:45.064+0000] {biological_data_dag.py:150} INFO - Taxon Name: Vertebrata
+[2024-10-31T12:11:45.064+0000] {biological_data_dag.py:151} INFO - Vernacular Name: vertebrates
+[2024-10-31T12:11:45.065+0000] {biological_data_dag.py:149} INFO - Rank: Class
+[2024-10-31T12:11:45.066+0000] {biological_data_dag.py:150} INFO - Taxon Name: Reptilia
+[2024-10-31T12:11:45.066+0000] {biological_data_dag.py:151} INFO - Vernacular Name: turtles, snakes, lizards, and relatives
+[2024-10-31T12:11:45.067+0000] {biological_data_dag.py:149} INFO - Rank: Order
+[2024-10-31T12:11:45.068+0000] {biological_data_dag.py:150} INFO - Taxon Name: Squamata
+[2024-10-31T12:11:45.068+0000] {biological_data_dag.py:151} INFO - Vernacular Name: 
+[2024-10-31T12:11:45.069+0000] {biological_data_dag.py:149} INFO - Rank: Family
+[2024-10-31T12:11:45.070+0000] {biological_data_dag.py:150} INFO - Taxon Name: Scincidae
+[2024-10-31T12:11:45.070+0000] {biological_data_dag.py:151} INFO - Vernacular Name: 
+[2024-10-31T12:11:45.073+0000] {biological_data_dag.py:149} INFO - Rank: Genus
+[2024-10-31T12:11:45.074+0000] {biological_data_dag.py:150} INFO - Taxon Name: Ablepharus
+[2024-10-31T12:11:45.074+0000] {biological_data_dag.py:151} INFO - Vernacular Name: 
+[2024-10-31T12:11:45.076+0000] {biological_data_dag.py:149} INFO - Rank: Species
+[2024-10-31T12:11:45.076+0000] {biological_data_dag.py:150} INFO - Taxon Name: Ablepharus kitaibelii
+[2024-10-31T12:11:45.077+0000] {biological_data_dag.py:151} INFO - Vernacular Name: Juniper Skink, Snake-eyed skink
+[2024-10-31T12:11:45.077+0000] {biological_data_dag.py:104} INFO - Specie being extracted: Acanthis flammea
+[2024-10-31T12:11:45.773+0000] {biological_data_dag.py:117} INFO - Request was successful!
+[2024-10-31T12:11:45.826+0000] {biological_data_dag.py:149} INFO - Rank: Kingdom
+[2024-10-31T12:11:45.826+0000] {biological_data_dag.py:150} INFO - Taxon Name: Animalia
+[2024-10-31T12:11:45.827+0000] {biological_data_dag.py:151} INFO - Vernacular Name: animals
+[2024-10-31T12:11:45.829+0000] {biological_data_dag.py:149} INFO - Rank: Phylum
+[2024-10-31T12:11:45.830+0000] {biological_data_dag.py:150} INFO - Taxon Name: Chordata
+[2024-10-31T12:11:45.830+0000] {biological_data_dag.py:151} INFO - Vernacular Name: chordates
+[2024-10-31T12:11:45.833+0000] {biological_data_dag.py:149} INFO - Rank: Subphylum
+[2024-10-31T12:11:45.833+0000] {biological_data_dag.py:150} INFO - Taxon Name: Vertebrata
+[2024-10-31T12:11:45.834+0000] {biological_data_dag.py:151} INFO - Vernacular Name: vertebrates
+[2024-10-31T12:11:45.836+0000] {biological_data_dag.py:149} INFO - Rank: Class
+[2024-10-31T12:11:45.837+0000] {biological_data_dag.py:150} INFO - Taxon Name: Aves
+[2024-10-31T12:11:45.838+0000] {biological_data_dag.py:151} INFO - Vernacular Name: birds
+[2024-10-31T12:11:45.841+0000] {biological_data_dag.py:149} INFO - Rank: Order
+[2024-10-31T12:11:45.841+0000] {biological_data_dag.py:150} INFO - Taxon Name: Passeriformes
+[2024-10-31T12:11:45.842+0000] {biological_data_dag.py:151} INFO - Vernacular Name: perching birds
+[2024-10-31T12:11:45.844+0000] {biological_data_dag.py:149} INFO - Rank: Family
+[2024-10-31T12:11:45.844+0000] {biological_data_dag.py:150} INFO - Taxon Name: Fringillidae
+[2024-10-31T12:11:45.845+0000] {biological_data_dag.py:151} INFO - Vernacular Name: finches
+[2024-10-31T12:11:45.847+0000] {biological_data_dag.py:149} INFO - Rank: Genus
+[2024-10-31T12:11:45.848+0000] {biological_data_dag.py:150} INFO - Taxon Name: Acanthis
+[2024-10-31T12:11:45.848+0000] {biological_data_dag.py:151} INFO - Vernacular Name: 
+[2024-10-31T12:11:45.850+0000] {biological_data_dag.py:149} INFO - Rank: Species
+[2024-10-31T12:11:45.851+0000] {biological_data_dag.py:150} INFO - Taxon Name: Acanthis flammea
+[2024-10-31T12:11:45.851+0000] {biological_data_dag.py:151} INFO - Vernacular Name: common redpoll
+[2024-10-31T12:11:45.852+0000] {biological_data_dag.py:104} INFO - Specie being extracted: Acanthochelys spixii
+[2024-10-31T12:11:46.825+0000] {biological_data_dag.py:117} INFO - Request was successful!
+[2024-10-31T12:11:46.884+0000] {biological_data_dag.py:149} INFO - Rank: Kingdom
+[2024-10-31T12:11:46.885+0000] {biological_data_dag.py:150} INFO - Taxon Name: Animalia
+[2024-10-31T12:11:46.885+0000] {biological_data_dag.py:151} INFO - Vernacular Name: animals
+[2024-10-31T12:11:46.887+0000] {biological_data_dag.py:149} INFO - Rank: Phylum
+[2024-10-31T12:11:46.888+0000] {biological_data_dag.py:150} INFO - Taxon Name: Chordata
+[2024-10-31T12:11:46.888+0000] {biological_data_dag.py:151} INFO - Vernacular Name: chordates
+[2024-10-31T12:11:46.889+0000] {biological_data_dag.py:149} INFO - Rank: Subphylum
+[2024-10-31T12:11:46.890+0000] {biological_data_dag.py:150} INFO - Taxon Name: Vertebrata
+[2024-10-31T12:11:46.890+0000] {biological_data_dag.py:151} INFO - Vernacular Name: vertebrates
+[2024-10-31T12:11:46.891+0000] {biological_data_dag.py:149} INFO - Rank: Class
+[2024-10-31T12:11:46.892+0000] {biological_data_dag.py:150} INFO - Taxon Name: Reptilia
+[2024-10-31T12:11:46.892+0000] {biological_data_dag.py:151} INFO - Vernacular Name: turtles, snakes, lizards, and relatives
+[2024-10-31T12:11:46.894+0000] {biological_data_dag.py:149} INFO - Rank: Order
+[2024-10-31T12:11:46.894+0000] {biological_data_dag.py:150} INFO - Taxon Name: Testudines
+[2024-10-31T12:11:46.894+0000] {biological_data_dag.py:151} INFO - Vernacular Name: 
+[2024-10-31T12:11:46.896+0000] {biological_data_dag.py:149} INFO - Rank: Family
+[2024-10-31T12:11:46.896+0000] {biological_data_dag.py:150} INFO - Taxon Name: Chelidae
+[2024-10-31T12:11:46.896+0000] {biological_data_dag.py:151} INFO - Vernacular Name: 
+[2024-10-31T12:11:46.898+0000] {biological_data_dag.py:149} INFO - Rank: Genus
+[2024-10-31T12:11:46.898+0000] {biological_data_dag.py:150} INFO - Taxon Name: Acanthochelys
+[2024-10-31T12:11:46.898+0000] {biological_data_dag.py:151} INFO - Vernacular Name: 
+[2024-10-31T12:11:46.899+0000] {biological_data_dag.py:149} INFO - Rank: Species
+[2024-10-31T12:11:46.900+0000] {biological_data_dag.py:150} INFO - Taxon Name: Acanthochelys spixii
+[2024-10-31T12:11:46.900+0000] {biological_data_dag.py:151} INFO - Vernacular Name: Black Spine-necked Swamp Turtle
+[2024-10-31T12:11:46.900+0000] {biological_data_dag.py:104} INFO - Specie being extracted: Acanthodactylus erythrurus
+[2024-10-31T12:11:47.627+0000] {biological_data_dag.py:117} INFO - Request was successful!
+[2024-10-31T12:11:47.692+0000] {biological_data_dag.py:149} INFO - Rank: Kingdom
+[2024-10-31T12:11:47.693+0000] {biological_data_dag.py:150} INFO - Taxon Name: Animalia
+[2024-10-31T12:11:47.694+0000] {biological_data_dag.py:151} INFO - Vernacular Name: animals
+[2024-10-31T12:11:47.696+0000] {biological_data_dag.py:149} INFO - Rank: Phylum
+[2024-10-31T12:11:47.697+0000] {biological_data_dag.py:150} INFO - Taxon Name: Chordata
+[2024-10-31T12:11:47.698+0000] {biological_data_dag.py:151} INFO - Vernacular Name: chordates
+[2024-10-31T12:11:47.700+0000] {biological_data_dag.py:149} INFO - Rank: Subphylum
+[2024-10-31T12:11:47.702+0000] {biological_data_dag.py:150} INFO - Taxon Name: Vertebrata
+[2024-10-31T12:11:47.702+0000] {biological_data_dag.py:151} INFO - Vernacular Name: vertebrates
+[2024-10-31T12:11:47.705+0000] {biological_data_dag.py:149} INFO - Rank: Class
+[2024-10-31T12:11:47.706+0000] {biological_data_dag.py:150} INFO - Taxon Name: Reptilia
+[2024-10-31T12:11:47.706+0000] {biological_data_dag.py:151} INFO - Vernacular Name: turtles, snakes, lizards, and relatives
+[2024-10-31T12:11:47.709+0000] {biological_data_dag.py:149} INFO - Rank: Order
+[2024-10-31T12:11:47.710+0000] {biological_data_dag.py:150} INFO - Taxon Name: Squamata
+[2024-10-31T12:11:47.710+0000] {biological_data_dag.py:151} INFO - Vernacular Name: 
+[2024-10-31T12:11:47.712+0000] {biological_data_dag.py:149} INFO - Rank: Family
+[2024-10-31T12:11:47.713+0000] {biological_data_dag.py:150} INFO - Taxon Name: Lacertidae
+[2024-10-31T12:11:47.713+0000] {biological_data_dag.py:151} INFO - Vernacular Name: 
+[2024-10-31T12:11:47.715+0000] {biological_data_dag.py:149} INFO - Rank: Genus
+[2024-10-31T12:11:47.716+0000] {biological_data_dag.py:150} INFO - Taxon Name: Acanthodactylus
+[2024-10-31T12:11:47.717+0000] {biological_data_dag.py:151} INFO - Vernacular Name: 
+[2024-10-31T12:11:47.719+0000] {biological_data_dag.py:149} INFO - Rank: Species
+[2024-10-31T12:11:47.720+0000] {biological_data_dag.py:150} INFO - Taxon Name: Acanthodactylus erythrurus
+[2024-10-31T12:11:47.721+0000] {biological_data_dag.py:151} INFO - Vernacular Name: Fringe-fingered Lizard
+[2024-10-31T12:11:47.721+0000] {biological_data_dag.py:104} INFO - Specie being extracted: Accipiter badius
+[2024-10-31T12:11:48.377+0000] {biological_data_dag.py:117} INFO - Request was successful!
+[2024-10-31T12:11:48.479+0000] {biological_data_dag.py:149} INFO - Rank: Kingdom
+[2024-10-31T12:11:48.480+0000] {biological_data_dag.py:150} INFO - Taxon Name: Animalia
+[2024-10-31T12:11:48.481+0000] {biological_data_dag.py:151} INFO - Vernacular Name: animals
+[2024-10-31T12:11:48.484+0000] {biological_data_dag.py:149} INFO - Rank: Phylum
+[2024-10-31T12:11:48.491+0000] {biological_data_dag.py:150} INFO - Taxon Name: Chordata
+[2024-10-31T12:11:48.493+0000] {biological_data_dag.py:151} INFO - Vernacular Name: chordates
+[2024-10-31T12:11:48.499+0000] {biological_data_dag.py:149} INFO - Rank: Subphylum
+[2024-10-31T12:11:48.500+0000] {biological_data_dag.py:150} INFO - Taxon Name: Vertebrata
+[2024-10-31T12:11:48.501+0000] {biological_data_dag.py:151} INFO - Vernacular Name: vertebrates
+[2024-10-31T12:11:48.506+0000] {biological_data_dag.py:149} INFO - Rank: Class
+[2024-10-31T12:11:48.508+0000] {biological_data_dag.py:150} INFO - Taxon Name: Aves
+[2024-10-31T12:11:48.508+0000] {biological_data_dag.py:151} INFO - Vernacular Name: birds
+[2024-10-31T12:11:48.512+0000] {biological_data_dag.py:149} INFO - Rank: Order
+[2024-10-31T12:11:48.513+0000] {biological_data_dag.py:150} INFO - Taxon Name: Falconiformes
+[2024-10-31T12:11:48.514+0000] {biological_data_dag.py:151} INFO - Vernacular Name: diurnal birds of prey
+[2024-10-31T12:11:48.517+0000] {biological_data_dag.py:149} INFO - Rank: Family
+[2024-10-31T12:11:48.519+0000] {biological_data_dag.py:150} INFO - Taxon Name: Accipitridae
+[2024-10-31T12:11:48.519+0000] {biological_data_dag.py:151} INFO - Vernacular Name: eagles, hawks, and kites
+[2024-10-31T12:11:48.522+0000] {biological_data_dag.py:149} INFO - Rank: Genus
+[2024-10-31T12:11:48.524+0000] {biological_data_dag.py:150} INFO - Taxon Name: Accipiter
+[2024-10-31T12:11:48.528+0000] {biological_data_dag.py:151} INFO - Vernacular Name: bird hawks
+[2024-10-31T12:11:48.533+0000] {biological_data_dag.py:149} INFO - Rank: Species
+[2024-10-31T12:11:48.534+0000] {biological_data_dag.py:150} INFO - Taxon Name: Accipiter badius
+[2024-10-31T12:11:48.537+0000] {biological_data_dag.py:151} INFO - Vernacular Name: shikra
+[2024-10-31T12:11:48.538+0000] {biological_data_dag.py:104} INFO - Specie being extracted: Accipiter cooperii
+[2024-10-31T12:11:49.439+0000] {biological_data_dag.py:117} INFO - Request was successful!
+[2024-10-31T12:11:50.181+0000] {biological_data_dag.py:149} INFO - Rank: Kingdom
+[2024-10-31T12:11:50.187+0000] {biological_data_dag.py:150} INFO - Taxon Name: Animalia
+[2024-10-31T12:11:50.190+0000] {biological_data_dag.py:151} INFO - Vernacular Name: animals
+[2024-10-31T12:11:51.437+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:11:51.582+0000] {biological_data_dag.py:196} INFO - Range_mass: 280 to 566 g
+[2024-10-31T12:11:51.588+0000] {biological_data_dag.py:201} INFO - Range_length: 35 to 50 cm
+[2024-10-31T12:11:51.588+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:11:51.594+0000] {biological_data_dag.py:220} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-31T12:11:51.594+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:11:51.595+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:11:51.634+0000] {biological_data_dag.py:149} INFO - Rank: Phylum
+[2024-10-31T12:11:51.635+0000] {biological_data_dag.py:150} INFO - Taxon Name: Chordata
+[2024-10-31T12:11:51.636+0000] {biological_data_dag.py:151} INFO - Vernacular Name: chordates
+[2024-10-31T12:11:52.540+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:11:52.797+0000] {biological_data_dag.py:196} INFO - Range_mass: 280 to 566 g
+[2024-10-31T12:11:52.799+0000] {biological_data_dag.py:201} INFO - Range_length: 35 to 50 cm
+[2024-10-31T12:11:52.800+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:11:52.801+0000] {biological_data_dag.py:220} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-31T12:11:52.802+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:11:52.803+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:11:52.824+0000] {biological_data_dag.py:149} INFO - Rank: Subphylum
+[2024-10-31T12:11:52.825+0000] {biological_data_dag.py:150} INFO - Taxon Name: Vertebrata
+[2024-10-31T12:11:52.826+0000] {biological_data_dag.py:151} INFO - Vernacular Name: vertebrates
+[2024-10-31T12:11:53.524+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:11:53.646+0000] {biological_data_dag.py:196} INFO - Range_mass: 280 to 566 g
+[2024-10-31T12:11:53.647+0000] {biological_data_dag.py:201} INFO - Range_length: 35 to 50 cm
+[2024-10-31T12:11:53.648+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:11:53.649+0000] {biological_data_dag.py:220} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-31T12:11:53.650+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:11:53.650+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:11:53.663+0000] {biological_data_dag.py:149} INFO - Rank: Class
+[2024-10-31T12:11:53.663+0000] {biological_data_dag.py:150} INFO - Taxon Name: Aves
+[2024-10-31T12:11:53.664+0000] {biological_data_dag.py:151} INFO - Vernacular Name: birds
+[2024-10-31T12:11:54.824+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:11:55.007+0000] {biological_data_dag.py:196} INFO - Range_mass: 280 to 566 g
+[2024-10-31T12:11:55.008+0000] {biological_data_dag.py:201} INFO - Range_length: 35 to 50 cm
+[2024-10-31T12:11:55.008+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:11:55.009+0000] {biological_data_dag.py:220} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-31T12:11:55.010+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:11:55.010+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:11:55.046+0000] {biological_data_dag.py:149} INFO - Rank: Order
+[2024-10-31T12:11:55.048+0000] {biological_data_dag.py:150} INFO - Taxon Name: Falconiformes
+[2024-10-31T12:11:55.049+0000] {biological_data_dag.py:151} INFO - Vernacular Name: diurnal birds of prey
+[2024-10-31T12:11:55.856+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:11:56.175+0000] {biological_data_dag.py:196} INFO - Range_mass: 280 to 566 g
+[2024-10-31T12:11:56.178+0000] {biological_data_dag.py:201} INFO - Range_length: 35 to 50 cm
+[2024-10-31T12:11:56.178+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:11:56.179+0000] {biological_data_dag.py:220} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-31T12:11:56.182+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:11:56.183+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:11:56.265+0000] {biological_data_dag.py:149} INFO - Rank: Family
+[2024-10-31T12:11:56.269+0000] {biological_data_dag.py:150} INFO - Taxon Name: Accipitridae
+[2024-10-31T12:11:56.270+0000] {biological_data_dag.py:151} INFO - Vernacular Name: eagles, hawks, and kites
+[2024-10-31T12:11:57.210+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:11:57.623+0000] {biological_data_dag.py:196} INFO - Range_mass: 280 to 566 g
+[2024-10-31T12:11:57.625+0000] {biological_data_dag.py:201} INFO - Range_length: 35 to 50 cm
+[2024-10-31T12:11:57.626+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:11:57.637+0000] {biological_data_dag.py:220} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-31T12:11:57.648+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:11:57.649+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:11:57.703+0000] {biological_data_dag.py:149} INFO - Rank: Genus
+[2024-10-31T12:11:57.706+0000] {biological_data_dag.py:150} INFO - Taxon Name: Accipiter
+[2024-10-31T12:11:57.707+0000] {biological_data_dag.py:151} INFO - Vernacular Name: bird hawks
+[2024-10-31T12:11:58.527+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:11:58.787+0000] {biological_data_dag.py:196} INFO - Range_mass: 280 to 566 g
+[2024-10-31T12:11:58.787+0000] {biological_data_dag.py:201} INFO - Range_length: 35 to 50 cm
+[2024-10-31T12:11:58.788+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:11:58.788+0000] {biological_data_dag.py:220} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-31T12:11:58.789+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:11:58.789+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:11:58.828+0000] {biological_data_dag.py:149} INFO - Rank: Species
+[2024-10-31T12:11:58.831+0000] {biological_data_dag.py:150} INFO - Taxon Name: Accipiter cooperii
+[2024-10-31T12:11:58.832+0000] {biological_data_dag.py:151} INFO - Vernacular Name: Cooper's hawk
+[2024-10-31T12:11:59.767+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:11:59.930+0000] {biological_data_dag.py:196} INFO - Range_mass: 280 to 566 g
+[2024-10-31T12:11:59.933+0000] {biological_data_dag.py:201} INFO - Range_length: 35 to 50 cm
+[2024-10-31T12:11:59.935+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:11:59.936+0000] {biological_data_dag.py:220} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-31T12:11:59.938+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:11:59.938+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:11:59.952+0000] {biological_data_dag.py:104} INFO - Specie being extracted: Accipiter gentilis
+[2024-10-31T12:12:00.680+0000] {biological_data_dag.py:117} INFO - Request was successful!
+[2024-10-31T12:12:00.743+0000] {biological_data_dag.py:149} INFO - Rank: Kingdom
+[2024-10-31T12:12:00.744+0000] {biological_data_dag.py:150} INFO - Taxon Name: Animalia
+[2024-10-31T12:12:00.745+0000] {biological_data_dag.py:151} INFO - Vernacular Name: animals
+[2024-10-31T12:12:01.670+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:12:01.775+0000] {biological_data_dag.py:196} INFO - Range_mass: 631 to 1364 g
+[2024-10-31T12:12:01.775+0000] {biological_data_dag.py:201} INFO - Range_length: 55 to 61 cm
+[2024-10-31T12:12:01.776+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:12:01.776+0000] {biological_data_dag.py:220} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-31T12:12:01.777+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:12:01.777+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:12:01.782+0000] {biological_data_dag.py:149} INFO - Rank: Phylum
+[2024-10-31T12:12:01.783+0000] {biological_data_dag.py:150} INFO - Taxon Name: Chordata
+[2024-10-31T12:12:01.783+0000] {biological_data_dag.py:151} INFO - Vernacular Name: chordates
+[2024-10-31T12:12:02.585+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:12:02.682+0000] {biological_data_dag.py:196} INFO - Range_mass: 631 to 1364 g
+[2024-10-31T12:12:02.682+0000] {biological_data_dag.py:201} INFO - Range_length: 55 to 61 cm
+[2024-10-31T12:12:02.683+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:12:02.684+0000] {biological_data_dag.py:220} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-31T12:12:02.684+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:12:02.685+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:12:02.692+0000] {biological_data_dag.py:149} INFO - Rank: Subphylum
+[2024-10-31T12:12:02.693+0000] {biological_data_dag.py:150} INFO - Taxon Name: Vertebrata
+[2024-10-31T12:12:02.693+0000] {biological_data_dag.py:151} INFO - Vernacular Name: vertebrates
+[2024-10-31T12:12:03.511+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:12:03.612+0000] {biological_data_dag.py:196} INFO - Range_mass: 631 to 1364 g
+[2024-10-31T12:12:03.613+0000] {biological_data_dag.py:201} INFO - Range_length: 55 to 61 cm
+[2024-10-31T12:12:03.614+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:12:03.614+0000] {biological_data_dag.py:220} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-31T12:12:03.615+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:12:03.615+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:12:03.622+0000] {biological_data_dag.py:149} INFO - Rank: Class
+[2024-10-31T12:12:03.623+0000] {biological_data_dag.py:150} INFO - Taxon Name: Aves
+[2024-10-31T12:12:03.623+0000] {biological_data_dag.py:151} INFO - Vernacular Name: birds
+[2024-10-31T12:12:04.412+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:12:04.476+0000] {biological_data_dag.py:196} INFO - Range_mass: 631 to 1364 g
+[2024-10-31T12:12:04.477+0000] {biological_data_dag.py:201} INFO - Range_length: 55 to 61 cm
+[2024-10-31T12:12:04.477+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:12:04.477+0000] {biological_data_dag.py:220} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-31T12:12:04.478+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:12:04.478+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:12:04.482+0000] {biological_data_dag.py:149} INFO - Rank: Order
+[2024-10-31T12:12:04.482+0000] {biological_data_dag.py:150} INFO - Taxon Name: Falconiformes
+[2024-10-31T12:12:04.482+0000] {biological_data_dag.py:151} INFO - Vernacular Name: diurnal birds of prey
+[2024-10-31T12:12:05.287+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:12:05.380+0000] {biological_data_dag.py:196} INFO - Range_mass: 631 to 1364 g
+[2024-10-31T12:12:05.380+0000] {biological_data_dag.py:201} INFO - Range_length: 55 to 61 cm
+[2024-10-31T12:12:05.381+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:12:05.381+0000] {biological_data_dag.py:220} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-31T12:12:05.382+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:12:05.382+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:12:05.391+0000] {biological_data_dag.py:149} INFO - Rank: Family
+[2024-10-31T12:12:05.392+0000] {biological_data_dag.py:150} INFO - Taxon Name: Accipitridae
+[2024-10-31T12:12:05.392+0000] {biological_data_dag.py:151} INFO - Vernacular Name: eagles, hawks, and kites
+[2024-10-31T12:12:06.109+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:12:06.253+0000] {biological_data_dag.py:196} INFO - Range_mass: 631 to 1364 g
+[2024-10-31T12:12:06.254+0000] {biological_data_dag.py:201} INFO - Range_length: 55 to 61 cm
+[2024-10-31T12:12:06.255+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:12:06.257+0000] {biological_data_dag.py:220} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-31T12:12:06.259+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:12:06.260+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:12:06.274+0000] {biological_data_dag.py:149} INFO - Rank: Genus
+[2024-10-31T12:12:06.276+0000] {biological_data_dag.py:150} INFO - Taxon Name: Accipiter
+[2024-10-31T12:12:06.278+0000] {biological_data_dag.py:151} INFO - Vernacular Name: bird hawks
+[2024-10-31T12:12:07.049+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:12:07.186+0000] {biological_data_dag.py:196} INFO - Range_mass: 631 to 1364 g
+[2024-10-31T12:12:07.190+0000] {biological_data_dag.py:201} INFO - Range_length: 55 to 61 cm
+[2024-10-31T12:12:07.191+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:12:07.192+0000] {biological_data_dag.py:220} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-31T12:12:07.192+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:12:07.193+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:12:07.240+0000] {biological_data_dag.py:149} INFO - Rank: Species
+[2024-10-31T12:12:07.241+0000] {biological_data_dag.py:150} INFO - Taxon Name: Accipiter gentilis
+[2024-10-31T12:12:07.241+0000] {biological_data_dag.py:151} INFO - Vernacular Name: northern goshawk
+[2024-10-31T12:12:07.894+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:12:07.973+0000] {biological_data_dag.py:196} INFO - Range_mass: 631 to 1364 g
+[2024-10-31T12:12:07.973+0000] {biological_data_dag.py:201} INFO - Range_length: 55 to 61 cm
+[2024-10-31T12:12:07.974+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:12:07.974+0000] {biological_data_dag.py:220} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-31T12:12:07.975+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:12:07.975+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:12:07.975+0000] {biological_data_dag.py:104} INFO - Specie being extracted: Accipiter nisus
+[2024-10-31T12:12:08.728+0000] {biological_data_dag.py:117} INFO - Request was successful!
+[2024-10-31T12:12:09.325+0000] {biological_data_dag.py:149} INFO - Rank: Kingdom
+[2024-10-31T12:12:09.327+0000] {biological_data_dag.py:150} INFO - Taxon Name: Animalia
+[2024-10-31T12:12:09.328+0000] {biological_data_dag.py:151} INFO - Vernacular Name: animals
+[2024-10-31T12:12:10.294+0000] {biological_data_dag.py:182} INFO - Information tab request was successful
+[2024-10-31T12:12:10.456+0000] {biological_data_dag.py:196} INFO - Range_mass: 110 to 342 g
+[2024-10-31T12:12:10.457+0000] {biological_data_dag.py:201} INFO - Range_length: 29 to 41 cm
+[2024-10-31T12:12:10.458+0000] {biological_data_dag.py:206} INFO - primary_diet: carnivore
+[2024-10-31T12:12:10.459+0000] {biological_data_dag.py:220} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-31T12:12:10.459+0000] {biological_data_dag.py:234} INFO - Habitats: temperate, terrestrial
+[2024-10-31T12:12:10.460+0000] {biological_data_dag.py:239} INFO - Conservation station: Least Concern
+[2024-10-31T12:12:10.479+0000] {python.py:240} INFO - Done. Returned value was: [{'specie': 'Ablepharus kitaibelii', 'common_name_adw': 'Juniper Skink, Snake-eyed skink', 'class_adw': 'Reptilia', 'order_adw': 'Squamata', 'family_adw': 'Scincidae', 'genus_adw': 'Ablepharus', 'species_adw': 'Ablepharus kitaibelii'}, {'specie': 'Acanthis flammea', 'common_name_adw': 'common redpoll', 'class_adw': 'Aves', 'order_adw': 'Passeriformes', 'family_adw': 'Fringillidae', 'genus_adw': 'Acanthis', 'species_adw': 'Acanthis flammea'}, {'specie': 'Acanthochelys spixii', 'common_name_adw': 'Black Spine-necked Swamp Turtle', 'class_adw': 'Reptilia', 'order_adw': 'Testudines', 'family_adw': 'Chelidae', 'genus_adw': 'Acanthochelys', 'species_adw': 'Acanthochelys spixii'}, {'specie': 'Acanthodactylus erythrurus', 'common_name_adw': 'Fringe-fingered Lizard', 'class_adw': 'Reptilia', 'order_adw': 'Squamata', 'family_adw': 'Lacertidae', 'genus_adw': 'Acanthodactylus', 'species_adw': 'Acanthodactylus erythrurus'}, {'specie': 'Accipiter badius', 'common_name_adw': 'shikra', 'class_adw': 'Aves', 'order_adw': 'Falconiformes', 'family_adw': 'Accipitridae', 'genus_adw': 'Accipiter', 'species_adw': 'Accipiter badius'}, {'specie': 'Accipiter cooperii', 'common_name_adw': "Cooper's hawk", 'range_mass_adw': '280 to 566 g', 'range_lenght_adw': '35 to 50 cm', 'primary_diet_adw': 'carnivore', 'activity_patterns_adw': 'arboreal, diurnal, motile, migratory, solitary, territorial', 'habitat_types_adw': 'temperate, terrestrial', 'conservation_status_adw': 'Least Concern', 'class_adw': 'Aves', 'order_adw': 'Falconiformes', 'family_adw': 'Accipitridae', 'genus_adw': 'Accipiter', 'species_adw': 'Accipiter cooperii'}, {'specie': 'Accipiter gentilis', 'common_name_adw': 'northern goshawk', 'range_mass_adw': '631 to 1364 g', 'range_lenght_adw': '55 to 61 cm', 'primary_diet_adw': 'carnivore', 'activity_patterns_adw': 'diurnal, motile, migratory, sedentary, solitary, territorial', 'habitat_types_adw': 'temperate, terrestrial', 'conservation_status_adw': 'Least Concern', 'class_adw': 'Aves', 'order_adw': 'Falconiformes', 'family_adw': 'Accipitridae', 'genus_adw': 'Accipiter', 'species_adw': 'Accipiter gentilis'}, {'specie': 'Accipiter nisus', 'common_name_adw': 'animals', 'range_mass_adw': '110 to 342 g', 'range_lenght_adw': '29 to 41 cm', 'primary_diet_adw': 'carnivore', 'activity_patterns_adw': 'arboreal, diurnal, motile, migratory, solitary, territorial', 'habitat_types_adw': 'temperate, terrestrial', 'conservation_status_adw': 'Least Concern'}]
+[2024-10-31T12:12:10.648+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-31T12:12:10.649+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=biological_data_dag, task_id=extract_data_from_adw, run_id=manual__2024-10-31T12:11:27.564141+00:00, execution_date=20241031T121127, start_date=20241031T121143, end_date=20241031T121210
+[2024-10-31T12:12:10.678+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-31T12:12:10.679+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-31T12:12:10.679+0000] {logging_mixin.py:190} INFO - Dag name:biological_data_dag queued_at:2024-10-31 12:11:27.591056+00:00
+[2024-10-31T12:12:10.679+0000] {logging_mixin.py:190} INFO - Task hostname:587c00f37f8c operator:_PythonDecoratedOperator
+[2024-10-31T12:12:10.739+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-31T12:12:10.822+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-31T12:12:10.828+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

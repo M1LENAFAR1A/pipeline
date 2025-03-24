@@ -1,0 +1,28 @@
+[2024-12-06T14:57:42.087+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-06T14:57:42.125+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data manual__2024-12-06T14:57:38.570328+00:00 [queued]>
+[2024-12-06T14:57:42.144+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data manual__2024-12-06T14:57:38.570328+00:00 [queued]>
+[2024-12-06T14:57:42.145+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-06T14:57:42.171+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-12-06 14:57:38.570328+00:00
+[2024-12-06T14:57:42.189+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=2364) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-06T14:57:42.193+0000] {standard_task_runner.py:72} INFO - Started process 2366 to run task
+[2024-12-06T14:57:42.195+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'get_all_data', 'manual__2024-12-06T14:57:38.570328+00:00', '--job-id', '2598', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmpq_hg68jr']
+[2024-12-06T14:57:42.199+0000] {standard_task_runner.py:105} INFO - Job 2598: Subtask get_all_data
+[2024-12-06T14:57:42.285+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.get_all_data manual__2024-12-06T14:57:38.570328+00:00 [running]> on host 4d2800f2c921
+[2024-12-06T14:57:42.468+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-06T14:57:38.570328+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-06T14:57:38.570328+00:00'
+[2024-12-06T14:57:42.478+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-06T14:57:42.484+0000] {inaturalist_dag.py:150} INFO - Getting data from keyword: roadkill
+[2024-12-06T14:57:42.521+0000] {inaturalist_dag.py:41} INFO - Maximum id 254298584 for the request
+[2024-12-06T14:57:43.837+0000] {inaturalist_dag.py:58} INFO - Got 1 results
+[2024-12-06T14:57:43.839+0000] {inaturalist_dag.py:163} INFO - Extracted 1 observations
+[2024-12-06T14:57:43.841+0000] {inaturalist_dag.py:41} INFO - Maximum id 254301792 for the request
+[2024-12-06T14:57:45.003+0000] {inaturalist_dag.py:58} INFO - Got 0 results
+[2024-12-06T14:57:45.006+0000] {inaturalist_dag.py:158} INFO - No more observations found, stopping.
+[2024-12-06T14:57:45.034+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-12-06T14:57:45.045+0000] {python.py:240} INFO - Done. Returned value was: [{'observation_id': 254301792, 'uuid': 'dc67e0ef-8254-4818-9322-a2ba1ae531b1', 'species_guess': 'Elegant Bronzeback', 'observed_on_string': '2024-12-06 22:01:31', 'updated_at': '2024-12-06T22:21:31+08:00', 'description': 'Roadkill.', 'geojson_latitude': 1.3551519403, 'geojson_longitude': 103.7972020358, 'observed_on': '2024-12-06', 'created_at': '2024-12-06T22:09:29+08:00', 'observations_photos': [{'id': 455473920, 'url': 'https://static.inaturalist.org/photos/455473920/square.jpeg'}], 'taxon_id': 26696, 'taxon_name': 'Dendrelaphis formosus', 'place_guess': 'Central Water Catchment, Singapore', 'quality_grade': 'research', 'positional_accuracy': 8096, 'default_photo': {'url': 'https://inaturalist-open-data.s3.amazonaws.com/photos/5848802/square.jpeg', 'original_dimensions': {'height': 1360, 'width': 2048}}, 'project_ids': []}]
+[2024-12-06T14:57:45.128+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-06T14:57:45.130+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_roadkill, task_id=get_all_data, run_id=manual__2024-12-06T14:57:38.570328+00:00, execution_date=20241206T145738, start_date=20241206T145742, end_date=20241206T145745
+[2024-12-06T14:57:45.226+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-06T14:57:45.287+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-06T14:57:45.292+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

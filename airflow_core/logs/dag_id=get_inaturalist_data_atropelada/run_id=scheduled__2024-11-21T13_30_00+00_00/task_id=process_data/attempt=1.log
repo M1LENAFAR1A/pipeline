@@ -1,0 +1,28 @@
+[2024-11-21T14:19:50.699+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T14:19:50.750+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.process_data scheduled__2024-11-21T13:30:00+00:00 [queued]>
+[2024-11-21T14:19:50.766+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.process_data scheduled__2024-11-21T13:30:00+00:00 [queued]>
+[2024-11-21T14:19:50.767+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-11-21T14:19:50.793+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): process_data> on 2024-11-21 13:30:00+00:00
+[2024-11-21T14:19:50.816+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=48) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T14:19:50.818+0000] {standard_task_runner.py:72} INFO - Started process 66 to run task
+[2024-11-21T14:19:50.823+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelada', 'process_data', 'scheduled__2024-11-21T13:30:00+00:00', '--job-id', '859', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp0u5vyo1q']
+[2024-11-21T14:19:50.824+0000] {standard_task_runner.py:105} INFO - Job 859: Subtask process_data
+[2024-11-21T14:19:50.923+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_atropelada.process_data scheduled__2024-11-21T13:30:00+00:00 [running]> on host 4e920529e77f
+[2024-11-21T14:19:51.093+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_atropelada' AIRFLOW_CTX_TASK_ID='process_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T13:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-21T13:30:00+00:00'
+[2024-11-21T14:19:51.094+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T14:19:51.095+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T14:19:51.099+0000] {logging_mixin.py:190} INFO - Current task name:process_data state:running start_date:2024-11-21 14:19:50.750765+00:00
+[2024-11-21T14:19:51.100+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelada and current dag run status:running
+[2024-11-21T14:19:51.100+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T14:19:51.101+0000] {python.py:240} INFO - Done. Returned value was: {'path': 'inaturalist_data/atropelada_data/2024/11/21/atropelada_observations_141951.json', 'format': 'application/json'}
+[2024-11-21T14:19:51.162+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-21T14:19:51.164+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_atropelada, task_id=process_data, run_id=scheduled__2024-11-21T13:30:00+00:00, execution_date=20241121T133000, start_date=20241121T141950, end_date=20241121T141951
+[2024-11-21T14:19:51.180+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-21T14:19:51.180+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-21T14:19:51.181+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelada queued_at:2024-11-21 14:19:46.528549+00:00
+[2024-11-21T14:19:51.181+0000] {logging_mixin.py:190} INFO - Task hostname:4e920529e77f operator:_PythonDecoratedOperator
+[2024-11-21T14:19:51.210+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-21T14:19:51.248+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-21T14:19:51.250+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

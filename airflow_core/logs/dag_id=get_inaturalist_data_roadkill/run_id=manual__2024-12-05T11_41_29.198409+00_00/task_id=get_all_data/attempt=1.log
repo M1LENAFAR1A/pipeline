@@ -1,0 +1,36 @@
+[2024-12-05T11:41:31.614+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-05T11:41:31.629+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data manual__2024-12-05T11:41:29.198409+00:00 [queued]>
+[2024-12-05T11:41:31.638+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data manual__2024-12-05T11:41:29.198409+00:00 [queued]>
+[2024-12-05T11:41:31.638+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-05T11:41:31.657+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-12-05 11:41:29.198409+00:00
+[2024-12-05T11:41:31.667+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=354) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-05T11:41:31.669+0000] {standard_task_runner.py:72} INFO - Started process 357 to run task
+[2024-12-05T11:41:31.669+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'get_all_data', 'manual__2024-12-05T11:41:29.198409+00:00', '--job-id', '2485', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmpgpt3yabn']
+[2024-12-05T11:41:31.671+0000] {standard_task_runner.py:105} INFO - Job 2485: Subtask get_all_data
+[2024-12-05T11:41:31.710+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.get_all_data manual__2024-12-05T11:41:29.198409+00:00 [running]> on host 5dd78280c9a6
+[2024-12-05T11:41:31.788+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-05T11:41:29.198409+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-05T11:41:29.198409+00:00'
+[2024-12-05T11:41:31.789+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-12-05T11:41:31.790+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-12-05T11:41:31.790+0000] {logging_mixin.py:190} INFO - Current task name:get_all_data state:running start_date:2024-12-05 11:41:31.630205+00:00
+[2024-12-05T11:41:31.790+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_roadkill and current dag run status:running
+[2024-12-05T11:41:31.790+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-05T11:41:31.791+0000] {inaturalist_dag.py:153} INFO - Getting data from keyword: roadkill
+[2024-12-05T11:41:31.797+0000] {inaturalist_dag.py:45} INFO - Maximum id 254188198 for the request
+[2024-12-05T11:41:32.775+0000] {inaturalist_dag.py:61} INFO - Got 1 results
+[2024-12-05T11:41:32.775+0000] {inaturalist_dag.py:165} INFO - Extracted 1 observations
+[2024-12-05T11:41:32.776+0000] {inaturalist_dag.py:45} INFO - Maximum id 254195102 for the request
+[2024-12-05T11:41:33.756+0000] {inaturalist_dag.py:61} INFO - Got 0 results
+[2024-12-05T11:41:33.757+0000] {inaturalist_dag.py:160} INFO - No more observations found, stopping.
+[2024-12-05T11:41:33.762+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-12-05T11:41:33.767+0000] {python.py:240} INFO - Done. Returned value was: [{'observation_id': 254195102, 'uuid': '07849129-5a55-4de2-952c-682f5b520d7b', 'species_guess': 'Eastern Grey Kangaroo', 'observed_on_string': '2024-12-05 17:34:00', 'updated_at': '2024-12-05T22:30:27+11:00', 'description': 'Roadkill', 'geojson_latitude': -35.551833, 'geojson_longitude': 150.3791909722, 'observed_on': '2024-12-05', 'created_at': '2024-12-05T22:30:09+11:00', 'observations_photos': [{'id': 455258442, 'url': 'https://inaturalist-open-data.s3.amazonaws.com/photos/455258442/square.jpeg'}], 'taxon_id': 42888, 'taxon_name': 'Macropus giganteus', 'place_guess': 'Kioloa NSW 2539, Australia', 'quality_grade': 'needs_id', 'positional_accuracy': None, 'default_photo': {'url': 'https://inaturalist-open-data.s3.amazonaws.com/photos/53221252/square.jpg', 'original_dimensions': {'height': 997, 'width': 1500}}, 'project_ids': [46638]}]
+[2024-12-05T11:41:33.791+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-05T11:41:33.791+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_roadkill, task_id=get_all_data, run_id=manual__2024-12-05T11:41:29.198409+00:00, execution_date=20241205T114129, start_date=20241205T114131, end_date=20241205T114133
+[2024-12-05T11:41:33.805+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-12-05T11:41:33.806+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-12-05T11:41:33.806+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_roadkill queued_at:2024-12-05 11:41:29.216672+00:00
+[2024-12-05T11:41:33.807+0000] {logging_mixin.py:190} INFO - Task hostname:5dd78280c9a6 operator:_PythonDecoratedOperator
+[2024-12-05T11:41:33.851+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-05T11:41:33.883+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-05T11:41:33.886+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

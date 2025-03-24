@@ -1,0 +1,22 @@
+[2024-12-11T10:02:00.179+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-11T10:02:00.197+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.save_data scheduled__2024-12-11T09:30:00+00:00 [queued]>
+[2024-12-11T10:02:00.213+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.save_data scheduled__2024-12-11T09:30:00+00:00 [queued]>
+[2024-12-11T10:02:00.213+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-11T10:02:00.227+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): save_data> on 2024-12-11 09:30:00+00:00
+[2024-12-11T10:02:00.239+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=582) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-11T10:02:00.240+0000] {standard_task_runner.py:72} INFO - Started process 584 to run task
+[2024-12-11T10:02:00.241+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'save_data', 'scheduled__2024-12-11T09:30:00+00:00', '--job-id', '85', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp5496pbhu']
+[2024-12-11T10:02:00.243+0000] {standard_task_runner.py:105} INFO - Job 85: Subtask save_data
+[2024-12-11T10:02:00.292+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.save_data scheduled__2024-12-11T09:30:00+00:00 [running]> on host a036f9eea991
+[2024-12-11T10:02:00.796+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='save_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-11T09:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-11T09:30:00+00:00'
+[2024-12-11T10:02:00.797+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-11T10:02:01.736+0000] {minio.py:40} INFO - created inaturalist/roadkill/2024/12/11/roadkill_observations_100158.csv object; etag: 1af40b065f953152391860b398a694b3, version-id: None
+[2024-12-11T10:02:01.736+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under inaturalist/roadkill/2024/12/11/roadkill_observations_100158.csv
+[2024-12-11T10:02:01.739+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-11T10:02:01.747+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-11T10:02:01.748+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_roadkill, task_id=save_data, run_id=scheduled__2024-12-11T09:30:00+00:00, execution_date=20241211T093000, start_date=20241211T100200, end_date=20241211T100201
+[2024-12-11T10:02:01.779+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-11T10:02:01.811+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-11T10:02:01.813+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

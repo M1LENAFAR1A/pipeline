@@ -1,0 +1,39 @@
+[2024-10-29T17:14:05.160+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-29T17:14:05.180+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: biological_data_dag.get_specie_link manual__2024-10-29T17:13:55.094298+00:00 [queued]>
+[2024-10-29T17:14:05.191+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: biological_data_dag.get_specie_link manual__2024-10-29T17:13:55.094298+00:00 [queued]>
+[2024-10-29T17:14:05.191+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-29T17:14:05.211+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_specie_link> on 2024-10-29 17:13:55.094298+00:00
+[2024-10-29T17:14:05.222+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=87) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-29T17:14:05.223+0000] {standard_task_runner.py:72} INFO - Started process 94 to run task
+[2024-10-29T17:14:05.224+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'biological_data_dag', 'get_specie_link', 'manual__2024-10-29T17:13:55.094298+00:00', '--job-id', '142', '--raw', '--subdir', 'DAGS_FOLDER/biological_data_dag.py', '--cfg-path', '/tmp/tmp96nznytg']
+[2024-10-29T17:14:05.225+0000] {standard_task_runner.py:105} INFO - Job 142: Subtask get_specie_link
+[2024-10-29T17:14:05.277+0000] {task_command.py:467} INFO - Running <TaskInstance: biological_data_dag.get_specie_link manual__2024-10-29T17:13:55.094298+00:00 [running]> on host 8b409d8ad50e
+[2024-10-29T17:14:05.419+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='biological_data_dag' AIRFLOW_CTX_TASK_ID='get_specie_link' AIRFLOW_CTX_EXECUTION_DATE='2024-10-29T17:13:55.094298+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-29T17:13:55.094298+00:00'
+[2024-10-29T17:14:05.420+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-29T17:14:05.420+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-29T17:14:05.421+0000] {logging_mixin.py:190} INFO - Current task name:get_specie_link state:running start_date:2024-10-29 17:14:05.181317+00:00
+[2024-10-29T17:14:05.421+0000] {logging_mixin.py:190} INFO - Dag name:biological_data_dag and current dag run status:running
+[2024-10-29T17:14:05.421+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-29T17:14:05.422+0000] {logging_mixin.py:190} INFO - len(species_list) 2322
+[2024-10-29T17:14:05.422+0000] {logging_mixin.py:190} INFO - Constructed URL: https://www.iucnredlist.org/search?query=Ablepharus+kitaibelii&searchType=species
+[2024-10-29T17:14:12.732+0000] {logging_mixin.py:190} INFO - Link for Ablepharus kitaibelii: https://www.iucnredlist.org/species/29691/115767606
+[2024-10-29T17:14:12.872+0000] {logging_mixin.py:190} INFO - Constructed URL: https://www.iucnredlist.org/search?query=Acanthis+flammea&searchType=species
+[2024-10-29T17:14:21.953+0000] {logging_mixin.py:190} INFO - Link for Acanthis flammea: https://www.iucnredlist.org/species/22725044/155292529
+[2024-10-29T17:14:22.019+0000] {logging_mixin.py:190} INFO - Constructed URL: https://www.iucnredlist.org/search?query=Acanthochelys+spixii&searchType=species
+[2024-10-29T17:14:26.695+0000] {logging_mixin.py:190} INFO - Link for Acanthochelys spixii: https://www.iucnredlist.org/species/76/97260200
+[2024-10-29T17:14:26.763+0000] {logging_mixin.py:190} INFO - Constructed URL: https://www.iucnredlist.org/search?query=Acanthodactylus+erythrurus&searchType=species
+[2024-10-29T17:14:32.189+0000] {logging_mixin.py:190} INFO - Link for Acanthodactylus erythrurus: https://www.iucnredlist.org/species/61456/12470495
+[2024-10-29T17:14:32.275+0000] {logging_mixin.py:190} INFO - Constructed URL: https://www.iucnredlist.org/search?query=Accipiter+badius&searchType=species
+[2024-10-29T17:14:36.789+0000] {logging_mixin.py:190} INFO - Link for Accipiter badius: https://www.iucnredlist.org/species/22695490/197951702
+[2024-10-29T17:14:36.853+0000] {python.py:240} INFO - Done. Returned value was: ['https://www.iucnredlist.org/species/29691/115767606', 'https://www.iucnredlist.org/species/22725044/155292529', 'https://www.iucnredlist.org/species/76/97260200', 'https://www.iucnredlist.org/species/61456/12470495', 'https://www.iucnredlist.org/species/22695490/197951702']
+[2024-10-29T17:14:36.877+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-29T17:14:36.878+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=biological_data_dag, task_id=get_specie_link, run_id=manual__2024-10-29T17:13:55.094298+00:00, execution_date=20241029T171355, start_date=20241029T171405, end_date=20241029T171436
+[2024-10-29T17:14:36.887+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-29T17:14:36.888+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-29T17:14:36.888+0000] {logging_mixin.py:190} INFO - Dag name:biological_data_dag queued_at:2024-10-29 17:13:55.109771+00:00
+[2024-10-29T17:14:36.888+0000] {logging_mixin.py:190} INFO - Task hostname:8b409d8ad50e operator:_PythonDecoratedOperator
+[2024-10-29T17:14:36.919+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-29T17:14:36.946+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-29T17:14:36.949+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

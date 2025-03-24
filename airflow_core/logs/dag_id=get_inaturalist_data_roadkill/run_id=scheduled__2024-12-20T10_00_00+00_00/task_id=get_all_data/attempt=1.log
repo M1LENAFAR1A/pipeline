@@ -1,0 +1,28 @@
+[2024-12-20T10:30:02.054+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-20T10:30:02.070+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-20T10:00:00+00:00 [queued]>
+[2024-12-20T10:30:02.082+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-20T10:00:00+00:00 [queued]>
+[2024-12-20T10:30:02.082+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-20T10:30:02.098+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-12-20 10:00:00+00:00
+[2024-12-20T10:30:02.108+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=850) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-20T10:30:02.110+0000] {standard_task_runner.py:72} INFO - Started process 859 to run task
+[2024-12-20T10:30:02.111+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'get_all_data', 'scheduled__2024-12-20T10:00:00+00:00', '--job-id', '452', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmpypzv83gw']
+[2024-12-20T10:30:02.114+0000] {standard_task_runner.py:105} INFO - Job 452: Subtask get_all_data
+[2024-12-20T10:30:02.173+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-20T10:00:00+00:00 [running]> on host e919aa2070f5
+[2024-12-20T10:30:02.270+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-20T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-20T10:00:00+00:00'
+[2024-12-20T10:30:02.271+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-20T10:30:02.274+0000] {inaturalist_dag.py:150} INFO - Getting data from keyword: roadkill
+[2024-12-20T10:30:02.291+0000] {inaturalist_dag.py:41} INFO - Maximum id 255660722 for the request
+[2024-12-20T10:30:03.318+0000] {inaturalist_dag.py:58} INFO - Got 1 results
+[2024-12-20T10:30:03.319+0000] {inaturalist_dag.py:163} INFO - Extracted 1 observations
+[2024-12-20T10:30:03.319+0000] {inaturalist_dag.py:41} INFO - Maximum id 255664069 for the request
+[2024-12-20T10:30:04.236+0000] {inaturalist_dag.py:58} INFO - Got 0 results
+[2024-12-20T10:30:04.237+0000] {inaturalist_dag.py:158} INFO - No more observations found, stopping.
+[2024-12-20T10:30:04.246+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-12-20T10:30:04.251+0000] {python.py:240} INFO - Done. Returned value was: [{'observation_id': 255664069, 'uuid': 'daf34760-cd08-4017-be33-72855f351f7b', 'species_guess': 'Martens', 'observed_on_string': '2024-12-20 11:03:30', 'updated_at': '2024-12-20T11:26:23+01:00', 'description': 'Roadkill', 'geojson_latitude': 43.9457571819, 'geojson_longitude': 3.8572690263, 'observed_on': '2024-12-20', 'created_at': '2024-12-20T11:06:39+01:00', 'observations_photos': [{'id': 458221029, 'url': 'https://static.inaturalist.org/photos/458221029/square.jpeg'}, {'id': 458221048, 'url': 'https://static.inaturalist.org/photos/458221048/square.jpeg'}, {'id': 458221079, 'url': 'https://static.inaturalist.org/photos/458221079/square.jpeg'}, {'id': 458221094, 'url': 'https://static.inaturalist.org/photos/458221094/square.jpeg'}, {'id': 458221110, 'url': 'https://static.inaturalist.org/photos/458221110/square.jpeg'}, {'id': 458221125, 'url': 'https://static.inaturalist.org/photos/458221125/square.jpeg'}, {'id': 458221144, 'url': 'https://static.inaturalist.org/photos/458221144/square.jpeg'}, {'id': 458221162, 'url': 'https://static.inaturalist.org/photos/458221162/square.jpeg'}], 'taxon_id': 41790, 'taxon_name': 'Martes', 'place_guess': '30170 Saint-Hippolyte-du-Fort, France', 'quality_grade': 'needs_id', 'positional_accuracy': 15, 'default_photo': {'url': 'https://static.inaturalist.org/photos/72664091/square.jpeg', 'original_dimensions': {'height': 1294, 'width': 1812}}, 'project_ids': [82335]}]
+[2024-12-20T10:30:04.275+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-20T10:30:04.275+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_roadkill, task_id=get_all_data, run_id=scheduled__2024-12-20T10:00:00+00:00, execution_date=20241220T100000, start_date=20241220T103002, end_date=20241220T103004
+[2024-12-20T10:30:04.333+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-20T10:30:04.361+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-20T10:30:04.364+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,27 @@
+[2024-11-27T11:20:18.150+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-27T11:20:18.245+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.process_data scheduled__2024-11-27T10:30:00+00:00 [queued]>
+[2024-11-27T11:20:18.292+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.process_data scheduled__2024-11-27T10:30:00+00:00 [queued]>
+[2024-11-27T11:20:18.292+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-11-27T11:20:18.420+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): process_data> on 2024-11-27 10:30:00+00:00
+[2024-11-27T11:20:18.473+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=59) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-27T11:20:18.481+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'process_data', 'scheduled__2024-11-27T10:30:00+00:00', '--job-id', '1570', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmpe3cm9a87']
+[2024-11-27T11:20:18.484+0000] {standard_task_runner.py:105} INFO - Job 1570: Subtask process_data
+[2024-11-27T11:20:18.484+0000] {standard_task_runner.py:72} INFO - Started process 113 to run task
+[2024-11-27T11:20:18.638+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.process_data scheduled__2024-11-27T10:30:00+00:00 [running]> on host 3de0f1e46a39
+[2024-11-27T11:20:19.095+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='process_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-27T10:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-27T10:30:00+00:00'
+[2024-11-27T11:20:19.097+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-27T11:20:19.097+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-27T11:20:19.098+0000] {logging_mixin.py:190} INFO - Current task name:process_data state:running start_date:2024-11-27 11:20:18.246446+00:00
+[2024-11-27T11:20:19.101+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_roadkill and current dag run status:running
+[2024-11-27T11:20:19.102+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-27T11:20:19.103+0000] {python.py:240} INFO - Done. Returned value was: {'path': 'inaturalist_data/roadkill_data/2024/11/27/roadkill_observations_112019.csv', 'format': 'text/csv'}
+[2024-11-27T11:20:19.180+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-27T11:20:19.181+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_roadkill, task_id=process_data, run_id=scheduled__2024-11-27T10:30:00+00:00, execution_date=20241127T103000, start_date=20241127T112018, end_date=20241127T112019
+[2024-11-27T11:20:19.212+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-27T11:20:19.213+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-27T11:20:19.216+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_roadkill queued_at:2024-11-27 11:20:01.717412+00:00
+[2024-11-27T11:20:19.216+0000] {logging_mixin.py:190} INFO - Task hostname:3de0f1e46a39 operator:_PythonDecoratedOperator
+[2024-11-27T11:20:19.252+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-27T11:20:19.299+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

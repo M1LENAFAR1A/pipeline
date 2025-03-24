@@ -1,0 +1,31 @@
+[2024-11-21T15:30:03.525+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T15:30:03.587+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.get_all_data scheduled__2024-11-21T15:00:00+00:00 [queued]>
+[2024-11-21T15:30:03.614+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.get_all_data scheduled__2024-11-21T15:00:00+00:00 [queued]>
+[2024-11-21T15:30:03.615+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-11-21T15:30:03.690+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-11-21 15:00:00+00:00
+[2024-11-21T15:30:03.717+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=277) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T15:30:03.719+0000] {standard_task_runner.py:72} INFO - Started process 291 to run task
+[2024-11-21T15:30:03.724+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelada', 'get_all_data', 'scheduled__2024-11-21T15:00:00+00:00', '--job-id', '922', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmpt54d78l9']
+[2024-11-21T15:30:03.726+0000] {standard_task_runner.py:105} INFO - Job 922: Subtask get_all_data
+[2024-11-21T15:30:03.913+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_atropelada.get_all_data scheduled__2024-11-21T15:00:00+00:00 [running]> on host 569dbdc45a07
+[2024-11-21T15:30:04.179+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_atropelada' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-21T15:00:00+00:00'
+[2024-11-21T15:30:04.189+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T15:30:04.191+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T15:30:04.193+0000] {logging_mixin.py:190} INFO - Current task name:get_all_data state:running start_date:2024-11-21 15:30:03.588734+00:00
+[2024-11-21T15:30:04.197+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelada and current dag run status:running
+[2024-11-21T15:30:04.198+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T15:30:04.202+0000] {inaturalist_dag.py:129} INFO - Getting data from keyword: atropelada
+[2024-11-21T15:30:05.928+0000] {inaturalist_dag.py:135} INFO - No more observations found, stopping.
+[2024-11-21T15:30:05.956+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-11-21T15:30:05.969+0000] {python.py:240} INFO - Done. Returned value was: []
+[2024-11-21T15:30:06.050+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-21T15:30:06.051+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_atropelada, task_id=get_all_data, run_id=scheduled__2024-11-21T15:00:00+00:00, execution_date=20241121T150000, start_date=20241121T153003, end_date=20241121T153006
+[2024-11-21T15:30:06.108+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-21T15:30:06.108+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-21T15:30:06.109+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelada queued_at:2024-11-21 15:30:00.044981+00:00
+[2024-11-21T15:30:06.109+0000] {logging_mixin.py:190} INFO - Task hostname:569dbdc45a07 operator:_PythonDecoratedOperator
+[2024-11-21T15:30:06.180+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-21T15:30:06.289+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-21T15:30:06.292+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

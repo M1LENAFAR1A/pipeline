@@ -1,0 +1,29 @@
+[2024-10-29T14:29:05.852+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-29T14:29:05.899+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: biological_data_dag.save_data_minio__1 scheduled__2024-09-05T00:00:00+00:00 [queued]>
+[2024-10-29T14:29:05.922+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: biological_data_dag.save_data_minio__1 scheduled__2024-09-05T00:00:00+00:00 [queued]>
+[2024-10-29T14:29:05.923+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-29T14:29:05.953+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): save_data_minio__1> on 2024-09-05 00:00:00+00:00
+[2024-10-29T14:29:05.975+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1659) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-29T14:29:05.977+0000] {standard_task_runner.py:72} INFO - Started process 1669 to run task
+[2024-10-29T14:29:05.982+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'biological_data_dag', 'save_data_minio__1', 'scheduled__2024-09-05T00:00:00+00:00', '--job-id', '108', '--raw', '--subdir', 'DAGS_FOLDER/biological_data_dag.py', '--cfg-path', '/tmp/tmp9_ee80ay']
+[2024-10-29T14:29:05.984+0000] {standard_task_runner.py:105} INFO - Job 108: Subtask save_data_minio__1
+[2024-10-29T14:29:06.102+0000] {task_command.py:467} INFO - Running <TaskInstance: biological_data_dag.save_data_minio__1 scheduled__2024-09-05T00:00:00+00:00 [running]> on host d865971e8c23
+[2024-10-29T14:29:06.409+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='biological_data_dag' AIRFLOW_CTX_TASK_ID='save_data_minio__1' AIRFLOW_CTX_EXECUTION_DATE='2024-09-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-05T00:00:00+00:00'
+[2024-10-29T14:29:06.417+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-29T14:29:06.418+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-29T14:29:06.419+0000] {logging_mixin.py:190} INFO - Current task name:save_data_minio__1 state:running start_date:2024-10-29 14:29:05.900330+00:00
+[2024-10-29T14:29:06.420+0000] {logging_mixin.py:190} INFO - Dag name:biological_data_dag and current dag run status:running
+[2024-10-29T14:29:06.422+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-29T14:29:06.541+0000] {logging_mixin.py:190} INFO - File species_data_red_list_14:29:01.csv saved in minIo.
+[2024-10-29T14:29:06.541+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-29T14:29:06.561+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-29T14:29:06.562+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=biological_data_dag, task_id=save_data_minio__1, run_id=scheduled__2024-09-05T00:00:00+00:00, execution_date=20240905T000000, start_date=20241029T142905, end_date=20241029T142906
+[2024-10-29T14:29:06.586+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-29T14:29:06.587+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-29T14:29:06.587+0000] {logging_mixin.py:190} INFO - Dag name:biological_data_dag queued_at:2024-10-29 14:27:12.503184+00:00
+[2024-10-29T14:29:06.587+0000] {logging_mixin.py:190} INFO - Task hostname:d865971e8c23 operator:_PythonDecoratedOperator
+[2024-10-29T14:29:06.642+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-29T14:29:06.684+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-29T14:29:06.687+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

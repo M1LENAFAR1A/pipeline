@@ -1,0 +1,28 @@
+[2024-12-20T14:00:01.382+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-20T14:00:01.396+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-20T13:30:00+00:00 [queued]>
+[2024-12-20T14:00:01.408+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-20T13:30:00+00:00 [queued]>
+[2024-12-20T14:00:01.409+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-20T14:00:01.431+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-12-20 13:30:00+00:00
+[2024-12-20T14:00:01.441+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=3457) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-20T14:00:01.443+0000] {standard_task_runner.py:72} INFO - Started process 3463 to run task
+[2024-12-20T14:00:01.444+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'get_all_data', 'scheduled__2024-12-20T13:30:00+00:00', '--job-id', '500', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp2xtr05i5']
+[2024-12-20T14:00:01.447+0000] {standard_task_runner.py:105} INFO - Job 500: Subtask get_all_data
+[2024-12-20T14:00:01.496+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2024-12-20T13:30:00+00:00 [running]> on host e919aa2070f5
+[2024-12-20T14:00:01.584+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-20T13:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-20T13:30:00+00:00'
+[2024-12-20T14:00:01.586+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-20T14:00:01.589+0000] {inaturalist_dag.py:150} INFO - Getting data from keyword: roadkill
+[2024-12-20T14:00:01.606+0000] {inaturalist_dag.py:41} INFO - Maximum id 255664069 for the request
+[2024-12-20T14:00:02.688+0000] {inaturalist_dag.py:58} INFO - Got 1 results
+[2024-12-20T14:00:02.689+0000] {inaturalist_dag.py:163} INFO - Extracted 1 observations
+[2024-12-20T14:00:02.689+0000] {inaturalist_dag.py:41} INFO - Maximum id 255675638 for the request
+[2024-12-20T14:00:03.619+0000] {inaturalist_dag.py:58} INFO - Got 0 results
+[2024-12-20T14:00:03.620+0000] {inaturalist_dag.py:158} INFO - No more observations found, stopping.
+[2024-12-20T14:00:03.625+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-12-20T14:00:03.630+0000] {python.py:240} INFO - Done. Returned value was: [{'observation_id': 255675638, 'uuid': 'b024bf35-89ce-4906-b155-26630306390a', 'species_guess': 'Hawks, Eagles, and Kites', 'observed_on_string': '2024-12-20 08:30:18', 'updated_at': '2024-12-20T08:41:02-05:00', 'description': 'Medium-sized bird of prey. Appeared to be flying above roadside roadkill.\n\nHead and breast and wingtips all noticeably darker than the rest of the underside of the bird.', 'geojson_latitude': 39.1661021, 'geojson_longitude': -75.4825601997, 'observed_on': '2024-12-20', 'created_at': '2024-12-20T08:40:59-05:00', 'observations_photos': [{'id': 458242216, 'url': 'https://static.inaturalist.org/photos/458242216/square.jpeg'}], 'taxon_id': 5067, 'taxon_name': 'Accipitridae', 'place_guess': 'Dover, DE, USA', 'quality_grade': 'needs_id', 'positional_accuracy': None, 'default_photo': {'url': 'https://inaturalist-open-data.s3.amazonaws.com/photos/12120585/square.jpg', 'original_dimensions': {'height': 1417, 'width': 2048}}, 'project_ids': []}]
+[2024-12-20T14:00:03.648+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-20T14:00:03.648+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_roadkill, task_id=get_all_data, run_id=scheduled__2024-12-20T13:30:00+00:00, execution_date=20241220T133000, start_date=20241220T140001, end_date=20241220T140003
+[2024-12-20T14:00:03.704+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-20T14:00:03.732+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-20T14:00:03.734+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

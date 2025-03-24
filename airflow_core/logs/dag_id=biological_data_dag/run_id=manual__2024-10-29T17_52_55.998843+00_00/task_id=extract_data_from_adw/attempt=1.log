@@ -1,0 +1,375 @@
+[2024-10-29T17:53:06.695+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-29T17:53:06.716+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: biological_data_dag.extract_data_from_adw manual__2024-10-29T17:52:55.998843+00:00 [queued]>
+[2024-10-29T17:53:06.743+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: biological_data_dag.extract_data_from_adw manual__2024-10-29T17:52:55.998843+00:00 [queued]>
+[2024-10-29T17:53:06.743+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-29T17:53:06.773+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): extract_data_from_adw> on 2024-10-29 17:52:55.998843+00:00
+[2024-10-29T17:53:06.786+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=100) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-29T17:53:06.788+0000] {standard_task_runner.py:72} INFO - Started process 106 to run task
+[2024-10-29T17:53:06.788+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'biological_data_dag', 'extract_data_from_adw', 'manual__2024-10-29T17:52:55.998843+00:00', '--job-id', '158', '--raw', '--subdir', 'DAGS_FOLDER/biological_data_dag.py', '--cfg-path', '/tmp/tmpb421ge79']
+[2024-10-29T17:53:06.789+0000] {standard_task_runner.py:105} INFO - Job 158: Subtask extract_data_from_adw
+[2024-10-29T17:53:06.847+0000] {task_command.py:467} INFO - Running <TaskInstance: biological_data_dag.extract_data_from_adw manual__2024-10-29T17:52:55.998843+00:00 [running]> on host 8b409d8ad50e
+[2024-10-29T17:53:06.977+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='biological_data_dag' AIRFLOW_CTX_TASK_ID='extract_data_from_adw' AIRFLOW_CTX_EXECUTION_DATE='2024-10-29T17:52:55.998843+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-29T17:52:55.998843+00:00'
+[2024-10-29T17:53:06.978+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-29T17:53:06.979+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-29T17:53:06.979+0000] {logging_mixin.py:190} INFO - Current task name:extract_data_from_adw state:running start_date:2024-10-29 17:53:06.716859+00:00
+[2024-10-29T17:53:06.979+0000] {logging_mixin.py:190} INFO - Dag name:biological_data_dag and current dag run status:running
+[2024-10-29T17:53:06.979+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-29T17:53:06.980+0000] {logging_mixin.py:190} INFO - len(species_list) 2322
+[2024-10-29T17:53:06.980+0000] {logging_mixin.py:190} INFO - specie Ablepharus kitaibelii
+[2024-10-29T17:53:12.805+0000] {logging_mixin.py:190} INFO - Request was successful!
+[2024-10-29T17:53:12.834+0000] {logging_mixin.py:190} INFO - Rank: Kingdom
+[2024-10-29T17:53:12.835+0000] {logging_mixin.py:190} INFO - Taxon Name: Animalia
+[2024-10-29T17:53:12.835+0000] {logging_mixin.py:190} INFO - Vernacular Name: animals
+[2024-10-29T17:53:12.835+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:12.836+0000] {logging_mixin.py:190} INFO - Rank: Phylum
+[2024-10-29T17:53:12.836+0000] {logging_mixin.py:190} INFO - Taxon Name: Chordata
+[2024-10-29T17:53:12.837+0000] {logging_mixin.py:190} INFO - Vernacular Name: chordates
+[2024-10-29T17:53:12.837+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:12.839+0000] {logging_mixin.py:190} INFO - Rank: Subphylum
+[2024-10-29T17:53:12.840+0000] {logging_mixin.py:190} INFO - Taxon Name: Vertebrata
+[2024-10-29T17:53:12.840+0000] {logging_mixin.py:190} INFO - Vernacular Name: vertebrates
+[2024-10-29T17:53:12.841+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:12.843+0000] {logging_mixin.py:190} INFO - Rank: Class
+[2024-10-29T17:53:12.844+0000] {logging_mixin.py:190} INFO - Taxon Name: Reptilia
+[2024-10-29T17:53:12.844+0000] {logging_mixin.py:190} INFO - Vernacular Name: turtles, snakes, lizards, and relatives
+[2024-10-29T17:53:12.845+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:12.847+0000] {logging_mixin.py:190} INFO - Rank: Order
+[2024-10-29T17:53:12.847+0000] {logging_mixin.py:190} INFO - Taxon Name: Squamata
+[2024-10-29T17:53:12.848+0000] {logging_mixin.py:190} INFO - Vernacular Name: 
+[2024-10-29T17:53:12.848+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:12.850+0000] {logging_mixin.py:190} INFO - Rank: Family
+[2024-10-29T17:53:12.850+0000] {logging_mixin.py:190} INFO - Taxon Name: Scincidae
+[2024-10-29T17:53:12.851+0000] {logging_mixin.py:190} INFO - Vernacular Name: 
+[2024-10-29T17:53:12.851+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:12.852+0000] {logging_mixin.py:190} INFO - Rank: Genus
+[2024-10-29T17:53:12.852+0000] {logging_mixin.py:190} INFO - Taxon Name: Ablepharus
+[2024-10-29T17:53:12.852+0000] {logging_mixin.py:190} INFO - Vernacular Name: 
+[2024-10-29T17:53:12.853+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:12.854+0000] {logging_mixin.py:190} INFO - Rank: Species
+[2024-10-29T17:53:12.855+0000] {logging_mixin.py:190} INFO - Taxon Name: Ablepharus kitaibelii
+[2024-10-29T17:53:12.855+0000] {logging_mixin.py:190} INFO - Vernacular Name: Juniper Skink, Snake-eyed skink
+[2024-10-29T17:53:12.855+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:12.856+0000] {logging_mixin.py:190} INFO - specie Acanthis flammea
+[2024-10-29T17:53:17.414+0000] {logging_mixin.py:190} INFO - Request was successful!
+[2024-10-29T17:53:17.494+0000] {logging_mixin.py:190} INFO - Rank: Kingdom
+[2024-10-29T17:53:17.495+0000] {logging_mixin.py:190} INFO - Taxon Name: Animalia
+[2024-10-29T17:53:17.496+0000] {logging_mixin.py:190} INFO - Vernacular Name: animals
+[2024-10-29T17:53:17.496+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:17.499+0000] {logging_mixin.py:190} INFO - Rank: Phylum
+[2024-10-29T17:53:17.500+0000] {logging_mixin.py:190} INFO - Taxon Name: Chordata
+[2024-10-29T17:53:17.500+0000] {logging_mixin.py:190} INFO - Vernacular Name: chordates
+[2024-10-29T17:53:17.500+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:17.503+0000] {logging_mixin.py:190} INFO - Rank: Subphylum
+[2024-10-29T17:53:17.504+0000] {logging_mixin.py:190} INFO - Taxon Name: Vertebrata
+[2024-10-29T17:53:17.505+0000] {logging_mixin.py:190} INFO - Vernacular Name: vertebrates
+[2024-10-29T17:53:17.506+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:17.510+0000] {logging_mixin.py:190} INFO - Rank: Class
+[2024-10-29T17:53:17.511+0000] {logging_mixin.py:190} INFO - Taxon Name: Aves
+[2024-10-29T17:53:17.511+0000] {logging_mixin.py:190} INFO - Vernacular Name: birds
+[2024-10-29T17:53:17.512+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:17.515+0000] {logging_mixin.py:190} INFO - Rank: Order
+[2024-10-29T17:53:17.515+0000] {logging_mixin.py:190} INFO - Taxon Name: Passeriformes
+[2024-10-29T17:53:17.516+0000] {logging_mixin.py:190} INFO - Vernacular Name: perching birds
+[2024-10-29T17:53:17.516+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:17.519+0000] {logging_mixin.py:190} INFO - Rank: Family
+[2024-10-29T17:53:17.519+0000] {logging_mixin.py:190} INFO - Taxon Name: Fringillidae
+[2024-10-29T17:53:17.520+0000] {logging_mixin.py:190} INFO - Vernacular Name: finches
+[2024-10-29T17:53:17.520+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:17.526+0000] {logging_mixin.py:190} INFO - Rank: Genus
+[2024-10-29T17:53:17.527+0000] {logging_mixin.py:190} INFO - Taxon Name: Acanthis
+[2024-10-29T17:53:17.528+0000] {logging_mixin.py:190} INFO - Vernacular Name: 
+[2024-10-29T17:53:17.528+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:17.531+0000] {logging_mixin.py:190} INFO - Rank: Species
+[2024-10-29T17:53:17.531+0000] {logging_mixin.py:190} INFO - Taxon Name: Acanthis flammea
+[2024-10-29T17:53:17.532+0000] {logging_mixin.py:190} INFO - Vernacular Name: common redpoll
+[2024-10-29T17:53:17.532+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:17.532+0000] {logging_mixin.py:190} INFO - specie Acanthochelys spixii
+[2024-10-29T17:53:22.481+0000] {logging_mixin.py:190} INFO - Request was successful!
+[2024-10-29T17:53:22.514+0000] {logging_mixin.py:190} INFO - Rank: Kingdom
+[2024-10-29T17:53:22.514+0000] {logging_mixin.py:190} INFO - Taxon Name: Animalia
+[2024-10-29T17:53:22.515+0000] {logging_mixin.py:190} INFO - Vernacular Name: animals
+[2024-10-29T17:53:22.515+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:22.516+0000] {logging_mixin.py:190} INFO - Rank: Phylum
+[2024-10-29T17:53:22.516+0000] {logging_mixin.py:190} INFO - Taxon Name: Chordata
+[2024-10-29T17:53:22.517+0000] {logging_mixin.py:190} INFO - Vernacular Name: chordates
+[2024-10-29T17:53:22.517+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:22.518+0000] {logging_mixin.py:190} INFO - Rank: Subphylum
+[2024-10-29T17:53:22.518+0000] {logging_mixin.py:190} INFO - Taxon Name: Vertebrata
+[2024-10-29T17:53:22.518+0000] {logging_mixin.py:190} INFO - Vernacular Name: vertebrates
+[2024-10-29T17:53:22.519+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:22.520+0000] {logging_mixin.py:190} INFO - Rank: Class
+[2024-10-29T17:53:22.520+0000] {logging_mixin.py:190} INFO - Taxon Name: Reptilia
+[2024-10-29T17:53:22.520+0000] {logging_mixin.py:190} INFO - Vernacular Name: turtles, snakes, lizards, and relatives
+[2024-10-29T17:53:22.521+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:22.522+0000] {logging_mixin.py:190} INFO - Rank: Order
+[2024-10-29T17:53:22.523+0000] {logging_mixin.py:190} INFO - Taxon Name: Testudines
+[2024-10-29T17:53:22.523+0000] {logging_mixin.py:190} INFO - Vernacular Name: 
+[2024-10-29T17:53:22.523+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:22.525+0000] {logging_mixin.py:190} INFO - Rank: Family
+[2024-10-29T17:53:22.525+0000] {logging_mixin.py:190} INFO - Taxon Name: Chelidae
+[2024-10-29T17:53:22.525+0000] {logging_mixin.py:190} INFO - Vernacular Name: 
+[2024-10-29T17:53:22.525+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:22.527+0000] {logging_mixin.py:190} INFO - Rank: Genus
+[2024-10-29T17:53:22.527+0000] {logging_mixin.py:190} INFO - Taxon Name: Acanthochelys
+[2024-10-29T17:53:22.527+0000] {logging_mixin.py:190} INFO - Vernacular Name: 
+[2024-10-29T17:53:22.527+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:22.529+0000] {logging_mixin.py:190} INFO - Rank: Species
+[2024-10-29T17:53:22.529+0000] {logging_mixin.py:190} INFO - Taxon Name: Acanthochelys spixii
+[2024-10-29T17:53:22.529+0000] {logging_mixin.py:190} INFO - Vernacular Name: Black Spine-necked Swamp Turtle
+[2024-10-29T17:53:22.530+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:22.530+0000] {logging_mixin.py:190} INFO - specie Acanthodactylus erythrurus
+[2024-10-29T17:53:26.432+0000] {logging_mixin.py:190} INFO - Request was successful!
+[2024-10-29T17:53:26.516+0000] {logging_mixin.py:190} INFO - Rank: Kingdom
+[2024-10-29T17:53:26.519+0000] {logging_mixin.py:190} INFO - Taxon Name: Animalia
+[2024-10-29T17:53:26.520+0000] {logging_mixin.py:190} INFO - Vernacular Name: animals
+[2024-10-29T17:53:26.521+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:26.524+0000] {logging_mixin.py:190} INFO - Rank: Phylum
+[2024-10-29T17:53:26.526+0000] {logging_mixin.py:190} INFO - Taxon Name: Chordata
+[2024-10-29T17:53:26.528+0000] {logging_mixin.py:190} INFO - Vernacular Name: chordates
+[2024-10-29T17:53:26.529+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:26.533+0000] {logging_mixin.py:190} INFO - Rank: Subphylum
+[2024-10-29T17:53:26.533+0000] {logging_mixin.py:190} INFO - Taxon Name: Vertebrata
+[2024-10-29T17:53:26.534+0000] {logging_mixin.py:190} INFO - Vernacular Name: vertebrates
+[2024-10-29T17:53:26.534+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:26.537+0000] {logging_mixin.py:190} INFO - Rank: Class
+[2024-10-29T17:53:26.539+0000] {logging_mixin.py:190} INFO - Taxon Name: Reptilia
+[2024-10-29T17:53:26.540+0000] {logging_mixin.py:190} INFO - Vernacular Name: turtles, snakes, lizards, and relatives
+[2024-10-29T17:53:26.540+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:26.545+0000] {logging_mixin.py:190} INFO - Rank: Order
+[2024-10-29T17:53:26.546+0000] {logging_mixin.py:190} INFO - Taxon Name: Squamata
+[2024-10-29T17:53:26.547+0000] {logging_mixin.py:190} INFO - Vernacular Name: 
+[2024-10-29T17:53:26.548+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:26.550+0000] {logging_mixin.py:190} INFO - Rank: Family
+[2024-10-29T17:53:26.551+0000] {logging_mixin.py:190} INFO - Taxon Name: Lacertidae
+[2024-10-29T17:53:26.552+0000] {logging_mixin.py:190} INFO - Vernacular Name: 
+[2024-10-29T17:53:26.552+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:26.555+0000] {logging_mixin.py:190} INFO - Rank: Genus
+[2024-10-29T17:53:26.556+0000] {logging_mixin.py:190} INFO - Taxon Name: Acanthodactylus
+[2024-10-29T17:53:26.556+0000] {logging_mixin.py:190} INFO - Vernacular Name: 
+[2024-10-29T17:53:26.557+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:26.562+0000] {logging_mixin.py:190} INFO - Rank: Species
+[2024-10-29T17:53:26.563+0000] {logging_mixin.py:190} INFO - Taxon Name: Acanthodactylus erythrurus
+[2024-10-29T17:53:26.565+0000] {logging_mixin.py:190} INFO - Vernacular Name: Fringe-fingered Lizard
+[2024-10-29T17:53:26.566+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:26.566+0000] {logging_mixin.py:190} INFO - specie Accipiter badius
+[2024-10-29T17:53:30.804+0000] {logging_mixin.py:190} INFO - Request was successful!
+[2024-10-29T17:53:30.831+0000] {logging_mixin.py:190} INFO - Rank: Kingdom
+[2024-10-29T17:53:30.831+0000] {logging_mixin.py:190} INFO - Taxon Name: Animalia
+[2024-10-29T17:53:30.832+0000] {logging_mixin.py:190} INFO - Vernacular Name: animals
+[2024-10-29T17:53:30.832+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:30.833+0000] {logging_mixin.py:190} INFO - Rank: Phylum
+[2024-10-29T17:53:30.833+0000] {logging_mixin.py:190} INFO - Taxon Name: Chordata
+[2024-10-29T17:53:30.833+0000] {logging_mixin.py:190} INFO - Vernacular Name: chordates
+[2024-10-29T17:53:30.833+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:30.834+0000] {logging_mixin.py:190} INFO - Rank: Subphylum
+[2024-10-29T17:53:30.835+0000] {logging_mixin.py:190} INFO - Taxon Name: Vertebrata
+[2024-10-29T17:53:30.835+0000] {logging_mixin.py:190} INFO - Vernacular Name: vertebrates
+[2024-10-29T17:53:30.835+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:30.836+0000] {logging_mixin.py:190} INFO - Rank: Class
+[2024-10-29T17:53:30.836+0000] {logging_mixin.py:190} INFO - Taxon Name: Aves
+[2024-10-29T17:53:30.837+0000] {logging_mixin.py:190} INFO - Vernacular Name: birds
+[2024-10-29T17:53:30.837+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:30.838+0000] {logging_mixin.py:190} INFO - Rank: Order
+[2024-10-29T17:53:30.838+0000] {logging_mixin.py:190} INFO - Taxon Name: Falconiformes
+[2024-10-29T17:53:30.839+0000] {logging_mixin.py:190} INFO - Vernacular Name: diurnal birds of prey
+[2024-10-29T17:53:30.839+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:30.840+0000] {logging_mixin.py:190} INFO - Rank: Family
+[2024-10-29T17:53:30.840+0000] {logging_mixin.py:190} INFO - Taxon Name: Accipitridae
+[2024-10-29T17:53:30.841+0000] {logging_mixin.py:190} INFO - Vernacular Name: eagles, hawks, and kites
+[2024-10-29T17:53:30.841+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:30.842+0000] {logging_mixin.py:190} INFO - Rank: Genus
+[2024-10-29T17:53:30.842+0000] {logging_mixin.py:190} INFO - Taxon Name: Accipiter
+[2024-10-29T17:53:30.842+0000] {logging_mixin.py:190} INFO - Vernacular Name: bird hawks
+[2024-10-29T17:53:30.843+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:30.844+0000] {logging_mixin.py:190} INFO - Rank: Species
+[2024-10-29T17:53:30.844+0000] {logging_mixin.py:190} INFO - Taxon Name: Accipiter badius
+[2024-10-29T17:53:30.845+0000] {logging_mixin.py:190} INFO - Vernacular Name: shikra
+[2024-10-29T17:53:30.845+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:30.845+0000] {logging_mixin.py:190} INFO - specie Accipiter cooperii
+[2024-10-29T17:53:35.409+0000] {logging_mixin.py:190} INFO - Request was successful!
+[2024-10-29T17:53:35.444+0000] {logging_mixin.py:190} INFO - Rank: Kingdom
+[2024-10-29T17:53:35.445+0000] {logging_mixin.py:190} INFO - Taxon Name: Animalia
+[2024-10-29T17:53:35.445+0000] {logging_mixin.py:190} INFO - Vernacular Name: animals
+[2024-10-29T17:53:41.704+0000] {logging_mixin.py:190} INFO - Range_mass: 280 to 566 g
+[2024-10-29T17:53:41.704+0000] {logging_mixin.py:190} INFO - Range_lenght: 35 to 50 cm
+[2024-10-29T17:53:41.704+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:53:41.705+0000] {logging_mixin.py:190} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-29T17:53:41.705+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:53:41.705+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:53:41.706+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:41.707+0000] {logging_mixin.py:190} INFO - Rank: Phylum
+[2024-10-29T17:53:41.707+0000] {logging_mixin.py:190} INFO - Taxon Name: Chordata
+[2024-10-29T17:53:41.707+0000] {logging_mixin.py:190} INFO - Vernacular Name: chordates
+[2024-10-29T17:53:45.503+0000] {logging_mixin.py:190} INFO - Range_mass: 280 to 566 g
+[2024-10-29T17:53:45.503+0000] {logging_mixin.py:190} INFO - Range_lenght: 35 to 50 cm
+[2024-10-29T17:53:45.503+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:53:45.504+0000] {logging_mixin.py:190} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-29T17:53:45.504+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:53:45.504+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:53:45.505+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:45.505+0000] {logging_mixin.py:190} INFO - Rank: Subphylum
+[2024-10-29T17:53:45.506+0000] {logging_mixin.py:190} INFO - Taxon Name: Vertebrata
+[2024-10-29T17:53:45.506+0000] {logging_mixin.py:190} INFO - Vernacular Name: vertebrates
+[2024-10-29T17:53:48.999+0000] {logging_mixin.py:190} INFO - Range_mass: 280 to 566 g
+[2024-10-29T17:53:48.999+0000] {logging_mixin.py:190} INFO - Range_lenght: 35 to 50 cm
+[2024-10-29T17:53:48.999+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:53:49.000+0000] {logging_mixin.py:190} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-29T17:53:49.000+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:53:49.000+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:53:49.001+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:49.002+0000] {logging_mixin.py:190} INFO - Rank: Class
+[2024-10-29T17:53:49.002+0000] {logging_mixin.py:190} INFO - Taxon Name: Aves
+[2024-10-29T17:53:49.002+0000] {logging_mixin.py:190} INFO - Vernacular Name: birds
+[2024-10-29T17:53:53.554+0000] {logging_mixin.py:190} INFO - Range_mass: 280 to 566 g
+[2024-10-29T17:53:53.555+0000] {logging_mixin.py:190} INFO - Range_lenght: 35 to 50 cm
+[2024-10-29T17:53:53.556+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:53:53.556+0000] {logging_mixin.py:190} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-29T17:53:53.557+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:53:53.557+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:53:53.558+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:53.560+0000] {logging_mixin.py:190} INFO - Rank: Order
+[2024-10-29T17:53:53.560+0000] {logging_mixin.py:190} INFO - Taxon Name: Falconiformes
+[2024-10-29T17:53:53.560+0000] {logging_mixin.py:190} INFO - Vernacular Name: diurnal birds of prey
+[2024-10-29T17:53:58.133+0000] {logging_mixin.py:190} INFO - Range_mass: 280 to 566 g
+[2024-10-29T17:53:58.133+0000] {logging_mixin.py:190} INFO - Range_lenght: 35 to 50 cm
+[2024-10-29T17:53:58.133+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:53:58.133+0000] {logging_mixin.py:190} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-29T17:53:58.134+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:53:58.134+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:53:58.134+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:53:58.135+0000] {logging_mixin.py:190} INFO - Rank: Family
+[2024-10-29T17:53:58.135+0000] {logging_mixin.py:190} INFO - Taxon Name: Accipitridae
+[2024-10-29T17:53:58.135+0000] {logging_mixin.py:190} INFO - Vernacular Name: eagles, hawks, and kites
+[2024-10-29T17:54:02.621+0000] {logging_mixin.py:190} INFO - Range_mass: 280 to 566 g
+[2024-10-29T17:54:02.622+0000] {logging_mixin.py:190} INFO - Range_lenght: 35 to 50 cm
+[2024-10-29T17:54:02.622+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:54:02.622+0000] {logging_mixin.py:190} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-29T17:54:02.622+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:54:02.623+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:54:02.623+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:54:02.624+0000] {logging_mixin.py:190} INFO - Rank: Genus
+[2024-10-29T17:54:02.624+0000] {logging_mixin.py:190} INFO - Taxon Name: Accipiter
+[2024-10-29T17:54:02.624+0000] {logging_mixin.py:190} INFO - Vernacular Name: bird hawks
+[2024-10-29T17:54:07.760+0000] {logging_mixin.py:190} INFO - Range_mass: 280 to 566 g
+[2024-10-29T17:54:07.760+0000] {logging_mixin.py:190} INFO - Range_lenght: 35 to 50 cm
+[2024-10-29T17:54:07.760+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:54:07.761+0000] {logging_mixin.py:190} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-29T17:54:07.761+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:54:07.761+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:54:07.762+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:54:07.762+0000] {logging_mixin.py:190} INFO - Rank: Species
+[2024-10-29T17:54:07.763+0000] {logging_mixin.py:190} INFO - Taxon Name: Accipiter cooperii
+[2024-10-29T17:54:07.763+0000] {logging_mixin.py:190} INFO - Vernacular Name: Cooper's hawk
+[2024-10-29T17:54:12.855+0000] {logging_mixin.py:190} INFO - Range_mass: 280 to 566 g
+[2024-10-29T17:54:12.855+0000] {logging_mixin.py:190} INFO - Range_lenght: 35 to 50 cm
+[2024-10-29T17:54:12.855+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:54:12.856+0000] {logging_mixin.py:190} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-29T17:54:12.856+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:54:12.856+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:54:12.856+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:54:12.857+0000] {logging_mixin.py:190} INFO - specie Accipiter gentilis
+[2024-10-29T17:54:17.781+0000] {logging_mixin.py:190} INFO - Request was successful!
+[2024-10-29T17:54:17.805+0000] {logging_mixin.py:190} INFO - Rank: Kingdom
+[2024-10-29T17:54:17.805+0000] {logging_mixin.py:190} INFO - Taxon Name: Animalia
+[2024-10-29T17:54:17.805+0000] {logging_mixin.py:190} INFO - Vernacular Name: animals
+[2024-10-29T17:54:23.616+0000] {logging_mixin.py:190} INFO - Range_mass: 631 to 1364 g
+[2024-10-29T17:54:23.616+0000] {logging_mixin.py:190} INFO - Range_lenght: 55 to 61 cm
+[2024-10-29T17:54:23.616+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:54:23.617+0000] {logging_mixin.py:190} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-29T17:54:23.617+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:54:23.617+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:54:23.617+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:54:23.618+0000] {logging_mixin.py:190} INFO - Rank: Phylum
+[2024-10-29T17:54:23.618+0000] {logging_mixin.py:190} INFO - Taxon Name: Chordata
+[2024-10-29T17:54:23.619+0000] {logging_mixin.py:190} INFO - Vernacular Name: chordates
+[2024-10-29T17:54:31.915+0000] {logging_mixin.py:190} INFO - Range_mass: 631 to 1364 g
+[2024-10-29T17:54:31.915+0000] {logging_mixin.py:190} INFO - Range_lenght: 55 to 61 cm
+[2024-10-29T17:54:31.916+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:54:31.916+0000] {logging_mixin.py:190} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-29T17:54:31.916+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:54:31.916+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:54:31.917+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:54:31.918+0000] {logging_mixin.py:190} INFO - Rank: Subphylum
+[2024-10-29T17:54:31.918+0000] {logging_mixin.py:190} INFO - Taxon Name: Vertebrata
+[2024-10-29T17:54:31.919+0000] {logging_mixin.py:190} INFO - Vernacular Name: vertebrates
+[2024-10-29T17:54:41.565+0000] {logging_mixin.py:190} INFO - Range_mass: 631 to 1364 g
+[2024-10-29T17:54:41.565+0000] {logging_mixin.py:190} INFO - Range_lenght: 55 to 61 cm
+[2024-10-29T17:54:41.567+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:54:41.568+0000] {logging_mixin.py:190} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-29T17:54:41.568+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:54:41.568+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:54:41.568+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:54:41.569+0000] {logging_mixin.py:190} INFO - Rank: Class
+[2024-10-29T17:54:41.570+0000] {logging_mixin.py:190} INFO - Taxon Name: Aves
+[2024-10-29T17:54:41.570+0000] {logging_mixin.py:190} INFO - Vernacular Name: birds
+[2024-10-29T17:54:49.857+0000] {logging_mixin.py:190} INFO - Range_mass: 631 to 1364 g
+[2024-10-29T17:54:49.857+0000] {logging_mixin.py:190} INFO - Range_lenght: 55 to 61 cm
+[2024-10-29T17:54:49.857+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:54:49.857+0000] {logging_mixin.py:190} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-29T17:54:49.858+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:54:49.858+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:54:49.858+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:54:49.859+0000] {logging_mixin.py:190} INFO - Rank: Order
+[2024-10-29T17:54:49.859+0000] {logging_mixin.py:190} INFO - Taxon Name: Falconiformes
+[2024-10-29T17:54:49.860+0000] {logging_mixin.py:190} INFO - Vernacular Name: diurnal birds of prey
+[2024-10-29T17:54:58.331+0000] {logging_mixin.py:190} INFO - Range_mass: 631 to 1364 g
+[2024-10-29T17:54:58.331+0000] {logging_mixin.py:190} INFO - Range_lenght: 55 to 61 cm
+[2024-10-29T17:54:58.331+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:54:58.332+0000] {logging_mixin.py:190} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-29T17:54:58.332+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:54:58.332+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:54:58.333+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:54:58.333+0000] {logging_mixin.py:190} INFO - Rank: Family
+[2024-10-29T17:54:58.334+0000] {logging_mixin.py:190} INFO - Taxon Name: Accipitridae
+[2024-10-29T17:54:58.334+0000] {logging_mixin.py:190} INFO - Vernacular Name: eagles, hawks, and kites
+[2024-10-29T17:55:07.545+0000] {logging_mixin.py:190} INFO - Range_mass: 631 to 1364 g
+[2024-10-29T17:55:07.546+0000] {logging_mixin.py:190} INFO - Range_lenght: 55 to 61 cm
+[2024-10-29T17:55:07.546+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:55:07.546+0000] {logging_mixin.py:190} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-29T17:55:07.547+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:55:07.547+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:55:07.547+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:55:07.548+0000] {logging_mixin.py:190} INFO - Rank: Genus
+[2024-10-29T17:55:07.548+0000] {logging_mixin.py:190} INFO - Taxon Name: Accipiter
+[2024-10-29T17:55:07.549+0000] {logging_mixin.py:190} INFO - Vernacular Name: bird hawks
+[2024-10-29T17:55:17.272+0000] {logging_mixin.py:190} INFO - Range_mass: 631 to 1364 g
+[2024-10-29T17:55:17.272+0000] {logging_mixin.py:190} INFO - Range_lenght: 55 to 61 cm
+[2024-10-29T17:55:17.272+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:55:17.273+0000] {logging_mixin.py:190} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-29T17:55:17.273+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:55:17.273+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:55:17.274+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:55:17.274+0000] {logging_mixin.py:190} INFO - Rank: Species
+[2024-10-29T17:55:17.275+0000] {logging_mixin.py:190} INFO - Taxon Name: Accipiter gentilis
+[2024-10-29T17:55:17.275+0000] {logging_mixin.py:190} INFO - Vernacular Name: northern goshawk
+[2024-10-29T17:55:27.271+0000] {logging_mixin.py:190} INFO - Range_mass: 631 to 1364 g
+[2024-10-29T17:55:27.272+0000] {logging_mixin.py:190} INFO - Range_lenght: 55 to 61 cm
+[2024-10-29T17:55:27.272+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:55:27.272+0000] {logging_mixin.py:190} INFO - Activity patterns: diurnal, motile, migratory, sedentary, solitary, territorial
+[2024-10-29T17:55:27.272+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:55:27.273+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:55:27.273+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:55:27.273+0000] {logging_mixin.py:190} INFO - specie Accipiter nisus
+[2024-10-29T17:55:37.750+0000] {logging_mixin.py:190} INFO - Request was successful!
+[2024-10-29T17:55:37.772+0000] {logging_mixin.py:190} INFO - Rank: Kingdom
+[2024-10-29T17:55:37.772+0000] {logging_mixin.py:190} INFO - Taxon Name: Animalia
+[2024-10-29T17:55:37.772+0000] {logging_mixin.py:190} INFO - Vernacular Name: animals
+[2024-10-29T17:55:53.205+0000] {logging_mixin.py:190} INFO - Range_mass: 110 to 342 g
+[2024-10-29T17:55:53.205+0000] {logging_mixin.py:190} INFO - Range_lenght: 29 to 41 cm
+[2024-10-29T17:55:53.205+0000] {logging_mixin.py:190} INFO - primary_diet: carnivore
+[2024-10-29T17:55:53.205+0000] {logging_mixin.py:190} INFO - Activity patterns: arboreal, diurnal, motile, migratory, solitary, territorial
+[2024-10-29T17:55:53.206+0000] {logging_mixin.py:190} INFO - Habitats: temperate, terrestrial
+[2024-10-29T17:55:53.206+0000] {logging_mixin.py:190} INFO - Conservation station: Least Concern
+[2024-10-29T17:55:53.206+0000] {logging_mixin.py:190} INFO - ----------------------------------------
+[2024-10-29T17:55:53.207+0000] {python.py:240} INFO - Done. Returned value was: [{'common_name_adw': 'Juniper Skink, Snake-eyed skink', 'class_adw': 'Reptilia', 'order_adw': 'Squamata', 'family_adw': 'Scincidae', 'genus_adw': 'Ablepharus', 'species_adw': 'Ablepharus kitaibelii'}, {'common_name_adw': 'common redpoll', 'class_adw': 'Aves', 'order_adw': 'Passeriformes', 'family_adw': 'Fringillidae', 'genus_adw': 'Acanthis', 'species_adw': 'Acanthis flammea'}, {'common_name_adw': 'Black Spine-necked Swamp Turtle', 'class_adw': 'Reptilia', 'order_adw': 'Testudines', 'family_adw': 'Chelidae', 'genus_adw': 'Acanthochelys', 'species_adw': 'Acanthochelys spixii'}, {'common_name_adw': 'Fringe-fingered Lizard', 'class_adw': 'Reptilia', 'order_adw': 'Squamata', 'family_adw': 'Lacertidae', 'genus_adw': 'Acanthodactylus', 'species_adw': 'Acanthodactylus erythrurus'}, {'common_name_adw': 'shikra', 'class_adw': 'Aves', 'order_adw': 'Falconiformes', 'family_adw': 'Accipitridae', 'genus_adw': 'Accipiter', 'species_adw': 'Accipiter badius'}, {'common_name_adw': "Cooper's hawk", 'range_mass_adw': '280 to 566 g', 'range_lenght_adw': '35 to 50 cm', 'primary_diet_adw': 'carnivore', 'activity_patterns_adw': 'arboreal, diurnal, motile, migratory, solitary, territorial', 'habitat_types_adw': 'temperate, terrestrial', 'conservation_status_adw': 'Least Concern', 'class_adw': 'Aves', 'order_adw': 'Falconiformes', 'family_adw': 'Accipitridae', 'genus_adw': 'Accipiter', 'species_adw': 'Accipiter cooperii'}, {'common_name_adw': 'northern goshawk', 'range_mass_adw': '631 to 1364 g', 'range_lenght_adw': '55 to 61 cm', 'primary_diet_adw': 'carnivore', 'activity_patterns_adw': 'diurnal, motile, migratory, sedentary, solitary, territorial', 'habitat_types_adw': 'temperate, terrestrial', 'conservation_status_adw': 'Least Concern', 'class_adw': 'Aves', 'order_adw': 'Falconiformes', 'family_adw': 'Accipitridae', 'genus_adw': 'Accipiter', 'species_adw': 'Accipiter gentilis'}, {'common_name_adw': 'animals', 'range_mass_adw': '110 to 342 g', 'range_lenght_adw': '29 to 41 cm', 'primary_diet_adw': 'carnivore', 'activity_patterns_adw': 'arboreal, diurnal, motile, migratory, solitary, territorial', 'habitat_types_adw': 'temperate, terrestrial', 'conservation_status_adw': 'Least Concern'}]
+[2024-10-29T17:55:53.226+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-29T17:55:53.227+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=biological_data_dag, task_id=extract_data_from_adw, run_id=manual__2024-10-29T17:52:55.998843+00:00, execution_date=20241029T175255, start_date=20241029T175306, end_date=20241029T175553
+[2024-10-29T17:55:53.235+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-29T17:55:53.235+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-29T17:55:53.235+0000] {logging_mixin.py:190} INFO - Dag name:biological_data_dag queued_at:2024-10-29 17:52:56.045010+00:00
+[2024-10-29T17:55:53.235+0000] {logging_mixin.py:190} INFO - Task hostname:8b409d8ad50e operator:_PythonDecoratedOperator
+[2024-10-29T17:55:53.250+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-29T17:55:53.270+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-29T17:55:53.272+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

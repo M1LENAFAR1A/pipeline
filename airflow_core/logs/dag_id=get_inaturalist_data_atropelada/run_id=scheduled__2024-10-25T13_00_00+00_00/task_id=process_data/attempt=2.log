@@ -1,0 +1,159 @@
+[2024-10-25T13:54:22.892+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-25T13:54:22.907+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.process_data scheduled__2024-10-25T13:00:00+00:00 [queued]>
+[2024-10-25T13:54:22.914+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.process_data scheduled__2024-10-25T13:00:00+00:00 [queued]>
+[2024-10-25T13:54:22.914+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 4
+[2024-10-25T13:54:22.925+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): process_data> on 2024-10-25 13:00:00+00:00
+[2024-10-25T13:54:22.934+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=201) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-25T13:54:22.935+0000] {standard_task_runner.py:72} INFO - Started process 203 to run task
+[2024-10-25T13:54:22.936+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelada', 'process_data', 'scheduled__2024-10-25T13:00:00+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp3yg26yop']
+[2024-10-25T13:54:22.936+0000] {standard_task_runner.py:105} INFO - Job 9: Subtask process_data
+[2024-10-25T13:54:22.980+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_atropelada.process_data scheduled__2024-10-25T13:00:00+00:00 [running]> on host 917daa3cf910
+[2024-10-25T13:54:23.060+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_atropelada' AIRFLOW_CTX_TASK_ID='process_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-25T13:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-25T13:00:00+00:00'
+[2024-10-25T13:54:23.061+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-25T13:54:23.061+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-25T13:54:23.062+0000] {logging_mixin.py:190} INFO - Current task name:process_data state:running start_date:2024-10-25 13:54:22.907563+00:00
+[2024-10-25T13:54:23.062+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelada and current dag run status:running
+[2024-10-25T13:54:23.062+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-25T13:54:23.063+0000] {python.py:240} INFO - Done. Returned value was: {'data': b'[{"observation_id": 8874033, "uuid": "f1d56d6e-5e04-432b-9a1c-6260bd96d82f", "species_guess": "Ratazana-castanha", "observed_on_string": "Fri Nov 17 2017 06:32:01 GMT-0300 (GMT-3)", "updated_at": "2020-12-01T01:16:28-03:00", "description": "Rato encontrado atropelado, na BR-230 km 11 munic\\u00edpio de Cabedelo-PB. Necessita de identifica\\u00e7\\u00e3o para trabalho de monitoramento de fauna atropelada nessa regi\\u00e3o.", "geojson": {"coordinates": [-34.8502804129, -7.0630465005], "type": "Point"}, "observed_on": "2017-11-17", "created_at": "2017-11-20T14:38:15-02:00", "observations_photos": [{"id": 11932723, "url": "https://static.inaturalist.org/photos/11932723/square.jpg"}, {"id": 11932662, "url": "https://static.inaturalist.org/photos/11932662/square.jpg"}, {"id": 11932697, "url": "https://static.inaturalist.org/photos/11932697/square.jpg"}, {"id": 11932682, "url": "https://static.inaturalist.org/photos/11932682/square.jpg"}], "taxon_id": 44576, "taxon_name": "Rattus norvegicus", "place_guess": "Rodovia Governador Pedro Gondim, Cabedelo, PB, BR"}, {"observation_id": 14268737, "uuid": "ff62370b-8c9b-4d03-a956-f926971206ff", "species_guess": "Guibe\\u00b4s Flame Snake", "observed_on_string": "2018/07/11 4:27 PM HST", "updated_at": "2024-10-20T09:23:32-10:00", "description": "Infelizmente, a encontrei completamente esmagada. Foi atropelada. Pequena, estou em d\\u00favida se n\\u00e3o \\u00e9 um Oxyrhopus sp\\r\\n\\r\\nUnfortunately, I found it completely crushed. She was run over. Little, I\'m in doubt if it\'s not an Oxyrhopus sp", "geojson": {"coordinates": [-46.7340603153, -23.7095601128], "type": "Point"}, "observed_on": "2018-07-11", "created_at": "2018-07-11T10:17:16-10:00", "observations_photos": [{"id": 21181673, "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/21181673/square.jpg"}, {"id": 21182133, "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/21182133/square.jpg"}, {"id": 21182160, "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/21182160/square.jpg"}, {"id": 21182223, "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/21182223/square.jpg"}], "taxon_id": 29166, "taxon_name": "Oxyrhopus guibei", "place_guess": "Guarapiranga, S\\u00e3o Paulo - SP, Brasil"}, {"observation_id": 14438781, "uuid": "d17db460-4300-476f-8f0d-4dca62a04745", "species_guess": "culebra bastarda", "observed_on_string": "Fri Mar 30 2018 11:23:59 GMT+0100 (GMT+1)", "updated_at": "2024-10-20T21:23:13+02:00", "description": "Atropelada ", "geojson": {"coordinates": [-9.13608116, 39.5151708507], "type": "Point"}, "observed_on": "2018-03-30", "created_at": "2018-07-17T10:35:30+02:00", "observations_photos": [{"id": 21488259, "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/21488259/square.jpg"}, {"id": 21488262, "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/21488262/square.jpg"}, {"id": 21488263, "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/21488263/square.jpg"}], "taxon_id": 29449, "taxon_name": "Malpolon monspessulanus", "place_guess": "Rua Comandante Jo\\u00e3o Ribeiro da Silva LT 29B, S\\u00e3o Martinho do Porto, Leiria, PT"}, {"observation_id": 15750471, "uuid": "94ccf956-0fcf-4507-9166-540d9c1b8ed1", "species_guess": "Red Fox", "observed_on_string": "2018/07/17 9:29 AM WEST", "updated_at": "2021-07-07T18:55:42+01:00", "description": "Cria atropelada", "geojson": {"coordinates": [-9.1668932242, 38.5977421411], "type": "Point"}, "observed_on": "2018-07-17", "created_at": "2018-08-21T12:19:55+01:00", "observations_photos": [{"id": 23524182, "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/23524182/square.jpg"}], "taxon_id": 42069, "taxon_name": "Vulpes vulpes", "place_guess": "Corroios, Portugal"}, {"observation_id": 17616720, "uuid": "f0307b57-b05d-44af-ba2b-cd92e1d412bc", "species_guess": "culebra bastarda", "observed_on_string": "2018/06/02 5:22 PM UTC", "updated_at": "2024-10-20T19:11:25+00:00", "description": "atropelada", "geojson": {"coordinates": [-6.9707436561, 40.8769721983], "type": "Point"}, "observed_on": "2018-06-02", "created_at": "2018-10-18T09:51:54+00:00", "observations_photos": [{"id": 26796677, "url": "https://static.inaturalist.org/photos/26796677/square.jpg"}], "taxon_id": 29449, "taxon_name": "Malpolon monspessulanus", "place_guess": "Figueira de Castelo Rodrigo, 6440, Portugal"}, {"observation_id": 17792728, "uuid": "25ea4c19-66f9-4a9f-9b0a-b8b94cf452f3", "species_guess": "Elapomorphus quinquelineatus", "observed_on_string": "2013/04/28 8:37 AM -03", "updated_at": "2021-09-20T01:30:10-03:00", "description": "Nosso primeiro registro da esp\\u00e9cie!\\r\\nEncontrada atropelada em estrada que corta a \\u00c1rea de Prote\\u00e7\\u00e3o Ambiental APA Ita\\u00fana", "geojson": {"coordinates": [-42.1159817485, -19.7900286362], "type": "Point"}, "observed_on": "2013-04-28", "created_at": "2018-10-24T08:39:53-03:00", "observations_photos": [{"id": 27148071, "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/27148071/square.jpg"}], "taxon_id": 30202, "taxon_name": "Elapomorphus quinquelineatus", "place_guess": "Caratinga - MG, Brasil"}, {"observation_id": 18733660, "uuid": "28a3f026-2f9e-412a-8a39-6c4c37d83efa", "species_guess": "Horseshoe Whip Snake", "observed_on_string": "2018-11-29", "updated_at": "2024-10-20T20:07:33+01:00", "description": "atropelada", "geojson": {"coordinates": [-9.158937, 38.755194], "type": "Point"}, "observed_on": "2018-11-29", "created_at": "2018-11-30T14:08:32+00:00", "observations_photos": [{"id": 28685143, "url": "https://static.inaturalist.org/photos/28685143/square.jpeg"}], "taxon_id": 73821, "taxon_name": "Hemorrhois hippocrepis", "place_guess": "Lisboa, PT-LI, PT"}, {"observation_id": 18733787, "uuid": "9c95b297-545e-4f11-b850-4bbdbf907611", "species_guess": "Horseshoe Whip Snake", "observed_on_string": "2018/11/29 2:17 PM WET", "updated_at": "2024-10-20T20:07:32+01:00", "description": "atropelada", "geojson": {"coordinates": [-9.1589954009, 38.7551454445], "type": "Point"}, "observed_on": "2018-11-29", "created_at": "2018-11-30T14:18:54+00:00", "observations_photos": [{"id": 28685042, "url": "https://static.inaturalist.org/photos/28685042/square.jpeg"}], "taxon_id": 73821, "taxon_name": "Hemorrhois hippocrepis", "place_guess": "Lisboa, Portugal"}]', 'path': 'inaturalist_data/atropelada_data/2024/10/25/atropelada_observations_135423.json', 'format': 'application/json'}
+[2024-10-25T13:54:23.068+0000] {xcom.py:690} ERROR - Object of type bytes is not JSON serializable. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your *** config or make sure to decorate your object with attr.
+[2024-10-25T13:54:23.070+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/json.py", line 92, in default
+    return serialize(o)
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/serialization/serde.py", line 190, in serialize
+    raise TypeError(f"cannot serialize object of type {cls}")
+TypeError: cannot serialize object of type <class 'bytes'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 788, in _execute_task
+    task_instance.xcom_push(key=key, value=value, session=session_or_null)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3638, in xcom_push
+    XCom.set(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom.py", line 249, in set
+    value = cls.serialize_value(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom.py", line 688, in serialize_value
+    return json.dumps(value, cls=XComEncoder).encode("UTF-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/json.py", line 105, in encode
+    return super().encode(o)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/json.py", line 94, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+[2024-10-25T13:54:23.081+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-10-25T13:54:23.081+0000] {logging_mixin.py:190} INFO - Task start:2024-10-25 13:54:22.907563+00:00 end:2024-10-25 13:54:23.081082+00:00 duration:0.173519
+[2024-10-25T13:54:23.082+0000] {logging_mixin.py:190} INFO - Task:<Task(_PythonDecoratedOperator): process_data> dag:<DAG: get_inaturalist_data_atropelada> dagrun:<DagRun get_inaturalist_data_atropelada @ 2024-10-25 13:00:00+00:00: scheduled__2024-10-25T13:00:00+00:00, state:running, queued_at: 2024-10-25 13:53:08.510865+00:00. externally triggered: False>
+[2024-10-25T13:54:23.082+0000] {logging_mixin.py:190} INFO - Failure caused by Object of type bytes is not JSON serializable
+[2024-10-25T13:54:23.082+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=get_inaturalist_data_atropelada, task_id=process_data, run_id=scheduled__2024-10-25T13:00:00+00:00, execution_date=20241025T130000, start_date=20241025T135422, end_date=20241025T135423
+[2024-10-25T13:54:23.093+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-25T13:54:23.094+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 9 for task process_data (Object of type bytes is not JSON serializable; 203)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/json.py", line 92, in default
+    return serialize(o)
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/serialization/serde.py", line 190, in serialize
+    raise TypeError(f"cannot serialize object of type {cls}")
+TypeError: cannot serialize object of type <class 'bytes'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 788, in _execute_task
+    task_instance.xcom_push(key=key, value=value, session=session_or_null)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3638, in xcom_push
+    XCom.set(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom.py", line 249, in set
+    value = cls.serialize_value(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom.py", line 688, in serialize_value
+    return json.dumps(value, cls=XComEncoder).encode("UTF-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/json.py", line 105, in encode
+    return super().encode(o)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/json.py", line 94, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+[2024-10-25T13:54:23.108+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-10-25T13:54:23.130+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-25T13:54:23.132+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

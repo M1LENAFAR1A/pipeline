@@ -1,0 +1,4 @@
+[2024-11-20T10:53:48.032+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-20T10:53:48.352+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.process_data scheduled__2024-11-20T10:00:00+00:00 [queued]>
+[2024-11-20T10:53:48.494+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.process_data scheduled__2024-11-20T10:00:00+00:00 [queued]>
+[2024-11-20T10:53:48.528+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4

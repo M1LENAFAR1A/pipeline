@@ -1,0 +1,31 @@
+[2024-11-18T12:07:26.551+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-18T12:07:26.589+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.get_all_data scheduled__2024-11-04T15:00:00+00:00 [queued]>
+[2024-11-18T12:07:26.620+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.get_all_data scheduled__2024-11-04T15:00:00+00:00 [queued]>
+[2024-11-18T12:07:26.621+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-11-18T12:07:26.780+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-11-04 15:00:00+00:00
+[2024-11-18T12:07:26.866+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=55) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-18T12:07:26.886+0000] {standard_task_runner.py:72} INFO - Started process 82 to run task
+[2024-11-18T12:07:26.887+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelamento', 'get_all_data', 'scheduled__2024-11-04T15:00:00+00:00', '--job-id', '486', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp7nvxb76v']
+[2024-11-18T12:07:26.896+0000] {standard_task_runner.py:105} INFO - Job 486: Subtask get_all_data
+[2024-11-18T12:07:27.133+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_atropelamento.get_all_data scheduled__2024-11-04T15:00:00+00:00 [running]> on host bf677ca5dd6f
+[2024-11-18T12:07:27.585+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_atropelamento' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-04T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-04T15:00:00+00:00'
+[2024-11-18T12:07:27.587+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-18T12:07:27.587+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-18T12:07:27.588+0000] {logging_mixin.py:190} INFO - Current task name:get_all_data state:running start_date:2024-11-18 12:07:26.591080+00:00
+[2024-11-18T12:07:27.596+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelamento and current dag run status:running
+[2024-11-18T12:07:27.596+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-18T12:07:27.598+0000] {inaturalist_dag.py:129} INFO - Getting data from keyword: atropelamento
+[2024-11-18T12:07:29.736+0000] {inaturalist_dag.py:135} INFO - No more observations found, stopping.
+[2024-11-18T12:07:29.751+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-11-18T12:07:29.756+0000] {python.py:240} INFO - Done. Returned value was: [{'observation_id': 250750964, 'uuid': '4c5babeb-dae0-483c-92cf-4d5b6e5f48ac', 'species_guess': 'Cobra-Preta', 'observed_on_string': '2023-03-07 13:18:00-03:00', 'updated_at': '2024-11-16T16:20:47-03:00', 'description': 'Animal silvestre vitima de atropelamento.', 'geojson': {'type': 'Point', 'coordinates': [-49.3199207864, -25.4194477183]}, 'observed_on': '2023-03-07', 'created_at': '2024-11-07T00:19:07-03:00', 'observations_photos': [{'id': 448532422, 'url': 'https://static.inaturalist.org/photos/448532422/square.jpeg'}, {'id': 448532426, 'url': 'https://static.inaturalist.org/photos/448532426/square.jpeg'}, {'id': 448532431, 'url': 'https://static.inaturalist.org/photos/448532431/square.jpeg'}, {'id': 448532439, 'url': 'https://static.inaturalist.org/photos/448532439/square.jpeg'}, {'id': 448532447, 'url': 'https://static.inaturalist.org/photos/448532447/square.jpeg'}, {'id': 448532450, 'url': 'https://static.inaturalist.org/photos/448532450/square.jpeg'}], 'taxon_id': 97961, 'taxon_name': 'Clelia plumbea', 'place_guess': 'Rua Professor Francisco Basseti Júnior, Curitiba, PR, BR'}, {'observation_id': 250907087, 'uuid': '085d89a5-001c-4156-a202-f7447b55fffe', 'species_guess': 'Porco-espinho', 'observed_on_string': '2024-11-03 07:36:07', 'updated_at': '2024-11-08T18:44:10-03:00', 'description': 'Animal vítima de atropelamento.', 'geojson': {'type': 'Point', 'coordinates': [-42.0396722222, -22.9022444444]}, 'observed_on': '2024-11-03', 'created_at': '2024-11-08T11:03:42-03:00', 'observations_photos': [{'id': 448839162, 'url': 'https://inaturalist-open-data.s3.amazonaws.com/photos/448839162/square.jpeg'}, {'id': 448839187, 'url': 'https://inaturalist-open-data.s3.amazonaws.com/photos/448839187/square.jpeg'}, {'id': 448839208, 'url': 'https://inaturalist-open-data.s3.amazonaws.com/photos/448839208/square.jpeg'}, {'id': 448839232, 'url': 'https://inaturalist-open-data.s3.amazonaws.com/photos/448839232/square.jpeg'}], 'taxon_id': 552456, 'taxon_name': 'Coendou spinosus', 'place_guess': 'Manoel Corrêa, Cabo Frio - RJ, Brasil'}]
+[2024-11-18T12:07:29.801+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-18T12:07:29.801+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_atropelamento, task_id=get_all_data, run_id=scheduled__2024-11-04T15:00:00+00:00, execution_date=20241104T150000, start_date=20241118T120726, end_date=20241118T120729
+[2024-11-18T12:07:29.825+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-18T12:07:29.825+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-18T12:07:29.826+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelamento queued_at:2024-11-18 12:07:03.519085+00:00
+[2024-11-18T12:07:29.829+0000] {logging_mixin.py:190} INFO - Task hostname:bf677ca5dd6f operator:_PythonDecoratedOperator
+[2024-11-18T12:07:29.857+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-18T12:07:29.908+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-18T12:07:29.911+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

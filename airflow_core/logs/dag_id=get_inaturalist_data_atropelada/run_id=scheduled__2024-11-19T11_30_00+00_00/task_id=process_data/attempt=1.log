@@ -1,0 +1,11 @@
+[2024-11-20T10:53:47.817+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-20T10:53:47.913+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.process_data scheduled__2024-11-19T11:30:00+00:00 [queued]>
+[2024-11-20T10:53:47.985+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.process_data scheduled__2024-11-19T11:30:00+00:00 [queued]>
+[2024-11-20T10:53:47.986+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-11-20T10:53:48.185+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): process_data> on 2024-11-19 11:30:00+00:00
+[2024-11-20T10:53:48.267+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelada', 'process_data', 'scheduled__2024-11-19T11:30:00+00:00', '--job-id', '756', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp0174rn22']
+[2024-11-20T10:53:48.269+0000] {standard_task_runner.py:105} INFO - Job 756: Subtask process_data
+[2024-11-20T10:53:48.231+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=63) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-20T10:53:48.275+0000] {standard_task_runner.py:72} INFO - Started process 103 to run task

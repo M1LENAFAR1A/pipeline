@@ -1,0 +1,114 @@
+[2024-12-02T10:59:57.472+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-02T10:59:57.488+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_gbif_data_roadkill.save_data manual__2024-12-02T10:58:19.798284+00:00 [queued]>
+[2024-12-02T10:59:57.495+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_gbif_data_roadkill.save_data manual__2024-12-02T10:58:19.798284+00:00 [queued]>
+[2024-12-02T10:59:57.496+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 4
+[2024-12-02T10:59:57.509+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): save_data> on 2024-12-02 10:58:19.798284+00:00
+[2024-12-02T10:59:57.520+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=319) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-02T10:59:57.519+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_gbif_data_roadkill', 'save_data', 'manual__2024-12-02T10:58:19.798284+00:00', '--job-id', '1958', '--raw', '--subdir', 'DAGS_FOLDER/gbif_dag.py', '--cfg-path', '/tmp/tmp0lalz313']
+[2024-12-02T10:59:57.521+0000] {standard_task_runner.py:105} INFO - Job 1958: Subtask save_data
+[2024-12-02T10:59:57.521+0000] {standard_task_runner.py:72} INFO - Started process 322 to run task
+[2024-12-02T10:59:57.562+0000] {task_command.py:467} INFO - Running <TaskInstance: get_gbif_data_roadkill.save_data manual__2024-12-02T10:58:19.798284+00:00 [running]> on host 64b3b6a2b10b
+[2024-12-02T10:59:57.629+0000] {abstractoperator.py:778} ERROR - Exception rendering Jinja template for task 'save_data', field 'op_kwargs'. Template: {'data': XComArg(<Task(_PythonDecoratedOperator): get_all_data>), 'tmp_path': XComArg(<Task(_PythonDecoratedOperator): process_data>, 'tmp_path'), 'path': XComArg(<Task(_PythonDecoratedOperator): process_data>, 'path'), 'content_type': XComArg(<Task(_PythonDecoratedOperator): process_data>, 'format'), 'data_lake': 'minio'}
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/abstractoperator.py", line 770, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 185, in render_template
+    return {k: self.render_template(v, context, jinja_env, oids) for k, v in value.items()}
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 175, in render_template
+    return value.resolve(context, include_xcom=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 468, in resolve
+    raise XComNotFound(ti.dag_id, task_id, self.key)
+airflow.exceptions.XComNotFound: XComArg result from process_data at get_gbif_data_roadkill with key="tmp_path" is not found!
+[2024-12-02T10:59:57.654+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3114, in _execute_task_with_callbacks
+    task_orig = self.render_templates(context=context, jinja_env=jinja_env)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3533, in render_templates
+    original_task.render_template_fields(context, jinja_env)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 1419, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/abstractoperator.py", line 770, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 185, in render_template
+    return {k: self.render_template(v, context, jinja_env, oids) for k, v in value.items()}
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 175, in render_template
+    return value.resolve(context, include_xcom=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 468, in resolve
+    raise XComNotFound(ti.dag_id, task_id, self.key)
+airflow.exceptions.XComNotFound: XComArg result from process_data at get_gbif_data_roadkill with key="tmp_path" is not found!
+[2024-12-02T10:59:57.664+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-12-02T10:59:57.664+0000] {logging_mixin.py:190} INFO - Task start:2024-12-02 10:59:57.488994+00:00 end:2024-12-02 10:59:57.664233+00:00 duration:0.175239
+[2024-12-02T10:59:57.665+0000] {logging_mixin.py:190} INFO - Task:<Task(_PythonDecoratedOperator): save_data> dag:<DAG: get_gbif_data_roadkill> dagrun:<DagRun get_gbif_data_roadkill @ 2024-12-02 10:58:19.798284+00:00: manual__2024-12-02T10:58:19.798284+00:00, state:running, queued_at: 2024-12-02 10:58:19.843923+00:00. externally triggered: True>
+[2024-12-02T10:59:57.665+0000] {logging_mixin.py:190} INFO - Failure caused by XComArg result from process_data at get_gbif_data_roadkill with key="tmp_path" is not found!
+[2024-12-02T10:59:57.665+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=get_gbif_data_roadkill, task_id=save_data, run_id=manual__2024-12-02T10:58:19.798284+00:00, execution_date=20241202T105819, start_date=20241202T105957, end_date=20241202T105957
+[2024-12-02T10:59:57.709+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-02T10:59:57.710+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 1958 for task save_data (XComArg result from process_data at get_gbif_data_roadkill with key="tmp_path" is not found!; 322)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3114, in _execute_task_with_callbacks
+    task_orig = self.render_templates(context=context, jinja_env=jinja_env)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3533, in render_templates
+    original_task.render_template_fields(context, jinja_env)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 1419, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/abstractoperator.py", line 770, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 185, in render_template
+    return {k: self.render_template(v, context, jinja_env, oids) for k, v in value.items()}
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 175, in render_template
+    return value.resolve(context, include_xcom=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom_arg.py", line 468, in resolve
+    raise XComNotFound(ti.dag_id, task_id, self.key)
+airflow.exceptions.XComNotFound: XComArg result from process_data at get_gbif_data_roadkill with key="tmp_path" is not found!
+[2024-12-02T10:59:57.735+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-12-02T10:59:57.765+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-02T10:59:57.767+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

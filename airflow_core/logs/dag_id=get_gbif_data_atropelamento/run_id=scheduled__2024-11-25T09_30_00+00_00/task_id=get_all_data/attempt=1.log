@@ -1,0 +1,11 @@
+[2024-11-25T10:01:57.605+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-25T10:01:57.734+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_gbif_data_atropelamento.get_all_data scheduled__2024-11-25T09:30:00+00:00 [queued]>
+[2024-11-25T10:01:57.796+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_gbif_data_atropelamento.get_all_data scheduled__2024-11-25T09:30:00+00:00 [queued]>
+[2024-11-25T10:01:57.797+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-11-25T10:01:58.091+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-11-25 09:30:00+00:00
+[2024-11-25T10:01:58.119+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=70) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-25T10:01:58.121+0000] {standard_task_runner.py:72} INFO - Started process 103 to run task
+[2024-11-25T10:01:58.139+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_gbif_data_atropelamento', 'get_all_data', 'scheduled__2024-11-25T09:30:00+00:00', '--job-id', '1225', '--raw', '--subdir', 'DAGS_FOLDER/gbif_dag.py', '--cfg-path', '/tmp/tmpl8hhzz3e']
+[2024-11-25T10:01:58.144+0000] {standard_task_runner.py:105} INFO - Job 1225: Subtask get_all_data

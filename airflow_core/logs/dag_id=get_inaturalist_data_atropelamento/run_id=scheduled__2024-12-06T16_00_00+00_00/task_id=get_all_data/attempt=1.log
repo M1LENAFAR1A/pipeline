@@ -1,0 +1,26 @@
+[2024-12-06T16:30:02.048+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-06T16:30:02.062+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.get_all_data scheduled__2024-12-06T16:00:00+00:00 [queued]>
+[2024-12-06T16:30:02.070+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.get_all_data scheduled__2024-12-06T16:00:00+00:00 [queued]>
+[2024-12-06T16:30:02.070+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-06T16:30:02.082+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-12-06 16:00:00+00:00
+[2024-12-06T16:30:02.089+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=775) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-06T16:30:02.090+0000] {standard_task_runner.py:72} INFO - Started process 780 to run task
+[2024-12-06T16:30:02.091+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelamento', 'get_all_data', 'scheduled__2024-12-06T16:00:00+00:00', '--job-id', '2643', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmpp7a8n900']
+[2024-12-06T16:30:02.093+0000] {standard_task_runner.py:105} INFO - Job 2643: Subtask get_all_data
+[2024-12-06T16:30:02.135+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_atropelamento.get_all_data scheduled__2024-12-06T16:00:00+00:00 [running]> on host 21d6d9811d5b
+[2024-12-06T16:30:02.213+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_atropelamento' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-06T16:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-06T16:00:00+00:00'
+[2024-12-06T16:30:02.216+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-06T16:30:02.219+0000] {logging_mixin.py:190} INFO - test env my_value
+[2024-12-06T16:30:02.219+0000] {inaturalist_dag.py:152} INFO - Getting data from keyword: atropelamento
+[2024-12-06T16:30:02.231+0000] {inaturalist_dag.py:41} INFO - Maximum id 254303192 for the request
+[2024-12-06T16:30:03.254+0000] {inaturalist_dag.py:58} INFO - Got 0 results
+[2024-12-06T16:30:03.256+0000] {inaturalist_dag.py:160} INFO - No more observations found, stopping.
+[2024-12-06T16:30:03.262+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-12-06T16:30:03.268+0000] {python.py:240} INFO - Done. Returned value was: []
+[2024-12-06T16:30:03.292+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-06T16:30:03.293+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_atropelamento, task_id=get_all_data, run_id=scheduled__2024-12-06T16:00:00+00:00, execution_date=20241206T160000, start_date=20241206T163002, end_date=20241206T163003
+[2024-12-06T16:30:03.348+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-06T16:30:03.371+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-06T16:30:03.373+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

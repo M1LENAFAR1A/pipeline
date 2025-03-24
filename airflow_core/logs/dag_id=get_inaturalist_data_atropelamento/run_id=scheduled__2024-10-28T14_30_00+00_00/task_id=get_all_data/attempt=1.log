@@ -1,0 +1,52 @@
+[2024-10-28T15:03:36.498+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-28T15:03:36.526+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.get_all_data scheduled__2024-10-28T14:30:00+00:00 [queued]>
+[2024-10-28T15:03:36.539+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.get_all_data scheduled__2024-10-28T14:30:00+00:00 [queued]>
+[2024-10-28T15:03:36.540+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-10-28T15:03:36.562+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-10-28 14:30:00+00:00
+[2024-10-28T15:03:36.575+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=164) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-28T15:03:36.577+0000] {standard_task_runner.py:72} INFO - Started process 166 to run task
+[2024-10-28T15:03:36.578+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelamento', 'get_all_data', 'scheduled__2024-10-28T14:30:00+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp08kopaix']
+[2024-10-28T15:03:36.579+0000] {standard_task_runner.py:105} INFO - Job 68: Subtask get_all_data
+[2024-10-28T15:03:36.657+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_atropelamento.get_all_data scheduled__2024-10-28T14:30:00+00:00 [running]> on host d4434c1c111a
+[2024-10-28T15:03:36.835+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_atropelamento' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-28T14:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-28T14:30:00+00:00'
+[2024-10-28T15:03:36.837+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-28T15:03:36.839+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-28T15:03:36.840+0000] {logging_mixin.py:190} INFO - Current task name:get_all_data state:running start_date:2024-10-28 15:03:36.527359+00:00
+[2024-10-28T15:03:36.841+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelamento and current dag run status:running
+[2024-10-28T15:03:36.842+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-28T15:03:36.857+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:03:39.161+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:03:40.761+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:03:42.398+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:03:43.906+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:03:45.597+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:03:47.023+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:03:48.620+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:03:49.983+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:03:51.301+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:03:52.643+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:03:53.976+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:03:55.602+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:03:57.060+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:01.404+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:03.605+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:06.368+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:10.365+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:12.764+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:14.152+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:16.629+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:18.429+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:20.807+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:23.158+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:24.694+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:26.647+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:28.277+0000] {inaturalist_dag.py:49} INFO - Keyword: atropelamento
+[2024-10-28T15:04:32.261+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-10-28T15:04:32.262+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-10-28T15:04:32.264+0000] {process_utils.py:132} INFO - Sending 15 to group 166. PIDs of all processes in the group: [166]
+[2024-10-28T15:04:32.265+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 166
+[2024-10-28T15:04:32.265+0000] {taskinstance.py:3092} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-10-28T15:04:32.295+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-28T15:04:32.319+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=166, status='terminated', exitcode=0, started='15:03:35') (166) terminated with exit code 0

@@ -1,0 +1,4 @@
+[2024-11-25T10:01:58.436+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-25T10:02:02.844+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_gbif_data_atropelada.get_all_data scheduled__2024-11-25T09:30:00+00:00 [queued]>
+[2024-11-25T10:02:39.298+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_gbif_data_atropelada.get_all_data scheduled__2024-11-25T09:30:00+00:00 [queued]>
+[2024-11-25T10:02:40.165+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4

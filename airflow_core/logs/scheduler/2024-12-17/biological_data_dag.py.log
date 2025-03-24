@@ -1,0 +1,490 @@
+[2024-12-17T17:33:46.989+0000] {processor.py:186} INFO - Started process (PID=44) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:33:46.990+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:33:46.998+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:33:46.997+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:33:53.286+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:33:53.374+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:33:53.372+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:33:53.472+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:33:53.471+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:33:53.542+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 6.572 seconds
+[2024-12-17T17:37:00.469+0000] {processor.py:186} INFO - Started process (PID=32) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:37:00.470+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:37:00.473+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:37:00.472+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:37:02.032+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:37:02.093+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:37:02.093+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:37:02.144+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:37:02.143+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:37:02.195+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.734 seconds
+[2024-12-17T17:37:32.721+0000] {processor.py:186} INFO - Started process (PID=44) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:37:32.723+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:37:32.744+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:37:32.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:37:34.445+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:37:34.477+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:37:34.477+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:37:34.516+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:37:34.515+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:37:34.550+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.838 seconds
+[2024-12-17T17:38:04.714+0000] {processor.py:186} INFO - Started process (PID=56) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:38:04.715+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:38:04.721+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:38:04.719+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:38:06.428+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:38:06.484+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:38:06.483+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:38:06.546+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:38:06.545+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:38:06.601+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.905 seconds
+[2024-12-17T17:38:36.863+0000] {processor.py:186} INFO - Started process (PID=68) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:38:36.863+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:38:36.865+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:38:36.865+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:38:37.882+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:38:37.908+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:38:37.908+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:38:37.939+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:38:37.939+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:38:37.963+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.107 seconds
+[2024-12-17T17:39:08.631+0000] {processor.py:186} INFO - Started process (PID=87) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:39:08.632+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:39:08.637+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:39:08.636+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:39:09.777+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:39:09.813+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:39:09.811+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:39:09.867+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:39:09.866+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:39:09.897+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.278 seconds
+[2024-12-17T17:39:40.648+0000] {processor.py:186} INFO - Started process (PID=100) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:39:40.649+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:39:40.652+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:39:40.652+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:39:42.100+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:39:42.145+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:39:42.143+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:39:42.201+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:39:42.200+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:39:42.257+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.624 seconds
+[2024-12-17T17:40:12.998+0000] {processor.py:186} INFO - Started process (PID=113) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:40:12.999+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:40:13.003+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:40:13.003+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:40:14.499+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:40:14.581+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:40:14.578+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:40:14.663+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:40:14.658+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:40:14.736+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.748 seconds
+[2024-12-17T17:40:44.885+0000] {processor.py:186} INFO - Started process (PID=126) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:40:44.888+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:40:44.892+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:40:44.891+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:40:45.790+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:40:45.813+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:40:45.812+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:40:45.842+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:40:45.842+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:40:45.863+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.987 seconds
+[2024-12-17T17:41:16.651+0000] {processor.py:186} INFO - Started process (PID=139) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:41:16.655+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:41:16.659+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:41:16.659+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:41:17.689+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:41:17.728+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:41:17.727+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:41:18.066+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:41:18.065+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:41:18.096+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.452 seconds
+[2024-12-17T17:41:48.313+0000] {processor.py:186} INFO - Started process (PID=151) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:41:48.315+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:41:48.320+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:41:48.319+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:41:49.046+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:41:49.066+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:41:49.066+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:41:49.101+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:41:49.100+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:41:49.126+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.826 seconds
+[2024-12-17T17:42:19.347+0000] {processor.py:186} INFO - Started process (PID=163) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:42:19.349+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:42:19.356+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:42:19.354+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:42:20.307+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:42:20.331+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:42:20.331+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:42:20.626+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:42:20.626+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:42:20.658+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.317 seconds
+[2024-12-17T17:42:51.241+0000] {processor.py:186} INFO - Started process (PID=175) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:42:51.243+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:42:51.246+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:42:51.245+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:42:52.598+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:42:52.648+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:42:52.647+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:42:52.700+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:42:52.700+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:42:52.743+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.511 seconds
+[2024-12-17T17:43:23.013+0000] {processor.py:186} INFO - Started process (PID=186) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:43:23.018+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:43:23.029+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:43:23.027+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:43:24.416+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:43:24.442+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:43:24.441+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:43:24.481+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:43:24.480+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:43:24.515+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.523 seconds
+[2024-12-17T17:43:55.180+0000] {processor.py:186} INFO - Started process (PID=197) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:43:55.181+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:43:55.183+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:43:55.182+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:43:55.975+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:43:56.477+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:43:56.472+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:43:56.582+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:43:56.582+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:43:56.632+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.457 seconds
+[2024-12-17T17:44:27.117+0000] {processor.py:186} INFO - Started process (PID=209) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:44:27.118+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:44:27.120+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:44:27.119+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:44:27.725+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:44:27.754+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:44:27.754+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:44:27.785+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:44:27.785+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:44:27.808+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.699 seconds
+[2024-12-17T17:44:58.227+0000] {processor.py:186} INFO - Started process (PID=221) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:44:58.229+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:44:58.233+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:44:58.232+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:44:59.410+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:44:59.430+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:44:59.429+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:44:59.456+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:44:59.456+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:44:59.476+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.257 seconds
+[2024-12-17T17:45:29.884+0000] {processor.py:186} INFO - Started process (PID=233) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:45:29.886+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:45:29.893+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:45:29.892+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:45:30.914+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:45:30.943+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:45:30.943+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:45:30.981+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:45:30.981+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:45:31.016+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.143 seconds
+[2024-12-17T17:46:01.460+0000] {processor.py:186} INFO - Started process (PID=245) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:46:01.462+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:46:01.465+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:46:01.464+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:46:02.210+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:46:02.247+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:46:02.246+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:46:02.708+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:46:02.707+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:46:02.793+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.341 seconds
+[2024-12-17T17:46:33.228+0000] {processor.py:186} INFO - Started process (PID=263) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:46:33.231+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:46:33.233+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:46:33.232+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:46:33.870+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:46:34.093+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:46:34.093+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:46:34.130+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:46:34.130+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:46:34.151+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.929 seconds
+[2024-12-17T17:47:04.739+0000] {processor.py:186} INFO - Started process (PID=274) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:47:04.744+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:47:04.750+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:47:04.749+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:47:07.090+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:47:07.150+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:47:07.148+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:47:07.216+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:47:07.215+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:47:07.272+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 2.551 seconds
+[2024-12-17T17:47:37.457+0000] {processor.py:186} INFO - Started process (PID=286) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:47:37.459+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:47:37.461+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:47:37.461+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:47:38.368+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:47:38.385+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:47:38.385+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:47:38.407+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:47:38.407+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:47:38.422+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.974 seconds
+[2024-12-17T17:48:08.524+0000] {processor.py:186} INFO - Started process (PID=298) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:48:08.526+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:48:08.528+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:48:08.527+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:48:09.229+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:48:09.244+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:48:09.244+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:48:09.262+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:48:09.261+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:48:09.276+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.757 seconds
+[2024-12-17T17:48:39.668+0000] {processor.py:186} INFO - Started process (PID=310) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:48:39.669+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:48:39.671+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:48:39.671+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:48:40.362+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:48:40.382+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:48:40.382+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:48:40.405+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:48:40.405+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:48:40.423+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.761 seconds
+[2024-12-17T17:49:10.803+0000] {processor.py:186} INFO - Started process (PID=340) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:49:10.806+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:49:10.809+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:49:10.808+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:49:11.417+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:49:11.432+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:49:11.432+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:49:11.451+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:49:11.451+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:49:11.466+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.671 seconds
+[2024-12-17T17:49:41.610+0000] {processor.py:186} INFO - Started process (PID=352) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:49:41.611+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:49:41.613+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:49:41.613+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:49:42.233+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:49:42.248+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:49:42.247+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:49:42.267+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:49:42.266+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:49:42.281+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.676 seconds
+[2024-12-17T17:50:12.439+0000] {processor.py:186} INFO - Started process (PID=364) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:50:12.440+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:50:12.442+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:50:12.442+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:50:12.998+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:50:13.014+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:50:13.013+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:50:13.031+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:50:13.031+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:50:13.046+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.611 seconds
+[2024-12-17T17:50:43.117+0000] {processor.py:186} INFO - Started process (PID=376) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:50:43.118+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:50:43.119+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:50:43.119+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:50:43.763+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:50:43.778+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:50:43.777+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:50:43.796+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:50:43.796+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:50:43.811+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.699 seconds
+[2024-12-17T17:51:14.140+0000] {processor.py:186} INFO - Started process (PID=388) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:51:14.141+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:51:14.143+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:51:14.143+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:51:14.774+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:51:14.789+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:51:14.788+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:51:14.810+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:51:14.810+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:51:14.827+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.692 seconds
+[2024-12-17T17:51:44.943+0000] {processor.py:186} INFO - Started process (PID=400) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:51:44.945+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:51:44.947+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:51:44.947+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:51:45.919+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:51:45.934+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:51:45.933+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:51:45.953+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:51:45.952+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:51:45.967+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 1.032 seconds
+[2024-12-17T17:52:16.033+0000] {processor.py:186} INFO - Started process (PID=412) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:52:16.036+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:52:16.039+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:52:16.039+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:52:16.801+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:52:16.815+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:52:16.815+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:52:16.833+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:52:16.833+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:52:16.848+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.826 seconds
+[2024-12-17T17:52:47.166+0000] {processor.py:186} INFO - Started process (PID=424) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:52:47.168+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:52:47.175+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:52:47.173+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:52:47.998+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:52:48.015+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:52:48.015+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:52:48.034+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:52:48.034+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:52:48.049+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.893 seconds
+[2024-12-17T17:53:18.289+0000] {processor.py:186} INFO - Started process (PID=436) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:53:18.292+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:53:18.294+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:53:18.294+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:53:18.913+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:53:18.928+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:53:18.927+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:53:18.945+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:53:18.945+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:53:18.960+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.678 seconds
+[2024-12-17T17:53:49.224+0000] {processor.py:186} INFO - Started process (PID=447) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:53:49.226+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:53:49.229+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:53:49.228+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:53:49.852+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:53:49.866+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:53:49.866+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:53:49.884+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:53:49.884+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:53:49.898+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.682 seconds
+[2024-12-17T17:54:20.230+0000] {processor.py:186} INFO - Started process (PID=459) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:54:20.232+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:54:20.234+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:54:20.233+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:54:20.953+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:54:20.969+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:54:20.968+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:54:20.988+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:54:20.987+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:54:21.005+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.781 seconds
+[2024-12-17T17:54:51.049+0000] {processor.py:186} INFO - Started process (PID=471) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:54:51.050+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:54:51.052+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:54:51.052+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:54:51.725+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:54:51.741+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:54:51.741+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:54:51.762+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:54:51.762+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:54:51.778+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.735 seconds
+[2024-12-17T17:55:22.263+0000] {processor.py:186} INFO - Started process (PID=483) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:55:22.264+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:55:22.266+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:55:22.266+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:55:23.019+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:55:23.035+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:55:23.035+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:55:23.054+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:55:23.053+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:55:23.069+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.812 seconds
+[2024-12-17T17:55:53.416+0000] {processor.py:186} INFO - Started process (PID=495) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:55:53.417+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:55:53.418+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:55:53.418+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:55:54.049+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:55:54.067+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:55:54.067+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:55:54.095+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:55:54.095+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:55:54.112+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.701 seconds
+[2024-12-17T17:56:24.340+0000] {processor.py:186} INFO - Started process (PID=507) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:56:24.342+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:56:24.344+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:56:24.344+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:56:24.945+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:56:24.958+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:56:24.958+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:56:24.973+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:56:24.973+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:56:24.985+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.650 seconds
+[2024-12-17T17:56:55.137+0000] {processor.py:186} INFO - Started process (PID=519) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:56:55.139+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:56:55.143+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:56:55.142+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:56:55.754+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:56:55.766+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:56:55.766+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:56:55.782+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:56:55.782+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:56:55.796+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.669 seconds
+[2024-12-17T17:57:26.118+0000] {processor.py:186} INFO - Started process (PID=531) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:57:26.119+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:57:26.121+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:57:26.121+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:57:26.766+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:57:26.779+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:57:26.778+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:57:26.793+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:57:26.793+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:57:26.805+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.694 seconds
+[2024-12-17T17:57:56.976+0000] {processor.py:186} INFO - Started process (PID=543) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:57:56.978+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:57:56.982+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:57:56.982+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:57:57.829+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:57:57.847+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:57:57.846+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:57:57.868+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:57:57.868+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:57:57.885+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.915 seconds
+[2024-12-17T17:58:28.530+0000] {processor.py:186} INFO - Started process (PID=555) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:58:28.532+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:58:28.534+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:58:28.534+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:58:29.208+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:58:29.222+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:58:29.222+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:58:29.241+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:58:29.240+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:58:29.255+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.730 seconds
+[2024-12-17T17:58:59.524+0000] {processor.py:186} INFO - Started process (PID=567) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:58:59.526+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:58:59.528+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:58:59.528+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:59:00.138+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:59:00.150+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:59:00.150+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:59:00.164+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:59:00.164+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:59:00.177+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.658 seconds
+[2024-12-17T17:59:30.376+0000] {processor.py:186} INFO - Started process (PID=579) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:59:30.378+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T17:59:30.383+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:59:30.382+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:59:30.990+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T17:59:31.002+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:59:31.002+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T17:59:31.017+0000] {logging_mixin.py:190} INFO - [2024-12-17T17:59:31.017+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T17:59:31.029+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.666 seconds
+[2024-12-17T18:00:01.258+0000] {processor.py:186} INFO - Started process (PID=596) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:00:01.259+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:00:01.261+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:00:01.261+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:00:02.083+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:00:02.096+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:00:02.096+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:00:02.114+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:00:02.114+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:00:02.126+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.877 seconds
+[2024-12-17T18:00:32.312+0000] {processor.py:186} INFO - Started process (PID=607) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:00:32.313+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:00:32.314+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:00:32.314+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:00:32.919+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:00:32.933+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:00:32.932+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:00:32.950+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:00:32.950+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:00:32.964+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.657 seconds
+[2024-12-17T18:01:03.051+0000] {processor.py:186} INFO - Started process (PID=619) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:01:03.052+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:01:03.053+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:01:03.053+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:01:03.656+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:01:03.668+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:01:03.667+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:01:03.683+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:01:03.683+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:01:03.695+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.649 seconds
+[2024-12-17T18:01:34.049+0000] {processor.py:186} INFO - Started process (PID=630) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:01:34.050+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:01:34.052+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:01:34.051+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:01:34.712+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:01:34.727+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:01:34.727+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:01:34.744+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:01:34.744+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:01:34.758+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.714 seconds
+[2024-12-17T18:02:05.288+0000] {processor.py:186} INFO - Started process (PID=643) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:02:05.290+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:02:05.292+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:02:05.292+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:02:06.091+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:02:06.111+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:02:06.111+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:02:06.139+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:02:06.139+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:02:06.163+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.882 seconds
+[2024-12-17T18:02:36.419+0000] {processor.py:186} INFO - Started process (PID=655) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:02:36.421+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:02:36.423+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:02:36.422+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:02:37.052+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:02:37.068+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:02:37.068+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:02:37.088+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:02:37.087+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:02:37.101+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.687 seconds
+[2024-12-17T18:03:07.261+0000] {processor.py:186} INFO - Started process (PID=667) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:03:07.262+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:03:07.264+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:03:07.263+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:03:07.883+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:03:07.897+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:03:07.897+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:03:07.916+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:03:07.915+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:03:07.929+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.673 seconds
+[2024-12-17T18:03:38.107+0000] {processor.py:186} INFO - Started process (PID=679) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:03:38.107+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:03:38.109+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:03:38.109+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:03:38.725+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:03:38.739+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:03:38.739+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:03:38.757+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:03:38.757+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:03:38.771+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.669 seconds
+[2024-12-17T18:04:08.829+0000] {processor.py:186} INFO - Started process (PID=691) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:04:08.830+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:04:08.831+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:04:08.831+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:04:09.423+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:04:09.435+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:04:09.435+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:04:09.456+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:04:09.456+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:04:09.471+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.646 seconds
+[2024-12-17T18:04:39.725+0000] {processor.py:186} INFO - Started process (PID=703) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:04:39.726+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:04:39.729+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:04:39.728+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:04:40.517+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:04:40.535+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:04:40.534+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:04:40.557+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:04:40.557+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:04:40.573+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.852 seconds
+[2024-12-17T18:05:10.727+0000] {processor.py:186} INFO - Started process (PID=715) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:05:10.728+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:05:10.731+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:05:10.731+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:05:11.415+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:05:11.432+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:05:11.432+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:05:11.451+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:05:11.451+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:05:11.468+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.746 seconds
+[2024-12-17T18:05:41.709+0000] {processor.py:186} INFO - Started process (PID=727) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:05:41.710+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:05:41.712+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:05:41.712+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:05:42.470+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:05:42.490+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:05:42.489+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:05:42.510+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:05:42.510+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:05:42.527+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.823 seconds
+[2024-12-17T18:06:12.778+0000] {processor.py:186} INFO - Started process (PID=743) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:06:12.779+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:06:12.782+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:06:12.782+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:06:13.487+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:06:13.506+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:06:13.505+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:06:13.527+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:06:13.526+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:06:13.544+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.771 seconds
+[2024-12-17T18:06:43.593+0000] {processor.py:186} INFO - Started process (PID=755) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:06:43.594+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:06:43.596+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:06:43.596+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:06:44.274+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:06:44.290+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:06:44.290+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:06:44.315+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:06:44.315+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:06:44.330+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.741 seconds
+[2024-12-17T18:07:14.396+0000] {processor.py:186} INFO - Started process (PID=767) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:07:14.397+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:07:14.399+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:07:14.399+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:07:15.080+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:07:15.097+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:07:15.096+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:07:15.118+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:07:15.118+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:07:15.143+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.752 seconds
+[2024-12-17T18:07:45.463+0000] {processor.py:186} INFO - Started process (PID=779) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:07:45.465+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:07:45.468+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:07:45.467+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:07:46.085+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:07:46.099+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:07:46.098+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:07:46.115+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:07:46.115+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:07:46.129+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.673 seconds
+[2024-12-17T18:08:16.341+0000] {processor.py:186} INFO - Started process (PID=791) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:08:16.341+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:08:16.343+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:08:16.343+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:08:16.941+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:08:16.953+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:08:16.953+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:08:16.968+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:08:16.968+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:08:16.981+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.645 seconds
+[2024-12-17T18:08:47.084+0000] {processor.py:186} INFO - Started process (PID=803) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:08:47.085+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:08:47.086+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:08:47.086+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:08:47.650+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:08:47.663+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:08:47.662+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:08:47.677+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:08:47.677+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:08:47.689+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.610 seconds
+[2024-12-17T18:09:17.795+0000] {processor.py:186} INFO - Started process (PID=815) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:09:17.796+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:09:17.798+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:09:17.798+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:09:18.403+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:09:18.418+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:09:18.417+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:09:18.437+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:09:18.437+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:09:18.453+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.662 seconds
+[2024-12-17T18:09:48.528+0000] {processor.py:186} INFO - Started process (PID=827) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:09:48.529+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:09:48.530+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:09:48.530+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:09:49.180+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:09:49.196+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:09:49.196+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:09:49.227+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:09:49.227+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:09:49.251+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.727 seconds
+[2024-12-17T18:10:19.654+0000] {processor.py:186} INFO - Started process (PID=839) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:10:19.656+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:10:19.658+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:10:19.657+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:10:20.327+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:10:20.341+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:10:20.341+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:10:20.359+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:10:20.359+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:10:20.373+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.724 seconds
+[2024-12-17T18:10:51.076+0000] {processor.py:186} INFO - Started process (PID=851) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:10:51.078+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:10:51.081+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:10:51.081+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:10:51.768+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:10:51.787+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:10:51.786+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:10:51.810+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:10:51.810+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:10:51.824+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.755 seconds
+[2024-12-17T18:11:21.922+0000] {processor.py:186} INFO - Started process (PID=863) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:11:21.924+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:11:21.927+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:11:21.927+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:11:22.608+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:11:22.623+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:11:22.623+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:11:22.640+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:11:22.640+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:11:22.654+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.737 seconds
+[2024-12-17T18:11:52.861+0000] {processor.py:186} INFO - Started process (PID=875) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:11:52.862+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:11:52.865+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:11:52.864+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:11:53.589+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:11:53.604+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:11:53.604+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:11:53.622+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:11:53.621+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:11:53.638+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.783 seconds
+[2024-12-17T18:12:24.010+0000] {processor.py:186} INFO - Started process (PID=887) to work on /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:12:24.010+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2024-12-17T18:12:24.013+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:12:24.012+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:12:24.645+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2024-12-17T18:12:24.660+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:12:24.659+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-17T18:12:24.677+0000] {logging_mixin.py:190} INFO - [2024-12-17T18:12:24.677+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2024-11-05 00:00:00+00:00, run_after=2024-12-05 00:00:00+00:00
+[2024-12-17T18:12:24.693+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.690 seconds

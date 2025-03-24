@@ -1,0 +1,30 @@
+[2024-10-25T14:01:16.560+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-25T14:01:16.580+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.upload scheduled__2024-10-25T13:30:00+00:00 [queued]>
+[2024-10-25T14:01:16.590+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.upload scheduled__2024-10-25T13:30:00+00:00 [queued]>
+[2024-10-25T14:01:16.591+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 5
+[2024-10-25T14:01:16.605+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): upload> on 2024-10-25 13:30:00+00:00
+[2024-10-25T14:01:16.618+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=336) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-25T14:01:16.619+0000] {standard_task_runner.py:72} INFO - Started process 338 to run task
+[2024-10-25T14:01:16.620+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelada', 'upload', 'scheduled__2024-10-25T13:30:00+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmpskbnfewd']
+[2024-10-25T14:01:16.621+0000] {standard_task_runner.py:105} INFO - Job 22: Subtask upload
+[2024-10-25T14:01:16.671+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_atropelada.upload scheduled__2024-10-25T13:30:00+00:00 [running]> on host 917daa3cf910
+[2024-10-25T14:01:16.806+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_atropelada' AIRFLOW_CTX_TASK_ID='upload' AIRFLOW_CTX_EXECUTION_DATE='2024-10-25T13:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-25T13:30:00+00:00'
+[2024-10-25T14:01:16.807+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-25T14:01:16.808+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-25T14:01:16.808+0000] {logging_mixin.py:190} INFO - Current task name:upload state:running start_date:2024-10-25 14:01:16.581308+00:00
+[2024-10-25T14:01:16.808+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelada and current dag run status:running
+[2024-10-25T14:01:16.808+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-25T14:01:16.809+0000] {logging_mixin.py:190} INFO - upload data []
+[2024-10-25T14:01:16.810+0000] {logging_mixin.py:190} INFO - path inaturalist_data/atropelada_data/2024/10/25/atropelada_observations_140005.json
+[2024-10-25T14:01:16.810+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-25T14:01:16.828+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-25T14:01:16.830+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_atropelada, task_id=upload, run_id=scheduled__2024-10-25T13:30:00+00:00, execution_date=20241025T133000, start_date=20241025T140116, end_date=20241025T140116
+[2024-10-25T14:01:16.847+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-25T14:01:16.847+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-25T14:01:16.848+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelada queued_at:2024-10-25 14:01:13.718088+00:00
+[2024-10-25T14:01:16.848+0000] {logging_mixin.py:190} INFO - Task hostname:917daa3cf910 operator:_PythonDecoratedOperator
+[2024-10-25T14:01:16.873+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-25T14:01:16.900+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-25T14:01:16.903+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

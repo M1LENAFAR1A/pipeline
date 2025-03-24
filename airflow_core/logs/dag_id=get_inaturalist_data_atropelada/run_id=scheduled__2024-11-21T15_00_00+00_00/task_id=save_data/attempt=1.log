@@ -1,0 +1,28 @@
+[2024-11-21T15:30:11.555+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-21T15:30:11.593+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.save_data scheduled__2024-11-21T15:00:00+00:00 [queued]>
+[2024-11-21T15:30:11.620+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.save_data scheduled__2024-11-21T15:00:00+00:00 [queued]>
+[2024-11-21T15:30:11.621+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-11-21T15:30:11.647+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): save_data> on 2024-11-21 15:00:00+00:00
+[2024-11-21T15:30:11.670+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=301) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-21T15:30:11.672+0000] {standard_task_runner.py:72} INFO - Started process 310 to run task
+[2024-11-21T15:30:11.676+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelada', 'save_data', 'scheduled__2024-11-21T15:00:00+00:00', '--job-id', '927', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmptinjlqkd']
+[2024-11-21T15:30:11.678+0000] {standard_task_runner.py:105} INFO - Job 927: Subtask save_data
+[2024-11-21T15:30:11.835+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_atropelada.save_data scheduled__2024-11-21T15:00:00+00:00 [running]> on host 569dbdc45a07
+[2024-11-21T15:30:12.172+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_atropelada' AIRFLOW_CTX_TASK_ID='save_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-21T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-21T15:00:00+00:00'
+[2024-11-21T15:30:12.174+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-21T15:30:12.174+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-21T15:30:12.176+0000] {logging_mixin.py:190} INFO - Current task name:save_data state:running start_date:2024-11-21 15:30:11.595359+00:00
+[2024-11-21T15:30:12.177+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelada and current dag run status:running
+[2024-11-21T15:30:12.178+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-21T15:30:12.179+0000] {inaturalist_dag.py:165} INFO - No new observations to store.
+[2024-11-21T15:30:12.180+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-21T15:30:12.199+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-21T15:30:12.201+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_atropelada, task_id=save_data, run_id=scheduled__2024-11-21T15:00:00+00:00, execution_date=20241121T150000, start_date=20241121T153011, end_date=20241121T153012
+[2024-11-21T15:30:12.220+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-21T15:30:12.221+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-21T15:30:12.223+0000] {logging_mixin.py:190} INFO - Dag name:get_inaturalist_data_atropelada queued_at:2024-11-21 15:30:00.044981+00:00
+[2024-11-21T15:30:12.224+0000] {logging_mixin.py:190} INFO - Task hostname:569dbdc45a07 operator:_PythonDecoratedOperator
+[2024-11-21T15:30:12.278+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-21T15:30:12.297+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

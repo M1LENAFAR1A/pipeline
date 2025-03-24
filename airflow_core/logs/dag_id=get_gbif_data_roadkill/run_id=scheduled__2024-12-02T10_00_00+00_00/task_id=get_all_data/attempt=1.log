@@ -1,0 +1,33 @@
+[2024-12-02T10:52:09.983+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-02T10:52:10.024+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_gbif_data_roadkill.get_all_data scheduled__2024-12-02T10:00:00+00:00 [queued]>
+[2024-12-02T10:52:10.040+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_gbif_data_roadkill.get_all_data scheduled__2024-12-02T10:00:00+00:00 [queued]>
+[2024-12-02T10:52:10.041+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-02T10:52:10.116+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2024-12-02 10:00:00+00:00
+[2024-12-02T10:52:10.162+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=59) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-02T10:52:10.171+0000] {standard_task_runner.py:72} INFO - Started process 87 to run task
+[2024-12-02T10:52:10.169+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_gbif_data_roadkill', 'get_all_data', 'scheduled__2024-12-02T10:00:00+00:00', '--job-id', '1924', '--raw', '--subdir', 'DAGS_FOLDER/gbif_dag.py', '--cfg-path', '/tmp/tmpdnyf6kbo']
+[2024-12-02T10:52:10.172+0000] {standard_task_runner.py:105} INFO - Job 1924: Subtask get_all_data
+[2024-12-02T10:52:10.387+0000] {task_command.py:467} INFO - Running <TaskInstance: get_gbif_data_roadkill.get_all_data scheduled__2024-12-02T10:00:00+00:00 [running]> on host 64b3b6a2b10b
+[2024-12-02T10:52:10.770+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_gbif_data_roadkill' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-02T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-02T10:00:00+00:00'
+[2024-12-02T10:52:10.772+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-12-02T10:52:10.773+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-12-02T10:52:10.774+0000] {logging_mixin.py:190} INFO - Current task name:get_all_data state:running start_date:2024-12-02 10:52:10.025400+00:00
+[2024-12-02T10:52:10.775+0000] {logging_mixin.py:190} INFO - Dag name:get_gbif_data_roadkill and current dag run status:running
+[2024-12-02T10:52:10.775+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-02T10:52:10.776+0000] {gbif_dag.py:227} INFO - Getting data from keyword: roadkill
+[2024-12-02T10:52:11.234+0000] {gbif_dag.py:220} ERROR - Status code 400
+[2024-12-02T10:52:11.235+0000] {gbif_dag.py:221} ERROR - Something went wrong {"body":"Max offset of 100001 exceeded: 125745 + 300"}
+[2024-12-02T10:52:11.236+0000] {gbif_dag.py:233} INFO - No more occurrences found, stopping.
+[2024-12-02T10:52:11.244+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-12-02T10:52:11.273+0000] {python.py:240} INFO - Done. Returned value was: []
+[2024-12-02T10:52:11.306+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-02T10:52:11.306+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_gbif_data_roadkill, task_id=get_all_data, run_id=scheduled__2024-12-02T10:00:00+00:00, execution_date=20241202T100000, start_date=20241202T105210, end_date=20241202T105211
+[2024-12-02T10:52:11.322+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-12-02T10:52:11.323+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-12-02T10:52:11.323+0000] {logging_mixin.py:190} INFO - Dag name:get_gbif_data_roadkill queued_at:2024-12-02 10:51:58.679776+00:00
+[2024-12-02T10:52:11.323+0000] {logging_mixin.py:190} INFO - Task hostname:64b3b6a2b10b operator:_PythonDecoratedOperator
+[2024-12-02T10:52:11.369+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-02T10:52:11.411+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-02T10:52:11.418+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

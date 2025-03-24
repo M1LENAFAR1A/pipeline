@@ -1,0 +1,20 @@
+[2024-12-07T23:02:42.769+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-07T23:02:42.789+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.process_data scheduled__2024-12-07T22:30:00+00:00 [queued]>
+[2024-12-07T23:02:42.797+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelada.process_data scheduled__2024-12-07T22:30:00+00:00 [queued]>
+[2024-12-07T23:02:42.797+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-12-07T23:02:42.809+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): process_data> on 2024-12-07 22:30:00+00:00
+[2024-12-07T23:02:42.816+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=111) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-07T23:02:42.818+0000] {standard_task_runner.py:72} INFO - Started process 116 to run task
+[2024-12-07T23:02:42.818+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelada', 'process_data', 'scheduled__2024-12-07T22:30:00+00:00', '--job-id', '2680', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp5flgkzjx']
+[2024-12-07T23:02:42.820+0000] {standard_task_runner.py:105} INFO - Job 2680: Subtask process_data
+[2024-12-07T23:02:42.861+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_atropelada.process_data scheduled__2024-12-07T22:30:00+00:00 [running]> on host 21d6d9811d5b
+[2024-12-07T23:02:42.958+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_atropelada' AIRFLOW_CTX_TASK_ID='process_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-07T22:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-07T22:30:00+00:00'
+[2024-12-07T23:02:42.959+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-07T23:02:42.962+0000] {taskinstance.py:301} INFO - No observations to process, skipping tasks
+[2024-12-07T23:02:42.982+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-07T23:02:42.983+0000] {taskinstance.py:352} INFO - Marking task as SKIPPED. dag_id=get_inaturalist_data_atropelada, task_id=process_data, run_id=scheduled__2024-12-07T22:30:00+00:00, execution_date=20241207T223000, start_date=20241207T230242, end_date=20241207T230242
+[2024-12-07T23:02:43.033+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-07T23:02:43.071+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-07T23:02:43.076+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
