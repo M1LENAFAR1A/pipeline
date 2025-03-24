@@ -1,0 +1,14 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:13
+    restart: always
+    environment:
+      - POSTGRES_DB=environbit
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=admin
+      - PGDATA=/var/lib/postgresql/data/pgdata/environbit
+    stdin_open: true
+    tty: true
+    ports:
+      - 31025:5432/tcp
