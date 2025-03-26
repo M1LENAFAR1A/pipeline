@@ -22,7 +22,6 @@ services:
       timeout: 5s
   rabbitmq:
     image: rabbitmq:4.0.4-management-alpine # tells docker which image to pull
-    platform: linux/amd64
     container_name: 'rabbitmq'
     ports:
       - 5672:5672 # AMQP protocol port

@@ -15,11 +15,12 @@ services:
       - RABBITMQ_QUEUE=queue_test
       - MINIO_URL=192.168.30.21:30688
       - MINIO_SECURE=False
-      - MINIO_SECRET_KEY=77KSs0rM7ED2aXDq9QChzNOxUx6HNiL4sCEEhwzD
-      - MINIO_ACCESS_KEY=fWr9nIiiQfZ9LD7TzMB4
+      - MINIO_SECRET_KEY=JACHvXYjV5tgQBiAWb9zizVrEY75PWGOgwzLtxk7
+      - MINIO_ACCESS_KEY=f92RzGA47dUK5Ck4YwCqe
       - MINIO_BUCKET_NAME=environbit
       - DATA_LAKE=minio
       - TAXONOMY_FILE=app/static/taxonomy_file.csv
       - TRANSFORMATION_DIR=/tmp/transformation/
     build:
-      context: .
+      context: ../..
+      dockerfile: composes/app/Dockerfile
