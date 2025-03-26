@@ -385,3 +385,12 @@
 [2025-03-26T11:42:42.810+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:42:42.810+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-26 11:00:00+00:00, run_after=2025-03-26 11:30:00+00:00
 [2025-03-26T11:42:42.811+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:42:42.811+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-26 11:00:00+00:00, run_after=2025-03-26 11:30:00+00:00
 [2025-03-26T11:42:42.815+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.155 seconds
+[2025-03-26T11:43:14.010+0000] {processor.py:186} INFO - Started process (PID=252) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T11:43:14.012+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T11:43:14.016+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:14.015+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T11:43:14.128+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_roadkill', 'get_gbif_data_atropelamento', 'get_gbif_data_atropelada' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T11:43:14.143+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:14.143+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T11:43:14.156+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:14.156+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-26 11:00:00+00:00, run_after=2025-03-26 11:30:00+00:00
+[2025-03-26T11:43:14.158+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:14.158+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-26 11:00:00+00:00, run_after=2025-03-26 11:30:00+00:00
+[2025-03-26T11:43:14.159+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:14.159+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-26 11:00:00+00:00, run_after=2025-03-26 11:30:00+00:00
+[2025-03-26T11:43:14.165+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.158 seconds

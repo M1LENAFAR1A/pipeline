@@ -299,3 +299,10 @@
 [2025-03-26T11:42:42.615+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:42:42.615+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-03-26T11:42:42.627+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:42:42.627+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2025-02-05 00:00:00+00:00, run_after=2025-03-05 00:00:00+00:00
 [2025-03-26T11:42:42.642+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.862 seconds
+[2025-03-26T11:43:13.328+0000] {processor.py:186} INFO - Started process (PID=248) to work on /opt/airflow/dags/biological_data_dag.py
+[2025-03-26T11:43:13.331+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/biological_data_dag.py for tasks to queue
+[2025-03-26T11:43:13.333+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:13.333+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/biological_data_dag.py
+[2025-03-26T11:43:13.950+0000] {processor.py:925} INFO - DAG(s) 'biological_data_dag' retrieved from /opt/airflow/dags/biological_data_dag.py
+[2025-03-26T11:43:13.960+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:13.960+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T11:43:13.979+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:13.979+0000] {dag.py:4180} INFO - Setting next_dagrun for biological_data_dag to 2025-02-05 00:00:00+00:00, run_after=2025-03-05 00:00:00+00:00
+[2025-03-26T11:43:13.987+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/biological_data_dag.py took 0.664 seconds

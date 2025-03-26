@@ -394,3 +394,12 @@
 [2025-03-26T11:42:42.312+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:42:42.312+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 11:30:00+00:00, run_after=2025-03-26 12:00:00+00:00
 [2025-03-26T11:42:42.313+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:42:42.313+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 11:30:00+00:00, run_after=2025-03-26 12:00:00+00:00
 [2025-03-26T11:42:42.564+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.821 seconds
+[2025-03-26T11:43:13.317+0000] {processor.py:186} INFO - Started process (PID=247) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T11:43:13.319+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T11:43:13.321+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:13.320+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T11:43:13.653+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelada', 'get_inaturalist_data_atropelamento' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T11:43:13.880+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:13.880+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T11:43:13.896+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:13.896+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 11:30:00+00:00, run_after=2025-03-26 12:00:00+00:00
+[2025-03-26T11:43:13.899+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:13.899+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 11:30:00+00:00, run_after=2025-03-26 12:00:00+00:00
+[2025-03-26T11:43:13.902+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:13.902+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 11:30:00+00:00, run_after=2025-03-26 12:00:00+00:00
+[2025-03-26T11:43:13.913+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.604 seconds
