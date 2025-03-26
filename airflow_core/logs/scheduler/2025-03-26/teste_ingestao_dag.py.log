@@ -170,3 +170,241 @@ SyntaxError: unterminated string literal (detected at line 64)
 [2025-03-26T00:15:05.071+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:15:05.066+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-03-26T00:15:05.095+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:15:05.095+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
 [2025-03-26T00:15:05.145+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.493 seconds
+[2025-03-26T00:15:35.287+0000] {processor.py:186} INFO - Started process (PID=190) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:15:35.289+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:15:35.300+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:15:35.296+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:15:36.260+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:15:36.407+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:15:36.397+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:15:36.483+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:15:36.482+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:15:36.568+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.293 seconds
+[2025-03-26T00:16:07.037+0000] {processor.py:186} INFO - Started process (PID=204) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:16:07.040+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:16:07.059+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:16:07.056+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:16:07.839+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:16:07.945+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:16:07.941+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:16:08.038+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:16:08.036+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:16:08.137+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.139 seconds
+[2025-03-26T00:16:38.898+0000] {processor.py:186} INFO - Started process (PID=218) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:16:38.900+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:16:38.910+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:16:38.907+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:16:40.304+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:16:40.599+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:16:40.592+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:16:40.760+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:16:40.759+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:16:40.900+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 2.020 seconds
+[2025-03-26T00:17:11.313+0000] {processor.py:186} INFO - Started process (PID=233) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:17:11.314+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:17:11.324+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:17:11.320+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:17:12.068+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:17:12.175+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:17:12.166+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:17:12.228+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:17:12.228+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:17:12.335+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.038 seconds
+[2025-03-26T00:17:42.572+0000] {processor.py:186} INFO - Started process (PID=247) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:17:42.573+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:17:42.580+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:17:42.577+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:17:43.241+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:17:43.303+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:17:43.302+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:17:43.359+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:17:43.359+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:17:43.417+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.857 seconds
+[2025-03-26T00:18:13.991+0000] {processor.py:186} INFO - Started process (PID=261) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:18:13.992+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:18:14.016+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:18:14.015+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:18:14.931+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:18:15.038+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:18:15.036+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:18:15.075+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:18:15.074+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:18:15.160+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.196 seconds
+[2025-03-26T00:18:45.677+0000] {processor.py:186} INFO - Started process (PID=275) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:18:45.678+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:18:45.681+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:18:45.680+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:18:46.414+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:18:46.528+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:18:46.526+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:18:46.589+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:18:46.587+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:18:46.652+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.987 seconds
+[2025-03-26T00:19:16.785+0000] {processor.py:186} INFO - Started process (PID=289) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:19:16.787+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:19:16.809+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:19:16.808+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:19:17.524+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:19:17.590+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:19:17.590+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:19:17.642+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:19:17.641+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:19:17.689+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.912 seconds
+[2025-03-26T00:19:47.982+0000] {processor.py:186} INFO - Started process (PID=303) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:19:47.985+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:19:48.001+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:19:47.995+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:19:48.647+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:19:48.754+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:19:48.753+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:19:48.846+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:19:48.845+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:19:48.925+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.955 seconds
+[2025-03-26T00:20:19.269+0000] {processor.py:186} INFO - Started process (PID=317) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:20:19.270+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:20:19.279+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:20:19.278+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:20:19.927+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:20:19.994+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:20:19.991+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:20:20.039+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:20:20.037+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:20:20.108+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.850 seconds
+[2025-03-26T00:20:50.889+0000] {processor.py:186} INFO - Started process (PID=331) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:20:50.892+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:20:50.911+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:20:50.906+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:20:51.641+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:20:51.771+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:20:51.766+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:20:51.809+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:20:51.807+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:20:51.862+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.982 seconds
+[2025-03-26T00:21:22.615+0000] {processor.py:186} INFO - Started process (PID=350) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:21:22.617+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:21:22.626+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:21:22.625+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:21:23.567+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:21:23.639+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:21:23.636+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:21:23.722+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:21:23.722+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:21:23.775+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.171 seconds
+[2025-03-26T00:21:53.938+0000] {processor.py:186} INFO - Started process (PID=364) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:21:53.940+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:21:53.949+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:21:53.947+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:21:54.705+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:21:54.776+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:21:54.775+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:21:54.825+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:21:54.825+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:21:54.909+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.988 seconds
+[2025-03-26T00:22:25.589+0000] {processor.py:186} INFO - Started process (PID=378) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:22:25.590+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:22:25.595+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:22:25.594+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:22:26.563+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:22:26.732+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:22:26.731+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:22:26.784+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:22:26.784+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:22:26.914+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.338 seconds
+[2025-03-26T00:22:57.791+0000] {processor.py:186} INFO - Started process (PID=392) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:22:57.795+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:22:57.805+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:22:57.805+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:22:58.581+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:22:58.737+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:22:58.735+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:22:58.808+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:22:58.808+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:22:58.895+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.114 seconds
+[2025-03-26T00:23:29.784+0000] {processor.py:186} INFO - Started process (PID=405) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:23:29.788+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:23:29.803+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:23:29.801+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:23:30.497+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:23:30.576+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:23:30.574+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:23:30.629+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:23:30.629+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:23:30.703+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.930 seconds
+[2025-03-26T00:24:01.144+0000] {processor.py:186} INFO - Started process (PID=419) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:24:01.146+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:24:01.167+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:24:01.155+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:24:01.875+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:24:01.988+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:24:01.987+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:24:02.028+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:24:02.027+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:24:02.081+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.952 seconds
+[2025-03-26T00:24:32.649+0000] {processor.py:186} INFO - Started process (PID=433) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:24:32.651+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:24:32.660+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:24:32.659+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:24:33.323+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:24:33.404+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:24:33.402+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:24:33.444+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:24:33.444+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:24:33.510+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.874 seconds
+[2025-03-26T00:25:04.312+0000] {processor.py:186} INFO - Started process (PID=447) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:25:04.317+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:25:04.349+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:25:04.332+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:25:05.147+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:25:05.215+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:25:05.214+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:25:05.266+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:25:05.266+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:25:05.312+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.016 seconds
+[2025-03-26T00:25:36.150+0000] {processor.py:186} INFO - Started process (PID=461) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:25:36.153+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:25:36.174+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:25:36.168+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:25:37.021+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:25:37.106+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:25:37.101+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:25:37.156+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:25:37.151+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:25:37.232+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.093 seconds
+[2025-03-26T00:26:19.185+0000] {processor.py:186} INFO - Started process (PID=473) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:26:19.232+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:26:19.335+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:26:19.300+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:38:05.091+0000] {processor.py:186} INFO - Started process (PID=495) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:38:05.093+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:38:05.096+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:38:05.094+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:38:06.552+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:38:06.715+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:38:06.714+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:38:06.733+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:38:06.733+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:38:06.790+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.724 seconds
+[2025-03-26T00:38:37.770+0000] {processor.py:186} INFO - Started process (PID=515) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:38:37.775+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:38:37.798+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:38:37.797+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:38:39.115+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:38:39.231+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:38:39.230+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:38:39.273+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:38:39.272+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:38:39.355+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.622 seconds
+[2025-03-26T00:39:09.940+0000] {processor.py:186} INFO - Started process (PID=529) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:39:09.944+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:39:09.962+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:39:09.959+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:39:10.513+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:39:10.616+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:39:10.612+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:39:10.661+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:39:10.661+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:39:10.772+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.842 seconds
+[2025-03-26T00:39:41.535+0000] {processor.py:186} INFO - Started process (PID=543) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:39:41.538+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:39:41.544+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:39:41.543+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:39:42.090+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:39:42.164+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:39:42.161+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:39:42.212+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:39:42.211+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:39:42.306+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.786 seconds
+[2025-03-26T00:40:12.585+0000] {processor.py:186} INFO - Started process (PID=557) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:40:12.590+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:40:12.598+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:40:12.597+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:40:13.151+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:40:13.221+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:40:13.218+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:40:13.266+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:40:13.266+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:40:13.352+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.778 seconds
+[2025-03-26T00:40:43.777+0000] {processor.py:186} INFO - Started process (PID=571) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:40:43.779+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:40:43.787+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:40:43.784+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:40:44.276+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:40:44.393+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:40:44.392+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:40:44.419+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:40:44.419+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:40:44.491+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.726 seconds
+[2025-03-26T00:41:14.822+0000] {processor.py:186} INFO - Started process (PID=585) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:41:14.826+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:41:14.833+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:41:14.832+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:41:15.377+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:41:15.476+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:41:15.474+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:41:15.518+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:41:15.515+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:41:15.605+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.797 seconds
+[2025-03-26T00:41:45.847+0000] {processor.py:186} INFO - Started process (PID=598) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:41:45.848+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:41:45.852+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:41:45.851+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:41:46.520+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:41:46.595+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:41:46.593+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:41:46.616+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:41:46.616+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:41:46.717+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.883 seconds
+[2025-03-26T00:42:16.873+0000] {processor.py:186} INFO - Started process (PID=612) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:42:16.875+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:42:16.892+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:42:16.886+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:42:17.716+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:42:17.847+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:42:17.844+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:42:17.902+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:42:17.902+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:42:17.968+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.108 seconds
+[2025-03-26T00:42:48.758+0000] {processor.py:186} INFO - Started process (PID=626) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:42:48.761+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:42:48.769+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:42:48.766+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:42:49.344+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:42:49.436+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:42:49.436+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:42:49.465+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:42:49.465+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:42:49.562+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.816 seconds
+[2025-03-26T00:43:19.785+0000] {processor.py:186} INFO - Started process (PID=639) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:43:19.788+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:43:19.805+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:43:19.798+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:43:20.392+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:43:20.497+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:43:20.496+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:43:20.597+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:43:20.586+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:43:20.687+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 0.915 seconds
+[2025-03-26T00:43:51.379+0000] {processor.py:186} INFO - Started process (PID=653) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:43:51.382+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:43:51.385+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:43:51.384+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:43:52.384+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:43:52.547+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:43:52.546+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:43:52.618+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:43:52.618+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:43:52.737+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 1.368 seconds
+[2025-03-26T00:44:23.566+0000] {processor.py:186} INFO - Started process (PID=667) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:44:23.611+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:44:23.641+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:44:23.639+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:44:24.787+0000] {processor.py:925} INFO - DAG(s) 'teste_ingestao_dados_fakes' retrieved from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:44:24.987+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:44:24.980+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-26T00:44:25.652+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:44:25.652+0000] {dag.py:4180} INFO - Setting next_dagrun for teste_ingestao_dados_fakes to None, run_after=None
+[2025-03-26T00:44:25.797+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste_ingestao_dag.py took 2.253 seconds
+[2025-03-26T00:44:56.537+0000] {processor.py:186} INFO - Started process (PID=683) to work on /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:44:56.541+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste_ingestao_dag.py for tasks to queue
+[2025-03-26T00:44:56.555+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:44:56.549+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste_ingestao_dag.py
+[2025-03-26T00:45:02.637+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:45:02.631+0000] {process_utils.py:266} INFO - Waiting up to 5 seconds for processes to exit...
