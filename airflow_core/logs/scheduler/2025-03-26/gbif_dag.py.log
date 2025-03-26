@@ -1,0 +1,126 @@
+[2025-03-26T00:00:09.115+0000] {processor.py:186} INFO - Started process (PID=908) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:00:09.118+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:00:09.119+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:00:09.119+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:00:09.674+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_roadkill', 'get_gbif_data_atropelada', 'get_gbif_data_atropelamento' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:00:09.739+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:00:09.738+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:00:09.776+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:00:09.776+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:00:09.800+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:00:09.798+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:00:09.808+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:00:09.807+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:00:09.838+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.729 seconds
+[2025-03-26T00:02:54.809+0000] {processor.py:186} INFO - Started process (PID=922) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:02:54.812+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:02:54.821+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:02:54.818+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:02:55.154+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_atropelamento', 'get_gbif_data_atropelada', 'get_gbif_data_roadkill' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:02:55.245+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:02:55.245+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:02:55.460+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:02:55.460+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:02:55.512+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:02:55.512+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:02:55.525+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:02:55.525+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:02:55.619+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.821 seconds
+[2025-03-26T00:03:25.822+0000] {processor.py:186} INFO - Started process (PID=935) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:03:25.823+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:03:25.825+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:03:25.824+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:03:26.117+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_atropelamento', 'get_gbif_data_atropelada', 'get_gbif_data_roadkill' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:03:26.171+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:03:26.169+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:03:26.275+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:03:26.267+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:03:26.321+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:03:26.320+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:03:26.328+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:03:26.327+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:03:26.345+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.528 seconds
+[2025-03-26T00:03:56.490+0000] {processor.py:186} INFO - Started process (PID=948) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:03:56.490+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:03:56.491+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:03:56.491+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:03:56.678+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_atropelada', 'get_gbif_data_atropelamento', 'get_gbif_data_roadkill' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:03:56.704+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:03:56.704+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:03:56.729+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:03:56.729+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:03:56.733+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:03:56.733+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:03:56.735+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:03:56.735+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:03:56.752+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.267 seconds
+[2025-03-26T00:04:28.051+0000] {processor.py:186} INFO - Started process (PID=960) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:04:28.051+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:04:28.052+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:04:28.052+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:04:28.294+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_atropelamento', 'get_gbif_data_roadkill', 'get_gbif_data_atropelada' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:04:28.316+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:04:28.316+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:04:28.342+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:04:28.342+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:04:28.365+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:04:28.365+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:04:28.366+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:04:28.366+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:04:28.376+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.330 seconds
+[2025-03-26T00:05:01.132+0000] {processor.py:186} INFO - Started process (PID=972) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:05:01.137+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:05:01.162+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:05:01.158+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:05:01.447+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_atropelada', 'get_gbif_data_roadkill', 'get_gbif_data_atropelamento' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:05:01.506+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:05:01.503+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:05:01.562+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:05:01.562+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:05:01.570+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:05:01.570+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:05:01.574+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:05:01.574+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:05:01.609+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.544 seconds
+[2025-03-26T00:10:56.380+0000] {processor.py:186} INFO - Started process (PID=71) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:10:56.386+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:10:56.455+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:10:56.426+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:11:01.314+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_roadkill', 'get_gbif_data_atropelada', 'get_gbif_data_atropelamento' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:11:01.426+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:11:01.425+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:11:01.527+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:11:01.527+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:11:01.539+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:11:01.538+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:11:01.560+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:11:01.560+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:11:01.736+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 5.572 seconds
+[2025-03-26T00:11:32.259+0000] {processor.py:186} INFO - Started process (PID=85) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:11:32.261+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:11:32.263+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:11:32.263+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:11:32.580+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_atropelada', 'get_gbif_data_roadkill', 'get_gbif_data_atropelamento' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:11:32.696+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:11:32.695+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:11:32.745+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:11:32.745+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:11:32.776+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:11:32.773+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:11:32.789+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:11:32.789+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:11:32.865+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.611 seconds
+[2025-03-26T00:12:03.343+0000] {processor.py:186} INFO - Started process (PID=98) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:12:03.346+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:12:03.363+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:12:03.357+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:12:03.757+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_roadkill', 'get_gbif_data_atropelada', 'get_gbif_data_atropelamento' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:12:03.812+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:12:03.811+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:12:03.889+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:12:03.889+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:12:03.895+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:12:03.894+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:12:03.897+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:12:03.897+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:12:03.950+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.614 seconds
+[2025-03-26T00:12:34.983+0000] {processor.py:186} INFO - Started process (PID=112) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:12:34.987+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:12:34.992+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:12:34.991+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:12:35.578+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_roadkill', 'get_gbif_data_atropelada', 'get_gbif_data_atropelamento' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:12:35.680+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:12:35.680+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:12:35.823+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:12:35.823+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:12:35.852+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:12:35.850+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:12:35.860+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:12:35.859+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:12:35.942+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.973 seconds
+[2025-03-26T00:13:06.172+0000] {processor.py:186} INFO - Started process (PID=124) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:13:06.174+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:13:06.183+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:13:06.183+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:13:06.570+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_roadkill', 'get_gbif_data_atropelada', 'get_gbif_data_atropelamento' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:13:06.690+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:13:06.690+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:13:06.873+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:13:06.869+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:13:06.888+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:13:06.887+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:13:06.895+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:13:06.895+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:13:06.994+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.829 seconds
+[2025-03-26T00:13:38.043+0000] {processor.py:186} INFO - Started process (PID=138) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:13:38.050+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:13:38.075+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:13:38.067+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:13:38.852+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_roadkill', 'get_gbif_data_atropelamento', 'get_gbif_data_atropelada' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:13:38.955+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:13:38.954+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:13:39.091+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:13:39.090+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:13:39.125+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:13:39.125+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:13:39.133+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:13:39.132+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:13:39.239+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 1.213 seconds
+[2025-03-26T00:14:10.096+0000] {processor.py:186} INFO - Started process (PID=152) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:14:10.098+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:14:10.105+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:14:10.103+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:14:10.532+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_atropelamento', 'get_gbif_data_roadkill', 'get_gbif_data_atropelada' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:14:10.633+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:14:10.633+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:14:10.744+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:14:10.743+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:14:10.786+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:14:10.781+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:14:10.798+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:14:10.798+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:14:10.883+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.794 seconds
+[2025-03-26T00:14:41.235+0000] {processor.py:186} INFO - Started process (PID=165) to work on /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:14:41.238+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
+[2025-03-26T00:14:41.254+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:14:41.250+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:14:41.699+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_roadkill', 'get_gbif_data_atropelamento', 'get_gbif_data_atropelada' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-26T00:14:41.791+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:14:41.791+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T00:14:41.903+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:14:41.901+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:14:41.926+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:14:41.921+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:14:41.936+0000] {logging_mixin.py:190} INFO - [2025-03-26T00:14:41.936+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-25 23:30:00+00:00, run_after=2025-03-26 00:00:00+00:00
+[2025-03-26T00:14:42.040+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 0.815 seconds

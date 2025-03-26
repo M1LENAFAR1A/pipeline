@@ -1,0 +1,20 @@
+[2025-03-25T23:08:40.346+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-25T23:08:40.535+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.process_data scheduled__2025-03-25T22:30:00+00:00 [queued]>
+[2025-03-25T23:08:40.589+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.process_data scheduled__2025-03-25T22:30:00+00:00 [queued]>
+[2025-03-25T23:08:40.591+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2025-03-25T23:08:40.705+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): process_data> on 2025-03-25 22:30:00+00:00
+[2025-03-25T23:08:40.783+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=250) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-25T23:08:40.786+0000] {standard_task_runner.py:72} INFO - Started process 255 to run task
+[2025-03-25T23:08:40.785+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelamento', 'process_data', 'scheduled__2025-03-25T22:30:00+00:00', '--job-id', '134', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp3yomgedx']
+[2025-03-25T23:08:40.793+0000] {standard_task_runner.py:105} INFO - Job 134: Subtask process_data
+[2025-03-25T23:08:40.976+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_atropelamento.process_data scheduled__2025-03-25T22:30:00+00:00 [running]> on host d76bf457b908
+[2025-03-25T23:08:41.253+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_atropelamento' AIRFLOW_CTX_TASK_ID='process_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-25T22:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-25T22:30:00+00:00'
+[2025-03-25T23:08:41.262+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-25T23:08:41.269+0000] {taskinstance.py:301} INFO - No observations to process, skipping tasks
+[2025-03-25T23:08:41.298+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-25T23:08:41.299+0000] {taskinstance.py:352} INFO - Marking task as SKIPPED. dag_id=get_inaturalist_data_atropelamento, task_id=process_data, run_id=scheduled__2025-03-25T22:30:00+00:00, execution_date=20250325T223000, start_date=20250325T230840, end_date=20250325T230841
+[2025-03-25T23:08:41.375+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-25T23:08:41.555+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-25T23:08:41.605+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
