@@ -1,0 +1,336 @@
+[2025-03-26T03:53:18.497+0000] {processor.py:186} INFO - Started process (PID=54) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T03:53:18.506+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T03:53:18.511+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:53:18.510+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:53:18.582+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:53:18.555+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T03:53:18.590+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:53:18.678+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.257 seconds
+[2025-03-26T03:53:49.610+0000] {processor.py:186} INFO - Started process (PID=67) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T03:53:49.611+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T03:53:49.636+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:53:49.633+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:53:49.662+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:53:49.660+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T03:53:49.663+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:53:49.725+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.143 seconds
+[2025-03-26T03:54:20.503+0000] {processor.py:186} INFO - Started process (PID=80) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T03:54:20.503+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T03:54:20.506+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:54:20.505+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:54:20.518+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:54:20.514+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T03:54:20.518+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:54:20.560+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.067 seconds
+[2025-03-26T03:54:41.618+0000] {processor.py:186} INFO - Started process (PID=93) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T03:54:41.620+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T03:54:41.623+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:54:41.622+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:54:41.654+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:54:41.649+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T03:54:41.654+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:54:41.735+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.133 seconds
+[2025-03-26T03:55:12.357+0000] {processor.py:186} INFO - Started process (PID=106) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T03:55:12.357+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T03:55:12.361+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:55:12.360+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:55:12.370+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:55:12.368+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T03:55:12.370+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:55:12.395+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.047 seconds
+[2025-03-26T03:55:42.630+0000] {processor.py:186} INFO - Started process (PID=119) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T03:55:42.631+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T03:55:42.632+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:55:42.632+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:55:42.642+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:55:42.638+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T03:55:42.643+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:55:42.679+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.076 seconds
+[2025-03-26T03:56:12.815+0000] {processor.py:186} INFO - Started process (PID=132) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T03:56:12.815+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T03:56:12.816+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:56:12.816+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:56:12.823+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:56:12.822+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T03:56:12.824+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:56:12.863+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.065 seconds
+[2025-03-26T03:56:43.750+0000] {processor.py:186} INFO - Started process (PID=145) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T03:56:43.751+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T03:56:43.752+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:56:43.752+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:56:43.759+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:56:43.757+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T03:56:43.759+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:56:43.798+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.067 seconds
+[2025-03-26T03:57:13.924+0000] {processor.py:186} INFO - Started process (PID=158) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T03:57:13.925+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T03:57:13.926+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:57:13.926+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:57:13.932+0000] {logging_mixin.py:190} INFO - [2025-03-26T03:57:13.931+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T03:57:13.933+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T03:57:13.959+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.050 seconds
+[2025-03-26T11:35:55.655+0000] {processor.py:186} INFO - Started process (PID=42) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:35:55.657+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:35:55.658+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:35:55.658+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:35:55.683+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:35:55.672+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:35:55.684+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:35:55.728+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.087 seconds
+[2025-03-26T11:36:26.782+0000] {processor.py:186} INFO - Started process (PID=73) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:36:26.783+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:36:26.789+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:36:26.786+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:36:26.806+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:36:26.803+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:36:26.806+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:36:26.837+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.066 seconds
+[2025-03-26T11:36:57.165+0000] {processor.py:186} INFO - Started process (PID=85) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:36:57.166+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:36:57.168+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:36:57.168+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:36:57.176+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:36:57.175+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:36:57.177+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:36:57.190+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.032 seconds
+[2025-03-26T11:37:28.118+0000] {processor.py:186} INFO - Started process (PID=98) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:37:28.118+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:37:28.120+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:37:28.119+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:37:28.125+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:37:28.124+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:37:28.126+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:37:28.148+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.040 seconds
+[2025-03-26T11:37:58.332+0000] {processor.py:186} INFO - Started process (PID=111) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:37:58.333+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:37:58.334+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:37:58.334+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:37:58.338+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:37:58.337+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:37:58.338+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:37:58.352+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.023 seconds
+[2025-03-26T11:38:28.495+0000] {processor.py:186} INFO - Started process (PID=124) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:38:28.496+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:38:28.497+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:38:28.497+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:38:28.501+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:38:28.500+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:38:28.502+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:38:28.519+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.035 seconds
+[2025-03-26T11:38:58.669+0000] {processor.py:186} INFO - Started process (PID=137) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:38:58.670+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:38:58.671+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:38:58.671+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:38:58.676+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:38:58.675+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:38:58.677+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:38:58.700+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.037 seconds
+[2025-03-26T11:39:29.714+0000] {processor.py:186} INFO - Started process (PID=150) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:39:29.715+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:39:29.716+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:39:29.715+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:39:29.721+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:39:29.719+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:39:29.721+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:39:29.739+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.034 seconds
+[2025-03-26T11:40:00.700+0000] {processor.py:186} INFO - Started process (PID=163) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:40:00.700+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:40:00.702+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:40:00.702+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:40:00.708+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:40:00.707+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:40:00.708+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:40:00.729+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.039 seconds
+[2025-03-26T11:40:31.752+0000] {processor.py:186} INFO - Started process (PID=175) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:40:31.753+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:40:31.754+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:40:31.754+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:40:31.760+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:40:31.759+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:40:31.761+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:40:31.782+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.039 seconds
+[2025-03-26T11:41:02.696+0000] {processor.py:186} INFO - Started process (PID=194) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:41:02.698+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:41:02.700+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:41:02.699+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:41:02.707+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:41:02.706+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:41:02.708+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:41:02.734+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.049 seconds
+[2025-03-26T11:41:33.721+0000] {processor.py:186} INFO - Started process (PID=207) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:41:33.721+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:41:33.722+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:41:33.722+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:41:33.727+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:41:33.726+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:41:33.727+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:41:33.753+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.043 seconds
+[2025-03-26T11:42:04.638+0000] {processor.py:186} INFO - Started process (PID=220) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:42:04.639+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:42:04.640+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:42:04.640+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:42:04.645+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:42:04.644+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:42:04.645+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:42:04.661+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.030 seconds
+[2025-03-26T11:42:35.594+0000] {processor.py:186} INFO - Started process (PID=233) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:42:35.594+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:42:35.596+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:42:35.596+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:42:35.606+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:42:35.604+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:42:35.606+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:42:35.632+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.046 seconds
+[2025-03-26T11:43:06.221+0000] {processor.py:186} INFO - Started process (PID=246) to work on /opt/airflow/dags/test-dag.py
+[2025-03-26T11:43:06.222+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-dag.py for tasks to queue
+[2025-03-26T11:43:06.223+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:06.223+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:43:06.230+0000] {logging_mixin.py:190} INFO - [2025-03-26T11:43:06.229+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test-dag.py", line 14, in <module>
+    from connectors.minio import MinioConnector
+ModuleNotFoundError: No module named 'connectors'
+[2025-03-26T11:43:06.230+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test-dag.py
+[2025-03-26T11:43:06.264+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-dag.py took 0.054 seconds
