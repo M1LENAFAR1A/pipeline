@@ -11,10 +11,6 @@ RUN poetry install -n --no-root
 COPY app /application/app
 RUN rm /application/app/consume.py
 
-#COPY app/consume.py /application/
-# Substitua as duas últimas linhas por esta única linha
-COPY app /application/app
-
-
+COPY app/consume.py /application/
 
 ENTRYPOINT ["poetry", "run", "python", "consume.py"]
