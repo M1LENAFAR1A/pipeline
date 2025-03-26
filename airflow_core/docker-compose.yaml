@@ -62,9 +62,9 @@ x-airflow-common:
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false' # set to true to show dag examples
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
     AIRFLOW_UID: 1000
-    AIRFLOW_VAR_DATA_LAKE_URL: "http://172.18.0.2:9000"
+    AIRFLOW_VAR_DATA_LAKE_URL: "192.168.30.21:30688"
     AIRFLOW_VAR_DATA_LAKE_ACCESS_KEY: "fWr9nIiiQfZ9LD7TzMB4"
-    AIRFLOW_VAR_DATA_LAKE_SECRET_KEY: "luMwhHsLhxAJ8DOeLHAkr99GGjCFbJIfe6nihnad"
+    AIRFLOW_VAR_DATA_LAKE_SECRET_KEY: "77KSs0rM7ED2aXDq9QChzNOxUx6HNiL4sCEEhwzD"
     AIRFLOW_VAR_DATA_LAKE_BUCKET_NAME: "environbit"
     AIRFLOW_VAR_PRODUCER_USER: "admin"
     AIRFLOW_VAR_PRODUCER_PASSWD: "admin"
@@ -312,21 +312,21 @@ services:
     restart: always
     ports:
       - "4444:4444"
-  # rabbitmq:
-  #   image: rabbitmq:3-management-alpine
-  #   container_name: 'rabbitmq'
-  #   ports:
-  #     - 5672:5672
-  #     - 15672:15672
-  #   volumes:
-  #     - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
-  #     - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
-  #   networks:
-  #     - rabbitmq_go_net
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq'
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+      - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+    networks:
+      - rabbitmq_go_net
 
-# networks:
-#   rabbitmq_go_net:
-#     driver: bridge
+networks:
+  rabbitmq_go_net:
+    driver: bridge
 
 volumes:
   postgres-db-volume:

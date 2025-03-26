@@ -14,3 +14,4 @@ RUN rm /application/app/consume.py
 COPY app/consume.py /application/
 
 ENTRYPOINT ["poetry", "run", "python", "consume.py"]
+

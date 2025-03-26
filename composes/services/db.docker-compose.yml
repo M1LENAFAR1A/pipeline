@@ -1,43 +1,14 @@
-# version: '3'
-# services:
-#   postgres:
-#     image: postgres:13
-#     restart: always
-#     environment:
-#       - POSTGRES_DB=environbit
-#       - POSTGRES_PASSWORD=admin
-#       - POSTGRES_USER=admin
-#       - PGDATA=/var/lib/postgresql/data/pgdata/environbit
-#     stdin_open: true
-#     tty: true
-#     ports:
-#       - 31025:5432/tcp
-
 version: '3'
 services:
   postgres:
     image: postgres:13
-    container_name: postgres
     restart: always
     environment:
-      POSTGRES_DB: environbit
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin_password
-      PGDATA: /var/lib/postgresql/data/pgdata/environbit
+      - POSTGRES_DB=environbit
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=admin
+      - PGDATA=/var/lib/postgresql/data/pgdata/environbit
+    stdin_open: true
+    tty: true
     ports:
-      - "5434:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    networks:
-      - postgres_net
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U admin -d environbit"]
-      interval: 10s
-      retries: 5
-      timeout: 5s
-
-volumes:
-  postgres_data:
-
-networks:
-  postgres_net:
+      - 31025:5432/tcp
