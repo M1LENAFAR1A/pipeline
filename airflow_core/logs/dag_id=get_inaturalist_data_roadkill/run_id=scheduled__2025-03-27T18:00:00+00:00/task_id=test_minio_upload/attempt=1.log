@@ -1,0 +1,22 @@
+[2025-03-27T18:30:19.180+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-27T18:30:19.457+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.test_minio_upload scheduled__2025-03-27T18:00:00+00:00 [queued]>
+[2025-03-27T18:30:19.487+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.test_minio_upload scheduled__2025-03-27T18:00:00+00:00 [queued]>
+[2025-03-27T18:30:19.488+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-03-27T18:30:19.551+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): test_minio_upload> on 2025-03-27 18:00:00+00:00
+[2025-03-27T18:30:19.584+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1175) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-27T18:30:19.588+0000] {standard_task_runner.py:72} INFO - Started process 1191 to run task
+[2025-03-27T18:30:19.701+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'test_minio_upload', 'scheduled__2025-03-27T18:00:00+00:00', '--job-id', '226', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp8k8x40c0']
+[2025-03-27T18:30:19.721+0000] {standard_task_runner.py:105} INFO - Job 226: Subtask test_minio_upload
+[2025-03-27T18:30:20.584+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.test_minio_upload scheduled__2025-03-27T18:00:00+00:00 [running]> on host 804b404afff8
+[2025-03-27T18:30:47.405+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='test_minio_upload' AIRFLOW_CTX_EXECUTION_DATE='2025-03-27T18:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-27T18:00:00+00:00'
+[2025-03-27T18:30:47.600+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-27T18:30:58.899+0000] {job.py:229} INFO - Heartbeat recovered after 40.00 seconds
+[2025-03-27T18:31:27.050+0000] {minio.py:40} INFO - created test/test_file_roadkill.txt object; etag: 03ec361c5f3da2d1a305922318e6a533, version-id: None
+[2025-03-27T18:31:27.217+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under test/test_file_roadkill.txt
+[2025-03-27T18:31:27.262+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-27T18:31:29.206+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-27T18:31:29.242+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_roadkill, task_id=test_minio_upload, run_id=scheduled__2025-03-27T18:00:00+00:00, execution_date=20250327T180000, start_date=20250327T183019, end_date=20250327T183129
+[2025-03-27T18:31:29.831+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-27T18:31:30.540+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

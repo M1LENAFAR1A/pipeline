@@ -1,0 +1,23 @@
+[2025-03-27T18:06:48.310+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-27T18:06:50.102+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.test_minio_upload manual__2025-03-27T18:01:19.420078+00:00 [queued]>
+[2025-03-27T18:06:51.681+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_atropelamento.test_minio_upload manual__2025-03-27T18:01:19.420078+00:00 [queued]>
+[2025-03-27T18:06:51.829+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-03-27T18:06:52.509+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): test_minio_upload> on 2025-03-27 18:01:19.420078+00:00
+[2025-03-27T18:06:52.698+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_atropelamento', 'test_minio_upload', 'manual__2025-03-27T18:01:19.420078+00:00', '--job-id', '207', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmp4irl8ymc']
+[2025-03-27T18:06:52.731+0000] {standard_task_runner.py:105} INFO - Job 207: Subtask test_minio_upload
+[2025-03-27T18:06:52.734+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=850) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-27T18:06:52.775+0000] {standard_task_runner.py:72} INFO - Started process 876 to run task
+[2025-03-27T18:06:53.903+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_atropelamento.test_minio_upload manual__2025-03-27T18:01:19.420078+00:00 [running]> on host 804b404afff8
+[2025-03-27T18:06:56.803+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_atropelamento' AIRFLOW_CTX_TASK_ID='test_minio_upload' AIRFLOW_CTX_EXECUTION_DATE='2025-03-27T18:01:19.420078+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-27T18:01:19.420078+00:00'
+[2025-03-27T18:06:56.849+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-27T18:06:57.789+0000] {minio.py:40} INFO - created test/test_file_atropelamento.txt object; etag: e6eea94cbfac9a01b0ce5557e0344813, version-id: None
+[2025-03-27T18:06:57.811+0000] {minio.py:42} INFO - Data successfully uploaded to MinIO in bucket environbit under test/test_file_atropelamento.txt
+[2025-03-27T18:06:57.820+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-27T18:06:58.218+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-27T18:06:58.230+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_atropelamento, task_id=test_minio_upload, run_id=manual__2025-03-27T18:01:19.420078+00:00, execution_date=20250327T180119, start_date=20250327T180650, end_date=20250327T180658
+[2025-03-27T18:06:59.433+0000] {job.py:229} INFO - Heartbeat recovered after 15.91 seconds
+[2025-03-27T18:07:00.046+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-27T18:07:01.176+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-27T18:07:01.336+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
