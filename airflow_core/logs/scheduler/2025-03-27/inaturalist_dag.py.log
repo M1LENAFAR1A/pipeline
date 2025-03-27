@@ -4377,3 +4377,12 @@ Please take a look at these docs to improve your DAG import time:
 [2025-03-27T18:50:23.884+0000] {logging_mixin.py:190} INFO - [2025-03-27T18:50:23.881+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-27 18:30:00+00:00, run_after=2025-03-27 19:00:00+00:00
 [2025-03-27T18:50:23.910+0000] {logging_mixin.py:190} INFO - [2025-03-27T18:50:23.910+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-27 18:30:00+00:00, run_after=2025-03-27 19:00:00+00:00
 [2025-03-27T18:50:24.391+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 6.594 seconds
+[2025-03-27T18:50:55.509+0000] {processor.py:186} INFO - Started process (PID=1655) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-27T18:50:55.512+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-27T18:50:55.527+0000] {logging_mixin.py:190} INFO - [2025-03-27T18:50:55.526+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-27T18:51:02.589+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_atropelamento', 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelada' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-27T18:51:02.944+0000] {logging_mixin.py:190} INFO - [2025-03-27T18:51:02.942+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-27T18:51:03.056+0000] {logging_mixin.py:190} INFO - [2025-03-27T18:51:03.056+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-27 18:30:00+00:00, run_after=2025-03-27 19:00:00+00:00
+[2025-03-27T18:51:03.097+0000] {logging_mixin.py:190} INFO - [2025-03-27T18:51:03.097+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-27 18:30:00+00:00, run_after=2025-03-27 19:00:00+00:00
+[2025-03-27T18:51:03.120+0000] {logging_mixin.py:190} INFO - [2025-03-27T18:51:03.119+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-27 18:30:00+00:00, run_after=2025-03-27 19:00:00+00:00
+[2025-03-27T18:51:03.226+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 7.736 seconds
