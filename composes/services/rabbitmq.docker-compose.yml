@@ -2,6 +2,7 @@ version: '3'
 services:
   rabbitmq:
     image: rabbitmq:4.0.4-management-alpine # tells docker which image to pull
+    platform: linux/arm64
     container_name: 'rabbitmq'
     ports:
         - 5672:5672 # port to interact with queue

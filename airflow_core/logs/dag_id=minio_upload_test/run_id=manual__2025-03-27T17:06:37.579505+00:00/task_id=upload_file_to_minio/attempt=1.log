@@ -1,0 +1,22 @@
+[2025-03-27T17:06:42.891+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-27T17:06:42.978+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_upload_test.upload_file_to_minio manual__2025-03-27T17:06:37.579505+00:00 [queued]>
+[2025-03-27T17:06:43.023+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_upload_test.upload_file_to_minio manual__2025-03-27T17:06:37.579505+00:00 [queued]>
+[2025-03-27T17:06:43.025+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-03-27T17:06:43.074+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): upload_file_to_minio> on 2025-03-27 17:06:37.579505+00:00
+[2025-03-27T17:06:43.162+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=198) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-27T17:06:43.175+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'minio_upload_test', 'upload_file_to_minio', 'manual__2025-03-27T17:06:37.579505+00:00', '--job-id', '180', '--raw', '--subdir', 'DAGS_FOLDER/minio_test_dag.py', '--cfg-path', '/tmp/tmpo4d565md']
+[2025-03-27T17:06:43.191+0000] {standard_task_runner.py:105} INFO - Job 180: Subtask upload_file_to_minio
+[2025-03-27T17:06:43.194+0000] {standard_task_runner.py:72} INFO - Started process 199 to run task
+[2025-03-27T17:06:43.489+0000] {task_command.py:467} INFO - Running <TaskInstance: minio_upload_test.upload_file_to_minio manual__2025-03-27T17:06:37.579505+00:00 [running]> on host 804b404afff8
+[2025-03-27T17:06:43.983+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_upload_test' AIRFLOW_CTX_TASK_ID='upload_file_to_minio' AIRFLOW_CTX_EXECUTION_DATE='2025-03-27T17:06:37.579505+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-27T17:06:37.579505+00:00'
+[2025-03-27T17:06:44.001+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-27T17:06:44.030+0000] {minio_test_dag.py:78} INFO - Conectando no MinIO em http://host.docker.internal:9000 com bucket 'environbit'
+[2025-03-27T17:06:44.206+0000] {minio_test_dag.py:98} INFO - ✔️ Arquivo 'minio_test_file.txt' enviado com sucesso para o bucket 'environbit'.
+[2025-03-27T17:06:44.222+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-27T17:06:44.294+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-27T17:06:44.296+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=minio_upload_test, task_id=upload_file_to_minio, run_id=manual__2025-03-27T17:06:37.579505+00:00, execution_date=20250327T170637, start_date=20250327T170642, end_date=20250327T170644
+[2025-03-27T17:06:44.527+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-27T17:06:44.683+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-27T17:06:44.691+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

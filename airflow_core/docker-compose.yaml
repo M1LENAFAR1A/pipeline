@@ -62,14 +62,14 @@ x-airflow-common:
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false' # set to true to show dag examples
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
     AIRFLOW_UID: 1000
-    AIRFLOW_VAR_DATA_LAKE_URL: "192.168.30.21:30688"
-    AIRFLOW_VAR_DATA_LAKE_ACCESS_KEY: "fWr9nIiiQfZ9LD7TzMB4"
-    AIRFLOW_VAR_DATA_LAKE_SECRET_KEY: "77KSs0rM7ED2aXDq9QChzNOxUx6HNiL4sCEEhwzD"
+    AIRFLOW_VAR_DATA_LAKE_URL: "http://host.docker.internal:9000" #mudei
+    AIRFLOW_VAR_DATA_LAKE_ACCESS_KEY: "h8VchqtGQvaO9HUxC6ko" #mudei
+    AIRFLOW_VAR_DATA_LAKE_SECRET_KEY: "pvzDRFNqAOqqgu73gFAuHuklQV8UV0dEGA5dqKQE" #mudei
     AIRFLOW_VAR_DATA_LAKE_BUCKET_NAME: "environbit"
     AIRFLOW_VAR_PRODUCER_USER: "admin"
     AIRFLOW_VAR_PRODUCER_PASSWD: "admin"
-    AIRFLOW_VAR_PRODUCER_HOST: "192.168.30.21"
-    AIRFLOW_VAR_PRODUCER_PORT: "30673"
+    AIRFLOW_VAR_PRODUCER_HOST: "http://host.docker.internal:9000" #mudei
+    AIRFLOW_VAR_PRODUCER_PORT: "9000" #mudei
     AIRFLOW_VAR_PRODUCER_MESSAGE_CHANNEL: "environbit"
     AIRFLOW_VAR_FULL_EXTRACTION: "true" # first time extracts all the data for prf then it sets the variable to false to extract the monthly values
 
@@ -103,6 +103,7 @@ x-airflow-common:
 services:
   postgres:
     image: postgres:13
+    platform: linux/arm64
     environment:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow

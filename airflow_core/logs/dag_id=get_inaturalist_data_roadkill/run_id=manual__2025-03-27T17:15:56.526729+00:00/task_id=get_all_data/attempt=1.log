@@ -1,0 +1,25 @@
+[2025-03-27T17:16:14.978+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-27T17:16:15.096+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data manual__2025-03-27T17:15:56.526729+00:00 [queued]>
+[2025-03-27T17:16:15.262+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data manual__2025-03-27T17:15:56.526729+00:00 [queued]>
+[2025-03-27T17:16:15.268+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2025-03-27T17:16:15.509+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2025-03-27 17:15:56.526729+00:00
+[2025-03-27T17:16:15.668+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=337) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-27T17:16:15.689+0000] {standard_task_runner.py:72} INFO - Started process 339 to run task
+[2025-03-27T17:16:15.686+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'get_all_data', 'manual__2025-03-27T17:15:56.526729+00:00', '--job-id', '191', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmplxk68kjn']
+[2025-03-27T17:16:15.701+0000] {standard_task_runner.py:105} INFO - Job 191: Subtask get_all_data
+[2025-03-27T17:16:16.175+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.get_all_data manual__2025-03-27T17:15:56.526729+00:00 [running]> on host 804b404afff8
+[2025-03-27T17:16:16.845+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-27T17:15:56.526729+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-27T17:15:56.526729+00:00'
+[2025-03-27T17:16:16.856+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-27T17:16:16.910+0000] {inaturalist_dag.py:150} INFO - Getting data from keyword: roadkill
+[2025-03-27T17:16:17.073+0000] {inaturalist_dag.py:41} INFO - Maximum id 267209431 for the request
+[2025-03-27T17:16:19.163+0000] {inaturalist_dag.py:58} INFO - Got 0 results
+[2025-03-27T17:16:19.181+0000] {inaturalist_dag.py:158} INFO - No more observations found, stopping.
+[2025-03-27T17:16:19.261+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-03-27T17:16:19.294+0000] {python.py:240} INFO - Done. Returned value was: []
+[2025-03-27T17:16:19.450+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-27T17:16:19.453+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_inaturalist_data_roadkill, task_id=get_all_data, run_id=manual__2025-03-27T17:15:56.526729+00:00, execution_date=20250327T171556, start_date=20250327T171615, end_date=20250327T171619
+[2025-03-27T17:16:19.656+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-27T17:16:20.198+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-27T17:16:20.218+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

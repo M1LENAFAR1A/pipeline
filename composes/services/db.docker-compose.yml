@@ -2,6 +2,7 @@ version: '3'
 services:
   postgres:
     image: postgres:13
+    platform: linux/arm64
     restart: always
     environment:
       - POSTGRES_DB=environbit

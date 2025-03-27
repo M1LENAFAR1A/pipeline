@@ -845,3 +845,177 @@ Please take a look at these docs to improve your DAG import time:
 * https://airflow.apache.org/docs/apache-airflow/2.10.2/best-practices.html#top-level-python-code
 * https://airflow.apache.org/docs/apache-airflow/2.10.2/best-practices.html#reducing-dag-complexity, PID: 1047
 [2025-03-26T18:37:15.782+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:06:42.673+0000] {processor.py:186} INFO - Started process (PID=42) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:06:42.676+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:06:42.681+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:06:42.678+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:06:44.316+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_atropelamento', 'get_inaturalist_data_atropelada', 'get_inaturalist_data_roadkill' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:06:44.540+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:06:44.539+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:06:44.574+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:06:44.574+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 20:30:00+00:00, run_after=2025-03-26 21:00:00+00:00
+[2025-03-26T21:06:44.577+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:06:44.577+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 20:30:00+00:00, run_after=2025-03-26 21:00:00+00:00
+[2025-03-26T21:06:44.579+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:06:44.579+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 20:30:00+00:00, run_after=2025-03-26 21:00:00+00:00
+[2025-03-26T21:06:44.611+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 1.946 seconds
+[2025-03-26T21:06:45.464+0000] {processor.py:186} INFO - Started process (PID=53) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:06:45.465+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:06:45.467+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:06:45.467+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:06:46.481+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_atropelamento', 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelada' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:06:46.511+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:06:46.509+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:06:46.550+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:06:46.550+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:06:46.563+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:06:46.560+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:06:46.571+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:06:46.571+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:06:46.599+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 1.145 seconds
+[2025-03-26T21:07:17.506+0000] {processor.py:186} INFO - Started process (PID=76) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:07:17.507+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:07:17.508+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:07:17.508+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:07:17.698+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelamento', 'get_inaturalist_data_atropelada' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:07:17.711+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:07:17.711+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:07:17.720+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:07:17.720+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:07:17.721+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:07:17.721+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:07:17.722+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:07:17.722+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:07:17.727+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.227 seconds
+[2025-03-26T21:07:48.174+0000] {processor.py:186} INFO - Started process (PID=88) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:07:48.174+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:07:48.175+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:07:48.175+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:07:48.347+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelada', 'get_inaturalist_data_atropelamento' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:07:48.361+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:07:48.360+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:07:48.371+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:07:48.371+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:07:48.373+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:07:48.373+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:07:48.383+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:07:48.383+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:07:48.389+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.218 seconds
+[2025-03-26T21:08:18.943+0000] {processor.py:186} INFO - Started process (PID=100) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:08:18.943+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:08:18.944+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:08:18.944+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:08:19.124+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_atropelada', 'get_inaturalist_data_atropelamento', 'get_inaturalist_data_roadkill' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:08:19.138+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:08:19.138+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:08:19.146+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:08:19.146+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:08:19.148+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:08:19.148+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:08:19.149+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:08:19.149+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:08:19.154+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.216 seconds
+[2025-03-26T21:08:49.679+0000] {processor.py:186} INFO - Started process (PID=112) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:08:49.680+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:08:49.681+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:08:49.681+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:08:49.862+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelamento', 'get_inaturalist_data_atropelada' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:08:49.879+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:08:49.879+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:08:49.888+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:08:49.888+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:08:49.892+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:08:49.892+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:08:49.893+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:08:49.893+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:08:49.898+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.224 seconds
+[2025-03-26T21:09:20.367+0000] {processor.py:186} INFO - Started process (PID=124) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:09:20.368+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:09:20.368+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:09:20.368+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:09:20.523+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelada', 'get_inaturalist_data_atropelamento' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:09:20.535+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:09:20.535+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:09:20.542+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:09:20.542+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:09:20.544+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:09:20.544+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:09:20.545+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:09:20.545+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:09:20.550+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.185 seconds
+[2025-03-26T21:09:51.011+0000] {processor.py:186} INFO - Started process (PID=136) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:09:51.012+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:09:51.013+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:09:51.013+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:09:51.234+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_atropelamento', 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelada' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:09:51.251+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:09:51.250+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:09:51.262+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:09:51.262+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:09:51.264+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:09:51.264+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:09:51.265+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:09:51.265+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:00:00+00:00, run_after=2025-03-26 21:30:00+00:00
+[2025-03-26T21:09:51.272+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.266 seconds
+[2025-03-26T21:38:38.462+0000] {processor.py:186} INFO - Started process (PID=55) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:38:38.466+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:38:38.494+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:38:38.470+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:38:43.743+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_atropelada', 'get_inaturalist_data_atropelamento', 'get_inaturalist_data_roadkill' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:38:43.835+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:38:43.834+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:38:43.904+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:38:43.904+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:38:43.913+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:38:43.913+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:38:43.917+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:38:43.917+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:38:43.945+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 5.496 seconds
+[2025-03-26T21:38:47.991+0000] {processor.py:186} INFO - Started process (PID=72) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:38:47.992+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:38:47.994+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:38:47.993+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:38:48.742+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_atropelada', 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelamento' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:38:48.780+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:38:48.777+0000] {taskinstance.py:3312} ERROR - {'DAG Id': 'get_inaturalist_data_roadkill', 'Task Id': 'save_data', 'Run Id': 'scheduled__2025-03-26T20:30:00+00:00', 'Hostname': '3a60e3c0d2e4', 'External Executor Id': '269081b3-6226-402d-97e2-a02c07e34d25'}
+[2025-03-26T21:38:48.826+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:38:48.826+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=get_inaturalist_data_roadkill, task_id=save_data, run_id=scheduled__2025-03-26T20:30:00+00:00, execution_date=20250326T203000, start_date=20250326T210954, end_date=20250326T213848
+[2025-03-26T21:38:48.864+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:38:48.863+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: get_inaturalist_data_roadkill.save_data scheduled__2025-03-26T20:30:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-03-26T21:38:48.916+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:38:48.915+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:38:48.961+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:38:48.961+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:38:48.975+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:38:48.975+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:38:48.987+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:38:48.986+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:38:49.012+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 1.034 seconds
+[2025-03-26T21:39:19.495+0000] {processor.py:186} INFO - Started process (PID=84) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:39:19.496+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:39:19.497+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:39:19.497+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:39:19.982+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_atropelamento', 'get_inaturalist_data_atropelada', 'get_inaturalist_data_roadkill' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:39:19.998+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:39:19.998+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:39:20.009+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:39:20.009+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:39:20.011+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:39:20.011+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:39:20.012+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:39:20.012+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:39:20.019+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.530 seconds
+[2025-03-26T21:39:50.365+0000] {processor.py:186} INFO - Started process (PID=96) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:39:50.366+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:39:50.367+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:39:50.367+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:39:51.089+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_atropelada', 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelamento' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:39:51.113+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:39:51.113+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:39:51.122+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:39:51.122+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:39:51.124+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:39:51.124+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:39:51.125+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:39:51.125+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:39:51.131+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.773 seconds
+[2025-03-26T21:40:21.625+0000] {processor.py:186} INFO - Started process (PID=108) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:40:21.625+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:40:21.627+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:40:21.626+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:40:22.243+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_atropelada', 'get_inaturalist_data_atropelamento', 'get_inaturalist_data_roadkill' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:40:22.286+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:40:22.285+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:40:22.306+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:40:22.306+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:40:22.308+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:40:22.308+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:40:22.309+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:40:22.309+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:40:22.316+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.699 seconds
+[2025-03-26T21:40:52.831+0000] {processor.py:186} INFO - Started process (PID=120) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:40:52.833+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:40:52.834+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:40:52.834+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:40:53.095+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelada', 'get_inaturalist_data_atropelamento' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:40:53.117+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:40:53.116+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:40:53.129+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:40:53.129+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:40:53.131+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:40:53.131+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:40:53.132+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:40:53.132+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:40:53.138+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.316 seconds
+[2025-03-26T21:41:23.587+0000] {processor.py:186} INFO - Started process (PID=132) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:41:23.587+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:41:23.588+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:41:23.588+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:41:23.827+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelamento', 'get_inaturalist_data_atropelada' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:41:23.843+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:41:23.843+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:41:23.853+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:41:23.853+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:41:23.855+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:41:23.855+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:41:23.856+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:41:23.856+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:41:23.862+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.282 seconds
+[2025-03-26T21:41:54.349+0000] {processor.py:186} INFO - Started process (PID=144) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:41:54.350+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:41:54.351+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:41:54.351+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:41:54.777+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelamento', 'get_inaturalist_data_atropelada' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:41:54.808+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:41:54.807+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:41:54.825+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:41:54.825+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:41:54.828+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:41:54.828+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:41:54.829+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:41:54.829+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:41:54.839+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.502 seconds
+[2025-03-26T21:42:25.528+0000] {processor.py:186} INFO - Started process (PID=156) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:42:25.529+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:42:25.530+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:42:25.529+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:42:25.832+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_atropelada', 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelamento' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:42:25.854+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:42:25.854+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:42:25.871+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:42:25.871+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:42:25.873+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:42:25.873+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:42:25.874+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:42:25.874+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:42:25.881+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.360 seconds
+[2025-03-26T21:42:56.517+0000] {processor.py:186} INFO - Started process (PID=168) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:42:56.519+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:42:56.520+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:42:56.520+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:42:56.850+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelamento', 'get_inaturalist_data_atropelada' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:42:56.882+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:42:56.882+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:42:56.904+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:42:56.903+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:42:56.908+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:42:56.908+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:42:56.911+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:42:56.911+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:42:56.925+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.420 seconds
+[2025-03-26T21:43:27.305+0000] {processor.py:186} INFO - Started process (PID=180) to work on /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:43:27.306+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/inaturalist_dag.py for tasks to queue
+[2025-03-26T21:43:27.307+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:43:27.307+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:43:27.821+0000] {processor.py:925} INFO - DAG(s) 'get_inaturalist_data_atropelada', 'get_inaturalist_data_roadkill', 'get_inaturalist_data_atropelamento' retrieved from /opt/airflow/dags/inaturalist_dag.py
+[2025-03-26T21:43:27.845+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:43:27.845+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-26T21:43:27.863+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:43:27.863+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelada to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:43:27.865+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:43:27.865+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_atropelamento to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:43:27.866+0000] {logging_mixin.py:190} INFO - [2025-03-26T21:43:27.866+0000] {dag.py:4180} INFO - Setting next_dagrun for get_inaturalist_data_roadkill to 2025-03-26 21:30:00+00:00, run_after=2025-03-26 22:00:00+00:00
+[2025-03-26T21:43:27.872+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/inaturalist_dag.py took 0.579 seconds

@@ -2,6 +2,7 @@ version: '3'
 services:
   minio:
     image: quay.io/minio/minio:RELEASE.2024-12-13T22-19-12Z
+    platform: linux/arm64
     ports:
       - '9000:9000'
       - '9001:9001'

@@ -1,94 +1,54 @@
-# version: '3'
-# services:
-#   postgres:
-#     image: postgres:13
-#     restart: always
-#     environment:
-#       - POSTGRES_DB=${POSTGRES_DB}
-#       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-#       - POSTGRES_USER=${POSTGRES_USER}
-#       - PGDATA=/var/lib/postgresql/data/pgdata/environbit
-#     stdin_open: true
-#     tty: true
-#     ports:
-#       - 5432:5432
-#       - 31025:5432/tcp
-#     networks:
-#       - workflow_net
-#     healthcheck:
-#       test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
-#       interval: 10s
-#       retries: 5
-#       timeout: 5s
-#   rabbitmq:
-#     image: rabbitmq:4.0.4-management-alpine # tells docker which image to pull
-#     container_name: 'rabbitmq'
-#     ports:
-#       - 5672:5672 # AMQP protocol port
-#       - 31074:5672/tcp  # external port Management web UI
-#       - 15672:15672 # Management web UI
-#     environment:
-#       RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
-#       RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
-#     volumes:
-#       - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
-#       - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
-#     networks:
-#       - workflow_net
-#     healthcheck:
-#       test: [ "CMD", "rabbitmqctl", "status" ]
-#       interval: 10s
-#       timeout: 5s
-#       retries: 5
-#   app:
-#     environment:
-#       - DB_HOST=${DB_HOST}
-#       - DB_PORT=${DB_PORT}
-#       - DB_NAME=${DB_NAME}
-#       - DB_USER=${DB_USER}
-#       - DB_PASSWORD=${DB_PASSWORD}
-#       - DB_TABLE=${DB_TABLE}
-#       - RABBITMQ_USER=${RABBITMQ_USER}
-#       - RABBITMQ_PWD=${RABBITMQ_PWD}
-#       - RABBITMQ_HOST=${RABBITMQ_HOST}
-#       - RABBITMQ_PORT=${RABBITMQ_PORT}
-#       - RABBITMQ_QUEUE=${RABBITMQ_QUEUE}
-#       - MINIO_URL=${MINIO_URL}
-#       - MINIO_SECURE=${MINIO_SECURE}
-#       - MINIO_SECRET_KEY=${MINIO_SECRET_KEY}
-#       - MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY}
-#       - MINIO_BUCKET_NAME=${MINIO_BUCKET_NAME}
-#       - TAXONOMY_FILE=${TAXONOMY_FILE}
-#       - TRANSFORMATION_DIR=${TRANSFORMATION_DIR}
-#     build:
-#       context: .
-#     depends_on:
-#       rabbitmq:
-#         condition: service_healthy
-#       postgres:
-#         condition: service_healthy
-#     networks:
-#       - workflow_net
-
-# networks:
-#   workflow_net:
-#     driver: bridge  # communicate with each other using services name, from outside only if ports are exposed
-
-# volumes:
-#   postgres_data:
-#   rabbitmq_data:
-#   rabbitmq_logs:
-
 version: '3'
-
 services:
+  postgres:
+    image: postgres:13
+    platform: linux/arm64
+    restart: always
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - PGDATA=/var/lib/postgresql/data/pgdata/environbit
+    stdin_open: true
+    tty: true
+    ports:
+      - 5432:5432
+      - 31025:5432/tcp
+    networks:
+      - workflow_net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      retries: 5
+      timeout: 5s
+  rabbitmq:
+    image: rabbitmq:4.0.4-management-alpine # tells docker which image to pull
+    container_name: 'rabbitmq'
+    ports:
+      - 5672:5672 # AMQP protocol port
+      - 31074:5672/tcp  # external port Management web UI
+      - 15672:15672 # Management web UI
+    environment:
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
+    volumes:
+      - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+      - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+    networks:
+      - workflow_net
+    healthcheck:
+      test: [ "CMD", "rabbitmqctl", "status" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
   app:
     environment:
-      - DB_HOST=${DB_HOST}  # host do PostgreSQL já rodando
+      - DB_HOST=${DB_HOST}
       - DB_PORT=${DB_PORT}
       - DB_NAME=${DB_NAME}
       - DB_USER=${DB_USER}
       - DB_PASSWORD=${DB_PASSWORD}
+      - DB_TABLE=${DB_TABLE}
       - RABBITMQ_USER=${RABBITMQ_USER}
       - RABBITMQ_PWD=${RABBITMQ_PWD}
       - RABBITMQ_HOST=${RABBITMQ_HOST}
@@ -103,9 +63,20 @@ services:
       - TRANSFORMATION_DIR=${TRANSFORMATION_DIR}
     build:
       context: .
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
     networks:
       - workflow_net
 
 networks:
   workflow_net:
-    driver: bridge
+    driver: bridge  # communicate with each other using services name, from outside only if ports are exposed
+
+volumes:
+  postgres_data:
+  rabbitmq_data:
+  rabbitmq_logs:
+  

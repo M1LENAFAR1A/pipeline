@@ -1,0 +1,340 @@
+[2025-03-27T14:48:52.241+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-27T14:48:52.261+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2025-03-27T14:00:00+00:00 [queued]>
+[2025-03-27T14:48:52.271+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2025-03-27T14:00:00+00:00 [queued]>
+[2025-03-27T14:48:52.272+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 4
+[2025-03-27T14:48:52.299+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): get_all_data> on 2025-03-27 14:00:00+00:00
+[2025-03-27T14:48:52.314+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=211) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-27T14:48:52.318+0000] {standard_task_runner.py:72} INFO - Started process 213 to run task
+[2025-03-27T14:48:52.319+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'get_inaturalist_data_roadkill', 'get_all_data', 'scheduled__2025-03-27T14:00:00+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/inaturalist_dag.py', '--cfg-path', '/tmp/tmpd8hbwy5z']
+[2025-03-27T14:48:52.321+0000] {standard_task_runner.py:105} INFO - Job 54: Subtask get_all_data
+[2025-03-27T14:48:52.413+0000] {task_command.py:467} INFO - Running <TaskInstance: get_inaturalist_data_roadkill.get_all_data scheduled__2025-03-27T14:00:00+00:00 [running]> on host f05f38f172ca
+[2025-03-27T14:48:52.498+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='get_inaturalist_data_roadkill' AIRFLOW_CTX_TASK_ID='get_all_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-27T14:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-27T14:00:00+00:00'
+[2025-03-27T14:48:52.500+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-27T14:48:52.503+0000] {inaturalist_dag.py:150} INFO - Getting data from keyword: roadkill
+[2025-03-27T14:48:52.519+0000] {inaturalist_dag.py:41} INFO - Maximum id 13459001 for the request
+[2025-03-27T14:49:00.909+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:49:00.964+0000] {inaturalist_dag.py:163} INFO - Extracted 200 observations
+[2025-03-27T14:49:00.965+0000] {inaturalist_dag.py:41} INFO - Maximum id 14754609 for the request
+[2025-03-27T14:49:07.550+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:49:07.568+0000] {inaturalist_dag.py:163} INFO - Extracted 399 observations
+[2025-03-27T14:49:07.568+0000] {inaturalist_dag.py:41} INFO - Maximum id 16271445 for the request
+[2025-03-27T14:49:19.009+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:49:19.023+0000] {inaturalist_dag.py:163} INFO - Extracted 599 observations
+[2025-03-27T14:49:19.023+0000] {inaturalist_dag.py:41} INFO - Maximum id 17779186 for the request
+[2025-03-27T14:49:27.756+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:49:27.773+0000] {inaturalist_dag.py:163} INFO - Extracted 795 observations
+[2025-03-27T14:49:27.774+0000] {inaturalist_dag.py:41} INFO - Maximum id 19091392 for the request
+[2025-03-27T14:49:33.866+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:49:33.884+0000] {inaturalist_dag.py:163} INFO - Extracted 994 observations
+[2025-03-27T14:49:33.885+0000] {inaturalist_dag.py:41} INFO - Maximum id 19708416 for the request
+[2025-03-27T14:49:38.191+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:49:38.198+0000] {inaturalist_dag.py:163} INFO - Extracted 1194 observations
+[2025-03-27T14:49:38.198+0000] {inaturalist_dag.py:41} INFO - Maximum id 19728241 for the request
+[2025-03-27T14:49:41.628+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:49:41.741+0000] {inaturalist_dag.py:163} INFO - Extracted 1394 observations
+[2025-03-27T14:49:41.743+0000] {inaturalist_dag.py:41} INFO - Maximum id 19740778 for the request
+[2025-03-27T14:49:45.160+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:49:45.175+0000] {inaturalist_dag.py:163} INFO - Extracted 1593 observations
+[2025-03-27T14:49:45.175+0000] {inaturalist_dag.py:41} INFO - Maximum id 19760409 for the request
+[2025-03-27T14:49:51.173+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:49:51.216+0000] {inaturalist_dag.py:163} INFO - Extracted 1793 observations
+[2025-03-27T14:49:51.233+0000] {inaturalist_dag.py:41} INFO - Maximum id 19770188 for the request
+[2025-03-27T14:50:03.397+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:50:03.487+0000] {inaturalist_dag.py:163} INFO - Extracted 1993 observations
+[2025-03-27T14:50:03.518+0000] {inaturalist_dag.py:41} INFO - Maximum id 19787415 for the request
+[2025-03-27T14:50:13.232+0000] {job.py:229} INFO - Heartbeat recovered after 17.69 seconds
+[2025-03-27T14:50:32.417+0000] {job.py:229} INFO - Heartbeat recovered after 19.24 seconds
+[2025-03-27T14:50:33.281+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:50:33.417+0000] {inaturalist_dag.py:163} INFO - Extracted 2193 observations
+[2025-03-27T14:50:33.421+0000] {inaturalist_dag.py:41} INFO - Maximum id 19815550 for the request
+[2025-03-27T14:50:45.655+0000] {job.py:229} INFO - Heartbeat recovered after 13.31 seconds
+[2025-03-27T14:50:46.727+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:50:46.816+0000] {inaturalist_dag.py:163} INFO - Extracted 2393 observations
+[2025-03-27T14:50:46.817+0000] {inaturalist_dag.py:41} INFO - Maximum id 19861048 for the request
+[2025-03-27T14:50:51.575+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:50:51.613+0000] {inaturalist_dag.py:163} INFO - Extracted 2593 observations
+[2025-03-27T14:50:51.614+0000] {inaturalist_dag.py:41} INFO - Maximum id 19883023 for the request
+[2025-03-27T14:50:58.559+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:50:58.573+0000] {inaturalist_dag.py:163} INFO - Extracted 2793 observations
+[2025-03-27T14:50:58.574+0000] {inaturalist_dag.py:41} INFO - Maximum id 19940980 for the request
+[2025-03-27T14:51:03.788+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:51:03.810+0000] {inaturalist_dag.py:163} INFO - Extracted 2993 observations
+[2025-03-27T14:51:03.811+0000] {inaturalist_dag.py:41} INFO - Maximum id 19981489 for the request
+[2025-03-27T14:51:07.442+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:51:07.457+0000] {inaturalist_dag.py:163} INFO - Extracted 3193 observations
+[2025-03-27T14:51:07.458+0000] {inaturalist_dag.py:41} INFO - Maximum id 20040448 for the request
+[2025-03-27T14:51:11.801+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:51:11.812+0000] {inaturalist_dag.py:163} INFO - Extracted 3393 observations
+[2025-03-27T14:51:11.812+0000] {inaturalist_dag.py:41} INFO - Maximum id 20052082 for the request
+[2025-03-27T14:51:17.270+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:51:17.283+0000] {inaturalist_dag.py:163} INFO - Extracted 3593 observations
+[2025-03-27T14:51:17.283+0000] {inaturalist_dag.py:41} INFO - Maximum id 20069923 for the request
+[2025-03-27T14:51:22.378+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:51:22.415+0000] {inaturalist_dag.py:163} INFO - Extracted 3793 observations
+[2025-03-27T14:51:22.416+0000] {inaturalist_dag.py:41} INFO - Maximum id 20240271 for the request
+[2025-03-27T14:51:31.759+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:51:31.780+0000] {inaturalist_dag.py:163} INFO - Extracted 3993 observations
+[2025-03-27T14:51:31.781+0000] {inaturalist_dag.py:41} INFO - Maximum id 20398346 for the request
+[2025-03-27T14:51:37.392+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:51:37.406+0000] {inaturalist_dag.py:163} INFO - Extracted 4193 observations
+[2025-03-27T14:51:37.406+0000] {inaturalist_dag.py:41} INFO - Maximum id 20770996 for the request
+[2025-03-27T14:51:42.193+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:51:42.203+0000] {inaturalist_dag.py:163} INFO - Extracted 4393 observations
+[2025-03-27T14:51:42.203+0000] {inaturalist_dag.py:41} INFO - Maximum id 20891675 for the request
+[2025-03-27T14:51:48.537+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:51:48.619+0000] {inaturalist_dag.py:163} INFO - Extracted 4593 observations
+[2025-03-27T14:51:48.620+0000] {inaturalist_dag.py:41} INFO - Maximum id 21091037 for the request
+[2025-03-27T14:51:53.868+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:51:53.881+0000] {inaturalist_dag.py:163} INFO - Extracted 4792 observations
+[2025-03-27T14:51:53.882+0000] {inaturalist_dag.py:41} INFO - Maximum id 21308712 for the request
+[2025-03-27T14:51:57.446+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:51:57.479+0000] {inaturalist_dag.py:163} INFO - Extracted 4992 observations
+[2025-03-27T14:51:57.480+0000] {inaturalist_dag.py:41} INFO - Maximum id 21334411 for the request
+[2025-03-27T14:52:01.325+0000] {inaturalist_dag.py:58} INFO - Got 200 results
+[2025-03-27T14:52:01.335+0000] {inaturalist_dag.py:163} INFO - Extracted 5190 observations
+[2025-03-27T14:52:01.335+0000] {inaturalist_dag.py:170} INFO - Max number of results per file reached, updating maximum_id variable to 21439887
+[2025-03-27T14:52:01.347+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-03-27T14:52:01.351+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "variable_key_uq"
+DETAIL:  Key (key)=(inaturalist_roadkill_latest_observation_id) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/inaturalist_dag.py", line 172, in get_all_data
+    Variable.set(f"inaturalist_{keyword}_latest_observation_id", maximum_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 175, in set
+    Variable._set(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 213, in _set
+    session.flush()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3449, in flush
+    self._flush(objects)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3588, in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3549, in _flush
+    flush_context.execute()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "variable_key_uq"
+DETAIL:  Key (key)=(inaturalist_roadkill_latest_observation_id) already exists.
+
+[SQL: INSERT INTO variable (key, val, description, is_encrypted) VALUES (%(key)s, %(val)s, %(description)s, %(is_encrypted)s) RETURNING variable.id]
+[parameters: {'key': 'inaturalist_roadkill_latest_observation_id', 'val': '21439887', 'description': None, 'is_encrypted': False}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+[2025-03-27T14:52:01.373+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=get_inaturalist_data_roadkill, task_id=get_all_data, run_id=scheduled__2025-03-27T14:00:00+00:00, execution_date=20250327T140000, start_date=20250327T144852, end_date=20250327T145201
+[2025-03-27T14:52:01.386+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-27T14:52:01.387+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 54 for task get_all_data ((psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "variable_key_uq"
+DETAIL:  Key (key)=(inaturalist_roadkill_latest_observation_id) already exists.
+
+[SQL: INSERT INTO variable (key, val, description, is_encrypted) VALUES (%(key)s, %(val)s, %(description)s, %(is_encrypted)s) RETURNING variable.id]
+[parameters: {'key': 'inaturalist_roadkill_latest_observation_id', 'val': '21439887', 'description': None, 'is_encrypted': False}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 213)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "variable_key_uq"
+DETAIL:  Key (key)=(inaturalist_roadkill_latest_observation_id) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/inaturalist_dag.py", line 172, in get_all_data
+    Variable.set(f"inaturalist_{keyword}_latest_observation_id", maximum_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 175, in set
+    Variable._set(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 213, in _set
+    session.flush()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3449, in flush
+    self._flush(objects)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3588, in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3549, in _flush
+    flush_context.execute()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "variable_key_uq"
+DETAIL:  Key (key)=(inaturalist_roadkill_latest_observation_id) already exists.
+
+[SQL: INSERT INTO variable (key, val, description, is_encrypted) VALUES (%(key)s, %(val)s, %(description)s, %(is_encrypted)s) RETURNING variable.id]
+[parameters: {'key': 'inaturalist_roadkill_latest_observation_id', 'val': '21439887', 'description': None, 'is_encrypted': False}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+[2025-03-27T14:52:01.403+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-27T14:52:01.425+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-27T14:52:01.426+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
