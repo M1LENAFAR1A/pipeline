@@ -4277,3 +4277,8 @@ Please take a look at these docs to improve your DAG import time:
 [2025-03-27T18:50:43.172+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/gbif_dag.py for tasks to queue
 [2025-03-27T18:50:43.204+0000] {logging_mixin.py:190} INFO - [2025-03-27T18:50:43.202+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/gbif_dag.py
 [2025-03-27T18:50:46.011+0000] {processor.py:925} INFO - DAG(s) 'get_gbif_data_atropelada', 'get_gbif_data_roadkill', 'get_gbif_data_atropelamento' retrieved from /opt/airflow/dags/gbif_dag.py
+[2025-03-27T18:50:46.334+0000] {logging_mixin.py:190} INFO - [2025-03-27T18:50:46.332+0000] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-03-27T18:50:46.585+0000] {logging_mixin.py:190} INFO - [2025-03-27T18:50:46.577+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelada to 2025-03-27 18:00:00+00:00, run_after=2025-03-27 18:30:00+00:00
+[2025-03-27T18:50:46.621+0000] {logging_mixin.py:190} INFO - [2025-03-27T18:50:46.621+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_atropelamento to 2025-03-27 18:00:00+00:00, run_after=2025-03-27 18:30:00+00:00
+[2025-03-27T18:50:46.650+0000] {logging_mixin.py:190} INFO - [2025-03-27T18:50:46.650+0000] {dag.py:4180} INFO - Setting next_dagrun for get_gbif_data_roadkill to 2025-03-27 18:00:00+00:00, run_after=2025-03-27 18:30:00+00:00
+[2025-03-27T18:50:47.029+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/gbif_dag.py took 3.930 seconds
