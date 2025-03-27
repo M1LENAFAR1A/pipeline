@@ -2260,3 +2260,10 @@ ModuleNotFoundError: No module named 'connectors'
 [2025-03-27T17:23:47.278+0000] {logging_mixin.py:190} INFO - [2025-03-27T17:23:47.273+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-03-27T17:23:47.591+0000] {logging_mixin.py:190} INFO - [2025-03-27T17:23:47.590+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_upload_test to None, run_after=None
 [2025-03-27T17:23:47.948+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/minio_test_dag.py took 3.308 seconds
+[2025-03-27T17:24:26.541+0000] {processor.py:186} INFO - Started process (PID=737) to work on /opt/airflow/dags/minio_test_dag.py
+[2025-03-27T17:24:26.544+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/minio_test_dag.py for tasks to queue
+[2025-03-27T17:24:26.560+0000] {logging_mixin.py:190} INFO - [2025-03-27T17:24:26.554+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/minio_test_dag.py
+[2025-03-27T17:24:28.984+0000] {processor.py:925} INFO - DAG(s) 'minio_upload_test' retrieved from /opt/airflow/dags/minio_test_dag.py
+[2025-03-27T17:24:29.521+0000] {logging_mixin.py:190} INFO - [2025-03-27T17:24:29.519+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-27T17:24:29.601+0000] {logging_mixin.py:190} INFO - [2025-03-27T17:24:29.600+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_upload_test to None, run_after=None
+[2025-03-27T17:24:29.762+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/minio_test_dag.py took 3.259 seconds
